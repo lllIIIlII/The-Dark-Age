@@ -1,0 +1,17 @@
+{
+	"captureWave":150
+	"planet": "Planzer",
+	"sector":26,
+	"difficulty": 11,
+	"research": {
+    "parent": "[卡佩]",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "[卡佩]"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

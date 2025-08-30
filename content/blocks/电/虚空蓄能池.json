@@ -1,0 +1,44 @@
+{
+	"name": "虚空蓄能池",
+	"health": 8700,
+	"armor":10
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"requirements": [
+		"lead/300",
+		"titanium/240",
+		"silicon/400",
+		"钢/40",
+		"钴钢/60",
+		"空间节点/5"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawPower",
+				"emptyLightColor": "FFFFFF",
+				"fullLightColor": "FFFFFF"
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"consumes": {
+		"powerBuffered": 1024000
+	},
+	"size": 3,
+	"type": "Battery",
+	"category": "power",
+	"research": {
+	"parent": "压缩电池",
+	"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "冥迷沙漠西部"
+			}
+		]
+	}
+}

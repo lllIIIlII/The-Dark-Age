@@ -1,0 +1,26 @@
+{
+	"name": "虚弱",
+	"show":true
+	"color": "8674C1",
+	"speedMultiplier": 0.65,
+	"healthMultiplier": 0.95,
+	"reloadMultiplier": 0.78,
+	"damageMultiplier": 0.8,
+	"effectChance": 0.15
+	"opposites": [
+	"伤害提升"
+	],
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 35,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"region": "黑暗纪元-斜正方",
+	"sizeFrom": 2,
+	"sizeTo": 5,
+	"colorFrom": "8674C1",
+	"colorTo": "B894F250"
+	}
+}

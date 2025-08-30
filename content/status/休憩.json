@@ -1,0 +1,26 @@
+{
+	"name": "休憩",
+	"color": "FFFFFF",
+	"speedMultiplier": 0,
+	"healthMultiplier": 1,
+	"reloadMultiplier": 0,
+    "damageMultiplier": 1,
+	"effectChance": 0.09,
+	"damage":-30
+	"disarm": true,
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 60,
+	"lifetime": 60,
+	"sizeInterp": "slope",
+	"region": "黑暗纪元-休憩effect",
+	"sizeFrom": 0,
+	"sizeTo": 5,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	"cone":15
+	"randLength": false,
+	}
+}

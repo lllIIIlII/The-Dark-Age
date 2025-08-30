@@ -1,0 +1,25 @@
+{
+	"name": "警惕",
+	"color": "CD5C5C",
+	"speedMultiplier": 0.85,
+	"healthMultiplier": 1.5,
+	"reloadMultiplier": 1.8,
+    "damageMultiplier": 2.0,
+	"effectChance": 0.1,
+	"opposites": [
+	"疑惑"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 0,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-警惕effect",
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "CD5C5C",
+		"colorTo": "FFFFFF"
+	}
+}

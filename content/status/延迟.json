@@ -1,0 +1,25 @@
+{
+	"name": "延迟",
+	"color": "FF795E",
+	"speedMultiplier": 0.35,
+	"healthMultiplier": 0.9,
+	"reloadMultiplier": 0.7,
+	"damageMultiplier": 0.9,
+	"effectChance": 0.22,
+	"opposites": [
+	"轻盈"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 20,
+		"length": -20,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-三角",
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "FF795E",
+		"colorTo": "FF795E50"
+	}
+}

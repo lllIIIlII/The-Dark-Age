@@ -1,0 +1,201 @@
+{
+  "type": "flying",
+  "name": "泽塔",
+  "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+  "rotateSpeed": 4.8,
+  "speed": 5.4,
+  "immunities": [
+    "tarred",
+    "slow",
+    "unmoving",
+    "spore-slowed",
+    "corroded",
+    "electrified",
+    "疑惑",
+    "空间混乱",
+    "磁化",
+    "延迟",
+    "消散"
+  ],
+  "ammoType": "thorium",
+  "ammoCapacity": 480,
+  "hitSize": 30,
+  "buildRange": 365,
+  "buildSpeed": 4.5,
+  "buildBeamOffset": 36,
+  "mineSpeed": 30,
+  "mineTier": 35,
+  "lightRadius": 75,
+  "itemCapacity": 5000,
+  "flying": true,
+  "health": 3650,
+  "armor": 380,
+  "engines": [
+    {
+      "x": 0,
+      "y": -18,
+      "radius": 6,
+      "rotation": 90
+    }
+  ],
+  "abilities": [
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": false,
+      "radius": 65,
+      "width": 15,
+      "max": 6000,
+      "regen": 60,
+      "cooldown": 160,
+      "angle": 90,
+      "angleOffset": 90
+    },
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": false,
+      "radius": 65,
+      "width": 15,
+      "max": 6000,
+      "regen": 30,
+      "cooldown": 160,
+      "angle": 90,
+      "angleOffset": -90
+    },
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": false,
+      "radius": 65,
+      "width": 18,
+      "max": 6000,
+      "regen": 30,
+      "cooldown": 160,
+      "angle": 90,
+      "angleOffset": -180
+    },
+    {
+      "type": "ShieldArcAbility",
+      "radius": 95,
+      "width": 20,
+      "max": 9000,
+      "regen": 30,
+      "cooldown": 160,
+      "angle": 120,
+      "angleOffset": 0
+    }
+  ],
+  "weapons": [
+    {
+      "name": "泽塔-侧",
+      "x": 0,
+      "y": 0,
+      "recoil": 0,
+      "shootX": -5,
+      "shootY": 0,
+      "reload": 30,
+      "top": false,
+      "rotate": false,
+      "shootSound": "DDFS",
+      "shoot": {
+        "shots": 1,
+        "shotDelay": 10,
+        "type": "ShootBarrel",
+        "barrels": [
+          -6,
+          2,
+          25,
+          6,
+          2,
+          25
+        ]
+      },
+      "alternate": false,
+      "mirror": true,
+      "bullet": {
+        "damage": 325,
+        "lifetime": 60,
+        "width": 3,
+        "height": 12,
+        "knockback": 5,
+        "speed": 15,
+        "pierceArmor": true,
+        "homingDelay": 5,
+        "homingPower": 0.4,
+        "homingRange": 1000,
+        "splashDamageRadius": 40,
+        "splashDamage": 120,
+        "sprite": "黑暗纪元-惊鸿",
+        "buildingDamageMultiplier": 0.01,
+        "status": "破防",
+        "statusDuration": 120,
+        "hitShake": 4,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "length": 35,
+              "baseLength": 0,
+              "lifetime": 15,
+              "colorFrom": "434242",
+              "colorTo": "CECECE70"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "length": 40,
+              "baseLength": 0,
+              "lifetime": 25,
+              "colorFrom": "434242",
+              "colorTo": "CECECE70"
+            }
+          ]
+        },
+        "trailLength": 40,
+        "trailWidth": 2,
+        "trailColor": "FFFFFF88",
+        "trailChance": 1,
+        "trailInterval": 16,
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "length": 16,
+          "baseLength": 1,
+          "lifetime": 30,
+          "colorFrom": "E3E3E380",
+          "colorTo": "E3E3E380",
+          "sizeFrom": 3,
+          "sizeTo": 0
+        }
+      }
+    },
+    {
+      "name": "泽塔-前",
+      "x": 0,
+      "y": 0,
+      "recoil": 0,
+      "shootX": 0,
+      "shootY": 8,
+      "reload": 20,
+      "top": false,
+      "rotate": false,
+      "shootSound": "shotgun",
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "damage": 305,
+        "lifetime": 10,
+        "width": 20,
+        "length": 320,
+        "pierce": true,
+        "hitShake": 4,
+        "buildingDamageMultiplier": 0.01,
+        "status": "疑惑",
+        "statusDuration": 240
+      }
+    }
+  ]
+}

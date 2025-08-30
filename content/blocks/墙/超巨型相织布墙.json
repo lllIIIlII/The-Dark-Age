@@ -1,0 +1,16 @@
+{
+	"name": "超巨型相织布墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 12360,
+	"armor":3,
+	"size": 4,
+	"absorbLasers":false,
+	"flashHit": true,
+	"chanceDeflect": 58,
+	"requirements": [
+	"phase-fabric/72"
+	],
+	"category": "defense",
+	"research": "巨型相织布墙"
+}

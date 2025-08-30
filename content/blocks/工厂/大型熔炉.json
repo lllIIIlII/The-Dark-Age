@@ -1,0 +1,43 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型熔炉",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health": 980,
+	"craftTime":25,	
+	"outputLiquid": "slag/1.75"
+	"size": 2,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "slag"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 150,
+	"updateEffect": "melting",
+	"consumes": {
+		"power": 1.5,
+		"items": [
+		"scrap/3"
+		]
+	},
+	"requirements": [
+		"graphite/85",
+		"copper/70",
+		"lead/80",
+		"metaglass/50"
+	],
+	"category": "crafting",
+	"research": "melter"
+}

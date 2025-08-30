@@ -1,0 +1,256 @@
+{
+	"type": "ItemTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "超相磁轨炮",
+	"unitSort": "strongest",
+	"health": 14910,
+	"size": 7,
+	"reload": 400,
+	"range": 1000,
+	"recoil": 6,
+	"canOverdrive": false,
+	"ammoPerShot":300,
+	"liquidCapacity":50
+	"maxAmmo": 600,
+	"minWarmup": 0.7,
+	"shootWarmupSpeed": 0.1,
+	"consumes": {
+		"power": 224,
+	},
+	"shoot": {
+	"type": "ShootPattern",
+	"firstShotDelay": 70
+	"type": "ShootBarrel",
+	"barrels": [
+	0,-3,0,
+	]
+},
+	"shootSound": "JG3",
+	"targetGround": true,
+	"targetAir": true,
+	"canOverdrive": false
+	"inaccuracy": 0,
+	"shake": 12,
+	"shootCone": 1,
+	"rotateSpeed": 1.8,
+	"ammoTypes": {
+	"phase-fabric": {
+	"damage": 100000,
+	"ammoMultiplier": 1,
+	"sprite":"黑暗纪元-穿刺",
+	"pierce":true
+	"pierceCap":15
+	"pierceArmor":true
+	"keepVelocity":true
+	"hitShake": 14.5,
+	"trailColor":"FFD494",
+	"trailLength":32,
+	"trailWidth":4,
+	"trailInterval": 1,
+	"trailChance": 50,
+	"trailEffect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 90,
+	"lifetime": 22,
+	"region":"黑暗纪元-三角",
+	"randLength": true,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"sizeFrom": 12,
+	"sizeTo": 0
+	"colorFrom": "FFD494",
+	"colorTo": "FFD494",
+	},
+	"chargeEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 12,
+	"strokeTo": 0,
+	"sizeFrom": 100,
+	"sizeTo": 0,
+	"lifetime": 60,
+	"colorFrom": "C1A070",
+	"colorTo": "FFD494"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 25,
+	"sizeFrom": 6
+	"sizeTo": 0,
+	"length": -160,
+	"baseLength": 160,
+	"lifetime": 60,
+	"colorFrom": "FFD49400",
+	"colorTo": "FFD494",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 32,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": -150,
+	"baseLength": 150,
+	"lifetime": 60,
+	"colorFrom": "C1A07000",
+	"colorTo": "C1A070",
+	}
+]
+},
+	"width": 25,
+	"height": 60,
+	"hitSound": "shootSmite",
+	"hitSoundVolume": 18
+	"status": "超相",
+	"statusDuration": 420,
+	"knockback":1330
+	"speed": 25,
+	"shrinkX":0
+	"shrinkY":0
+	"lifetime": 40,
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 160,
+	"sizeTo": 0,
+	"length": 0,
+	"interp": "bounceIn",
+	"lifetime": 60,
+	"region": "黑暗纪元-裂痕"
+	"colorFrom": "FFD494",
+	"colorTo": "FFD494"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 8,
+	"strokeTo": 0,
+	"sides": 3,
+	"rotation": 0,
+	"sizeFrom": 30,
+	"sizeTo": 30,
+	"lifetime": 60,
+	"colorFrom": "C1A070",
+	"colorTo": "FFD494"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 8,
+	"strokeTo": 0,
+	"sides": 3,
+	"rotation": 60,
+	"sizeFrom": 40,
+	"sizeTo": 40,
+	"lifetime": 60,
+	"colorFrom": "C1A070",
+	"colorTo": "FFD494"
+	}
+]
+}
+}
+}
+    "drawer":{
+    "type":"DrawTurret",
+    "parts":[
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-左下"
+    "layer":52,
+    "moveX":0,
+    "moveY":20
+    "moves": [
+	{
+	"progress": "recoil",
+	"y":-2
+	}
+]
+},
+{
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-右下"
+    "layer":52,
+    "moveX":0,
+    "moveY":20
+    "moves": [
+	{
+	"progress": "recoil",
+	"y":-2
+	}
+]
+},
+{
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-左上"
+    "layer":51,
+    "moveX":0,
+    "moveY":30
+    "moves": [
+	{
+	"progress": "recoil",
+	"y":-4
+	}
+]
+},
+{
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-右上"
+    "layer":51,
+    "moveX":0,
+    "moveY":30
+    "moves": [
+	{
+	"progress": "recoil",
+	"y":-4
+	}
+]
+},
+{
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-标"
+    "layer":54,
+    "moveX":0,
+    "moveY":0
+}
+]
+},
+	"requirements": [
+		"metaglass/3000"
+		"silicon/900"
+		"钴钢/620"
+		"暗能钢/800"
+		"plastanium/3500"
+		"铁/2000"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "华光",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "涯光岛"
+			}
+		]
+	}
+}

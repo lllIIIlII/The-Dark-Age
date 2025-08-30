@@ -1,0 +1,23 @@
+{
+	"type": "LiquidBridge",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "暗能驱动输液管",
+	"health": 670,
+	"range": 32,
+	"liquidCapacity": 32,
+	"consumes": {
+	"power": 0.98
+	},
+	"arrowSpacing": 8,
+	"arrowOffset": 4,
+	"arrowTimeScl": 12,
+	"bridgeWidth": 8,
+	"requirements": [
+		"metaglass/25",
+		"silicon/10",
+		"钢/5",
+		"暗能钢/10",
+	],
+	"category": "liquid",
+	"research": "暗能驱动传送桥"
+}

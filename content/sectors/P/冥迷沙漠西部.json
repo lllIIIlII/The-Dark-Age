@@ -1,0 +1,17 @@
+{
+	"captureWave":55
+	"planet": "Planzer",
+	"sector":36,
+	"difficulty": 3,
+	"research": {
+    "parent": "云月关",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "云月关"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

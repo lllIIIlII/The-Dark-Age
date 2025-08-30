@@ -1,0 +1,33 @@
+{
+	"name": "暗能提速器",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "OverdriveProjector",
+	"health": 580,
+	"size": 4,
+	"range": 240,
+	"phaseRangeBoost": 40,
+	"speedBoostPhase": 1,
+	"speedBoost": 3.5,
+	"hasBoost": true,
+	"useTime": 60,
+	"consumes": {
+		"power": 7,
+		"items": {
+			"items": [
+				"暗能钢/1"
+			],
+			"booster": true,
+			"optional": true
+		}
+	},
+	"requirements": [
+	"copper/300",
+	"silicon/460",
+	"钢/350",
+	"surge-alloy/230",
+	"暗能钢/10",
+	"钴/200"
+	],
+	"category": "effect",
+	"research": "铁伞"
+}

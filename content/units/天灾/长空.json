@@ -1,0 +1,278 @@
+{
+  "type": "payload",
+  "name": "长空",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "speed": 1.4,
+  "drag": 0.04,
+  "accel": 0.06,
+  "rotateSpeed": 2.5,
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "破防",
+    "疑惑",
+    "污染",
+    "致盲",
+    "空间混乱",
+    "瘫痪",
+    "溃解",
+    "延迟",
+    "暗蚀"
+  ],
+  "ammoType": {
+    "type": "PowerAmmoType",
+    "totalPower": 5800
+  },
+  "itemCapacity": 450,
+  "hitSize": 60,
+  "flying": true,
+  "health": 50000,
+  "armor": 47,
+  "targetFlags": [
+    "turret",
+    "core"
+  ],
+  "engines": [
+    {
+      "x": 0,
+      "y": -22,
+      "radius": 20,
+      "rotation": 90
+    }
+  ],
+  "abilities": [
+    {
+      "type": "StatusFieldAbility",
+      "duration": 600,
+      "reload": 590,
+      "range": 160,
+      "applyEffect": "none",
+      "effect": "攻速提升",
+      "activeEffect": {
+        "type": "WaveEffect",
+        "lifetime": 60,
+        "sizeFrom": 130,
+        "sizeTo": 130,
+        "strokeFrom": 7,
+        "strokeTo": 0,
+        "colorFrom": "AC5F87",
+        "colorTo": "AC5F87"
+      }
+    }
+  ],
+  "weapons": [
+    {
+      "name": "长空-左",
+      "reload": 60,
+      "x": 0,
+      "y": 0,
+      "shootX": -27,
+      "shootY": 27,
+      "rotate": false,
+      "shootCone": 1,
+      "recoil": 2.6,
+      "shoot": {
+        "shots": 3,
+        "shotDelay": 5
+      },
+      "ejectEffect": "none",
+      "shootSound": "bolt",
+      "alternate": true,
+      "mirror": false,
+      "inaccuracy": 0,
+      "bullet": {
+        "type": "PointBulletType",
+        "layer": 110,
+        "damage": 300,
+        "ammoMultiplier": 1,
+        "hitSound": "none",
+        "lifetime": 1,
+        "speed": 600,
+        "hitShake": 1,
+        "buildingDamageMultiplier": 1.2,
+        "trailSpacing": 10,
+        "despawnEffect": "none",
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "baseLength": 0.1,
+          "length": 0.1,
+          "lifetime": 22,
+          "line": true,
+          "randLength": false,
+          "interp": "pow10Out",
+          "sizeInterp": "pow5In",
+          "lenFrom": 9,
+          "lenTo": 9,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "colorFrom": "D8C7C6",
+          "colorTo": "D8C7C6",
+          "cone": 0
+        },
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 4,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "lenFrom": 12,
+              "lenTo": 0,
+              "length": 60,
+              "baseLength": 0,
+              "lifetime": 30,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "interp": "pow5In",
+              "sizeInterp": "pow10Out",
+              "sizeFrom": 7,
+              "sizeTo": 0,
+              "length": 60,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "D8C7C6",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 0,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 40,
+              "lifetime": 30,
+              "colorFrom": "D8C7C6",
+              "colorTo": "FFFFFF"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "长空-右",
+      "reload": 60,
+      "x": 0,
+      "y": 0,
+      "shootX": 27,
+      "shootY": 27,
+      "rotate": false,
+      "shootCone": 1,
+      "recoil": 2.6,
+      "shoot": {
+        "shots": 3,
+        "shotDelay": 5,
+        "firstShotDelay": 20
+      },
+      "ejectEffect": "none",
+      "shootSound": "bolt",
+      "alternate": true,
+      "mirror": false,
+      "inaccuracy": 0,
+      "bullet": {
+        "type": "PointBulletType",
+        "layer": 110,
+        "damage": 300,
+        "ammoMultiplier": 1,
+        "hitSound": "none",
+        "lifetime": 1,
+        "speed": 600,
+        "hitShake": 1,
+        "buildingDamageMultiplier": 1.2,
+        "trailSpacing": 10,
+        "despawnEffect": "none",
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "baseLength": 0.1,
+          "length": 0.1,
+          "lifetime": 22,
+          "line": true,
+          "randLength": false,
+          "interp": "pow10Out",
+          "sizeInterp": "pow5In",
+          "lenFrom": 9,
+          "lenTo": 9,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "colorFrom": "D8C7C6",
+          "colorTo": "D8C7C6",
+          "cone": 0
+        },
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 4,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "lenFrom": 12,
+              "lenTo": 0,
+              "length": 60,
+              "baseLength": 0,
+              "lifetime": 30,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 12,
+              "interp": "pow5In",
+              "sizeInterp": "pow10Out",
+              "sizeFrom": 7,
+              "sizeTo": 0,
+              "length": 60,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "D8C7C6",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 0,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 40,
+              "lifetime": 30,
+              "colorFrom": "D8C7C6",
+              "colorTo": "FFFFFF"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "research": {
+    "parent": "前线指挥中心",
+    "objectives": [
+      {
+        "type": "OnSector",
+        "preset": "空置域"
+      }
+    ]
+  }
+}

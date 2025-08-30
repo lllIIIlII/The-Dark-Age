@@ -1,0 +1,19 @@
+{
+	"type": "StorageBlock",
+	"name": "普兰大陆-东赤道区",
+	"health": 68,
+	"size": 1,
+	"requirements": [
+	],
+	"itemCapacity": 0,
+	"buildVisibility": "sandboxOnly",
+	"research": {
+    "parent": "前线指挥中心",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":225,
+	"difficulty": 5,
+	"research": {
+    "parent": "侵蚀区-外围",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "侵蚀区-外围"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

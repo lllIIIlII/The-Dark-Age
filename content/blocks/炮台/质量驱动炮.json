@@ -1,0 +1,1198 @@
+{
+	"type": "ItemTurret",
+	"name": "质量驱动炮",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"unitSort": "weakest",
+	"health": 1500,
+	"size": 3,
+	"reload": 120,
+	"range": 1000,
+    "ammoPerShot":120,
+	"ammoUseEffect":
+	"casing2",
+	"maxAmmo": 240,
+	"recoilTime": 30,
+	"recoil": 5,
+	"recoilTime":120,
+	"consumes": {
+	"power": 12,
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+		}
+	},
+	"shootSound": "artillery",
+	"targetGround": true,
+	"targetAir": false,
+	"inaccuracy": 2,
+	"rotateSpeed": 5,
+	"ammoTypes": {
+		"copper": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"collidesAir": false,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "trailColor":"B65607",
+	        "trailLength":12,
+	        "trailWidth":4,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},
+		"lead": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"collidesAir": false,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "trailColor":"643274",
+	        "trailLength":12,
+	        "trailWidth":4,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},	
+		"silicon": {
+	        "reloadMultiplier":1.5,
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200
+		    "collidesAir": false,
+		    "trailColor":"434242",
+	        "trailLength":12,
+	        "trailWidth":4
+		    "homingDelay": 25,
+	        "homingPower": 0.1,
+		    "homingRange": 650,
+		    "ammoMultiplier": 2,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15,
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},	
+		"titanium": {
+			"width": 20,
+			"height": 20,
+			"speed": 10,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":100,
+		    "collidesAir": false,
+		    "trailColor":"6FA9FC",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "freezing",
+		    "statusDuration": 120,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 30,
+				"lifetime": 10,
+			    "width": 5,
+			    "height": 5,
+			    "status": "freezing",
+		        "statusDuration": 120,
+		        "collidesAir": false,
+				"damage": 15
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 30,
+				"lifetime": 10,
+				"status": "freezing",
+		        "statusDuration": 120,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},
+	    "sand": {
+			"width": 20,
+			"height": 20,
+			"speed": 2.5,
+			"damage": 50,
+			"knockback":250,
+			"bulletInterval":180,
+		    "lifetime":400,
+		    "status": "疑惑",
+		    "collidesAir": false,
+		    "trailColor":"FCE178",
+	        "trailLength":12
+	        "trailWidth":4
+		    "statusDuration": 120,
+		    "ammoMultiplier": 2,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 7.5,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+			    "status": "疑惑",
+		        "statusDuration": 120,
+				"damage": 7.5
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 7.5,
+				"lifetime": 20,
+				"status": "疑惑",
+		        "statusDuration": 120,
+				"damage": 2.5,
+			    "width": 2.5,
+			    "collidesAir": false,
+			    "height": 2.5,
+			    }
+			}
+		}
+		"metaglass": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"FFFFFF",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 2,
+			"fragBullets":160,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    }
+			}
+		},
+		"coal": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"070707100",
+	        "trailLength":12
+	        "trailWidth":4
+			"status": "burning",
+			"statusDuration": 180,
+		    "ammoMultiplier": 2,
+			"fragBullets":160,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+			    "status": "burning",
+			    "statusDuration": 180,
+			    "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "burning",
+			    "statusDuration": 180,
+			    "collidesAir": false,
+			    }
+			}
+		},
+		"scrap": {
+	        "reloadMultiplier":0.5,
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "status": "melting",
+		    "statusDuration": 180,
+		    "collidesAir": false,
+		    "trailColor":"928F58",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 3,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"status": "melting",
+		        "statusDuration": 120,
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "melting",
+		        "statusDuration": 60,
+		        "collidesAir": false,
+			    }
+			}
+		},
+	    "spore-pod": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "status": "spore-slowed",
+		    "statusDuration": 150,
+		    "collidesAir": false,
+		    "trailColor":"58026A",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+			    "status": "spore-slowed",
+		        "statusDuration": 150,
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "spore-slowed",
+		        "statusDuration": 150,
+		        "collidesAir": false,
+			    }
+			}
+		},
+		"plastanium": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 175,
+			"knockback":200,
+			"bulletInterval":180,
+			"collidesAir": false,
+			"trailColor":"B4F381",
+	        "trailLength":12
+	        "trailWidth":4
+		    "lifetime":200,
+		    "pierceCap": 3,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 65
+				"pierceCap": 2,
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 45,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},
+		"graphite": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"87D4D8",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "sapped",
+		    "statusDuration": 60,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+			    "status": "sapped",
+		        "statusDuration": 60,
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "sapped",
+		        "statusDuration": 60,
+		        "collidesAir": false,
+		        }
+		    }
+	    },	
+	    "phase-fabric": {
+	    "buildingDamageMultiplier": 1.5,
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":400,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"FED5A6",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"knockback":40,
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+				"knockback":10,
+				"collidesAir": false,
+			    }
+			}
+		},    
+		"thorium": {
+	        "reloadMultiplier":0.75,
+			"width": 20,
+			"height": 20,
+			"speed": 15,
+			"damage": 75,
+			"knockback":200,
+			"collidesAir": false,
+			"trailColor":"FAB6C1",
+	        "trailLength":12
+	        "trailWidth":4
+			"bulletInterval":180,
+		    "lifetime":66.6,
+		    "ammoMultiplier": 2,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 45,
+				"lifetime": 6.6,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 45,
+				"lifetime": 6.6,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},
+	    "pyratite": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 95,
+			"knockback":250,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"FE9900",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "burning",
+		    "statusDuration": 600,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 25
+			    "status": "burning",
+		        "statusDuration": 300,
+				"knockback":25,
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 15,
+			    "width": 2.5,
+			    "height": 2.5,
+				"knockback":10,
+			    "status": "burning",
+		        "statusDuration": 180,
+		        "collidesAir": false,
+			    }
+			}
+		},   
+		"blast-compound": {
+		"buildingDamageMultiplier": 2.0,
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 125,
+			"knockback":300,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"F35C3D",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "blasted",
+		    "statusDuration": 1,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+			"buildingDamageMultiplier": 2.0,
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 65
+			    "knockback":55,
+			    "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+			    "buildingDamageMultiplier": 2.0,
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 35,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "knockback":30,
+			    "collidesAir": false,
+			    }
+			}
+		},
+		"surge-alloy": {
+			"width": 20,
+			"height": 20,
+			"speed": 10,
+			"damage": 225,
+			"knockback":100,
+			"bulletInterval":180,
+		    "lifetime":100,
+		    "collidesAir": false,
+		    "trailColor":"FED843",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 1,
+			"lightning":1,
+			"lightningDamage":45,
+			"lightningLength":15
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 30,
+				"lifetime": 10,
+			    "width": 8,
+			    "height": 8,
+				"damage": 65
+				"lightning":1,
+			    "lightningDamage":25,
+			    "lightningLength":10
+			    "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 30,
+				"lifetime": 10,
+				"damage": 35,
+			    "width": 6,
+			    "height": 6,
+				"lightning":1,
+			    "lightningDamage":10,
+			    "lightningLength":5
+			    "collidesAir": false,
+			    }
+			}
+		},
+	    "铀": {
+			"width": 20,
+			"height": 20,
+			"speed": 30,
+			"damage": 275,
+			"collidesAir": false,
+			"trailColor":"4CF408",
+	        "trailLength":12
+	        "trailWidth":4
+			"bulletInterval":180,
+		    "lifetime":33.3,
+		    "ammoMultiplier": 1,
+		    "collidesAir": false,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 90,
+				"lifetime": 3.3,
+			    "width": 5,
+			    "height": 5,
+				"damage": 115
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 90,
+				"lifetime": 3.3,
+				"damage": 75,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},    
+		"贫铀": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 245,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"A3EF85",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "污染",
+		    "statusDuration": 60,
+		    "pierceArmor": true,
+		    "pierceCap": 6,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 115
+			    "status": "污染",
+		        "statusDuration": 30,
+		        "pierceArmor": true,
+		        "pierceCap": 3,
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 75,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "污染",
+		        "statusDuration": 20,
+		        "pierceArmor": true,
+		        "pierceCap": 2,
+		        "collidesAir": false,
+			    }
+			}
+		},
+			"钴": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"987085",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+				"collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			    }
+			}
+		},
+		"铁": {
+	    "buildingDamageMultiplier": 2.5,
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 35,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"B1B1B1",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "磁化",
+		    "statusDuration": 15,
+		    "ammoMultiplier": 3,
+			"fragBullets":140,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 65
+				"status": "磁化",
+		        "statusDuration": 15,
+		        "collidesAir": false,
+			}
+		},
+		"钢": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 75,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":200,
+		    "collidesAir": false,
+		    "trailColor":"738FC0",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "破防",
+		    "statusDuration": 30,
+		    "ammoMultiplier": 1,
+		    "hitSound":"钢管"
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+			    "status": "破防",
+		        "statusDuration": 30,
+		        "collidesAir": false,
+		        "hitSound":"钢管"
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 5,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "破防",
+		        "statusDuration": 30,
+		        "collidesAir": false,
+		        "hitSound":"钢管"
+		            }
+			    }
+			},	
+			"暗金属": {
+			"width": 20,
+			"height": 20,
+			"speed": 5,
+			"damage": 150,
+			"knockback":200,
+			"bulletInterval":180,
+		    "lifetime":325,
+		    "collidesAir": false,
+		    "trailColor":"000000",
+	        "trailLength":12
+	        "trailWidth":4
+		    "ammoMultiplier": 1,
+			"fragBullets":150,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+			    "width": 5,
+			    "height": 5,
+				"damage": 45
+				"collidesAir": false,
+			    "fragBullets":10,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 15,
+				"lifetime": 20,
+				"damage": 20,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "collidesAir": false,
+			        }
+			    }
+			},
+			"暗能钢": {
+			"width": 20,
+			"height": 20,
+			"speed": 50,
+			"damage": 345,
+			"knockback":250,
+			"bulletInterval":180,
+		    "lifetime":32.5,
+		    "collidesAir": false,
+		    "trailColor":"2B2C2C",
+	        "trailLength":12
+	        "trailWidth":4
+		    "status": "致盲",
+		    "statusDuration": 120,
+		    "ammoMultiplier": 1,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 200,
+				"lifetime": 2,
+			    "width": 5,
+			    "height": 5,
+				"damage": 15
+			    "status": "致盲",
+		        "statusDuration": 60,
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 150,
+				"lifetime": 2,
+				"damage": 7,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "致盲",
+		        "statusDuration": 30,
+		        "collidesAir": false,
+		            }
+			    }
+			},
+			"洛德合金": {
+			"width": 20,
+			"height": 20,
+			"speed": 15,
+			"collidesAir": false,
+			"damage": 345,
+			"knockback":150,
+			"bulletInterval":180,
+		    "lifetime":108.3,
+		    "trailColor":"81AC4E",
+	        "trailLength":12,
+	        "trailWidth":4,
+		    "ammoMultiplier": 1,
+		    "status": "瘫痪",
+		    "statusDuration": 300,
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 45,
+				"lifetime": 6.5,
+			    "width": 5,
+			    "height": 5,
+				"damage": 105
+				"status": "瘫痪",
+		        "statusDuration": 180
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 45,
+				"lifetime": 6.5,
+				"damage": 65,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "瘫痪",
+		        "statusDuration": 65
+		        "collidesAir": false,
+			    }
+			}
+		},
+			"空间节点": {
+			"width": 20,
+			"height": 20,
+			"speed": 100,
+			"damage": 1050,
+			"collidesAir": false,
+			"knockback":600,
+			"bulletInterval":180,
+		    "lifetime":16.25,
+		    "trailColor":"16CFC9",
+	        "trailLength":12,
+	        "trailWidth":4,
+		    "ammoMultiplier": 1,
+		    "status": "空间混乱",
+		    "statusDuration": 10
+		    "hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 7,
+					"strokeTo": 0,
+					"lifetime": 50,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				    },
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 6,
+					"strokeTo": 0,
+					"lifetime": 40,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				    },
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 5,
+					"strokeTo": 0,
+					"lifetime": 60,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				    }
+				]
+			},
+			"fragBullets":120,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 300,
+				"lifetime": 1.5,
+			    "width": 5,
+			    "height": 5,
+				"damage": 300
+				"collidesAir": false,
+				"sprite":"黑暗纪元-彗星",
+	            "spin": 7,
+				"status": "空间混乱",
+		        "statusDuration": 5
+		        "hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 5,
+					"strokeTo": 0,
+					"lifetime": 50,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				    },
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 4,
+					"strokeTo": 0,
+					"lifetime": 40,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				    }
+				]
+			},
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 300,
+				"lifetime": 1.5,
+				"damage": 300
+			    "width": 2.5,
+			    "height": 2.5
+			    "collidesAir": false,
+			    "sprite":"黑暗纪元-新星",
+	            "spin": 9,
+	            "hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+				    {
+					"type": "WaveEffect",
+					"strokeFrom": 5,
+					"strokeTo": 0,
+					"lifetime": 50,
+					"colorFrom": "16CFC9",
+					"colorTo": "FFFFFF"
+				            }
+				        ]
+				    }
+			    }
+			}
+	    },
+	    	"钴钢": {
+			"width": 20,
+			"height": 20,
+			"speed": 15,
+			"collidesAir": false,
+			"damage": 456,
+			"knockback":75,
+		    "lifetime":66.67,
+		    "trailColor":"EB9494",
+	        "trailLength":12,
+	        "trailWidth":4,
+		    "ammoMultiplier": 1,
+		    "status": "虚弱",
+		    "statusDuration": 300,
+			"fragBullets":150,
+			"fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			"fragSpread":20,
+			"fragBullet":{
+				"speed": 65,
+				"lifetime": 3.5,
+			    "width": 5,
+			    "height": 5,
+				"damage": 234
+				"status": "虚弱",
+		        "statusDuration": 180
+		        "collidesAir": false,
+			    "fragBullets":5,
+			    "fragLifeMin": 0.8,
+                "fragLifeMax": 1.3,
+			    "fragSpread":20,
+			    "fragBullet":{
+				"speed": 55,
+				"lifetime": 4.5,
+				"damage": 109,
+			    "width": 2.5,
+			    "height": 2.5,
+			    "status": "虚弱",
+		        "statusDuration": 65
+		        "collidesAir": false,
+			    }
+			}
+		}
+	},
+	"requirements":[
+		"lead/1250"
+		"titanium/1250"
+		"silicon/750"
+		"thorium/500"
+	],
+	"category": "turret",
+	"research": "mass-driver"
+}

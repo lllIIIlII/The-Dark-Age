@@ -1,0 +1,231 @@
+{
+	"type": "PowerTurret",
+	"name": "阻断",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health": 2450,
+	"size": 4,
+	"reload": 1000,
+	"range": 1600,
+	"recoilTime": 200,
+	"recoil": 4,
+	"liquidCapacity":50
+	"unitSort": "weakest",
+	"coolantMultiplier":0.5
+	"consumes": {
+		"power": 9.3,
+		"coolant": {
+		"amount": 0.2,
+		"optional": true
+		}
+	},
+	"shoot": {
+		"shots": 3,
+		"shotDelay": 10,
+		"type": "ShootBarrel",
+		"barrels": [
+			5,-1,-2
+			-5,-1,2
+			8,-1.7,-3
+			-8,-1.7,3
+			0,0,0
+			]
+	},
+	"shootSound": "cannon",
+	"shootEffect":{
+"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 1,
+		"strokeTo": 10,
+		"sizeFrom": 0,
+		"sizeTo": 20,
+		"lifetime": 20,
+		"colorFrom": "FFFFFF50",
+		"colorTo": "FFFFFF00"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 10,
+		"line":true
+		"lenFrom": 35,
+		"lenTo": 35
+		"length": 50,
+		"strokeFrom": 10,
+		"strokeTo": 0,
+		"baseLength": 0,
+		"lifetime": 45,
+		"cone":10
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF50"
+		}
+	]
+}
+	"targetGround": false,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 5,
+	"shootCone": 1,
+	"rotateSpeed": 6,
+	"shootType": {
+	    "type":"BasicBulletType",
+		"damage": 30,
+		"splashDamageRadius": 80,
+		"splashDamage": 164.5,
+		"ammoMultiplier": 1,
+		"sprite":"circle-bullet"
+		"backColor":"FFFFFF",
+		"frontColor":"FEB380",
+		"knockback":45.3
+		"collidesGround":false
+		"hitShake":5
+		"shrinkX":0
+		"shrinkY":0
+		"width": 9,
+		"height": 9,
+		"pierce": true,
+		"speed": 10,
+		"lifetime": 10
+		"hitSound":"release"
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "ParticleEffect",
+		"particles": 5,
+		"line": true,
+		"strokeFrom": 30,
+		"strokeTo": 30,
+		"lenFrom": 10,
+		"lenTo": 0,
+		"length": 65,
+		"baseLength": 10,
+		"lifetime": 30,
+		"colorFrom": "FEB380",
+		"colorTo": "FFFFFF50"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 15,
+		"sizeFrom": 15,
+		"sizeTo": 5,
+		"length": 65,
+		"baseLength": 10,
+		"lifetime": 30,
+		"colorFrom": "FEB380",
+		"colorTo": "FFFFFF50"
+		},
+		{
+			"type": "WaveEffect",
+			"strokeFrom": 3,
+			"strokeTo": 9,
+			"lifetime": 30,
+			"colorFrom": "FEB380",
+			"colorTo": "FFFFFF80",
+			"sizeFrom": 15,
+			"sizeTo": 35
+				}
+			]
+		},
+		"trailLength": 30,
+		"trailWidth": 6,
+		"trailColor": "FFFFFF80",
+		"trailChance": 10,
+		"trailInterval": 10,
+		"trailEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "ParticleEffect",
+		"particles": 8,
+		"length": 40,
+		"baseLength": 12,
+		"lifetime": 45,
+		"colorFrom": "FFFFFF80",
+		"colorTo": "FEB38080",
+		"sizeFrom": 8,
+		"sizeTo": 0
+		}
+	]
+},
+		"fragBullets":60,
+		"fragVelocityMin":1,
+		"fragVelocityMax":1.1,
+		"fragLifeMin":1,
+		"fragLifeMax":1.7,
+		"fragRandomSpread":45,
+		"fragBullet":{
+		"speed": 65,
+		"lifetime": 420,
+		"drag":0.1
+		"shrinkX":0
+		"shrinkY":0
+		"knockback":20
+		"hitShake":2
+		"splashDamageRadius": 32,
+		"splashDamage": 45.7,
+		"width": 5,
+		"height": 5,
+		"damage": 67.6
+		"hitSound":"boom"
+		"sprite":"circle-bullet",
+		"backColor":"FFFFFF",
+		"frontColor":"FEB380",
+		"collidesGround":false
+		"status": "瘫痪",
+		"statusDuration": 300,
+		"pierceArmor":true
+		"trailLength": 30,
+		"trailWidth": 3,
+		"trailColor": "FFFFFF80",
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "ParticleEffect",
+		"particles": 5,
+		"line": true,
+		"strokeFrom": 1,
+		"strokeTo": 0,
+		"lenFrom": 10,
+		"lenTo": 0,
+		"length": 65,
+		"baseLength": 40,
+		"lifetime": 30,
+		"colorFrom": "FEB38070",
+		"colorTo": "FFFFFF00"
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 3,
+		"strokeTo": 3,
+		"lifetime": 30,
+		"colorFrom": "FEB380",
+		"colorTo": "FFFFFF40",
+		"sizeFrom": 15,
+		"sizeTo": 35
+		}
+		"instBomb"
+			]
+		}
+	}
+},
+	"requirements": [
+		"silicon/500"
+		"钢/1400"
+		"钴/3000"
+		"graphite/1800"
+		"metaglass/450"
+		"phase-fabric/280"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "散爆",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "缓冲区0004"
+			}
+		]
+	}
+}

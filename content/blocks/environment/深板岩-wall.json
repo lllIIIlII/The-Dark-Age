@@ -1,0 +1,10 @@
+{
+	"type": "StaticWall",
+	"name": "深板岩墙",
+	"variants": 3
+	"allowRectanglePlacement":true,
+    "instantBuild":true,
+    "breakable":false,
+    "alwaysReplace":false,
+    "solid":true,
+}

@@ -1,0 +1,26 @@
+{
+	"name": "真空抽水机",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "SolidPump",
+	"health": 250,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 40,
+	"requirements": [
+		"titanium/35",
+		"silicon/60",
+		"metaglass/40",
+		"钢/50",
+	],
+	"consumes": {
+		"power": 2.8
+	},
+	"pumpAmount": 0.31,
+	"rotateSpeed": 1.2,
+	"result": "water",
+	"baseEfficiency": 1,
+	"attribute": "water",
+	"category": "production",
+	"research": "液压钻机"
+}

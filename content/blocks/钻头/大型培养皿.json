@@ -1,0 +1,44 @@
+{
+	"type": "AttributeCrafter",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "大型培养皿",
+	"health":850,
+	"itemCapacity":50,
+	"liquidCapacity": 180,
+	"outputItem":"spore-pod/5",
+	"size":3,
+	"hasPower":true,
+	"hasLiquid":true
+	"craftTime":5,	
+		"consumes": {
+		"power": 2.7,
+		"items":[
+		"spore-pod/1"
+		],
+		"liquid": {
+			"liquid": "water",
+			"amount": 1,
+			}
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawCultivator",
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+    "requirements": [
+    "lead/220"
+	"copper/300"
+	"metaglass/150"
+	"silicon/200"
+	],
+	"boostScale": 0.3,
+	"attribute": "spores",
+	"category": "production",
+	"research": "cultivator",
+}

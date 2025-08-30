@@ -1,0 +1,57 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "微波石墨炉",
+	"health":1200,
+	"itemCapacity":30,
+    "liquidCapacity":125,
+	"outputItem":"graphite/12",
+	"size":4,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":90,	
+	"consumes":{
+		"power":13.8,
+		"liquid":"oil/0.4",
+		"items": [
+	    "coal/12",
+	    "铁/1"
+	         ]
+		},
+	"updateEffect":{
+	"type":"MultiEffect",
+	"effects":[
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"sizeFrom": 5
+	"sizeTo": 0,
+	"length": 40,
+	"baseLength": 0,
+	"lifetime": 30,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+},
+    "requirements": [
+    "thorium/350"
+	"copper/100",
+	"lead/50",
+	"silicon/180",
+	"metaglass/60"
+	],
+	"ambientSound": "shield",
+	"ambientSoundVolume": 0.45,
+	"category": "crafting",
+	"research": {
+    "parent": "大型炼钢厂",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "地冠"
+			}
+		]
+	}
+}

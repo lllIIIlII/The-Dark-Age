@@ -1,0 +1,60 @@
+{
+	"type": "PowerTurret",
+	"name": "supernova-68",
+	"size": 4,
+	"health": 2147483647,
+	"armor":2147483647
+	"range": 360,
+	"reload": 1,
+	"recoilTime": 0,
+	"recoil": 0,
+	"hasPower": true,
+	"shootSound": "none",
+	"shootEffect":"none"
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 0,
+	"shootCone": 1,
+	"rotateSpeed": 30,
+	"shootType": {
+	"type":"PointBulletType",
+	"damage": 2147483647,
+	"splashDamageRadius": 100,
+	"splashDamage": 2147483647,
+	"splashDamagePierce": true,
+	"ammoMultiplier": 1,
+	"status": "量子态",
+	"statusDuration": 600,
+	"buildingDamageMultiplier": 10
+	"pierceArmor":true
+	"speed":200
+	"trailEffect": "none"
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 0
+	"sizeTo": 100,
+	"length": 0,
+	"sizeInterp": "pow3Out",
+	"region":"黑暗纪元-渐变圆"
+	"baseLength": 0,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	}
+]
+}
+}
+	"liquidCapacity":60
+	"consumes": {},
+	"requirements": [],
+	"buildVisibility": "sandboxOnly",
+	"category": "turret",
+	"research": {
+	"parent": "supernova-68",
+	}
+}

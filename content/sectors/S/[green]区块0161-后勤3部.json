@@ -1,0 +1,22 @@
+{
+"description":"位于生物质合成区旁的黑沙盆地，地势平坦，矿物资源极为丰富。现在这里由后勤3部接管\n[red]难度等级:0"
+	"captureWave":0
+	"planet": "serpulo",
+	"sector":161,
+	"difficulty": 0,
+	"research": {
+    "parent": "extractionOutpost",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "extractionOutpost"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

@@ -1,0 +1,21 @@
+{
+	"captureWave":0
+	"planet": "serpulo",
+	"sector":226,
+	"difficulty": 0,
+	"research": {
+    "parent": "impact0078",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "impact0078"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

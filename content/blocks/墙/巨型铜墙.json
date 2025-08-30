@@ -1,0 +1,13 @@
+{
+	"name": "巨型铜墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 3150,
+	"size": 3,
+	"absorbLasers":false,
+	"requirements": [
+		"copper/48"
+	],
+	"category": "defense",
+	"research": "copper-wall-large"
+}

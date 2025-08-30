@@ -1,0 +1,16 @@
+{
+    "type": "Floor",
+    "name": "润滑剂池",
+    "speedMultiplier":0.7,
+    "variants":0,
+    "status":"none",
+    "statusDuration": 0,
+    "albedo": 0.7,
+    "shallow":true,
+    "cacheLayer":"water",
+    "isLiquid": true,
+    "liquidDrop": "润滑剂",
+    "liquidMultiplier": 1,
+    "placeableOn":true,
+    "supportsOverlay":true
+}

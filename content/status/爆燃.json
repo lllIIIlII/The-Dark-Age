@@ -1,0 +1,39 @@
+{
+	"name": "爆燃",
+	"color": "FFD494",
+	"speedMultiplier": 0.98,
+	"healthMultiplier": 0.98,
+	"reloadMultiplier": 0.9,
+	"damageMultiplier": 1,
+	"effectChance": 0.3,
+	"damage": 98,
+	"effect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 34,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"sizeFrom": 3,
+	"sizeTo": 0,
+	"colorFrom": "FFE92C",
+	"colorTo": "FFE92C"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 34,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"sizeFrom": 3,
+	"sizeTo": 0,
+	"colorFrom": "FFE92C",
+	"colorTo": "FFE92C"
+	}
+]
+}
+}

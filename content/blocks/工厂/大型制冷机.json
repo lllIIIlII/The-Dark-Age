@@ -1,0 +1,44 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "大型制冷机",
+	"health": 1400,
+	"craftTime":60,	
+	"outputLiquid": "cryofluid/1.4"
+	"size": 3,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "cryofluid"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 180,
+	"updateEffect": "freezing",
+	"consumes": {
+		"power": 3,
+		"liquid": "water/1.2"
+		"items": [
+		"titanium/2"
+		]
+	},
+	"requirements": [
+		"plastanium/150",
+		"metaglass/70",
+		"silicon/200",
+		"titanium/300"
+	],
+	"category": "crafting",
+	"research": "高效窑炉"
+}

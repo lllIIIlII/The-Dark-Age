@@ -1,0 +1,143 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "影踪",
+	"unitSort": "strongest",
+	"health": 1450,
+	"size": 5,
+	"reload": 1000,
+	"range": 1200,
+	"customShadow": false,
+	"solid": false,
+	"canOverdrive": true,//能被超速
+	"consumes": {
+		"power": 25,
+		},
+	"shoot": {
+	"type": "ShootPattern",
+	"firstShotDelay": 120
+	},
+	"shootSound": "DDFS",
+	"targetGround": false,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shootCone": 360,
+	"rotateSpeed": 0,
+	"shootType": {
+	    "type":"BasicBulletType",
+	    "collidesGround": false,
+		"damage": 7900,
+		"buildingDamageMultiplier": 0.01,
+	    "homingDelay": 0,//追踪延迟
+	    "homingPower": 0.05,//追踪强度
+		"homingRange": 1500,//追踪范围
+		"splashDamageRadius": 160,//1/8
+		"splashDamage": 4580,
+		"sprite":"黑暗纪元-惊鸿",
+		"ammoMultiplier": 1,
+		"hitSound": "explosionbig"
+		"width": 30,
+		"height": 80,
+		"pierceArmor": true,
+		"status": "破防",
+		"statusDuration": 30,
+		"speed": 15,
+		"lifetime": 200,
+		"trailLength": 70,
+			"trailWidth": 6,
+			"trailColor": "FFFFFF80",
+			"trailChance": 1,
+			"trailInterval": 10,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 8,
+				"length": 20,
+				"baseLength": 1,
+				"lifetime": 45,
+				"colorFrom": "E3E3E380",
+				"colorTo": "E3E3E380",
+				"sizeFrom": 8,
+				"sizeTo": 0
+				},
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 80,
+						"sizeFrom": 50,
+						"sizeTo": 0,
+						"length": 140,
+						"baseLength": 40,
+						"lifetime": 30,
+						"colorFrom": "565555",
+						"colorTo": "FFFFFF"
+						},
+						{
+						"type": "ParticleEffect",
+						"particles": 70,
+						"sizeFrom": 40,
+						"sizeTo": 0,
+						"length": 130,
+						"baseLength": 30,
+						"lifetime": 20,
+						"colorFrom": "565555",
+						"colorTo": "FFFFFF"
+						},
+						{
+						"type": "ParticleEffect",
+						"particles": 90,
+						"sizeFrom": 60,
+						"sizeTo": 0,
+						"length": 150,
+						"baseLength": 50,
+						"lifetime": 40,
+						"colorFrom": "565555",
+						"colorTo": "FFFFFF"
+						}
+					]
+				}
+			},
+	"drawer":{
+	"type":"DrawTurret",
+    "parts":[
+    {
+    "type":"RegionPart",
+    "mirror":false,//是否开启镜像
+    "x":0,
+    "y":0,//初始位置
+    "suffix":"-左门"//,贴图后缀
+    "layer":50,//层，49-110
+    "moveX":-10,//改变位置
+    "moveY":0
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-右门"
+    "layer":50,
+    "moveX":10,
+    "moveY":0
+            }
+        ]
+    },
+	"requirements": [
+	    "plastanium/1200"
+		"silicon/700"
+		"钢/1500"
+		"贫铀/250"
+		"暗金属/200"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "飞剑",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

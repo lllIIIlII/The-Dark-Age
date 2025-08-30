@@ -1,0 +1,28 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"plans":[
+	{
+			"unit": "flare",
+			"requirements": [
+				"silicon/15"
+			],
+			"time": 900
+		},
+	{
+			"unit": "mono",
+			"requirements": [
+				"lead/15",
+				"silicon/25"
+			],
+			"time": 2100
+		},
+			{
+			"unit": "敏捷",
+			"requirements": [
+				"silicon/25",
+				"铁/25"
+			],
+			"time": 1600
+		}
+		]
+}

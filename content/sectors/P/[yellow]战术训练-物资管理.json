@@ -1,0 +1,18 @@
+{
+	"captureWave":6
+	"planet": "Planzer",
+	"sector":91,
+	"difficulty": 1,
+	"research":""
+	"research": {
+    "parent": "[yellow]战术训练-防空网",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "[yellow]战术训练-防空网"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

@@ -1,0 +1,17 @@
+{
+"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "StackConveyor",
+	"name": "钢制传输带",
+	"health": 215,
+	"armor":8
+	"requirements": [
+	"copper/1",
+	"silicon/1",
+	"钢/1",
+	"thorium/1"
+	],
+	"category": "distribution",
+	"research":"plastanium-conveyor",
+	"speed": 0.18,
+	"itemCapacity":25
+}

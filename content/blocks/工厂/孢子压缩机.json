@@ -1,0 +1,61 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health":980,
+	"name": "大型孢子压缩机",
+	"outputLiquid": "oil/2.05",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 2
+			},
+			"DrawDefault",
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "oil"
+			}
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 18,
+	"itemCapacity": 25,
+	"liquidCapacity": 145,
+	"updateEffect": {
+		"type": "ParticleEffect",
+		"particles": 3,
+		"sizeFrom": 3,
+		"sizeTo": 0,
+		"length": 15,
+		"baseLength": 10,
+		"lifetime": 10,
+		"colorFrom": "E3E3E390",
+		"colorTo": "FFFFFF"
+	},
+	"consumes": {
+		"power": 10.5,
+		"items": [
+			"spore-pod/7"
+		]
+	},
+	"requirements": [
+		"silicon/100",
+		"metaglass/60",
+		"plastanium/40"
+		"thorium/100"
+	],
+	"category": "crafting",
+	"research": "压缩塑钢机"
+}

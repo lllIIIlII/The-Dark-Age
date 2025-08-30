@@ -1,0 +1,129 @@
+{
+  "name": "恐怖",
+  "type": "legs",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "drag": 0.5,
+  "speed": 1,
+  "hitSize": 56,
+  "health": 300000,
+  "armor": 12,
+  "legCount": 6,
+  "legMoveSpace": 0.8,
+  "legPairOffset": 3,
+  "legLength": 68,
+  "legExtension": -4,
+  "legBaseOffset": 2,
+  "stepShake": 1,
+  "legLengthScl": 0.95,
+  "rippleScale": 3,
+  "legSpeed": 0.17,
+  "hovering": true,
+  "allowLegStep": true,
+  "range": 600,
+  "shadowElevation": 0.95,
+  "abilities": [
+  {
+	"type": "ArmorPlateAbility",
+	"healthMultiplier": 1.95
+	"color":"262B44",
+	},
+    {
+      "type": "StatusFieldAbility",
+      "duration": 600,
+      "reload": 300,
+      "range": 450,
+      "applyEffect": "none",
+      "activeEffect": {
+	"type": "WaveEffect",
+	"sides": 8,
+	"rotation": 0,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 450,
+	"lifetime": 30,
+	"layer": 111,
+	"colorFrom": "000000",
+	"colorTo": "000000"
+	},
+      "effect": "boss"
+    }
+  ],
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "致盲",
+    "磁化",
+    "破防",
+    "瘫痪",
+    "空间混乱",
+    "污染",
+    "暗蚀"
+  ],
+  "research": {
+    "parent": "飞蝗",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "铁线三角洲"
+      }
+    ]
+  },
+  "weapons": [
+    {
+	"name": "色彩1",
+	"reload": 15,
+	"x": 0,
+	"y": 2,
+	"shootY": 6,
+	"controllable": false,
+	"autoTarget": true,
+	"rotate": true,
+	"rotateSpeed": 8,
+	"mirror": false,
+	"type": "RepairBeamWeapon",
+	"beamWidth": 1.2,
+	"repairSpeed": 72,
+	"laserColor": "5A6988",
+	"laserTopColor": "FFFFFF",
+	"bullet": {
+	"maxRange": 360
+	}
+},
+{
+      "name": "色彩2",
+      "x": 14,
+      "y": 14,
+      "type": "PointDefenseWeapon",
+      "shootX": 0,
+      "shootY": 3,
+      "recoil": 0,
+      "rotateSpeed": 2,
+      "mirror": true,
+      "reload": 3,
+      "targetInterval": 3,
+      "targetSwitchInterval": 3,
+      "shoot": {
+        "shots": 5
+      },
+      "bullet": {
+        "speed": 360,
+        "lifetime": 1,
+        "shootEffect": "none",
+        "maxRange": 360,
+        "damage": 20
+      }
+    }
+  ]
+}

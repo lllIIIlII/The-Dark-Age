@@ -1,0 +1,21 @@
+{
+	"captureWave":85
+	"planet": "serpulo",
+	"sector":168,
+	"difficulty": 4,
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"research": {
+    "parent": "天南沼泽",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "天南沼泽"
+      }
+     ]
+    }
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

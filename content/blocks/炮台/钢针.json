@@ -1,0 +1,82 @@
+{
+	"type":"ItemTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name":"钢针",
+	"size":2,
+	"health":200,
+	"ammoPerShot":1,
+	"range":200,
+	"reload":10,
+	"inaccuracy":0.5,
+	"ammoUseEffect":"casing2",
+	"rotateSpeed":5,
+	"maxAmmo":30,
+	"targetAir":true
+	"targetGround":true,
+	"coolantMultiplier":2,
+	"ammoTypes":{
+		"copper": {	
+		    "pierceCap":2,
+		    "reloadMultiplier":1,
+			"speed": 10,
+			"damage": 40,
+			"knockback":0,
+			"lifetime":20,
+			"width": 5,
+			"height": 20,
+			"ammoMultiplier":1,
+			"shootEffect": "shootBig"
+        },
+        "lead": {
+		    "reloadMultiplier":1,
+			"speed":10,
+			"damage":45,
+			"knockback":2,
+			"lifetime":20,
+			"width": 5,
+			"height": 20,
+			"ammoMultiplier":2,
+			"shootEffect": "shootBig"
+			},
+			"钴": {    
+			"reloadMultiplier":1.5,
+			"speed":10,
+			"damage":80,
+			"knockback":2,
+			"rangeChange": 100,
+			"lifetime":30,
+			"width": 5,
+			"height": 20,
+			"ammoMultiplier":4,
+			"shootEffect": "shootBig"
+            },	
+            "铁": {    
+			"reloadMultiplier":1,
+			"speed":10,
+			"damage":65,
+			"lifetime":50,
+			"rangeChange": 100,
+			"width": 5,
+			"height": 20,
+			"ammoMultiplier":2,
+			"shootEffect": "shootBig"
+		    "status": "磁化",
+		    "statusDuration": 30,
+            },
+}
+	"requirements": [
+	 "copper/200"
+	 "钴/100"
+	 "铁/50"
+	 ],
+	"category": "turret",
+	"research": {
+    "parent": "临时核心",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

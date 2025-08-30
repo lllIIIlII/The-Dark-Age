@@ -1,0 +1,19 @@
+{
+	"type": "ArmoredConduit",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "装甲管道",
+	"health": 250,
+	"liquidCapacity":32,
+	"liquidPressure": 4.5,
+	"insulated":true,
+	"displayFlow":true,
+	"placeableLiquid": true,
+	"requirements": [
+		"钢/1",
+		"metaglass/1",
+		"钴/1"
+	],
+	"bridgeReplacement": "phase-conduit",
+	"category": "liquid",
+	"research": "气压泵"
+}

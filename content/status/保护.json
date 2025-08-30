@@ -1,0 +1,12 @@
+{
+	"name": "保护",
+	"color": "30FF3E",
+	"speedMultiplier": 1.3,
+	"healthMultiplier": 2.3,
+	"reloadMultiplier": 1.3,
+    "damageMultiplier": 0.85,
+	"effectChance": 1,
+	"opposites": [
+	"破防"
+	],
+}

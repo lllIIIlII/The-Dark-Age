@@ -1,0 +1,11 @@
+{
+	"name": "生命提升",
+	"color": "DC3023",
+	"speedMultiplier": 1,
+	"healthMultiplier": 2,
+	"reloadMultiplier": 1,
+	"effectChance": 1,
+	"opposites": [
+	"致盲"
+	],
+}

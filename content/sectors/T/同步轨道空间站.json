@@ -1,0 +1,21 @@
+{
+	"planet": "Synchronous-orbit-space-station",
+	"sector":154,
+	"difficulty": 2,
+	"captureWave": 80
+	"research": {
+        "parent": "planetaryTerminal",
+        "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "planetaryTerminal"
+			}
+		]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

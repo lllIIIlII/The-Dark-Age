@@ -1,0 +1,70 @@
+{
+	"type": "UnitAssembler",
+	"template": "ErekirBlockType",
+	"name": "特级单位构建厂",
+	"size": 7,
+	"liquidCapacity": 300,
+	"consumes": {
+		"power": 4.8,
+		"liquid": {
+			"liquid": "cyanogen",
+			"amount": 0.5
+		}
+	},
+	"areaSize": 20,
+	"plans": [
+		{
+			"unit": "凄光",
+			"time": 14400,
+			"requirements": [
+				"carbide-wall-large/36",
+				"reinforced-surge-wall-large/6",
+				"sublimate/1",
+				"obviate/4"
+			]
+		},
+		{
+			"unit": "威严",
+			"time": 14400,
+			"requirements": [
+				"carbide-wall-large/36",
+				"reinforced-surge-wall-large/6",
+				"breach/1",
+				"precept/4"
+			]
+		},
+		{
+			"unit": "天仙",
+			"time": 14400,
+			"requirements": [
+				"carbide-wall-large/36",
+				"reinforced-surge-wall-large/6",
+				"diffuse/1",
+				"anthicus/4"
+			]
+		}
+	],
+	"droneType": "assembly-drone",
+	"requirements": [
+		"silicon/3000",
+		"tungsten/1000",
+		"surge-alloy/500",
+		"beryllium/2000",
+		"oxide/850",
+	],
+	"category": "units",
+	"canOverdrive": false,
+	"research": {
+		"parent": "tank-assembler",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "侵蚀区-外围"
+			},
+			{
+				"type": "SectorComplete",
+				"preset": "origin"
+			}
+		]
+	}
+}

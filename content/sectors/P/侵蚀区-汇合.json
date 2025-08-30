@@ -1,0 +1,17 @@
+{
+	"captureWave":155
+	"planet": "Planzer",
+	"sector":233,
+	"difficulty": 11,
+	"research": {
+    "parent": "突袭",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "突袭"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

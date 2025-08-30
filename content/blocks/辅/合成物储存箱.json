@@ -1,0 +1,26 @@
+{
+	"type": "StorageBlock",
+	"name": "合成物储存箱",
+	"health": 45000,
+	"size": 3,
+	"requirements": [
+	"silicon/20000",
+	"metaglass/20000",
+	"plastanium/20000",
+	"spore-pod/20000",
+	"graphite/20000",
+	"phase-fabric/20000",
+	"pyratite/20000",
+	"blast-compound/20000",
+	"surge-alloy/20000",
+	"钢/20000",
+	"贫铀/20000",
+	"暗能钢/20000",
+	"洛德合金/20000",
+	"钴钢/20000",
+	"空间节点/5000"
+	],
+	"itemCapacity": 0,
+	"buildCostMultiplier": 0,
+	"buildVisibility": "campaignOnly"
+}

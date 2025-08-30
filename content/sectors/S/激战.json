@@ -1,0 +1,21 @@
+{
+	"captureWave":150
+	"planet": "serpulo",
+	"sector":254,
+	"difficulty": 8,
+	"research": {
+    "parent": "缓冲区0004",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "缓冲区0004"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

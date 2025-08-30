@@ -1,0 +1,50 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "高效编织机",
+	"outputItem":"phase-fabric/4"
+	"itemCapacity": 75,
+	"size": 3,
+	"updateEffect": {
+		"type": "WaveEffect",
+		"lifetime": 40,
+		"sizeFrom": 0,
+		"sizeTo": 10,
+		"strokeFrom": 6,
+		"strokeTo": 2,
+		"colorFrom": "FFD59E",
+		"colorTo": "FFD59E50"
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			"DrawWeave",
+			"DrawDefault"
+		]
+	},
+	"craftTime": 60,
+	"consumes": {
+		"power": 8.5,
+		"items": {
+			"items": [
+				"thorium/3",
+				"sand/12",
+			]
+		}
+	},
+	"requirements": [
+		"graphite/300",
+		"silicon/25",
+		"copper/70",
+		"thorium/120"
+		"lead/130"
+	],
+	"ambientSound": "techloop",
+	"ambientSoundVolume": 0.3,
+	"category": "crafting",
+	"research": "压缩塑钢机"
+}

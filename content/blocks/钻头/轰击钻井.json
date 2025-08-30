@@ -1,0 +1,93 @@
+{
+	"name": "轰击钻井",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "BurstDrill",
+	"health": 1890,
+	"size": 5,
+	"tier": 6.5,
+	"arrowOffset": 0,
+	"arrowSpacing": 0.5,
+	"arrows": 12,
+	"itemCapacity": 60,
+	"drawRim": true,
+	"hasItems": true,
+	"drillTime": 40,
+	"drillEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 50,
+	"lifetime": 20,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"sizeFrom": 10
+	"sizeTo": 0,
+	"length": 60,
+	"baseLength": 3,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "7B7B7B",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"sizeFrom": 20,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 60,
+	"baseLength": 2,
+	"lifetime": 80,
+	"colorFrom": "73737350",
+	"colorTo": "73737320",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 10
+	"sizeTo": 3,
+	"length": 100,
+	"baseLength": 3,
+	"interp": "pow5Out",
+	"sizeInterp": "bounceOut",
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	},
+]
+}
+	"consumes": {
+	"power": 8,
+	"liquid": {
+	"liquid": "cryofluid",
+	"amount": 0.05
+	}
+}
+	"requirements": [
+		"titanium/500",
+		"graphite/150",
+		"silicon/300",
+		"copper/300",
+		"metaglass/105"
+	],
+	"category": "production",
+	"research": {
+		"parent": "blast-drill",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "planetaryTerminal"
+			}
+		]
+	}
+}

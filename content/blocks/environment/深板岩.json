@@ -1,0 +1,12 @@
+{
+	"type": "floor",
+	"name": "深板岩",
+	"speedMultiplier": 1,
+	"dragMultiplier": 0.8,
+	"attributes":{
+		"oil": 0,
+		"water": -0.12
+	},
+	"variants": 3
+	"wall":"深板岩-wall"
+}

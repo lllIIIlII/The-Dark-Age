@@ -1,0 +1,440 @@
+{
+    "type": "naval",
+    "name": "定海",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "speed": 0.64,
+    "rotateSpeed": 0.63,
+    "ammoType": "暗金属",
+    "ammoCapacity": 800,
+    "hitSize": 75,
+    "immunities": [
+        "freezing",
+        "disarmed",
+        "sapped",
+        "shocked",
+        "破防",
+        "疑惑"
+    ],
+    "trailLength": 80,
+    "waveTrailX": 20,
+    "waveTrailY": -24,
+    "trailScl": 4.5,
+    "health": 217600,
+    "armor": 51,
+    "faceTarget": false,
+    "research": {
+        "parent": "navanax",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "北极星银滩"
+            }
+        ]
+    },
+    "requirements": {
+        "block": "复量级单位重构厂",
+        "previous": "navanax"
+    },
+    "abilities": [
+        {
+            "type": "ShieldRegenFieldAbility",
+            "amount": 6000,
+            "max": 5700,
+            "reload": 600,
+            "range": 280,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "lifetime": 33,
+                        "sizeFrom": 0,
+                        "sizeTo": 280,
+                        "strokeFrom": 6,
+                        "strokeTo": 0,
+                        "colorFrom": "FFFFFF",
+                        "colorTo": "FFFFFF"
+                    }
+                ]
+            }
+        }
+    ],
+    "weapons": [
+        {
+            "name": "定海1",
+            "x": 9,
+            "y": 16,
+            "mirror": false,
+            "reload": 60,
+            "shootSound": "bigshot",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 2,
+            "shootStatusDuration": 300,
+            "shootStatus": "神圣",
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 123,
+                "splashDamageRadius": 40,
+                "splashDamage": 89,
+                "collidesGround": true,
+                "collidesAir": true,
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "A0F19B",
+                "trailChance": 0,
+                "trailRotation": true,
+                "sprite": "黑暗纪元-斜正方",
+                "backColor": "A0F19B",
+                "frontColor": "74AC83",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 10,
+                "height": 10,
+                "speed": 8,
+                "lifetime": 90,
+                "hitSound": "plasmaboom",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 7,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 60,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 44,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "length": 55,
+                            "baseLength": 0,
+                            "lifetime": 70,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83",
+                            "cone": 270
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "定海1",
+            "x": -9,
+            "y": 16,
+            "mirror": false,
+            "reload": 60,
+            "shootSound": "bigshot",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 2,
+            "shootStatusDuration": 300,
+            "shootStatus": "神圣",
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 123,
+                "splashDamageRadius": 40,
+                "splashDamage": 89,
+                "collidesGround": true,
+                "collidesAir": true,
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "A0F19B",
+                "trailChance": 0,
+                "trailRotation": true,
+                "sprite": "黑暗纪元-斜正方",
+                "backColor": "A0F19B",
+                "frontColor": "74AC83",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 10,
+                "height": 10,
+                "speed": 8,
+                "lifetime": 90,
+                "hitSound": "plasmaboom",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 7,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 60,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 44,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "length": 55,
+                            "baseLength": 0,
+                            "lifetime": 70,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83",
+                            "cone": 270
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "定海2",
+            "x": -11,
+            "y": -10,
+            "shootY": 1,
+            "mirror": true,
+            "reload": 50,
+            "shootSound": "laser",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 3.4,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5,
+                "firstShotDelay": 10
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 198,
+                "hitShake": 1,
+                "healPercent": 2.5,
+                "splashDamageRadius": 60,
+                "splashDamage": 131.5,
+                "knockback": 4,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 80,
+                            "lifetime": 54,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow10In",
+                            "length": 0,
+                            "baseLength": 0,
+                            "lifetime": 120,
+                            "colorFrom": "A0F19B50",
+                            "colorTo": "FFFFFF20"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 23,
+                            "sizeFrom": 10,
+                            "sizeTo": 0,
+                            "length": 70,
+                            "baseLength": 0,
+                            "lifetime": 40,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "A0F19B",
+                "trailChance": 0,
+                "trailRotation": true,
+                "sprite": "黑暗纪元-圈",
+                "backColor": "74AC83",
+                "frontColor": "A0F19B",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 7,
+                "height": 7,
+                "speed": 12,
+                "lifetime": 50,
+                "hitSound": "Glass",
+                "homingDelay": 5,
+                "homingPower": 0.04,
+                "homingRange": 200
+            }
+        },
+        {
+            "name": "定海2",
+            "x": -13,
+            "y": -18,
+            "shootY": 1,
+            "mirror": true,
+            "reload": 50,
+            "shootSound": "laser",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 3.4,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 198,
+                "hitShake": 1,
+                "healPercent": 2.5,
+                "splashDamageRadius": 60,
+                "splashDamage": 131.5,
+                "knockback": 4,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 80,
+                            "lifetime": 54,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow10In",
+                            "length": 0,
+                            "baseLength": 0,
+                            "lifetime": 120,
+                            "colorFrom": "A0F19B50",
+                            "colorTo": "FFFFFF20"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 23,
+                            "sizeFrom": 10,
+                            "sizeTo": 0,
+                            "length": 70,
+                            "baseLength": 0,
+                            "lifetime": 40,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "A0F19B",
+                "trailChance": 0,
+                "trailRotation": true,
+                "sprite": "黑暗纪元-圈",
+                "backColor": "74AC83",
+                "frontColor": "A0F19B",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 7,
+                "height": 7,
+                "speed": 12,
+                "lifetime": 50,
+                "hitSound": "Glass",
+                "homingDelay": 5,
+                "homingPower": 0.04,
+                "homingRange": 200
+            }
+        },
+        {
+            "name": "定海2",
+            "x": -7,
+            "y": -26,
+            "shootY": 1,
+            "mirror": true,
+            "reload": 50,
+            "shootSound": "laser",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 3.4,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5,
+                "firstShotDelay": 20
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 198,
+                "hitShake": 1,
+                "healPercent": 2.5,
+                "splashDamageRadius": 60,
+                "splashDamage": 131.5,
+                "knockback": 4,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "sizeFrom": 0,
+                            "sizeTo": 80,
+                            "lifetime": 54,
+                            "colorFrom": "FFFFFF",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 60,
+                            "sizeTo": 0,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow10In",
+                            "length": 0,
+                            "baseLength": 0,
+                            "lifetime": 120,
+                            "colorFrom": "A0F19B50",
+                            "colorTo": "FFFFFF20"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 23,
+                            "sizeFrom": 10,
+                            "sizeTo": 0,
+                            "length": 70,
+                            "baseLength": 0,
+                            "lifetime": 40,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "A0F19B",
+                "trailChance": 0,
+                "trailRotation": true,
+                "sprite": "黑暗纪元-圈",
+                "backColor": "74AC83",
+                "frontColor": "A0F19B",
+                "shrinkY": 0,
+                "shrinkX": 0,
+                "width": 7,
+                "height": 7,
+                "speed": 12,
+                "lifetime": 50,
+                "hitSound": "Glass",
+                "homingDelay": 5,
+                "homingPower": 0.04,
+                "homingRange": 200
+            }
+        }
+    ]
+}

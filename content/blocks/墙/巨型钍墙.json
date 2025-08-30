@@ -1,0 +1,13 @@
+{
+	"name": "巨型钍墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 8960,
+	"size": 3,
+	"absorbLasers":false,
+	"requirements": [
+		"thorium/48"
+	],
+	"category": "defense",
+	"research": "thorium-wall-large"
+}

@@ -1,0 +1,600 @@
+{
+    "type": "legs",
+    "name": "群星",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+    "legLength": 45,
+    "legBaseOffset": 17,
+    "legSplashDamage": 320,
+    "legSplashRange": 20,
+    "legCount": 6,
+    "legMoveSpace": 0.5,
+    "stepShake": 0.77,
+    "buildRange": 400,
+    "buildSpeed": 7.8,
+    "buildBeamOffset": 20,
+    "rippleScale": 1,
+    "hovering": true,
+    "allowLegStep": true,
+    "canBoost": false,
+    "drownTimeMultiplier": 8,
+    "hitSize": 58,
+    "armor": 112,
+    "speed": 0.68,
+    "rotateSpeed": 1.2,
+    "baseRotateSpeed": 1.1,
+    "health": 410990,
+    "ammoType": "暗能钢",
+    "ammoCapacity": 450,
+    "immunities": [
+        "blasted",
+        "burning",
+        "freezing",
+        "melting",
+        "disarmed",
+        "sapped",
+        "破防",
+        "疑惑",
+        "污染",
+        "空间混乱",
+        "瘫痪",
+        "延迟",
+        "虚弱"
+    ],
+    "research": {
+        "parent": "陨星",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "涯光岛"
+            }
+        ]
+    },
+    "requirements": {
+        "block": "瀚量级单位进阶工厂",
+        "previous": "陨星"
+    },
+    "canDrown": false,
+    "mechStepParticles": true,
+    "mechFrontSway": 2.35,
+    "mechSideSway": 0.8,
+    "abilities": [
+        {
+            "type": "ForceFieldAbility",
+            "sides": 360,
+            "radius": 340,
+            "regen": 90,
+            "max": 109800,
+            "cooldown": 1200
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 860,
+            "reload": 800,
+            "range": 340,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "sides": 8,
+                "strokeFrom": 15,
+                "strokeTo": 0,
+                "sizeFrom": 340,
+                "sizeTo": 340,
+                "lifetime": 60,
+                "colorFrom": "A0F19B",
+                "colorTo": "A0F19B00"
+            },
+            "effect": "再生"
+        }
+    ],
+    "weapons": [
+        {
+            "reload": 480,
+            "shake": 3.5,
+            "recoil": 0,
+            "recoilTime": 0,
+            "shootX": 0,
+            "shootY": 13,
+            "x": 0,
+            "y": 0,
+            "rotate": false,
+            "top": false,
+            "inaccuracy": 0,
+            "chargeSound": "lasercharge",
+            "shootSound": "laserblast",
+            "shootStatusDuration": 65,
+            "shootStatus": "unmoving",
+            "alternate": false,
+            "shootCone": 1,
+            "shoot": {
+                "firstShotDelay": 60
+            },
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 4540,
+                "splashDamageRadius": 68,
+                "splashDamage": 3340,
+                "status": "freezing",
+                "statusDuration": 380,
+                "lightningSpacing": 20,
+                "lightningLength": 11,
+                "lightningDelay": 0.5,
+                "lightningLengthRand": 1,
+                "lightningAngleRand": 8,
+                "lightningDamage": 450,
+                "lightningColor": "74AC83",
+                "collidesGround": true,
+                "collidesAir": true,
+                "length": 840,
+                "width": 42,
+                "pierce": true,
+                "lifetime": 90,
+                "sideAngle": 34,
+                "sideWidth": 1,
+                "sideLength": 340,
+                "colors": [
+                    "FFFFFF",
+                    "A0F19B",
+                    "74AC83",
+                    "16A951"
+                ],
+                "smokeEffect": "smokeCloud",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 5,
+                            "strokeTo": 0,
+                            "sizeFrom": 300,
+                            "sizeTo": 0,
+                            "lifetime": 60,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "sizeFrom": 280,
+                            "sizeTo": 0,
+                            "lifetime": 60,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "74AC83"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 15,
+                            "sizeFrom": 23,
+                            "sizeTo": 19,
+                            "length": -200,
+                            "baseLength": 200,
+                            "interp": "pow3In",
+                            "sizeInterp": "pow5Out",
+                            "lifetime": 40,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "16A951"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 18,
+                            "sizeFrom": 28,
+                            "sizeTo": 23,
+                            "length": -200,
+                            "baseLength": 200,
+                            "interp": "pow3In",
+                            "sizeInterp": "pow5Out",
+                            "lifetime": 45,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "16A951"
+                        }
+                    ]
+                },
+                "healPercent": 33,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 2.3
+            }
+        },
+        {
+            "name": "群星1",
+            "top": true,
+            "reload": 150,
+            "x": 23,
+            "y": -3,
+            "shootY": 9,
+            "shootX": 0,
+            "mirror": true,
+            "alternate": true,
+            "rotate": true,
+            "recoil": 3.9,
+            "recoilTime": 30,
+            "inaccuracy": 4,
+            "shootSound": "cannon",
+            "shootStatusDuration": 600,
+            "shootStatus": "神圣",
+            "bullet": {
+                "type": "ArtilleryBulletType",
+                "damage": 1089,
+                "splashDamage": 588.9,
+                "splashDamageRadius": 160,
+                "drag": -0.012,
+                "sprite": "黑暗纪元-新星",
+                "backColor": "A0F19B",
+                "frontColor": "74AC83",
+                "absorbable": false,
+                "reflectable": false,
+                "collides": true,
+                "collidesTeam": true,
+                "speed": 8,
+                "lifetime": 80,
+                "hitSound": "explosionbig",
+                "knockback": 12,
+                "hitShake": 33,
+                "despawnEffect": "none",
+                "trailLength": 35,
+                "trailWidth": 4,
+                "trailColor": "A0F19B",
+                "width": 14,
+                "height": 14,
+                "parts": [
+                    {
+                        "type": "FlarePart",
+                        "progress": "life",
+                        "rotation": 86,
+                        "color1": "A0F19B",
+                        "stroke": 6.8,
+                        "radius": 30,
+                        "radiusTo": 30
+                    }
+                ],
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 20,
+                            "strokeTo": 0,
+                            "sizeFrom": 170,
+                            "sizeTo": 150,
+                            "lifetime": 80,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "A0F19B"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "sizeFrom": 160,
+                            "sizeTo": 160,
+                            "lifetime": 80,
+                            "colorFrom": "A0F19B77",
+                            "colorTo": "A0F19B00"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 28,
+                            "sizeFrom": 34,
+                            "sizeTo": 30,
+                            "interp": "pow5Out",
+                            "sizeInterp": "pow10In",
+                            "region": "黑暗纪元-新星",
+                            "length": 200,
+                            "baseLength": 50,
+                            "lifetime": 100,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "A0F19B00"
+                        }
+                    ]
+                },
+                "fragBullets": 12,
+                "fragLifeMin": 1,
+                "fragLifeMax": 2,
+                "fragSpread": 137.5,
+                "fragBullet": {
+                    "type": "EmpBulletType",
+                    "damage": 598.7,
+                    "splashDamage": 233.2,
+                    "splashDamageRadius": 280,
+                    "sprite": "黑暗纪元-新星",
+                    "backColor": "A0F19B",
+                    "frontColor": "74AC83",
+                    "absorbable": false,
+                    "reflectable": false,
+                    "speed": 6,
+                    "lifetime": 30,
+                    "hitSound": "plasmaboom",
+                    "knockback": 8,
+                    "hitShake": 17,
+                    "despawnEffect": "none",
+                    "trailLength": 23,
+                    "trailWidth": 4,
+                    "trailColor": "A0F19B",
+                    "width": 8,
+                    "height": 8,
+                    "parts": [
+                        {
+                            "type": "FlarePart",
+                            "progress": "life",
+                            "rotation": 86,
+                            "color1": "A0F19B",
+                            "stroke": 4.8,
+                            "radius": 14,
+                            "radiusTo": 14
+                        }
+                    ],
+                    "hitEffect": {
+                        "type": "MultiEffect",
+                        "effects": [
+                            {
+                                "type": "ParticleEffect",
+                                "particles": 5,
+                                "sizeFrom": 14,
+                                "sizeTo": 10,
+                                "interp": "pow5Out",
+                                "sizeInterp": "pow10In",
+                                "region": "黑暗纪元-新星",
+                                "length": 180,
+                                "baseLength": 50,
+                                "lifetime": 80,
+                                "colorFrom": "A0F19B",
+                                "colorTo": "A0F19B00"
+                            },
+                            {
+                                "type": "WrapEffect",
+                                "effect": "dynamicSpikes",
+                                "color": "A0F19B",
+                                "rotation": 86
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "群星2",
+            "top": true,
+            "x": 32,
+            "y": 16,
+            "type": "PointDefenseWeapon",
+            "shootX": 0,
+            "shootY": 0,
+            "recoil": 0,
+            "rotateSpeed": 2,
+            "mirror": true,
+            "reload": 2,
+            "targetInterval": 2,
+            "targetSwitchInterval": 2,
+            "shootStatusDuration": 60,
+            "shootStatus": "生命提升",
+            "shoot": {
+                "shots": 2
+            },
+            "bullet": {
+                "speed": 560,
+                "lifetime": 1,
+                "shootEffect": "none",
+                "maxRange": 350,
+                "damage": 250
+            }
+        },
+        {
+            "top": false,
+            "reload": 99999999,
+            "x": 0,
+            "y": 0,
+            "shootY": 0,
+            "shootX": 0,
+            "mirror": false,
+            "alternate": true,
+            "rotate": true,
+            "recoil": 0,
+            "recoilTime": 0,
+            "shootCone": 360,
+            "inaccuracy": 0,
+            "shootOnDeath": true,
+            "shootSound": "none",
+            "bullet": {
+                "speed": 21.4,
+                "damage": 55,
+                "lifetime": 30,
+                "despawnEffect": "none",
+                "absorbable": false,
+                "reflectable": false,
+                "hittable": false,
+                "hitSound": "none",
+                "hitEffect": {
+                    "type": "WaveEffect",
+                    "strokeFrom": 11,
+                    "strokeTo": 0,
+                    "sizeFrom": 60,
+                    "sizeTo": 0,
+                    "lifetime": 80,
+                    "colorFrom": "A0F19B00",
+                    "colorTo": "A0F19B"
+                },
+                "homingDelay": 0,
+                "homingPower": 34,
+                "homingRange": 1280,
+                "fragBullets": 1,
+                "fragVelocityMin": 1,
+                "fragLifeMin": 1,
+                "fragLifeMax": 1,
+                "fragAngle": 180,
+                "fragRandomSpread": 5,
+                "fragBullet": {
+                    "type": "PointBulletType",
+                    "speed": 1280,
+                    "damage": 255,
+                    "lifetime": 1,
+                    "despawnEffect": "none",
+                    "collidesGround": false,
+                    "collidesAir": false,
+                    "absorbable": false,
+                    "reflectable": false,
+                    "hittable": false,
+                    "collides": false,
+                    "collidesTiles": false,
+                    "hitSound": "none",
+                    "hitEffect": {
+                        "type": "ParticleEffect",
+                        "particles": 6,
+                        "sizeFrom": 48,
+                        "sizeTo": 48,
+                        "length": 80,
+                        "baseLength": 0,
+                        "lifetime": 80,
+                        "colorFrom": "A0F19B77",
+                        "colorTo": "A0F19B00"
+                    },
+                    "trailEffect": "none",
+                    "fragBullets": 1,
+                    "fragVelocityMin": 2,
+                    "fragLifeMin": 1,
+                    "fragLifeMax": 1.5,
+                    "fragAngle": 180,
+                    "fragRandomSpread": 0,
+                    "fragBullet": {
+                        "type": "EmpBulletType",
+                        "damage": 4332,
+                        "splashDamage": 2239.8,
+                        "splashDamageRadius": 222,
+                        "drag": -0.0004,
+                        "homingDelay": 5,
+                        "homingPower": 0.02,
+                        "homingRange": 1280,
+                        "sprite": "黑暗纪元-新星",
+                        "backColor": "A0F19B",
+                        "frontColor": "74AC83",
+                        "absorbable": false,
+                        "reflectable": false,
+                        "speed": 8,
+                        "lifetime": 160,
+                        "hitSound": "BZ7",
+                        "hitSoundVolume": 22,
+                        "knockback": 33,
+                        "hitShake": 37,
+                        "despawnEffect": "none",
+                        "trailLength": 35,
+                        "trailWidth": 4,
+                        "trailColor": "A0F19B",
+                        "width": 24,
+                        "height": 24,
+                        "parts": [
+                            {
+                                "type": "FlarePart",
+                                "progress": "life",
+                                "rotation": 86,
+                                "color1": "A0F19B",
+                                "stroke": 6.8,
+                                "radius": 50,
+                                "radiusTo": 50
+                            }
+                        ],
+                        "hitEffect": {
+                            "type": "MultiEffect",
+                            "effects": [
+                                {
+                                    "type": "WaveEffect",
+                                    "strokeFrom": 25,
+                                    "strokeTo": 0,
+                                    "sizeFrom": 250,
+                                    "sizeTo": 200,
+                                    "lifetime": 80,
+                                    "colorFrom": "A0F19B",
+                                    "colorTo": "A0F19B"
+                                },
+                                {
+                                    "type": "ParticleEffect",
+                                    "particles": 1,
+                                    "sizeFrom": 225,
+                                    "sizeTo": 225,
+                                    "lifetime": 80,
+                                    "colorFrom": "A0F19B77",
+                                    "colorTo": "A0F19B00"
+                                },
+                                {
+                                    "type": "ParticleEffect",
+                                    "particles": 28,
+                                    "sizeFrom": 40,
+                                    "sizeTo": 30,
+                                    "interp": "pow5Out",
+                                    "sizeInterp": "pow10In",
+                                    "region": "黑暗纪元-新星",
+                                    "length": 220,
+                                    "baseLength": 50,
+                                    "lifetime": 100,
+                                    "colorFrom": "A0F19B",
+                                    "colorTo": "A0F19B00"
+                                }
+                            ]
+                        },
+                        "fragBullets": 35,
+                        "fragLifeMin": 1,
+                        "fragLifeMax": 2,
+                        "fragSpread": 137.5,
+                        "fragBullet": {
+                            "type": "EmpBulletType",
+                            "damage": 600,
+                            "splashDamage": 300,
+                            "splashDamageRadius": 300,
+                            "sprite": "黑暗纪元-新星",
+                            "backColor": "A0F19B",
+                            "frontColor": "74AC83",
+                            "absorbable": false,
+                            "reflectable": false,
+                            "collidesTiles": false,
+                            "collides": true,
+                            "collidesTeam": true,
+                            "healPercent": 45,
+                            "speed": 7,
+                            "lifetime": 30,
+                            "hitSound": "plasmaboom",
+                            "knockback": 8,
+                            "hitShake": 6,
+                            "despawnEffect": "none",
+                            "trailLength": 23,
+                            "trailWidth": 4,
+                            "trailColor": "A0F19B",
+                            "width": 8,
+                            "height": 8,
+                            "parts": [
+                                {
+                                    "type": "FlarePart",
+                                    "progress": "life",
+                                    "rotation": 86,
+                                    "color1": "A0F19B",
+                                    "stroke": 4.8,
+                                    "radius": 14,
+                                    "radiusTo": 14
+                                }
+                            ],
+                            "hitEffect": {
+                                "type": "MultiEffect",
+                                "effects": [
+                                    {
+                                        "type": "ParticleEffect",
+                                        "particles": 5,
+                                        "sizeFrom": 14,
+                                        "sizeTo": 10,
+                                        "interp": "pow5Out",
+                                        "sizeInterp": "pow10In",
+                                        "region": "黑暗纪元-新星",
+                                        "length": 300,
+                                        "baseLength": 50,
+                                        "lifetime": 80,
+                                        "colorFrom": "A0F19B",
+                                        "colorTo": "A0F19B00"
+                                    },
+                                    {
+                                        "type": "WrapEffect",
+                                        "effect": "dynamicSpikes",
+                                        "color": "A0F19B",
+                                        "rotation": 86
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

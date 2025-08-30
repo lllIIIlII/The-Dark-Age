@@ -1,0 +1,92 @@
+{
+	"type": "PowerTurret",
+	"name": "礼物盒",
+	"health": 80000,
+	"armor":8888
+	"size": 2,
+	"reload": 30,
+	"range": 400,
+	"destroyEffect":"none"
+	"breakable":false,
+	"insulated": true,
+	"absorbLasers":true,
+	"inaccuracy": 360,
+	"rotateSpeed": 0,
+	"shootCone":360
+	"shootSound": "door",
+	"shootY": -3,
+	"shoot": {
+	"firstShotDelay": 45
+	},
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+"type":"RegionPart",
+"mirror":false,//是否开启镜像
+"x":0,
+"y":0,//初始位置
+"suffix":"-盖"//,贴图后缀
+"layer":50,//层，49-110
+"layerOffset":-0.5
+"moveX":0,//改变位置
+"moveY":-15
+"moveRot": 45
+}
+]
+}
+	"shootType": {
+	"type": "EmpBulletType",
+	"damage": 500,
+	"splashDamage": 3600,
+	"splashDamageRadius": 500,
+	"sprite":"黑暗纪元-新星"
+	"status": "瘫痪",
+	"statusDuration": 600
+	"backColor":"AFEDFF",
+	"frontColor":"AFEDFF",
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"radius": 500
+	"unitDamageScl":500
+	"timeIncrease":3 
+	"timeDuration":15
+	"powerDamageScl":500,
+	"powerSclDecrease":0.5,
+	"speed": 0,
+	"lifetime": 0,
+	"hitSound": "plasmaboom",
+	"hitShake":21
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"parts": [
+	{
+	"type": "FlarePart",
+	"progress": "life",
+	"rotation": 86,
+	"color1": "AFEDFF",
+	"stroke": 4.8,
+	"radius": 14,
+	"radiusTo": 14
+	}
+]
+	"hitEffect":
+	{
+	"type": "WrapEffect",
+	"effect": "dynamicSpikes",
+	"color": "AFEDFF",
+	"rotation": 86
+	}
+}
+	"requirements": [
+	"silicon/200",
+	"pyratite/75",
+	"metaglass/200",
+	"titanium/300"
+	],
+	"buildCostMultiplier": 0,
+	"category": "effect",
+	"research": "礼物盒"
+}

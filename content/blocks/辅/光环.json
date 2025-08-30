@@ -1,0 +1,95 @@
+{
+	"type": "ItemTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "光环",
+	"health": 500,
+	"size": 3,
+	"reload": 900,
+	"range": 0,
+	"recoilTime": 0,
+	"recoil": 0,
+	"maxAmmo":1000,
+	"ammoPerShot":250,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 13.5,
+	},
+	"shootSound": "wave",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 0,
+	"shootCone": 360,
+	"rotateSpeed": 0,
+	"shootY":0
+	"alwaysShooting":true
+	"ammoTypes": {
+		"silicon": {
+		"ammoMultiplier": 1,
+"spawnUnit": "fast"
+},
+"钢": {
+		"ammoMultiplier": 1,
+		"reloadMultiplier":1.65,
+"spawnUnit": "静防"
+},
+"空间节点": {
+		"ammoMultiplier": 1,
+"spawnUnit": "轻盈"
+},
+"surge-alloy": {
+		"ammoMultiplier": 1,
+"spawnUnit": "过载"
+},
+"钴钢": {
+		"ammoMultiplier": 1,
+"spawnUnit": "攻速提升"
+},
+"贫铀": {
+		"ammoMultiplier": 1,
+"spawnUnit": "伤害提升"
+},
+"暗能钢": {
+		"ammoMultiplier": 5,
+		"reloadMultiplier":2,
+"spawnUnit": "盾"
+},
+"暗金属": {
+		"ammoMultiplier": 1,
+"spawnUnit": "生命提升"
+}
+},
+"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+		"DrawDefault",
+		{
+		"type": "DrawRegion",
+		"suffix": "-转",
+		"spinSprite": true,
+		"rotateSpeed": 0.02
+		}
+	]
+},
+	"requirements": [
+		"graphite/2000"
+		"phase-fabric/1200"
+		"copper/3000"
+		"silicon/2350"
+		"thorium/1950"
+		"surge-alloy/800"
+		"metaglass/450"
+		"titanium/4000"
+		"plastanium/2500"
+	],
+	"category": "effect",
+	"research": {
+    "parent": "segment",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "impact0078"
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"name": "疑惑",
+	"color": "FFFFFF",
+	"speedMultiplier": 0.95,
+	"healthMultiplier": 0.66,
+	"reloadMultiplier": 0.66,
+    "damageMultiplier": 0.5,
+	"effectChance": 0.1,
+	"opposites": [
+	"警惕"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 0,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-疑惑effect",
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF"
+	}
+}

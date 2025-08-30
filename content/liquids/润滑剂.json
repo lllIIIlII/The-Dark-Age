@@ -1,0 +1,14 @@
+{
+	"name": "润滑剂",
+	"description": "优秀的润滑液体，防锈防腐蚀，用作炮台和单位修缮",
+	"alwaysUnlocked":false,
+	"lightColor":"CDC673",
+	"color": "CDBE70",
+	"flammability": 0,
+	"temperature": 0.1,
+	"heatCapacity": 1.6,
+	"viscosity": 0.45,
+	"explosiveness": 0,
+	"research": "钢"
+	"shownPlanets": [ "serpulo","erekir","Planzer" ]
+}

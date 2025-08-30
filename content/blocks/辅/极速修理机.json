@@ -1,0 +1,31 @@
+{
+	"type": "MendProjector",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "极速修理机",
+	"health": 350,
+	"size": 3,
+	"range": 255,
+	"reload": 10,
+	"healPercent": 0.5,
+	"phaseBoost": 5,
+	"phaseRangeBoost": 0,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 12,
+		"items": {
+			"items": [
+				"洛德合金/1"
+			],
+			"booster": true,
+			"optional": true
+		}
+	},
+	"requirements": [
+		"titanium/120",
+		"plastanium/80",
+		"surge-alloy/70",
+		"钢/125",
+	],
+	"category": "effect",
+	"research": "铁伞"
+}

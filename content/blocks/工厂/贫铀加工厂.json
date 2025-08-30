@@ -1,0 +1,61 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "贫铀加工厂",
+	"health":2500,
+	"itemCapacity":10,
+    "liquidCapacity":360,
+	"outputItem":"贫铀/3",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":60,	
+	"consumes":{
+		"power":6,
+		"liquid":"water/0.5",
+		"items": [
+	    "铀/1",
+	    "lead/4",
+	    "sand/3"
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0,
+				"flameColor": "F2E770"
+			}
+		]
+	},
+	"updateEffect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 0
+	"sizeTo": 8,
+	"region":"黑暗纪元-渐变圆",
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 60,
+	"colorFrom": "CFFD76",
+	"colorTo": "CFFD7600",
+	},
+"requirements": [
+	"钢/50",
+	"copper/250"
+	"lead/200"
+	"titanium/1450"
+	"铁/55"
+	],	
+	"category": "crafting",
+	"research": "铀合成机",
+	"ambientSound": "explosion",
+	"ambientSoundVolume": 0.4,
+}
+

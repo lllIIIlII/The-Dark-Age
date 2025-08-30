@@ -1,0 +1,26 @@
+{
+	"research": {
+	"root":true,
+	"name": "中央数据库"
+	},
+	"requirements": [
+	"copper/40000"
+	"lead/37000"
+	"silicon/12000"
+	"plastanium/9000"
+	"钢/24000"
+	"钴/30000"
+	"铁/26000"
+	"phase-fabric/9000"
+	"暗能钢/7000"
+	],
+	"unitType": "泽塔",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"alwaysUnlocked":true,
+	"armor":68,
+	"health": 58400,
+	"itemCapacity": 30000,
+	"size": 6,
+	"unitCapModifier": 30,
+	"category": "effect"
+}

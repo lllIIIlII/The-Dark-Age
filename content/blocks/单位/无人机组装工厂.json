@@ -1,0 +1,63 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "UnitFactory",
+	"name": "无人机组装工厂",
+	"health": 2500,
+	"size": 5,
+	"liquidCapacity": 60,
+	"consumes": {
+		"power": 8,
+		"liquid": "润滑剂/0.1"
+	},
+	"plans": [
+		{
+			"unit": "建造机",
+			"time": 2400,
+			"requirements": [
+				"钢/100",
+				"silicon/80",
+				"graphite/20",
+				"metaglass/40"
+			]
+		},
+		{
+			"unit": "挖矿机",
+			"time": 2400,
+			"requirements": [
+				"钢/120",
+				"plastanium/80",
+				"graphite/20",
+				"metaglass/40"
+			]
+		},
+		{
+			"unit": "自杀式无人机",
+			"time": 2400,
+			"requirements": [
+				"钢/120",
+				"plastanium/80",
+				"blast-compound/20",
+				"metaglass/40"
+			]
+		}
+		{
+			"unit": "修复机",
+			"time": 2400,
+			"requirements": [
+				"钢/280",
+				"plastanium/160",
+				"metaglass/20",
+				"钴/60"
+			]
+		}
+	],
+	"requirements": [
+		"thorium/360",
+		"钢/400",
+		"钴/200",
+		"plastanium/100",
+		"metaglass/50"
+	],
+	"category": "units",
+	"research": "钢针"
+}

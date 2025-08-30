@@ -1,0 +1,128 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "UnitFactory",
+	"name": "进阶集成组装工厂",
+	"health": 4000,
+	"size": 5,
+	"armor":5
+	"liquidCapacity": 120,
+	"consumes": {
+		"power": 14,
+		"liquid": "cryofluid/1"
+	},
+	"plans": [
+		{
+			"unit": "fortress",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "zenith",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "bryde",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "spiroct",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "quasar",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "mega",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "cyerce",
+			"time": 1900,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+			]
+		},
+		{
+			"unit": "极速",
+			"time": 2400,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+				"钢/140"
+			]
+		},
+		{
+			"unit": "弥漫",
+			"time": 2400,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+				"钢/140"
+			]
+		},
+		{
+			"unit": "无畏",
+			"time": 2400,
+			"requirements": [
+				"titanium/160",
+				"silicon/260",
+				"graphite/40",
+				"metaglass/80"
+				"钢/140"
+			]
+		},
+	],
+	"requirements": [
+		"thorium/460",
+		"钢/450",
+		"钴钢/200",
+		"plastanium/200",
+		"metaglass/50",
+		"phase-fabric/120"
+	],
+	"category": "units",
+	"research": "无人机组装工厂"
+}

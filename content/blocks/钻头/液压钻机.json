@@ -1,0 +1,32 @@
+{
+	"name": "液压钻机",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Drill",
+	"size": 4,
+	"tier": 7,
+	"health": 780,
+	"rotateSpeed": 3,
+	"warmupSpeed": 0.06,
+	"itemCapacity": 25,
+	"liquidCapacity": 30,
+	"hasItems": true,
+	"canOverdrive": true,
+	"drillTime": 50,
+	"drillEffect": "mineBig",
+	"updateEffect": "mineBig",
+	"liquidBoostIntensity": 1.7,
+	"hardnessDrillMultiplier": 9,
+	"consumes": {
+		"power": 2.7,
+		"liquid": "water/0.7"
+	},
+	"requirements": [
+		"copper/30",
+		"graphite/45",
+		"silicon/35",
+		"钢/70"
+		"thorium/80"
+	],
+	"category": "production",
+	"research": "钴传输带"
+}

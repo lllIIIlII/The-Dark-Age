@@ -1,0 +1,18 @@
+{
+	"captureWave":115
+	"planet": "Planzer",
+	"sector":177,
+	"difficulty": 4,
+	"research":"峡石涧"
+	"research": {
+    "parent": "峡石涧",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "峡石涧"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

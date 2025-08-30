@@ -1,0 +1,25 @@
+{
+	"name": "暗风暴",
+	"type": "ParticleWeather",
+	"attrs":{
+	"spores": 3
+	"light":-56
+	},
+	"color": "000000",
+	"particleRegion":"circle-shadow",
+    "drawNoise":true,
+    "useWindVector":true,
+    "sizeMax":200,
+    "sizeMin":40,
+    "minAlpha":0.1,
+    "maxAlpha":18,
+    "density":99999,//能见度
+    "baseSpeed":8,
+    "opacityMultiplier":0.25,//不透明度
+    "force":75,//风力
+    "sound":"wind",
+    "soundVol":0.7,
+    "duration":3000
+	"statusDuration": 60,
+	"status": "致盲"
+}

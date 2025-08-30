@@ -1,0 +1,1103 @@
+{
+	"type": "PowerTurret",
+	"name": "礼物盒",
+	"health": 80000,
+	"armor":8888
+	"size": 2,
+	"reload": 30,
+	"range": 400,
+	"destroyEffect":"none"
+	"breakable":false,
+	"insulated": true,
+	"absorbLasers":true,
+	"inaccuracy": 360,
+	"rotateSpeed": 0,
+	"shootCone":360
+	"shootSound": "door",
+	"shootY": -3,
+	"shoot": {
+	"firstShotDelay": 45
+	},
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+"type":"RegionPart",
+"mirror":false,//是否开启镜像
+"x":0,
+"y":0,//初始位置
+"suffix":"-盖"//,贴图后缀
+"layer":50,//层，49-110
+"layerOffset":-0.5
+"moveX":0,//改变位置
+"moveY":-15
+"moveRot": 45
+}
+]
+}
+	"shootType": {
+	"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "瘫痪",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 0,
+	"lifetime": 0,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+	"fragBullets":1,
+	"fragLifeMin": 1,
+	"fragLifeMax": 1,
+	"fragVelocityMin":1,
+	"fragBullet":{
+	"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "瘫痪",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "虚弱",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "延迟",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "污染",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+	"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "疑惑",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "致盲",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "slow",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "spore-slowed",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "melting",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "disarmed",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "electrified",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "unmoving",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "暗蚀",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "腐化",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "爆燃",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "寂灭",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "扭转",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "磁干扰",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "压制",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "空间混乱",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "溃解",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+"fragBullets":1,
+"fragLifeMin": 1,
+"fragLifeMax": 1,
+"fragVelocityMin":1,
+"fragBullet":{
+"damage": 50,
+	"splashDamage": 100,
+	"splashDamageRadius": 500,
+	"status": "禁锢",
+	"statusDuration": 1200
+	"absorbable":false,
+	"reflectable":false,
+	"killShooter": true,
+	"speed": 7,
+	"lifetime": 5,
+	"hitSound": "boom",
+	"hitShake":12
+	"despawnEffect": "none",
+	"width": 0,
+	"height": 0,
+	"hitEffect":{
+"type": "MultiEffect",
+"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"sizeFrom": 13
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+]
+}
+}}}}}}}}}}}}}}}}}}}}}}}
+
+	"requirements": [
+	"silicon/300",
+	"surge-alloy/275",
+	"sand/500",
+	"phase-fabric/95"
+	],
+	"buildCostMultiplier": 0,
+	"category": "effect",
+	"research": "礼物盒"
+}

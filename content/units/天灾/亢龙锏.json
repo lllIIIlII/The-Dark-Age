@@ -1,0 +1,211 @@
+{
+  "type": "tank",
+  "name": "亢龙锏",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "healColor": "FF5B5B",
+  "outlineColor": "383848",
+  "squareShape": true,
+  "rotateMoveFirst": true,
+  "omniMovement": false,
+  "targetAir": true,
+  "dpsEstimate": 0,
+  "speed": 0.6,
+  "rotateSpeed": 0.6,
+  "crushDamage": 50,
+  "hitSize": 70,
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "致盲",
+    "磁化",
+    "破防",
+    "延迟",
+    "瘫痪",
+    "空间混乱",
+    "污染",
+    "溃解",
+    "暗蚀"
+  ],
+  "ammoCapacity": 99999,
+  "health": 300000,
+  "armor": 800,
+  "accel": 0.098,
+  "drag": 0.075,
+  "drownTimeMultiplier": 250000,
+  "faceTarget": true,
+  "research": {
+    "parent": "前线指挥中心",
+    "objectives": [
+      {
+        "type": "OnSector",
+        "preset": "激战"
+      }
+    ]
+  },
+  "treadRects": [
+    {
+      "x": -110,
+      "y": -95,
+      "width": 65,
+      "height": 260
+    },
+    {
+      "x": -110,
+      "y": -95,
+      "width": 65,
+      "height": 260
+    }
+  ],
+  "abilities": [
+    {
+      "type": "StatusFieldAbility",
+      "duration": 6000,
+      "reload": 3600,
+      "range": 300,
+      "applyEffect": "none",
+      "effect": "保护",
+      "activeEffect": {
+        "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 300,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "30FF3E",
+        "colorTo": "30FF3E50"
+      }
+    },
+    {
+      "type": "StatusFieldAbility",
+      "duration": 6000,
+      "reload": 3600,
+      "range": 100,
+      "applyEffect": "none",
+      "effect": "boss",
+      "activeEffect": {
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 100,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "DC3023",
+        "colorTo": "DC3023"
+      }
+    }
+  ],
+  "weapons": [
+    {
+      "name": "亢龙锏-中",
+      "x": 0,
+      "y": 0,
+      "reload": 60,
+      "recoil": 4,
+      "recoilTime": 30,
+      "mirror": false,
+      "shootX": 0,
+      "shootY": 4,
+      "shootSound": "missileLarge",
+      "rotate": true,
+      "rotateSpeed": 2,
+      "shootCone": 1,
+      "inaccuracy": 0,
+      "bullet": {
+        "damage": 400,
+        "speed": 20,
+        "lightning": 5,
+        "lightningDamage": 225,
+        "lightningLength": 10,
+        "hittable": false,
+        "absorbable": true,
+        "buildingDamageMultiplier": 3.5,
+        "splashDamageRadius": 40,
+        "splashDamage": 250,
+        "knockback": 60,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 8,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "length": 55,
+              "baseLength": 8,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "lifetime": 85,
+              "colorFrom": "FFFFFF80",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 32,
+              "line": true,
+              "interp": "pow10Out",
+              "sizeInterp": "pow10In",
+              "strokeFrom": 1,
+              "strokeTo": 0,
+              "lenFrom": 24,
+              "lenTo": 0,
+              "length": 30,
+              "baseLength": 20,
+              "lifetime": 16,
+              "colorFrom": "FF9C00",
+              "colorTo": "FF9C00"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 16,
+              "sizeFrom": 5,
+              "sizeTo": 40,
+              "strokeFrom": 8,
+              "strokeTo": 0,
+              "colorFrom": "FF9C00",
+              "colorTo": "FF9C00"
+            }
+          ]
+        },
+        "despawnEffect": "flakExplosion",
+        "sprite": "黑暗纪元-穿刺",
+        "trailLength": 8,
+        "trailWidth": 1,
+        "trailChance": 1,
+        "trailInterval": 6,
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "length": -40,
+          "lifetime": 30,
+          "interp": "pow5Out",
+          "sizeInterp": "pow5In",
+          "colorFrom": "FF6420",
+          "colorTo": "FFFFFF50",
+          "cone": 19
+        },
+        "trailRotation": true,
+        "hitSound": "plasmaboom",
+        "trailColor": "FF6420",
+        "backColor": "FF6420",
+        "frontColor": "FFFFFF",
+        "width": 10,
+        "height": 45,
+        "lifetime": 30
+      }
+    }
+  ]
+}

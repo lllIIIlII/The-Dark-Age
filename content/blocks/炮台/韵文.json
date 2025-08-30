@@ -1,0 +1,194 @@
+{
+	"type":"ItemTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name":"韵文",
+	"size":3,
+	"health":1700
+	"range":320,
+	"reload":300,
+	"recoilTime": 180,
+	"recoil": 3,
+	"inaccuracy":0.5
+	"rotateSpeed":3.4,
+	"maxAmmo":30,
+	"targetAir":true
+	"targetGround":true,
+	"targetHealing": true,
+	"shootCone": 30,
+	"shootSound": "cannon",
+	"consumes": {
+		"power": 10,
+		"coolant": {
+			"amount": 0.15,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"type": "ShootMulti",
+		"source": {
+			"shots": 2,
+			"shotDelay": 15
+		},
+		"dest": [
+			{
+				"type": "ShootHelix",
+				"scl": 10,
+				"mag": 2
+			},
+			{
+				"type": "ShootHelix",
+				"scl": 5.5,
+				"mag": 3
+			}
+		]
+	},
+	"shootEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+"particles": 15,
+"line": true,
+"strokeFrom": 3,
+"strokeTo": 0,
+"lenFrom": 20,
+"lenTo": 0,
+"length": 40,
+"baseLength": 0,
+"lifetime": 30,
+"colorFrom": "FFFFFF00",
+"colorTo": "FFFFFF"
+"cone":30
+}
+]
+},
+	"ammoTypes":{
+		"暗金属": {
+		    "reloadMultiplier":1,
+			"speed": 7,
+			"damage": 100,
+			"knockback":0,
+			"lifetime":50,
+			"sprite":"黑暗纪元-月波",
+			"splashDamageRadius": 40,
+			"splashDamage": 240,
+			"width": 15,
+			"height": 15,
+			"trailColor":"36CC72",
+			"trailLength":30,
+			"trailWidth":5,
+			"hitSound":"explosion"
+			"ammoMultiplier":1,
+			"homingDelay": 0,
+			"homingPower": 0.08,
+			"homingRange": 240,
+			"collides":true
+		"collidesTeam":true
+		"healPercent":10
+		"hitShake":7
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+"particles": 15,
+"line": true,
+"strokeFrom": 3,
+"strokeTo": 0,
+"lenFrom": 20,
+"lenTo": 0,
+"length": 40,
+"baseLength": 0,
+"lifetime": 30,
+"colorFrom": "36CC72",
+"colorTo": "16A95150"
+},
+{
+"particles": 18,
+"sizeFrom": 5,
+"sizeTo": 0,
+"length": 40,
+"baseLength": 0,
+"lifetime": 50,
+"colorFrom": "36CC72",
+"colorTo": "16A95150"
+},
+{
+"type": "WaveEffect",
+"sizeFrom": 0,
+"sizeTo": 50,
+"lifetime": 20,
+"colorFrom": "36CC72",
+"colorTo": "FFFFFF50"
+}
+]
+},
+"fragBullets":3
+		"fragBullet":{
+		"speed": 5,
+		"lifetime": 80,
+		"shrinkX":0
+		"shrinkY":0
+		"width": 5,
+		"height": 5,
+		"damage": 340
+		"sprite":"黑暗纪元-彗星",
+		"backColor":"36CC72",
+		"frontColor":"16A951",
+		"status": "修复",
+		"statusDuration": 600,
+		"collides":true
+		"collidesTeam":true
+		"healPercent":5
+		"hitShake":3
+		"trailColor":"36CC72",
+		"trailLength":25,
+		"trailWidth":2,
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+"particles": 15,
+"line": true,
+"strokeFrom": 3,
+"strokeTo": 0,
+"lenFrom": 20,
+"lenTo": 0,
+"length": 40,
+"baseLength": 0,
+"lifetime": 30,
+"colorFrom": "36CC72",
+"colorTo": "16A95150"
+},
+{
+"particles": 1,
+"region":"黑暗纪元-新星",
+"spin": 3,
+"sizeFrom": 5,
+"sizeTo": 0,
+"length": 0,
+"baseLength": 0,
+"lifetime": 60,
+"colorFrom": "36CC72",
+"colorTo": "16A95150"
+},
+{
+"type": "WaveEffect",
+"sizeFrom": 0,
+"sizeTo": 50,
+"lifetime": 20,
+"colorFrom": "36CC72",
+"colorTo": "FFFFFF50"
+}
+]
+}
+}
+}
+},
+	"requirements": [
+	"silicon/1500"
+	"钴/600"
+	"铁/500"
+	"metaglass/700"
+	],
+	"category": "turret",
+	"research": "碎解"
+}

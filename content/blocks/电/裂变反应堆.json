@@ -1,0 +1,149 @@
+{
+	"type": "NuclearReactor",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "裂变反应堆",
+	"size": 5,
+	"health": 15600,
+	"liquidCapacity": 100,
+	"itemCapacity": 25,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsPower": true,
+	"powerProduction": 278,
+	"itemDuration": 150,
+	"heating": 0.02,
+	"lightColor": "FFFFFF",
+	"explosionShake": 9,
+	"explosionShakeDuration": 120,
+	"explosionRadius": 60,
+	"explosionDamage": 18000,
+	"explodeSound": "BZ",
+	"explodeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "WaveEffect",
+				"lifetime": 60,
+				"sizeFrom": 0,
+				"sizeTo": 320,
+				"strokeFrom": 18,
+				"strokeTo": 0,
+				"colorFrom": "EEC591",
+				"colorTo": "FFFFFF"
+			},
+			{
+	"type": "ParticleEffect",
+	"particles": 20,
+	"line":true
+	"lenFrom": 35,
+	"lenTo": 0
+	"length": 300,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 20,
+	"lifetime": 95,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	}
+			{
+				"type": "ParticleEffect",
+				"particles": 25,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 35,
+				"sizeTo": 0,
+				"length": 280,
+				"baseLength": 0,
+				"lifetime": 250,
+				"colorFrom": "DEDEDE70",
+				"colorTo": "DEDEDE70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 35,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 30,
+				"sizeTo": 0,
+				"length": 290,
+				"baseLength": 0,
+				"lifetime": 300,
+				"colorFrom": "DEDEDE70",
+				"colorTo": "DEDEDE70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 40,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 20,
+				"sizeTo": 0,
+				"length": 300,
+				"baseLength": 0,
+				"lifetime": 350,
+				"colorFrom": "DEDEDE70",
+				"colorTo": "DEDEDE70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 25,
+				"line": true,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"lenFrom": 150,
+				"lenTo": 0,
+				"length": 220,
+				"baseLength": 60,
+				"lifetime": 60,
+				"colorFrom": "DEDEDE",
+				"colorTo": "DEDEDE"
+			},
+			{
+				"type": "ParticleEffect",
+				"region":"黑暗纪元-新星",
+				"particles": 1,
+				"spin":2
+				"sizeFrom": 400,
+				"sizeTo": 0,
+				"sizeInterp":"pow10In",
+				"length": 0,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FF5B5B"
+			}
+		]
+	},
+    "drawer": {
+    "type": "DrawMulti",
+		"drawers": [
+		{
+			"DrawDefault":{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "cryofluid"
+			}
+		}
+	]
+},
+	"fuelItem": "铀",
+    "itemRadioactive": {},
+	"consumes": {
+		"liquid":"cryofluid/0.2",
+		"items":["铀/2"]
+	},
+	"buildCostMultiplier": 0.88,
+	"requirements": [
+		"lead/1200",
+		"graphite/600",
+		"metaglass/140",
+		"copper/1180",
+		"钢/1500",
+		"silicon/900",
+		"plastanium/800"
+		"钴钢/100"
+	],
+	"category": "power",
+	"research": "地热转能站"
+}

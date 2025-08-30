@@ -1,0 +1,191 @@
+{
+	"name": "潮水",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "LaserTurret",
+	"size": 5,
+	"health": 4750,
+	"shootEffect": "none",
+	"shootSound": "laserbig",
+	"range": 280,
+	"reload": 600,
+	"coolantMultiplier": 1,
+	"liquidCapacity": 180,
+	"inaccuracy": 0,
+	"rotateSpeed": 3.6,
+	"shake": 5,
+	"coolEffect": "steam",
+	"targetHealing": true,
+	"unitSort": "strongest",
+	"cooldownTime": 180,
+	"recoil": 2,
+	"recoilTime": 60,
+	"minWarmup": 0.89,
+	"warmupMaintainTime": 300,
+	"drawer":{
+"type":"DrawTurret",
+"parts":[
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": 9,
+	"color": "8DA3F8",
+	"stroke": 0,
+	"strokeTo": 2,
+	"circle": true,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 19,
+	"layer": 110
+	},
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": 9,
+	"color": "8DA3F8",
+	"stroke": 0,
+	"strokeTo": 2,
+	"circle": true,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 14,
+	"layer": 110
+	},
+	{
+	"type": "HaloPart",
+	"progress": "warmup",
+	"y": 9,
+	"sides": 5,//边数
+	"color": "8DA3F8",
+	"rotateSpeed": 0,
+	"shapeRotation": 180,
+	"stroke": 0,
+	"strokeTo": 1,
+	"shapes":5,
+	"tri": true,
+	"hollow": true,
+	"radius": 0,//底长
+	"radiusTo": 4,
+	"layer": 110,
+	"triLength": 0,//高
+	"triLengthTo": 14,
+	"haloRadius": 14,
+	"haloRadiusTo": 19,
+	"haloRotateSpeed": -1.2
+	}
+]
+},
+	"shootY": 10,
+	"shootType": {
+		"type": "ContinuousLaserBulletType",
+		"hitEffect": {
+			"type": "ParticleEffect",
+			"particles": 6,
+			"baseLength": 8,
+			"length": 18,
+			"lifetime": 10,
+			"line": true,
+			"lenFrom": 26,
+			"lenTo": 0,
+			"strokeFrom": 6,
+			"strokeTo": 0,
+			"colorFrom": "5A7DE5",
+			"colorTo": "FFFFFF"
+		},
+		"shootEffect": {
+			"type": "ParticleEffect",
+			"particles": 10,
+			"line": true,
+			"length": 0,
+			"baseLength": 0,
+			"lifetime": 300,
+			"colorFrom": "5A7DE5",
+			"colorTo": "0C42E500",
+			"cone": 0
+		},
+		"status": "wet",
+		"statusDuration": 360,
+		"incendChance": 0,
+		"incendSpread": 0,
+		"incendAmount": 0,
+		"ammoMultiplier": 1,
+		"hitSize": 8,
+		"length": 280,
+		"width": 6,
+		"damage": 4298,
+		"lightColor": "5A7DE5",
+		"colors": [
+			"5A7DE5",
+			"5A7DE580",
+			"0C42E5",
+			"FFFFFF"
+			]
+	"intervalBullets":1
+	"bulletInterval":60
+	"intervalBullet":{
+	"type": "BasicBulletType",
+	"speed":22
+	"lifetime":10
+	"collidesAir":true
+	"collidesGround":true
+	"absorbable": false
+	"hittable": false,
+	"homingDelay": 0,
+	"homingPower": 1,
+	"homingRange": 300,
+	"hitSound": "none"
+	"width": 0.1,
+	"height": 0.1,
+	"trailEffect":"none"
+	"damage":100
+	"fragBullets":3
+	"fragVelocityMax":1,
+	"fragVelocityMin":1,
+	"fragSpread":30,
+	"fragBullet":{
+	"type": "PointBulletType",
+	"speed":8
+	"lifetime":10
+	"collidesAir":false
+	"collidesGround":false
+	"hitSound": "laser"
+	"trailEffect":"none"
+	"hitEffect":"none"
+	"damage":390
+	"fragBullets":1,
+	"fragAngle": 180,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragBullet":{
+	"type": "LaserBulletType",
+		"chargeEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				"lancerLaserCharge",
+				"lancerLaserChargeBegin"
+			]
+		},
+		"despawnEffect": "none",
+		"damage": 845,
+		"ammoMultiplier": 1,
+		"width": 48,
+		"length": 95,
+		"lifetime": 20
+		}
+	}
+}
+}
+	"consumes": {
+		"power": 48,
+		"liquid": "water/1.25"
+	},
+	"shootDuration": 250,
+	"requirements": [
+		"钢/600",
+		"surge-alloy/650",
+		"silicon/1400",
+		"plastanium/880"
+		"metaglass/300"
+	],
+	"category": "turret",
+	"research": "疾雨"
+}

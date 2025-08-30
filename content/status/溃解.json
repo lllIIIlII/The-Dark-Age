@@ -1,0 +1,14 @@
+{
+	"name": "溃解",
+	"color": "99AAD5",
+	"speedMultiplier": 0.8,
+	"healthMultiplier": 0.75,
+	"reloadMultiplier": 0.8,
+	"damageMultiplier": 0.9,
+	"effectChance": 60,
+	"damage": 19.9,
+	"transitionDamage": 20000,
+    "affinities": [
+    "超相"
+    ],
+}

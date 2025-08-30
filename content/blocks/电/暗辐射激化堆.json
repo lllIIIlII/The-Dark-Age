@@ -1,0 +1,294 @@
+{
+	"type": "ImpactReactor",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "暗辐射激化堆",
+	"size": 6,
+	"health": 78210,
+	"armor":100
+	"itemCapacity": 120,
+	"liquidCapacity": 600,
+	"itemDuration": 1560,
+	"outputsPower": true,
+	"hasItems": true,
+	"powerProduction": 3450,
+	"warmupSpeed": 0.01618,
+	"lightColor": "FFFFFF",
+	"explosionMinWarmup": 0.1,
+	"explosionShake": 50
+	"explosionShakeDuration": 88
+	"explosionRadius": 400,
+	"explosionDamage": 34000,
+	"explodeSound": "explosionbig",
+	"explodeEffect": "none"
+	"consumes": {
+	"power":120
+	"liquid": {
+	"liquid":"cryofluid",
+	"amount": 5
+}
+	"items":[
+	"暗能钢/30"
+	"phase-fabric/25"
+	]
+},
+	"requirements": [
+	"lead/5000",
+	"phase-fabric/1200",
+	"metaglass/1500",
+	"copper/6080",
+	"钢/3500"
+	"silicon/2300"
+	"钴钢/1110"
+	"暗金属/3400"
+	"暗能钢/1230"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "cryofluid"
+			},
+			{
+				"type": "DrawPlasma",
+				"plasma0": "8B8B8B",
+				"plasma1": "8B8B8B",
+				"plasma2": "8B8B8B",
+				"plasma3": "8B8B8B"
+			},
+			"DrawDefault"
+	]
+},
+	"destroyBullet": {
+	"width": 0,
+	"height": 0,
+	"sprite": "circle-bullet",
+	"shrinkX": 0,
+	"shrinkY": 0,
+	"spin": 4,
+	"speed": 0,
+	"lifetime": 10,
+	"frontColor": "303030",
+	"backColor": "303030",
+	"hitSound": "corexplode",
+	"hitSoundVolume": 28,
+	"collides": false,
+	"hittable": false,	
+	"absorbable": false,
+	"splashDamageRadius": 400,
+	"splashDamage": 56210,
+	"status": "致盲",
+	"statusDuration": 1200,
+	"hittable": false,
+	"hitShake": 80,
+	"hitEffect":{
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 400,
+	"lifetime": 80,
+	"colorFrom": "5A5A5A",
+	"colorTo": "000000"
+	"startDelay":0
+	"interp": "fastSlow",
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 16,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 425,
+	"lifetime": 80,
+	"colorFrom": "5A5A5A",
+	"colorTo": "000000"
+	"startDelay":60
+	"interp": "fastSlow",
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 17,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 450,
+	"lifetime": 80,
+	"colorFrom": "5A5A5A",
+	"colorTo": "000000"
+	"startDelay":120
+	"interp": "fastSlow",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 200,
+	"sizeFrom": 12
+	"sizeTo": 0,
+	"length": 400,
+	"baseLength": 0,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "000000",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 130,
+	"sizeFrom": 20
+	"sizeTo": 0,
+	"length": 410,
+	"baseLength": 0,
+	"lifetime": 115,
+	"colorFrom": "FFFFFF",
+	"colorTo": "000000",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 105,
+	"sizeFrom": 40,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 400,
+	"baseLength": 10,
+	"lifetime": 200,
+	"colorFrom": "73737350",
+	"colorTo": "73737320",
+	"layer":50
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 42,
+	"line":true
+	"lenFrom": 30,
+	"lenTo": 0
+	"length": 410,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 40,
+	"lifetime": 245,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 34,
+	"line":true
+	"lenFrom": 45,
+	"lenTo": 0
+	"length": 400,
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"baseLength": 40,
+	"lifetime": 255,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	}
+]
+},
+"fragBullets":111,
+"fragVelocityMin":0.7,
+	"fragVelocityMin":1.3,
+	"fragLifeMin":1,
+	"fragLifeMax":2,
+	"fragSpread":360,
+	"fragBullet":{
+	"width": 10,
+	"height": 10,
+	"sprite": "黑暗纪元-斜正方",
+	"shrinkX": 0,
+	"shrinkY": 0,
+	"spin": -1.3,
+	"speed": 17,
+	"lifetime": 20,
+	"drag":-0.01
+	"frontColor": "303030",
+	"backColor": "737373",
+	"trailLength": 10,
+	"trailWidth": 5,
+	"trailChance": 80,
+	"trailInterval": 80,
+	"trailColor": "000000",
+	"hitSound": "boom",
+	"hitSoundVolume": 12,
+	"collides": false,
+	"hittable": false,	
+	"absorbable": false,
+	"splashDamageRadius": 80,
+	"splashDamage": 976,
+	"damage":1134.92
+	"status": "致盲",
+	"statusDuration": 600,
+	"makeFire": true,
+	"hittable": false,
+	"hitShake": 20,
+	"knockback":12
+	"hitEffect":{
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 88,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "303030"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 19,
+	"sizeFrom": 12,
+	"sizeTo": 0,
+	"interp": "fastSlow",
+	"sizeInterp": "pow10In",
+	"length": 60,
+	"baseLength": 0,
+	"lifetime": 80,
+	"colorFrom": "73737390",
+	"colorTo": "73737370",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"line":true
+	"lenFrom": 35,
+	"lenTo": 0
+	"length": 80,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 60,
+	"lifetime": 65,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	},
+	{
+	"type": "WrapEffect",
+	"effect": "dynamicSpikes",
+	"color": "303030",
+	"rotation": 45
+	}
+]
+}
+}
+},
+	"research": {
+    "parent": "裂变反应堆"
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "地冠"
+			}
+		]
+	},
+	"category": "power"
+}

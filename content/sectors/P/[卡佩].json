@@ -1,0 +1,17 @@
+{
+	"captureWave":35
+	"planet": "Planzer",
+	"sector":237,
+	"difficulty": 10,
+	"research": {
+    "parent": "霍兰德山脉",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "霍兰德山脉"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

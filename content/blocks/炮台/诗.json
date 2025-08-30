@@ -1,0 +1,313 @@
+{
+    "type": "ItemTurret",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "name": "诗",
+    "size": 6,
+    "health": 7866,
+    "range": 480,
+    "reload": 55,
+    "recoilTime": 10,
+    "recoil": 3,
+    "inaccuracy": 0,
+    "rotateSpeed": 7,  // 修正字段名
+    "maxAmmo": 66,
+    "targetAir": true,
+    "targetGround": true,
+    "targetHealing": true,
+    "liquidCapacity": 30,
+    "coolantMultiplier": 0.35,
+    "shootCone": 1,
+    "ammoPerShot": 3,
+    "shootSound": "artillery",
+    "consumes": {
+        "power": 98,
+        "coolant": {
+            "amount": 0.35,
+            "optional": true
+        }
+    },
+    "shoot": {
+        "shots": 2,
+        "shotDelay": 0,
+        "type": "ShootBarrel",
+        "barrels": [15, 0, 0, -15, 0, 0]
+    },
+    "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 15,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "interp": "fastSlow",
+                "lenFrom": 20,
+                "lenTo": 0,
+                "lifetime": 30,
+                "colorFrom": "FFFFFF00",
+                "colorTo": "FFFFFF",
+                "cone": 20
+            },
+            {
+                "type": "ParticleEffect",
+                "particles": 4,
+                "sizeFrom": 10,
+                "sizeTo": 0,
+                "interp": "pow10Out",
+                "sizeInterp": "pow5In",
+                "lifetime": 30,
+                "colorFrom": "16A951",
+                "colorTo": "057748"
+            }
+        ]
+    },
+    "ammoTypes": {
+        "暗金属": {
+            "reloadMultiplier": 1.5,
+            "speed": 7,
+            "damage": 367,
+            "knockback": 89,
+            "lifetime": 70,
+            "sprite": "黑暗纪元-菱形",
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "backColor": "057748",
+            "frontColor": "16A951",
+            "splashDamageRadius": 16,
+            "splashDamage": 240,
+            "width": 18.54,
+            "height": 60,
+            "trailColor": "16A951",
+            "trailLength": 30,
+            "trailWidth": 5,
+            "hitSound": "explosion",
+            "ammoMultiplier": 1,
+            "collides": true,
+            "collidesTeam": true,
+            "healPercent": 15,
+            "hitShake": 7,
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 15,
+                        "line": true,
+                        "strokeFrom": 3,
+                        "strokeTo": 0,
+                        "lenFrom": 20,
+                        "lenTo": 0,
+                        "lifetime": 30,
+                        "colorFrom": "16A951",
+                        "colorTo": "05774850",
+                        "cone": 25
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 18,
+                        "sizeFrom": 5,
+                        "sizeTo": 0,
+                        "lifetime": 50,
+                        "colorFrom": "16A951",
+                        "colorTo": "05774850",
+                        "cone": 25
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "sizeFrom": 0,
+                        "sizeTo": 79,
+                        "lifetime": 20,
+                        "colorFrom": "16A951",
+                        "colorTo": "FFFFFF50"
+                    }
+                ]
+            },
+            "bulletInterval": 2,
+            "intervalBullets": 1,
+            "intervalRandomSpread": 30,
+            "intervalBullet": {
+                "speed": 5,
+                "weaveScale": 5,
+                "weaveMag": 2,
+                "lifetime": 90,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "width": 7,
+                "height": 7,
+                "damage": 68,
+                "sprite": "large-orb",
+                "backColor": "057748",
+                "frontColor": "16A951",
+                "status": "disarmed",
+                "statusDuration": 5,
+                "collides": true,
+                "collidesTeam": true,
+                "healPercent": 1,
+                "hitShake": 3,
+                "trailColor": "36CC72",
+                "trailLength": 25,
+                "trailWidth": 2,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 5,
+                            "line": true,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "lenFrom": 20,
+                            "lenTo": 0,
+                            "lifetime": 30,
+                            "colorFrom": "16A951",
+                            "colorTo": "05774850"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 10,
+                            "colorFrom": "16A951",
+                            "colorTo": "FFFFFF50"
+                        }
+                    ]
+                }
+            }
+        },
+        "暗能钢": {
+            "reloadMultiplier": 2,
+            "speed": 7,
+            "damage": 837,
+            "knockback": 452,
+            "lifetime": 70,
+            "weaveScale": 3,
+            "weaveMag": 1,
+            "sprite": "黑暗纪元-菱形",
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "backColor": "057748",
+            "frontColor": "16A951",
+            "splashDamageRadius": 16,
+            "splashDamage": 480,
+            "width": 18.54,
+            "height": 60,
+            "trailColor": "16A951",
+            "trailLength": 30,
+            "trailWidth": 5,
+            "hitSound": "explosion",
+            "ammoMultiplier": 1,
+            "collides": true,
+            "collidesTeam": true,
+            "healPercent": 20,
+            "hitShake": 8,
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 15,
+                        "line": true,
+                        "strokeFrom": 3,
+                        "strokeTo": 0,
+                        "lenFrom": 20,
+                        "lenTo": 0,
+                        "lifetime": 30,
+                        "colorFrom": "16A951",
+                        "colorTo": "05774850",
+                        "cone": 25
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 18,
+                        "sizeFrom": 5,
+                        "sizeTo": 0,
+                        "lifetime": 50,
+                        "colorFrom": "16A951",
+                        "colorTo": "05774850",
+                        "cone": 25
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "sizeFrom": 0,
+                        "sizeTo": 79,
+                        "lifetime": 20,
+                        "colorFrom": "16A951",
+                        "colorTo": "FFFFFF50"
+                    }
+                ]
+            },
+            "bulletInterval": 2,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 10,
+            "intervalBullet": {
+                "speed": 5,
+                "weaveScale": 5,
+                "weaveMag": 2,
+                "lifetime": 90,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "width": 7,
+                "height": 7,
+                "damage": 68,
+                "sprite": "large-orb",
+                "backColor": "057748",
+                "frontColor": "16A951",
+                "status": "disarmed",
+                "statusDuration": 5,
+                "collides": true,
+                "collidesTeam": true,
+                "healPercent": 1,
+                "hitShake": 3,
+                "trailColor": "36CC72",
+                "trailLength": 25,
+                "trailWidth": 2,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 5,
+                            "line": true,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "lenFrom": 20,
+                            "lenTo": 0,
+                            "lifetime": 30,
+                            "colorFrom": "16A951",
+                            "colorTo": "05774850"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "sizeFrom": 0,
+                            "sizeTo": 60,
+                            "lifetime": 10,
+                            "colorFrom": "16A951",
+                            "colorTo": "FFFFFF50"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "requirements": [
+        "silicon/3000",
+        "titanium/6000",
+        "plastanium/3205",
+        "phase-fabric/1430",
+        "钢/500",
+        "metaglass/900",
+        "铀/2777",
+        "钴钢/2000"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "韵文",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "铁线三角洲"
+            }
+        ]
+    }
+}

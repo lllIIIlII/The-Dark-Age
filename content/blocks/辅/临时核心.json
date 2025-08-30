@@ -1,0 +1,20 @@
+{
+	"research": {
+		"root":true,
+		"name": "普兰则尔"
+		},
+	"requirements": [
+	{"amount": 2000, "item": "copper"},
+	{"amount": 1500, "item": "lead"},
+	{"amount": 750, "item": "silicon"}
+	],
+	"unitType": "alpha",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"alwaysUnlocked":true,
+	"armor":28,
+	"health": 1500,
+	"itemCapacity": 1500,
+	"size": 3,
+	"unitCapModifier": 3,
+	"category": "effect"
+}

@@ -1,0 +1,106 @@
+{
+    "speed": 0.8,
+    "accel": 0.05,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 35000,
+    "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+    "weapons": [
+        {
+            "name": "日蚀2",
+            "shake": 4.0,
+            "shootY": 9.0,
+            "x": 18.0,
+            "y": 5.0,
+            "rotateSpeed": 2.0,
+            "reload": 45.0,
+            "recoil": 4.0,
+            "shootSound": "laser",
+            "shadow": 20.0,
+            "inaccuracy": 3,
+            "rotate": true,
+            "top": true,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 10
+            },
+            "bullet": {
+                "type": "LaserBulletType",
+                "damage": 100,
+                "sideAngle": 20,
+                "sideWidth": 1.5,
+                "sideLength": 80,
+                "width": 25.0,
+                "length": 400.0,
+                "shootEffect": "shockwave",
+                "colors": [
+                    "ec7458aa",
+                    "ff9c5a",
+                    "ffffff"
+                ]
+            }
+        },
+        {
+            "name": "日蚀1",
+            "x": 11.0,
+            "y": 27.0,
+            "rotateSpeed": 2.0,
+            "reload": 30,
+            "shootSound": "shoot",
+            "shadow": 7.0,
+            "rotate": true,
+            "top": true,
+            "recoil": 0.5,
+            "shootY": 7.25,
+            "inaccuracy": 5,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "bullet": {
+                "type": "FlakBulletType",
+                "shootEffect": "shootBig",
+                "ammoMultiplier": 4.0,
+                "damage":30
+                "splashDamage": 65.0,
+                "splashDamageRadius": 25.0,
+                "collidesGround": true,
+                "lifetime": 70.0,
+                "speed": 5.85,
+                "status": "blasted",
+                "statusDuration": 60.0
+            }
+        },
+        {
+            "name": "日蚀1",
+            "x": -13.0,
+            "y": -20.0,
+            "rotateSpeed": 2.0,
+            "reload": 30,
+            "shootSound": "shoot",
+            "shadow": 7.0,
+            "rotate": true,
+            "top": true,
+            "recoil": 0.5,
+            "shootY": 7.25,
+            "inaccuracy": 5,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 1
+            },
+            "bullet": {
+                "type": "FlakBulletType",
+                "shootEffect": "shootBig",
+                "ammoMultiplier": 4.0,
+                "damage":30
+                "splashDamage": 65.0,
+                "splashDamageRadius": 25.0,
+                "collidesGround": true,
+                "lifetime": 70.0,
+                "speed": 5.85,
+                "status": "blasted",
+                "statusDuration": 60.0
+            }
+        }
+    ]
+}

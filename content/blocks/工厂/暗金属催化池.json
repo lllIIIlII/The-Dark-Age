@@ -1,0 +1,54 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "暗金属催化池",
+	"health":950,
+	"itemCapacity":15,
+    "liquidCapacity":360,
+	"outputItem":"暗金属/2",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":50,	
+	"consumes":{
+		"power":38,
+		"liquid":"water/0.4",
+		"items": [
+	    "sand/3",
+	    "copper/1"
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+		]
+	},
+	"updateEffect":{
+	"type":"MultiEffect",
+	"effects":[
+	{
+		"type": "WaveEffect",
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"sizeFrom": 0,
+		"sizeTo": 10,
+		"lifetime": 10,
+		"colorFrom": "FFFFFF",
+		"colorTo": "000000"
+		}
+    ]
+},
+    "requirements": [
+    "plastanium/100"
+	"copper/200",
+	"silicon/150"
+	"phase-fabric/50"
+	"thorium/155"
+	],	
+	"category": "crafting",
+	"research": "炼钢厂",
+	"ambientSound": "tractorbeam",
+	"ambientSoundVolume": 0.7,
+}

@@ -1,0 +1,25 @@
+{
+	"name": "修复",
+	"color": "36CC72",
+	"speedMultiplier": 1,
+	"healthMultiplier": 1.5,
+	"reloadMultiplier": 0.95,
+	"effectChance": 0.01,
+	"damage": -10,
+	"opposites": [
+	"污染"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 30,
+		"length": -20,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-圆矩",
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "36CC72",
+		"colorTo": "36CC7250"
+	}
+}

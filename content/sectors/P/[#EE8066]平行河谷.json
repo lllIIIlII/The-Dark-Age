@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":15,
+	"difficulty": 15,
+	"research": {
+    "parent": "染湖北畔",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "染湖北畔"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

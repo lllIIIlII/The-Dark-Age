@@ -1,0 +1,24 @@
+{
+	"name": "献祭",
+	"color": "9D2933",
+	"speedMultiplier": 5,
+	"healthMultiplier": 0.9,
+	"reloadMultiplier": 3.5,
+	"damageMultiplier": 7.8,
+	"effectChance": 0.18,
+	"damage": 477,
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"line":true
+	"lenFrom": 32,
+	"lenTo": 0
+	"length": 120,
+	"strokeFrom": 7,
+	"strokeTo": 7,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "DC3023",
+	"colorTo": "9D2933"
+	}
+}

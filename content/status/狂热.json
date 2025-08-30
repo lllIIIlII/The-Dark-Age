@@ -1,0 +1,10 @@
+{
+	"name": "狂热",
+	"color": "FF6420",
+	"speedMultiplier": 1.98,
+	"healthMultiplier": 1.1,
+	"reloadMultiplier": 1.8,
+	"damageMultiplier": 2,
+	"effectChance": 60,
+	"damage": 20.35,
+}

@@ -1,0 +1,612 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "波动标点",
+	"health": 20000,
+	"armor":999
+	"size": 2,
+	"reload": 30,
+	"range": 300,
+	"destroyEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"lifetime": 115,
+	"sizeFrom": 40,
+	"sizeTo": 560,
+	"strokeFrom": 1,
+	"strokeTo": 10,
+	"colorFrom": "E294B3",
+	"colorTo": "CA528500"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 30,
+	"sizeFrom": 30,
+	"sizeTo": 0,
+	"length": 550,
+	"baseLength": 0,
+	"lifetime": 120,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528577",
+	}
+	{
+	"type": "ParticleEffect",
+	"particles": 20,
+	"sizeFrom": 45,
+	"sizeTo": 0,
+	"length": 540,
+	"baseLength": 0,
+	"lifetime": 125,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528577",
+	}
+	{
+	"type": "ParticleEffect",
+	"particles":10,
+	"sizeFrom": 60,
+	"sizeTo": 0,
+	"length": 500,
+	"baseLength": 0,
+	"lifetime": 130,
+	"colorFrom": "E294B3",
+	"colorTo": "CA528577",
+	}
+	{
+	"type": "ParticleEffect",
+	"particles": 13,
+	"line":true
+	"lenFrom": 45,
+	"lenTo": 0
+	"length": 525,
+	"interp": "pow10Out",
+	"sizeInterp": "pow5In",
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 110,
+	"colorFrom": "E294B3",
+	"colorTo": "E294B366"
+	}
+]
+},
+	"breakable":false,
+	"rebuildable": false,
+	"insulated": true,
+	"canOverdrive": false,
+	"absorbLasers":true,
+	"inaccuracy": 0,
+	"rotateSpeed": 68,
+	"shootSound": "DS",
+	"shootType":{
+	"type": "BasicBulletType",
+	"hittable": false,
+	"absorbable": false,
+	"killShooter": true,
+	"hitSound": "laserblast",
+	"ammoMultiplier": 1,
+	"speed": 0,
+	"lifetime": 600,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 560,
+	"lifetime": 120,
+	"colorFrom": "E294B3",
+	"colorTo": "E294B3"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 0,
+	"strokeTo": 10,
+	"sizeFrom": 0,
+	"sizeTo": 570,
+	"lifetime": 125,
+	"colorFrom": "E294B388",
+	"colorTo": "E294B305"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 25,
+	"sizeFrom": 45,
+	"sizeTo": 0,
+	"length": 580,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 60,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 20,
+	"sizeFrom": 52,
+	"sizeTo": 0,
+	"length": 570,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 55,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 35,
+	"sizeFrom": 46,
+	"sizeTo": 0,
+	"length": 560,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 50,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"line":true
+	"lenFrom": 45,
+	"lenTo": 0
+	"length": 525,
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "CA5285",
+	"colorTo": "E294B350"
+	}
+]
+},
+	"despawnEffect": "none",
+	"hitShake": 30,
+	"damage": 44,
+	"splashDamageRadius": 560,
+	"splashDamage": 8888,
+	"status": "瘫痪",
+	"statusDuration": 600
+	"width": 0,
+	"height": 0,
+	"bulletInterval":1
+	"intervalBullets":1
+	"intervalBullet": {
+	"hittable":false,
+	"speed": 7,
+	"lifetime": 25,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"damage": 844,
+	"splashDamageRadius": 56,
+	"splashDamage": 536,
+	"status": "slow",
+	"statusDuration": 600
+	"width": 0,
+	"height": 0,
+	"hitEffect":"none"
+	"fragBullets":3,
+	"fragVelocityMin":1,
+	"fragLifeMin":0.8,
+	"fragLifeMax":1.1,
+	"fragSpread":137.5,
+	"fragBullet": {
+	"hittable":false,
+	"speed": 10,
+	"lifetime": 30,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 80,
+	"lifetime": 25,
+	"colorFrom": "E294B3",
+	"colorTo": "CA5285"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 0,
+	"strokeTo": 7,
+	"sizeFrom": 0,
+	"sizeTo": 70,
+	"lifetime": 30,
+	"colorFrom": "E294B3",
+	"colorTo": "CA528533"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 5,
+	"sizeFrom": 15,
+	"sizeTo": 0,
+	"length": 80,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 36,
+	"colorFrom": "E294B3",
+	"colorTo": "E294B3",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 8,
+	"sizeFrom": 10,
+	"sizeTo": 0,
+	"length": 70,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 40,
+	"colorFrom": "E294B3",
+	"colorTo": "E294B370",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 56,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 15,
+	"colorFrom": "E294B3",
+	"colorTo": "FFFFFF10",
+	}
+]
+},
+	"despawnEffect": "none",
+	"hitShake": 14,
+	"damage": 3897,
+	"splashDamageRadius": 56,
+	"splashDamage": 900,
+	"lightning":3,
+	"lightningDamage":340,
+	"lightningLength":16
+	"lightningColor":"CA528585"
+	"status": "污染",
+	"statusDuration": 300
+	"hitSound": "explosionbig",
+	"width": 0,
+	"height": 0,
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragLifeMin":0.2,
+	"fragLifeMax":1.2,
+	"fragSpread":60,
+	"fragBullet": {
+	"despawnEffect": "none",
+	"hitShake": 7,
+	"damage": 239,
+	"splashDamageRadius": 56,
+	"splashDamage": 128,
+	"hitSound": "none",
+	"hitEffect":"none"
+	"status": "sapped",
+	"statusDuration": 660
+	"width": 0,
+	"height": 0,
+	"fragBullets":3,
+	"fragVelocityMin":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1.8,
+	"fragSpread":60,
+	"fragBullet": {
+	"type": "LaserBulletType",
+	"length": 60,
+	"width": 15,
+	"pierce": true
+	"pierceArmor":true
+	"damage": 830,
+	"status": "疑惑",
+	"statusDuration": 450
+	"hitSound": "laser",
+	"buildingDamageMultiplier": 3.8
+	"lifetime": 25,
+	"colors": [
+	"E294B3",
+	"DE5D70",
+	"CA5285",
+	"FFFFFF"
+	]
+}
+}
+}
+}
+},
+"destroyBullet": {
+	"hittable": false,
+	"absorbable": false,
+	"hitSound": "CDBZ",
+	"speed": 0,
+	"lifetime": 1,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 610,
+	"lifetime": 120,
+	"colorFrom": "E294B3",
+	"colorTo": "E294B3"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 0,
+	"strokeTo": 10,
+	"sizeFrom": 0,
+	"sizeTo": 630,
+	"lifetime": 125,
+	"colorFrom": "E294B388",
+	"colorTo": "E294B305"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 25,
+	"sizeFrom": 75,
+	"sizeTo": 0,
+	"length": 630,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 60,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 20,
+	"sizeFrom": 62,
+	"sizeTo": 0,
+	"length": 620,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 55,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 35,
+	"sizeFrom": 56,
+	"sizeTo": 0,
+	"length": 610,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 50,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528530",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 16,
+	"line":true
+	"lenFrom": 45,
+	"lenTo": 0
+	"length": 555,
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 105,
+	"colorFrom": "CA5285",
+	"colorTo": "E294B350"
+	}
+	{
+	"type": "ParticleEffect",
+	"particles": 8,
+	"line":true
+	"lenFrom": 60,
+	"lenTo": 0
+	"length": 540,
+	"strokeFrom": 18,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 95,
+	"colorFrom": "CA5285",
+	"colorTo": "E294B350"
+	}
+]
+},
+	"despawnEffect": "none",
+	"hitShake": 60,
+	"damage": 404,
+	"splashDamageRadius": 600,
+	"splashDamage": 9999,
+	"status": "破防",
+	"statusDuration": 600
+	"width": 0,
+	"height": 0,
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1,
+	"fragSpread":137.5,
+	"fragBullet": {
+	"width": 0,
+	"height": 0,
+	"hitEffect":"none"
+	"hitSound":"none"
+	"despawnEffect": "none",
+	"hitShake": 60,
+	"damage": 239,
+	"splashDamageRadius": 600,
+	"splashDamage": 2410,
+	"status": "spore-slowed",
+	"statusDuration": 380
+	"speed":0
+	"lifetime":300
+	"bulletInterval":2
+	"intervalBullets":1
+	"intervalBullet": {
+	"hittable":false,
+	"speed": 7,
+	"lifetime": 25,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"damage": 569,
+	"splashDamageRadius": 56,
+	"splashDamage": 536,
+	"status": "延迟",
+	"statusDuration": 600
+	"width": 0,
+	"height": 0,
+	"hitEffect":"none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragLifeMin":0.4,
+	"fragLifeMax":1,
+	"fragSpread":137.5,
+	"fragBullet": {
+	"hittable":false,
+	"speed": 7,
+	"lifetime": 25,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 80,
+	"lifetime": 25,
+	"colorFrom": "CA5285",
+	"colorTo": "E294B3"
+	},
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 0,
+	"strokeTo": 7,
+	"sizeFrom": 0,
+	"sizeTo": 70,
+	"lifetime": 30,
+	"colorFrom": "CA5285",
+	"colorTo": "E294B333"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 5,
+	"sizeFrom": 15,
+	"sizeTo": 0,
+	"length": 80,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 36,
+	"colorFrom": "CA5285",
+	"colorTo": "CA5285",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 8,
+	"sizeFrom": 10,
+	"sizeTo": 0,
+	"length": 70,
+	"interp": "fastSlow",
+	"baseLength": 20,
+	"lifetime": 40,
+	"colorFrom": "CA5285",
+	"colorTo": "CA528570",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 56,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 15,
+	"colorFrom": "CA5285",
+	"colorTo": "FFFFFF10",
+	}
+]
+},
+	"despawnEffect": "none",
+	"hitShake": 14,
+	"damage": 2436,
+	"splashDamageRadius": 56,
+	"splashDamage": 581,
+	"lightning":3,
+	"lightningDamage":340,
+	"lightningLength":16
+	"lightningColor":"CA528585"
+	"status": "electrified",
+	"statusDuration": 300
+	"hitSound": "largeCannon",
+	"width": 0,
+	"height": 0,
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragLifeMin":0.2,
+	"fragLifeMax":1.2,
+	"fragSpread":60,
+	"fragBullet": {
+	"speed":5
+	"lifetime":12
+	"despawnEffect": "none",
+	"hitShake": 7,
+	"damage": 239,
+	"splashDamageRadius": 56,
+	"splashDamage": 128,
+	"hitSound": "none",
+	"hitEffect":"none"
+	"status": "freezing",
+	"statusDuration": 660
+	"width": 0,
+	"height": 0,
+	"fragBullets":3,
+	"fragVelocityMin":1,
+	"fragLifeMin":0.7,
+	"fragLifeMax":1.2,
+	"fragSpread":60,
+	"fragBullet": {
+	"type": "LaserBulletType",
+	"length": 60,
+	"width": 15,
+	"pierce": true
+	"pierceArmor":true
+	"damage": 830,
+	"status": "disarmed",
+	"statusDuration": 450
+	"hitSound": "laser",
+	"buildingDamageMultiplier": 3.8
+	"lifetime": 25,
+	"colors": [
+	"E294B3",
+	"DE5D70",
+	"CA5285",
+	"FFFFFF"
+	]
+}
+}
+}
+}
+}
+}
+	"requirements": [
+	"silicon/1500",
+	"空间节点/200",
+	"洛德合金/1500",
+	"graphite/3800",
+	"blast-compound/48",
+	"surge-alloy/885",
+	"贫铀/780"
+	],
+	"category": "effect",
+	"research": "差值"
+	}

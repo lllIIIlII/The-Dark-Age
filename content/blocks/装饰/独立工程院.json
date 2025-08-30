@@ -1,0 +1,14 @@
+{
+	"name": "独立工程院",
+	"type": "Wall",
+	"health": 680000,
+	"armor":6800
+	"size": 4,
+	"absorbLasers":false,
+	"chanceDeflect": 100,
+	"requirements": [],
+	"category": "defense",
+	"buildVisibility": "sandboxOnly",
+	"buildCostMultiplier": 0,
+	"research": "前线指挥中心"
+}

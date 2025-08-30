@@ -1,0 +1,12 @@
+{
+	"type": "floor",
+	"name": "路面-内上右",
+	"speedMultiplier": 1.5,
+	"dragMultiplier": 1,
+	"attributes":{
+		"oil": -0.15,
+		"water": -0.15
+	},
+	"blendGroup": "硬基地",
+	"variants": 0
+}

@@ -1,0 +1,404 @@
+{
+    "type": "naval",
+    "name": "恒久",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "speed": 0.55,
+    "rotateSpeed": 0.63,
+    "ammoType": "暗能钢",
+    "ammoCapacity": 1200,
+    "hitSize": 65,
+    "immunities": [
+        "freezing",
+        "melting",
+        "disarmed",
+        "sapped",
+        "shocked",
+        "slow",
+        "破防",
+        "延迟",
+        "疑惑"
+    ],
+    "trailLength": 80,
+    "waveTrailX": 20,
+    "waveTrailY": -24,
+    "trailScl": 4.5,
+    "health": 57800,
+    "armor": 85,
+    "faceTarget": false,
+    "research": "磐石",
+    "requirements": {
+        "block": "tetrative-reconstructor",
+        "previous": "磐石"
+    },
+    "weapons": [
+        {
+            "name": "恒久1",
+            "x": -17,
+            "y": -26,
+            "mirror": false,
+            "reload": 60,
+            "shootSound": "shoot",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 0,
+            "shoot": {
+                "shots": 6,
+                "firstShotDelay": 30,
+                "shotDelay": 3,
+                "type": "ShootBarrel",
+                "barrels": [
+                    -4,
+                    -1,
+                    0
+                ]
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 150,
+                "status": "疑惑",
+                "statusDuration": 100,
+                "absorbable": false,
+                "hitShake": 3,
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 10,
+                    "sizeTo": 30,
+                    "strokeFrom": 5,
+                    "strokeTo": 0,
+                    "colorFrom": "C29E87",
+                    "colorTo": "FFFFFF"
+                },
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 22,
+                            "line": true,
+                            "interp": "fastSlow",
+                            "lenFrom": 12,
+                            "lenTo": 0,
+                            "length": 55,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "baseLength": 0,
+                            "lifetime": 103,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF",
+                            "cone": 40
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 0,
+                            "sizeTo": 30,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "C29E87",
+                "trailChance": 0,
+                "trailRotation": true,
+                "backColor": "C29E87",
+                "frontColor": "97715E",
+                "shrinkY": 0,
+                "width": 15,
+                "height": 25,
+                "speed": 5.5,
+                "lifetime": 60
+            }
+        },
+        {
+            "name": "恒久2",
+            "x": 17,
+            "y": -26,
+            "mirror": false,
+            "reload": 60,
+            "shootSound": "shoot",
+            "rotate": true,
+            "inaccuracy": 0,
+            "recoil": 0,
+            "shoot": {
+                "shots": 6,
+                "shotDelay": 3,
+                "type": "ShootBarrel",
+                "barrels": [
+                    4,
+                    -1,
+                    0
+                ]
+            },
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage": 150,
+                "status": "疑惑",
+                "statusDuration": 100,
+                "absorbable": false,
+                "hitShake": 3,
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 10,
+                    "sizeTo": 30,
+                    "strokeFrom": 5,
+                    "strokeTo": 0,
+                    "colorFrom": "C29E87",
+                    "colorTo": "FFFFFF"
+                },
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 22,
+                            "line": true,
+                            "interp": "fastSlow",
+                            "lenFrom": 12,
+                            "lenTo": 0,
+                            "length": 55,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "baseLength": 0,
+                            "lifetime": 103,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF",
+                            "cone": 40
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 0,
+                            "sizeTo": 30,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "C29E87",
+                "trailChance": 0,
+                "trailRotation": true,
+                "backColor": "C29E87",
+                "frontColor": "97715E",
+                "shrinkY": 0,
+                "width": 15,
+                "height": 25,
+                "speed": 5.5,
+                "lifetime": 60
+            }
+        },
+        {
+            "name": "恒久3",
+            "x": 0,
+            "y": -10,
+            "mirror": false,
+            "reload": 480,
+            "shootSound": "pulseBlast",
+            "rotate": true,
+            "inaccuracy": 10,
+            "recoil": 0,
+            "shoot": {
+                "shotDelay": 60,
+                "type": "ShootBarrel",
+                "barrels": [
+                    0,
+                    6,
+                    0
+                ]
+            },
+            "bullet": {
+                "type": "PointBulletType",
+                "splashDamageRadius": 80,
+                "splashDamage": 1720,
+                "status": "melting",
+                "statusDuration": 600,
+                "absorbable": false,
+                "despawnEffect": {
+                    "type": "WaveEffect",
+                    "lifetime": 30,
+                    "sizeFrom": 10,
+                    "sizeTo": 30,
+                    "strokeFrom": 5,
+                    "strokeTo": 0,
+                    "colorFrom": "C29E87",
+                    "colorTo": "FFFFFF"
+                },
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 22,
+                            "line": true,
+                            "interp": "fastSlow",
+                            "lenFrom": 12,
+                            "lenTo": 0,
+                            "length": -150,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "baseLength": 150,
+                            "lifetime": 103,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 30,
+                            "sizeTo": 0,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF"
+                        }
+                    ]
+                },
+                "shootEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 22,
+                            "line": true,
+                            "interp": "fastSlow",
+                            "lenFrom": 12,
+                            "lenTo": 0,
+                            "length": 55,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "baseLength": 0,
+                            "lifetime": 103,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF",
+                            "cone": 40
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 10,
+                            "sizeFrom": 0,
+                            "sizeTo": 30,
+                            "strokeFrom": 3,
+                            "strokeTo": 0,
+                            "colorFrom": "C29E87",
+                            "colorTo": "FFFFFF"
+                        }
+                    ]
+                },
+                "trailLength": 35,
+                "trailWidth": 3,
+                "trailColor": "C29E87",
+                "trailChance": 0,
+                "trailRotation": true,
+                "trailEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 1,
+                            "baseLength": 0.1,
+                            "length": 0.1,
+                            "lifetime": 22,
+                            "line": true,
+                            "randLength": false,
+                            "lenFrom": 9,
+                            "lenTo": 9,
+                            "strokeFrom": 8,
+                            "strokeTo": 0,
+                            "colorFrom": "F2AA70",
+                            "colorTo": "F2AA7050",
+                            "cone": 0
+                        }
+                    ]
+                },
+                "speed": 50,
+                "lifetime": 10,
+                "fragBullets": 10,
+                "fragRandomSpread": 60,
+                "fragBullet": {
+                    "type": "PointBulletType",
+                    "speed": 40,
+                    "lifetime": 10,
+                    "damage": 580,
+                    "splashDamageRadius": 40,
+                    "splashDamage": 120,
+                    "hitSound": "none",
+                    "trailColor": "C29E87",
+                    "trailSpacing": 5,
+                    "trailEffect": {
+                        "type": "MultiEffect",
+                        "effects": [
+                            {
+                                "type": "ParticleEffect",
+                                "particles": 1,
+                                "baseLength": 0.1,
+                                "length": 0.1,
+                                "lifetime": 22,
+                                "line": true,
+                                "randLength": false,
+                                "lenFrom": 9,
+                                "lenTo": 9,
+                                "strokeFrom": 8,
+                                "strokeTo": 0,
+                                "colorFrom": "F2AA70",
+                                "colorTo": "F2AA7050",
+                                "cone": 0
+                            }
+                        ]
+                    },
+                    "hitEffect": {
+                        "type": "MultiEffect",
+                        "effects": [
+                            {
+                                "type": "WaveEffect",
+                                "strokeFrom": 0,
+                                "strokeTo": 0,
+                                "sizeFrom": 80,
+                                "sizeTo": 82,
+                                "lifetime": 30,
+                                "colorFrom": "FFFFFF50",
+                                "colorTo": "FFFFFF"
+                            },
+                            {
+                                "type": "ParticleEffect",
+                                "particles": 7,
+                                "line": true,
+                                "strokeFrom": 2,
+                                "strokeTo": 0,
+                                "lenFrom": 12,
+                                "lenTo": 0,
+                                "length": 80,
+                                "baseLength": 0,
+                                "lifetime": 15,
+                                "colorFrom": "FFFFFF50",
+                                "colorTo": "FFFFFF"
+                            },
+                            {
+                                "type": "ParticleEffect",
+                                "particles": 12,
+                                "line": true,
+                                "strokeFrom": 3,
+                                "strokeTo": 0,
+                                "lenFrom": 12,
+                                "lenTo": 0,
+                                "length": 100,
+                                "baseLength": 10,
+                                "lifetime": 25,
+                                "colorFrom": "FFFFFF50",
+                                "colorTo": "FFFFFF"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}

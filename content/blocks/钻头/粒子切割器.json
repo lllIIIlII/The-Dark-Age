@@ -1,0 +1,38 @@
+{
+	"name": "粒子切割器",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Drill",
+	"size": 3,
+	"tier": 9999,
+	"health": 1250,
+	"rotateSpeed": 3,
+	"warmupSpeed": 0.07,
+	"itemCapacity": 15,
+	"liquidCapacity": 20,
+	"canOverdrive": true,
+	"hasItems": true,
+	"drillTime": 80,
+	"drillEffect": "mineBig",
+	"updateEffect": "mineBig",
+	"liquidBoostIntensity": 1.6,
+	"hardnessDrillMultiplier": 30,
+	"consumes": {
+		"power": 3,
+		"liquid": {
+			"liquid": "water",
+			"amount": 0.15,
+			"booster": true,
+			"optional": true
+		}
+	},
+	"requirements": [
+		"copper/20",
+		"lead/50",
+		"silicon/30",
+		"钢/45",
+		"thorium/80"
+		"钴/60"
+	],
+	"category": "production",
+	"research": "液压钻机"
+}

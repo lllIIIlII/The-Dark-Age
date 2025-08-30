@@ -1,0 +1,210 @@
+{
+	"type": "PowerTurret",
+	"name": "阿瑞斯",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"unitSort": "farthest",
+	"health": 25050,
+	"size": 7,
+	"armor":17
+	"reload": 80,
+	"range": 590,
+	"recoilTime": 10,
+	"recoil": 3,
+	"consumes": {
+		"power": 115,
+		"coolant": {
+			"amount": 0.6,
+			"optional": true
+		}
+	},
+	"shootY": 0,
+	"shoot": {
+		"shots": 8,
+		"shotDelay": 1,
+		"type": "ShootBarrel",
+		"barrels": [
+			20,15,0,
+			10,15,0,
+			-10,15,0,
+			-20,15,0
+			]
+		},
+		"shootEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+"type": "WaveEffect",
+"strokeFrom": 5,
+"strokeTo": 0,
+"sizeFrom": 0,
+"sizeTo": 10,
+"lifetime": 10,
+"colorFrom": "FFFFFF00",
+"colorTo": "FFD494"
+},
+{
+"type": "WaveEffect",
+"strokeFrom": 0,
+"strokeTo": 5,
+"sizeFrom": 0,
+"sizeTo": 10,
+"lifetime": 10,
+"colorFrom": "FFFFFF",
+"colorTo": "FFD49400"
+}
+]
+}
+	"shootSound": "PF",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0
+	"shake": 3,
+	"shootCone": 10,
+	"rotateSpeed": 2,
+	"shootType": {
+	    "type":"BasicBulletType",
+		"damage": 250,
+		"ammoMultiplier": 1,
+		"sprite":"黑暗纪元-弹药飞剑",
+		"lightningColor":"D4F2FF"
+		"lightning":4,
+		"lightningDamage":85,
+		"lightningLength":20,
+		"splashDamageRadius": 40,
+		"splashDamage": 600,
+		"despawnEffect": "none"
+		"width": 15,
+		"height": 50,
+		"pierceCap": 3,
+		"hitSound":"plasmaboom"
+		"status": "延迟",
+		"statusDuration": 30,
+		"speed": 20,
+		"lifetime": 30,
+		"trailLength": 40,
+			"trailWidth": 2,
+			"trailColor": "FFFFFF88",
+			"trailChance": 1,
+			"trailInterval": 16,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"length": 16,
+				"region": "黑暗纪元-圆矩",
+				"baseLength": 1,
+				"lifetime": 30,
+				"colorFrom": "FFFFFF80",
+				"colorTo": "E3E3E380",
+				"sizeFrom": 3,
+				"sizeTo": 0
+			}
+			"hitEffect":{
+			"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"sizeFrom": 100,
+		"sizeTo": 100,
+		"lifetime": 10,
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 25,
+		"sizeFrom": 10,
+		"sizeTo": 0,
+		"length": 80,
+		"baseLength": 20,
+		"lifetime": 30,
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"interp": "pow5Out",
+		"sizeInterp": "pow10In",
+		"region": "黑暗纪元-圆矩",
+		"length": 0,
+		"baseLength": 0,
+		"lifetime": 20,
+		"colorFrom": "FFFFFF50",
+		"colorTo": "FFFFFF20",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 10,
+		"line":true
+		"lenFrom": 35,
+		"lenTo": 0
+		"length": 100,
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"baseLength": 40,
+		"lifetime": 45,
+		"colorFrom": "D4F2FF",
+		"colorTo": "6F889250"
+		}
+	]
+}
+},
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": -24,
+	"sides": 3,
+	"color": "FFFFFF",
+	"rotateSpeed": 2,
+	"stroke": 0,
+	"strokeTo": 3,
+	"circle": false,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 9,
+	"layer": 110
+	},
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": -24,
+	"sides": 3,
+	"color": "FFFFFF",
+	"rotateSpeed": -3,
+	"stroke": 0,
+	"strokeTo": 6,
+	"circle": false,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 16,
+	"layer": 110
+			}
+		]
+	},
+	"requirements": [
+		"graphite/1980"
+		"silicon/2000"
+		"钢/3000"
+		"钴/4000"
+		"metaglass/1500"
+		"thorium/2800"
+		"钴钢/1650"
+	],
+	"category": "turret",
+	"research": {
+	"parent": "钢针",
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "地冠"
+			}
+		]
+	}
+}

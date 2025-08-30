@@ -1,0 +1,9 @@
+{
+	"name": "寂灭",
+	"color": "F7CF73",
+	"speedMultiplier": 0.85,
+	"healthMultiplier": 0.98,
+	"reloadMultiplier": 0.98,
+    "damageMultiplier": 0.5,
+	"effectChance": 60,
+}

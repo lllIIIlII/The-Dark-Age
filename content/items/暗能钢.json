@@ -1,0 +1,12 @@
+{
+    "name": "暗能钢",
+    "color": "2B2C2C",
+    "explosiveness": 0,
+    "flammability": 0,
+    "radioactivity": 1.8,
+    "charge": 0,
+    "cost": 5,
+    "alwaysUnlocked": false,
+    "research": "暗金属"
+    "shownPlanets": [ "serpulo","Planzer" ]
+}

@@ -1,0 +1,101 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+"ammoTypes":{
+"scrap": {
+                    "lifetime":85
+                    "speed":3.8
+                    "damage":5
+                    "ammoMultiplier":5
+                    "shootEffect":"shootSmall"
+                    "reloadMultiplier": 0.5
+                    "width": 6
+                    "height": 8
+                    "hitEffect":"flakExplosion"
+                    "splashDamage": 33
+                    "splashDamageRadius": 24
+                    "frontColor":"D9B492"
+                    "backColor":"D9B492"
+                    "hitColor": "D9B492"
+                    "despawnEffect":"hitBulletColor"
+                },
+                
+                "lead":{
+                    "lifetime": 85
+                    "speed":3.8
+                    "damage":5
+                    "ammoMultiplier":4
+                    "shootEffect":"shootSmall"
+                    "width":6
+                    "height": 8
+                    "hitEffect":"flakExplosion"
+                    "splashDamage":40.5
+                    "splashDamageRadius": 15
+                }
+                "metaglass" :{
+                    "backColor": "FFFFFF"
+                    "trailColor": "FFFFFF"
+                    "hitColor": "FFFFFF"
+                    "frontColor": "FFFFFF"
+                    "despawnEffect": "hitBulletColor"
+                    "lifetime": 85
+                    "speed":3.8
+                    "damage":5
+                    "ammoMultiplier": 5
+                    "shootEffect": "shootSmall"
+                    "reloadMultiplier": 0.8
+                    "width": 6
+                    "height": 8
+                    "hitEffect": "flakExplosion"
+                    "splashDamage": 45
+                    "splashDamageRadius": 20
+                    "fragBullets": 6
+                    "fragBullet":{
+                    "speed":2
+                    "damage":8
+                        "width": 5
+                        "height": 12
+                        "shrinkY": 1
+                        "lifetime": 20
+                        "backColor": "FFFFFF"
+                        "trailColor": "FFFFFF"
+                        "hitColor": "FFFFFF"
+                        "frontColor": "FFFFFF"
+                        "despawnEffect": "none"
+                        "collidesGround": false;
+                    }
+                   }
+                  }
+            "drawer":{ 
+            "type":"DrawTurret",
+                "parts":[
+                {
+                "type":"RegionPart"
+                "suffix":"-mid"
+                    "progress":{
+                    "type":"recoil"
+                    "under": false;
+                    "moveY": -1.25
+                }
+               }
+            ]
+        }
+            "reload": 12
+            "range": 300
+            "size": 2;
+            "targetGround": false
+            "shoot":{
+            "shotDelay": 5
+            "shots": 4
+            }
+            "recoil": 1
+            "rotateSpeed": 15
+            "inaccuracy": 17
+            "shootCone": 35
+            "scaledHealth": 200;
+            "shootSound": "shootSnap"
+            "researchCostMultiplier": 0.05
+            "limitRange":2
+            	"research": {
+	"parent": "duo",
+	}
+}

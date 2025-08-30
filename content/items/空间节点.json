@@ -1,0 +1,12 @@
+{
+    "name":"空间节点",
+    "color":"16CFC9",
+    "explosiveness":0.5
+    "flammability":0
+    "radioactivity":0
+    "charge":1,
+    "cost":16,
+    "alwaysUnlocked":false,
+    "research": "洛德合金"
+    "shownPlanets": [ "serpulo","Planzer" ]
+}

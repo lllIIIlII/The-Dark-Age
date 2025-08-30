@@ -1,0 +1,10 @@
+{
+	"type": "TreeBlock",
+	"name": "古树",
+	"solid": true,
+	"clipSize":90,
+	"breakable":true
+	"alwaysReplace":true;
+	"customShadow":true
+	"shadowOffset":-7
+}

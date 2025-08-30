@@ -1,0 +1,60 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "石油蒸馏机",
+	"health": 700,
+	"itemCapacity":15,
+	"craftTime":30,	
+	"outputLiquid": {
+		"liquid": "润滑剂",
+		"amount": 0.25
+	},
+	"itemCapacity": 14,
+	"size": 2,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "润滑剂"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 180,
+	"updateEffect": {
+	"type":"hitEmpSpark"
+	    "particles":3
+	    "sizeFrom":5
+	    "sizeTo":0
+	    "length":15
+	    "baseLength":5
+	    "colorFrom":"CDC67360"
+	    "colorTo":"ffffff"
+	    "lifetime":20
+	    "cone":360//不建议改
+	    },
+	"consumes": {
+		"power": 5.5,
+		"liquid": "oil/0.5"
+		"items": [
+		"graphite/1"
+		]
+	},
+	"requirements": [
+		"plastanium/250",
+		"metaglass/60",
+		"silicon/120",
+		"钢/80"
+	],
+	"category": "crafting",
+	"research": "压缩塑钢机"
+}

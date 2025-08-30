@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":158,
+	"difficulty": 9,
+	"research": {
+    "parent": "涯光岛",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "涯光岛"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

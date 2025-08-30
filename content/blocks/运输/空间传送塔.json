@@ -1,0 +1,23 @@
+{
+	"type": "ItemBridge",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "空间传送塔",
+	"health": 450,
+	"range": 64,
+	"transportTime":1,
+	"consumes": {
+	"power": 4
+	},
+	"arrowSpacing": 8,
+	"arrowOffset": 4,
+	"arrowTimeScl": 12,
+	"bridgeWidth": 8,
+	"requirements": [
+		"thorium/285",
+		"silicon/180",
+		"空间节点/5",
+		"plastanium/50"
+	],
+	"category": "distribution",	
+	"research": "暗能驱动传送桥"
+}

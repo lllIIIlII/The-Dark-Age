@@ -1,0 +1,54 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "高效窑炉",
+	"health":650,
+	"itemCapacity":20,
+	"outputItem":"metaglass/4",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+	"craftTime":30,	
+	"consumes":{
+		"power":2.8,
+		"items": [
+	    "lead/4",
+	    "sand/5",
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0,
+				"flameColor": "FFFFFF"
+			}
+		]
+	},
+	"craftEffect": {
+	"type":"ParticleEffect"
+	"sizeFrom":6
+	"sizeTo":2
+	"region": "黑暗纪元-斜正方",
+	"colorFrom":"FFFFFF"
+	"colorTo":"FFFFFF00"
+	"strokeFrom":0
+	"strokeTo":0
+	"lifetime":25
+	"length": 20,
+	"baseLength": 0,
+	},
+    "requirements": [
+    "graphite/180"
+	"copper/150"
+	"lead/150"
+	"silicon/60"
+	],	
+	"category": "crafting",
+	"research": "冶硅炉",
+}

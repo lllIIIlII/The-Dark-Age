@@ -1,0 +1,34 @@
+{
+"type":"BaseShield"
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+"name": "真•空间隔断发生器",
+"health": 8120,
+"size": 3,
+"requirements": [
+	"lead/1890",
+	"铀/2780",
+	"钢/3000",
+	"silicon/2760"
+	"graphite/425"
+	"plastanium/2100",
+	"phase-fabric/1260",
+	"暗能钢/1200",
+	"空间节点/5000"
+	],
+"radius": 65,
+"sides": 12,
+"hasPower":true
+"consumes": {
+"power": 400
+},
+"research": {
+"parent": "空间隔断发生器",
+"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "深入"
+			}
+		]
+	},
+"category": "effect",
+}

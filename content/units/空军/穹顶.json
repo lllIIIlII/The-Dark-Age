@@ -1,0 +1,279 @@
+{
+    "type": "payload",
+    "name": "穹顶",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+    "controller": "FlyingFollowAI",
+    "payloadCapacity": 6189,
+    "rotateSpeed": 1.2,
+    "speed": 0.51,
+    "drag": 0.02,
+    "accel": 0.06,
+    "immunities": [
+        "tarred",
+        "slow",
+        "burning",
+        "freezing",
+        "spore-slowed",
+        "electrified",
+        "disarmed",
+        "疑惑",
+        "致盲",
+        "破防"
+    ],
+    "hitSize": 95,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 218900,
+    "itemCapacity": 3500,
+    "itemOffsetY": 16,
+    "mineSpeed": 34.8,
+    "mineTier": 100,
+    "mineRange": 600,
+    "buildRange": 360,
+    "buildSpeed": 8.9,
+    "buildBeamOffset": 16,
+    "armor": 42,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 34000
+    },
+    "engines": [
+        {
+            "x": 0,
+            "y": -58,
+            "radius": 15,
+            "rotation": 90
+        }
+    ],
+    "research": {
+        "parent": "oct",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "出云要塞"
+            }
+        ]
+    },
+    "requirements": {
+        "block": "复量级单位重构厂",
+        "previous": "oct"
+    },
+    "abilities": [
+        {
+            "type": "ForceFieldAbility",
+            "sides": 5,
+            "radius": 340,
+            "regen": 300,
+            "max": 8200,
+            "cooldown": 1200
+        },
+        {
+            "type": "ForceFieldAbility",
+            "sides": 5,
+            "rotation": 180,
+            "radius": 340,
+            "regen": 300,
+            "max": 8200,
+            "cooldown": 1200
+        },
+        {
+            "type": "StatusFieldAbility",
+            "duration": 80,
+            "reload": 800,
+            "range": 600,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 20,
+                "sizeFrom": 24,
+                "sizeTo": 600,
+                "strokeFrom": 2,
+                "strokeTo": 22,
+                "interp": "fastSlow",
+                "colorFrom": "A0F19B",
+                "colorTo": "FFFFFF07"
+            },
+            "effect": "神圣"
+        },
+        {
+            "type": "RepairFieldAbility",
+            "amount": 4800,
+            "reload": 300,
+            "range": 600,
+            "healEffect": "none",
+            "activeEffect": {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "line": true,
+                "lenFrom": 40,
+                "lenTo": 0,
+                "length": 600,
+                "interp": "pow10Out",
+                "sizeInterp": "pow5In",
+                "strokeFrom": 10,
+                "strokeTo": 0,
+                "baseLength": 40,
+                "lifetime": 45,
+                "colorFrom": "FFFFFF",
+                "colorTo": "74AC8350"
+            }
+        },
+        {
+            "type": "EnergyFieldAbility",
+            "damage": 275,
+            "reload": 120,
+            "range": 300,
+            "healPercent": 5,
+            "sameTypeHealMult": 0.8,
+            "effectRadius": 0,
+            "sectors": 3,
+            "sectorRad": 0.05,
+            "rotateSpeed": 1,
+            "color": "FFE92C",
+            "hitEffect": {
+                "type": "ParticleEffect",
+                "particles": 15,
+                "line": true,
+                "length": 85,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "FFE92C",
+                "colorTo": "FFE92C"
+            },
+            "damageEffect": "chainLightning",
+            "shootSound": "spark",
+            "x": 0,
+            "y": 16,
+            "targetGround": true,
+            "targetAir": true,
+            "maxTargets": 8
+        }
+    ],
+    "weapons": [
+        {
+            "name": "穹顶1",
+            "x": 38,
+            "y": -14,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 75,
+            "xRand": 0,
+            "top": true,
+            "rotate": true,
+            "shootSound": "malignShoot",
+            "alternate": false,
+            "mirror": true,
+            "shootStatusDuration": 105,
+            "shootStatus": "修复",
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5
+            },
+            "bullet": {
+                "damage": 120,
+                "lifetime": 50,
+                "pierce": true,
+                "hitSound": "bang",
+                "weaveScale": 5,
+                "weaveMag": 2,
+                "width": 6,
+                "height": 6,
+                "speed": 12,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "A0F19B77",
+                "healPercent": 7,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 0.9
+            }
+        },
+        {
+            "name": "穹顶1",
+            "x": 27,
+            "y": 2,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 75,
+            "xRand": 0,
+            "top": true,
+            "rotate": true,
+            "shootSound": "malignShoot",
+            "alternate": false,
+            "mirror": true,
+            "shootStatusDuration": 105,
+            "shootStatus": "修复",
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5,
+                "firstShotDelay": 5
+            },
+            "bullet": {
+                "damage": 120,
+                "lifetime": 50,
+                "pierce": true,
+                "hitSound": "bang",
+                "weaveScale": 5,
+                "weaveMag": 2,
+                "width": 6,
+                "height": 6,
+                "speed": 12,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "A0F19B77",
+                "healPercent": 7,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 0.9
+            }
+        },
+        {
+            "name": "穹顶1",
+            "x": 11,
+            "y": 12,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 75,
+            "xRand": 0,
+            "top": true,
+            "rotate": true,
+            "shootSound": "malignShoot",
+            "alternate": false,
+            "mirror": true,
+            "shootStatusDuration": 105,
+            "shootStatus": "修复",
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 5,
+                "firstShotDelay": 10
+            },
+            "bullet": {
+                "damage": 120,
+                "lifetime": 50,
+                "pierce": true,
+                "hitSound": "bang",
+                "weaveScale": 5,
+                "weaveMag": 2,
+                "width": 6,
+                "height": 6,
+                "speed": 12,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "A0F19B77",
+                "healPercent": 7,
+                "pierceArmor": true,
+                "buildingDamageMultiplier": 0.9
+            }
+        }
+    ]
+}

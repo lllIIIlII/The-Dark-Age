@@ -1,0 +1,9 @@
+{
+    "name":"铁",
+    "color":"B1B1B1",
+    "hardness":3,
+    "cost":1.2,
+    "alwaysUnlocked":false,
+    "research": "钴"
+    "shownPlanets": [ "serpulo","Planzer" ]
+}

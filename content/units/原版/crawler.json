@@ -1,0 +1,34 @@
+{
+  "speed": 2,
+  "health": 250,
+  "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+  "weapons": [
+    {
+      "reload": 10,
+      "x": 0,
+      "y": 0,
+      "rotate": false,
+      "shootCone": 270,
+      "ejectEffect": "none",
+      "shootSound": "explosionbig",
+      "mirror": false,
+      "inaccuracy": 0,
+      "alternate": true,
+      "top": false,
+      "shootOnDeath": true,
+      "bullet": {
+        "killShooter": true,
+        "splashDamageRadius": 68,
+        "instantDisappear": true,
+        "collides": false,
+        "splashDamage": 300,
+        "splashDamagePierce": true,
+        "speed": 1,
+        "hitEffect": "massiveExplosion",
+        "despawnEffect": "none",
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "type": "mech",
+  "name": "尘落",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "hitSize": 71,
+  "armor": 3000,
+  "speed": 0.55,
+  "rotateSpeed": 1.32,
+  "baseRotateSpeed": 1.3,
+  "health": 480000,
+  "ammoType": "silicon",
+  "ammoCapacity": 170,
+  "research": {
+    "parent": "前线指挥中心",
+    "objectives": [
+      {
+        "type": "OnSector",
+        "preset": "北极星银滩"
+      }
+    ]
+  },
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "致盲",
+    "磁化",
+    "破防",
+    "延迟",
+    "瘫痪",
+    "空间混乱",
+    "污染",
+    "溃解",
+    "暗蚀"
+  ],
+  "canDrown": false,
+  "mechStepParticles": true,
+  "mechFrontSway": 2.35,
+  "mechSideSway": 0.8,
+  "abilities": [
+    {
+      "type": "StatusFieldAbility",
+      "duration": 1800,
+      "reload": 666,
+      "range": 240,
+      "applyEffect": "none",
+      "effect": "boss",
+      "activeEffect": {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 240,
+        "sizeTo": 0,
+        "interp": "pow5Out",
+        "sizeInterp": "pow10In",
+        "length": 0,
+        "baseLength": 20,
+        "lifetime": 60,
+        "colorFrom": "BA625600",
+        "colorTo": "BA625670"
+      }
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "unit": "飞蝗",
+      "spawnX": -23,
+      "spawnY": 3,
+      "spawnTime": 660
+    },
+    {
+      "type": "UnitSpawnAbility",
+      "unit": "飞蝗",
+      "spawnX": 23,
+      "spawnY": 3,
+      "spawnTime": 660
+    },
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "飞蝗",
+      "amount": 30,
+      "randAmount": 60
+    },
+    {
+      "type": "ShieldRegenFieldAbility",
+      "amount": 360000,
+      "max": 360000,
+      "reload": 1330,
+      "range": 320,
+      "applyEffect": "none",
+      "activeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "interp": "circleOut",
+            "particles": 55,
+            "sizeFrom": 19,
+            "sizeTo": 0,
+            "length": 120,
+            "baseLength": 0,
+            "lifetime": 60,
+            "colorFrom": "FFFFFF90",
+            "colorTo": "FFD49440"
+          }
+        ]
+      }
+    }
+  ],
+  "weapons": [
+    {
+      "name": "尘落1",
+      "reload": 160,
+      "shake": 3.5,
+      "recoil": 3.5,
+      "recoilTime": 10,
+      "shootX": 48,
+      "shootY": 30,
+      "x": 0,
+      "y": 0,
+      "rotate": false,
+      "top": false,
+      "inaccuracy": 18,
+      "shootSound": "PF",
+      "alternate": true,
+      "shootCone": 22,
+      "shoot": {
+        "shots": 8,
+        "shotDelay": 2,
+        "firstShotDelay": 30
+      },
+      "bullet": {
+        "damage": 543,
+        "splashDamage": 432,
+        "splashDamageRadius": 196,
+        "pierceBuilding": true,
+        "pierceArmor": true,
+        "weaveScale": 9,
+        "weaveMag": 9,
+        "hitShake": 12,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "speed": 15,
+        "lifetime": 65,
+        "hitSound": "shockBlast",
+        "shootEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 22,
+              "lifetime": 20,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 35,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "length": 160,
+              "baseLength": 10,
+              "lifetime": 40,
+              "colorFrom": "D8C7C680",
+              "colorTo": "FFFFFF80",
+              "cone": 20
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 15,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "interp": "pow5Out",
+              "sizeInterp": "pow10In",
+              "length": 250,
+              "baseLength": 20,
+              "lifetime": 80,
+              "colorFrom": "73737350",
+              "colorTo": "73737320",
+              "cone": 20
+            }
+          ]
+        },
+        "smokeEffect": "shootBigSmoke",
+        "despawnEffect": "flakExplosionBig",
+        "trailLength": 4.8,
+        "trailWidth": 3.3,
+        "trailColor": "6E7080",
+        "width": 13,
+        "height": 19,
+        "sprite": "黑暗纪元-圈",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 133,
+              "sizeFrom": 22,
+              "sizeTo": 0,
+              "length": 200,
+              "baseLength": 0,
+              "lifetime": 44,
+              "colorFrom": "303030",
+              "colorTo": "5A5A5A"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 196,
+              "sizeTo": 0,
+              "interp": "pow5Out",
+              "sizeInterp": "pow10In",
+              "length": 0,
+              "baseLength": 0,
+              "lifetime": 74,
+              "colorFrom": "73737300",
+              "colorTo": "73737350"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 23,
+              "line": true,
+              "lenFrom": 65,
+              "lenTo": 0,
+              "length": 180,
+              "strokeFrom": 12,
+              "strokeTo": 0,
+              "baseLength": 8,
+              "lifetime": 98,
+              "colorFrom": "FFC23F50",
+              "colorTo": "FFC23F50"
+            }
+          ]
+        },
+        "fragBullets": 10,
+        "fragSpread": 360,
+        "fragBullet": {
+          "type": "LightningBulletType",
+          "damage": 141,
+          "lightningLength": 24,
+          "lightningLengthRand": 9,
+          "shootEffect": "shootHeal",
+          "smokeEffect": "none",
+          "instantDisappear": true,
+          "lightningColor": "000000",
+          "hitColor": "000000",
+          "hitEffect": "hitLancer",
+          "status": "shocked",
+          "despawnSound": "laser"
+        }
+      }
+    }
+  ]
+}

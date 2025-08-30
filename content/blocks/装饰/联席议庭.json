@@ -1,0 +1,14 @@
+{
+	"name": "联席议庭",
+	"type": "Wall",
+	"health": 31415926,
+	"armor":27182
+	"size": 4,
+	"absorbLasers":false,
+	"chanceDeflect": 100,
+	"requirements": [],
+	"category": "defense",
+	"buildVisibility": "sandboxOnly",
+	"buildCostMultiplier": 0,
+	"research": "前线指挥中心"
+}

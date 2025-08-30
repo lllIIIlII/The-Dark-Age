@@ -1,0 +1,68 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型炼钢厂",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health":1400,
+	"itemCapacity":20,
+    "liquidCapacity":360,
+	"outputItem":"钢/4",
+	"size":4,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":25,	
+	"consumes":{
+		"power":5.5,
+		"liquid":"water/0.8",
+		"items": [
+	    "铁/4",
+	    "graphite/2",
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 3,
+				"flameRadiusIn": 2,
+				"flameRadiusMag": 2,
+				"flameRadiusInMag": 1,
+				"flameColor": "F2E770"
+			}
+		]
+	},
+	"craftEffect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 4
+	"sizeTo": 0,
+	"length": 50,
+	"baseLength": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"region":"黑暗纪元-斜方环"
+	"lifetime": 30,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF",
+	},
+    "requirements": [
+	"钴/180",
+	"copper/300"
+	"lead/260"
+	"铁/160"
+	"钢/30"
+	],	
+	"category": "crafting",
+	"research": {
+    "parent": "炼钢厂",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "峡石涧"
+			}
+		]
+	}
+}
+

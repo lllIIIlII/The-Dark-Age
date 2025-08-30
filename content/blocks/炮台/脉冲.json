@@ -1,0 +1,214 @@
+{
+	"type": "PowerTurret",
+	"name": "脉冲",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health": 5670,
+	"size": 5,
+	"reload": 2800,
+	"range": 1200,
+	"customShadow": false,
+	"solid": false,
+	"canOverdrive": false,//能被超速
+	"consumes": {
+		"power": 100,
+		},
+	"shoot": {
+	"type": "ShootPattern",
+	"firstShotDelay": 60
+	"type": "ShootBarrel",
+	"barrels": [
+	0,-27,0
+	]
+},
+	"shootSound": "wave",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shootCone": 360,
+	"rotateSpeed": 0,
+	"shootEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 10,
+	"sizeTo": 0,
+	"length": 96,
+	"baseLength": 24,
+	"lifetime": 180,
+	"interp": "pow10Out",
+	"sizeInterp": "pow5In",
+	"colorFrom": "737373",
+	"colorTo": "73737350",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 15,
+	"sizeTo": 0,
+	"length": 88,
+	"baseLength": 24,
+	"lifetime": 180,
+	"interp": "pow10Out",
+	"sizeInterp": "pow5In",
+	"colorFrom": "737373",
+	"colorTo": "73737350",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 20,
+	"sizeTo": 0,
+	"length": 80,
+	"baseLength": 24,
+	"lifetime": 180,
+	"interp": "pow10Out",
+	"sizeInterp": "pow5In",
+	"colorFrom": "737373",
+	"colorTo": "73737350",
+	}
+]
+},
+	"shootType": {
+	    "type":"BasicBulletType",
+		"damage": 0,
+		"buildingDamageMultiplier": 0,
+		"splashDamageRadius": 1200,//1/8
+		"splashDamage": 0,
+		"sprite":"黑暗纪元-惊鸿",
+		"ammoMultiplier": 1,
+		"hitSound": "none"
+		"width": 0,
+		"height": 0,
+		"pierceArmor": true,
+		"status": "瘫痪",
+		"statusDuration": 600,
+		"speed": 0,
+		"lifetime": 0,
+		"chargeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 3,
+		"strokeTo": 1,
+		"sizeFrom": 360,
+		"sizeTo": 0,
+		"lifetime": 40,
+		"colorFrom": "A6EBFF",
+		"colorTo": "FFFFFF40"
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 4,
+		"strokeTo": 1,
+		"sizeFrom": 380,
+		"sizeTo": 0,
+		"lifetime": 40,
+		"colorFrom": "A6EBFF",
+		"colorTo": "FFFFFF40"
+		"startDelay":15
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 5,
+		"strokeTo": 1,
+		"sizeFrom": 400,
+		"sizeTo": 0,
+		"lifetime": 40,
+		"colorFrom": "A6EBFF",
+		"colorTo": "FFFFFF40"
+		"startDelay":30
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 8,
+		"strokeTo": 1,
+		"sizeFrom": 375,
+		"sizeTo": 0,
+		"lifetime": 35,
+		"colorFrom": "A6EBFF",
+		"colorTo": "FFFFFF40"
+		"startDelay":20
+		}
+	]
+},
+		"trailEffect":"none"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 7,
+		"strokeTo": 0,
+		"sizeFrom": 0,
+		"sizeTo": 1150,
+		"lifetime": 25,
+		"colorFrom": "FFFFFF",
+		"colorTo": "A6EBFF50"
+		"startDelay":0
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 9,
+		"strokeTo": 0,
+		"sizeFrom": 0,
+		"sizeTo": 1200,
+		"lifetime": 30,
+		"colorFrom": "FFFFFF",
+		"colorTo": "A6EBFF50"
+		"startDelay":10
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 10,
+		"strokeTo": 0,
+		"sizeFrom": 0,
+		"sizeTo": 1250,
+		"lifetime": 35,
+		"colorFrom": "FFFFFF",
+		"colorTo": "A6EBFF50"
+		"startDelay":20
+		}
+	]
+},
+}
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+		"DrawDefault",
+		{
+		"type": "DrawRegion",
+		"suffix": "-顶",
+		"spinSprite": true,
+		"rotateSpeed": 0.8
+		},
+		{
+		"type": "DrawRegion",
+		"suffix": "-层",
+		"spinSprite": true,
+		"rotateSpeed": -0.8
+		}
+	]
+},
+	"requirements": [
+	    "plastanium/2400"
+		"silicon/1980"
+		"titanium/1145"
+		"lead/3890"
+		"phase-fabric/2000"
+		"surge-alloy/560"
+		"copper/890"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "阻断",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "[yellow]战术训练-防空网"
+			}
+		]
+	}
+}

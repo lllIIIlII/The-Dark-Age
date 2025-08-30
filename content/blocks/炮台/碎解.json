@@ -1,0 +1,38 @@
+{
+	"type": "PointDefenseTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "碎解",
+	"size": 4,
+	"health": 15480,
+	"armor":9000
+	"range": 360,
+	"hasPower": true,
+	"absorbLasers":true,
+	"shootLength": 360,
+	"bulletDamage": 200,
+	"liquidCapacity":60
+	"retargetTime": 2
+	//如果你要高效拦截的话，上下这俩家伙记得相等
+	//如果你要来一波奇妙操作的话，上面往死里提升，下面往死里下降,
+	"reload": 2,
+	"consumes": {
+		"power": 70,
+	},
+	"requirements": [
+		"钢/700",
+		"钴/3400"
+		"silicon/1540"
+		"plastanium/700"
+		"铁/1200"
+	],
+	"category": "turret",
+	"research": {
+	"parent": "月华",
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "寒锋走廊"
+			}
+		]
+	}
+}

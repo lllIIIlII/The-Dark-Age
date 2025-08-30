@@ -1,0 +1,233 @@
+{
+    "type": "payload",
+    "name": "凄光",
+    "template": "ErekirUnitType",
+    "pickupUnits": true,
+    "circleTarget": true,
+    "payloadCapacity": 1800,
+    "rotateSpeed": 1.5,
+    "speed": 0.9,
+    "drag": 0.07,
+    "accel": 0.1,
+    "ammoCapacity": 150,
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 21800
+    },
+    "immunities": [
+        "tarred",
+        "burning",
+        "freezing",
+        "spore-slowed",
+        "electrified",
+        "疑惑",
+        "致盲",
+        "破防"
+    ],
+    "hitSize": 60,
+    "flying": true,
+    "lowAltitude": false,
+    "health": 166880,
+    "armor": 15,
+    "engineOffset": 30,
+    "engineSize": 8,
+    "engines": [
+        {
+            "x": 25,
+            "y": -20,
+            "radius": 4,
+            "rotation": 45
+        },
+        {
+            "x": -25,
+            "y": -20,
+            "radius": 4,
+            "rotation": 135
+        }
+    ],
+    "parts": [
+        {
+            "type": "ShapePart",
+            "y": 0,
+            "sides": 4,
+            "color": "B894F2",
+            "rotateSpeed": 0,
+            "stroke": 6,
+            "strokeTo": 6,
+            "circle": true,
+            "hollow": true,
+            "radius": 50,
+            "radiusTo": 50,
+            "layer": 110
+        },
+        {
+            "type": "HaloPart",
+            "progress": "warmup",
+            "y": 0,
+            "sides": 5,
+            "color": "B894F2",
+            "rotateSpeed": 0,
+            "shapeRotation": 0,
+            "stroke": 0,
+            "strokeTo": 0.1,
+            "shapes": 4,
+            "tri": true,
+            "hollow": true,
+            "radius": 9,
+            "radiusTo": 9,
+            "layer": 110,
+            "triLength": 0,
+            "triLengthTo": 27,
+            "haloRadius": 48.5,
+            "haloRadiusTo": 48.5,
+            "haloRotateSpeed": 1
+        }
+    ],
+    "abilities": [
+        {
+            "type": "SuppressionFieldAbility",
+            "orbRadius": 6,
+            "particleSize": 3,
+            "y": -9,
+            "particles": 3
+        }
+    ],
+    "research": {
+        "parent": "disrupt",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "突袭"
+            },
+            {
+                "type": "SectorComplete",
+                "preset": "origin"
+            }
+        ]
+    },
+    "weapons": [
+        {
+            "reload": 200,
+            "x": 0,
+            "y": 0,
+            "rotate": false,
+            "mirror": false,
+            "inaccuracy": 45,
+            "shootCone": 55,
+            "alternate": false,
+            "shootSound": "missileLaunch",
+            "shake": 5,
+            "shootStatusDuration": 200,
+            "shootStatus": "神圣",
+            "cooldownTime": 90,
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 10
+            },
+            "parts": [
+                {
+                    "type": "ShapePart",
+                    "y": 30,
+                    "sides": 4,
+                    "progress": "warmup",
+                    "color": "B894F200",
+                    "colorTo": "B894F2",
+                    "rotateSpeed": 0,
+                    "stroke": 2,
+                    "strokeTo": 2,
+                    "circle": true,
+                    "hollow": true,
+                    "radius": 20,
+                    "radiusTo": 12,
+                    "layer": 110
+                },
+                {
+                    "type": "HaloPart",
+                    "progress": "warmup",
+                    "y": 18,
+                    "sides": 5,
+                    "color": "B894F2",
+                    "rotateSpeed": 0,
+                    "shapeRotation": 0,
+                    "stroke": 0,
+                    "strokeTo": 0.1,
+                    "shapes": 1,
+                    "tri": true,
+                    "hollow": true,
+                    "radius": 3,
+                    "radiusTo": 3,
+                    "layer": 110,
+                    "triLength": 0,
+                    "triLengthTo": 10,
+                    "haloRadius": 0,
+                    "haloRadiusTo": 0,
+                    "haloRotateSpeed": 0
+                },
+                {
+                    "type": "HaloPart",
+                    "progress": "warmup",
+                    "y": 42,
+                    "sides": 5,
+                    "color": "B894F2",
+                    "rotateSpeed": 0,
+                    "shapeRotation": 180,
+                    "stroke": 0,
+                    "strokeTo": 0.1,
+                    "shapes": 1,
+                    "tri": true,
+                    "hollow": true,
+                    "radius": 3,
+                    "radiusTo": 3,
+                    "layer": 110,
+                    "triLength": 0,
+                    "triLengthTo": 10,
+                    "haloRadius": 0,
+                    "haloRadiusTo": 0,
+                    "haloRotateSpeed": 0
+                }
+            ],
+            "bullet": {
+                "layer": 50,
+                "keepVelocity": false,
+                "speed": 0,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "spawnUnit": "凄光导弹"
+            }
+        },
+        {
+            "name": "凄光1",
+            "type": "PointDefenseWeapon",
+            "x": 0,
+            "y": 12,
+            "mirror": false,
+            "recoil": 0,
+            "rotateSpeed": 1,
+            "reload": 30,
+            "targetInterval": 5,
+            "targetSwitchInterval": 5,
+            "shootStatusDuration": 600,
+            "shootStatus": "修复",
+            "shoot": {
+                "shots": 1
+            },
+            "bullet": {
+                "speed": 605,
+                "lifetime": 1,
+                "shootEffect": "none",
+                "hitEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "line": true,
+                    "length": 64,
+                    "baseLength": 0,
+                    "lifetime": 25,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "FFFFFF30"
+                },
+                "maxRange": 605,
+                "damage": 119
+            }
+        }
+    ]
+}

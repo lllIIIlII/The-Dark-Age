@@ -1,0 +1,20 @@
+{
+	"name": "磁干扰",
+	"color": "3B2E7E",
+	"speedMultiplier": 1,
+	"healthMultiplier": 0.98,
+	"reloadMultiplier": 0.2,
+    "damageMultiplier": 1.08,
+	"effectChance": 0.3,
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 0
+	"sizeTo": 30,
+	"length": 0,
+	"baseLength": 40,
+	"lifetime": 60,
+	"colorFrom": "DC3023",
+	"colorTo": "0200FF00"
+	}
+}

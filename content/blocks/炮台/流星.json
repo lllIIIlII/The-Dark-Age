@@ -1,0 +1,238 @@
+{
+    "type": "ItemTurret",
+    "name": "流星",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "health": 2000,
+    "size": 4,
+    "reload": 180,
+    "range": 610,
+    "recoilTime": 120,
+    "recoil": 1.8,
+    "minWarmup": 0.2,
+    "cooldownTime": 60,
+    "maxAmmo": 50,
+    "coolantMultiplier": 0.6,
+    "ammoPerShot": 10,
+    "canOverdrive": false,
+    "consumes": {
+        "power": 17.5,
+        "coolant": {
+            "amount": 0.35,
+            "optional": true
+        }
+    },
+    "shootSound": "Shoot4",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 0,
+    "shake": 2,
+    "shootCone": 2,
+    "rotateSpeed": 3.4,
+    "shootY": 4,
+    "velocityRnd": 0.01,
+    "shoot": {
+        "type": "ShootMulti",
+        "source": {
+            "shots": 1
+        },
+        "dest": [
+            {
+                "type": "ShootBarrel",
+                "shots": 8,
+                "shotDelay": 0,
+                "barrels": [
+                    -1.5, 0, 0,
+                    -3, 0, 0,
+                    -4.5, 0, 0,
+                    1.5, 0, 0,
+                    3, 0, 0,
+                    4.5, 0, 0,
+                    -2, 0, -1.5,
+                    2, 0, 1.5
+                ]
+            },
+            {
+                "type": "ShootBarrel",
+                "shots": 8,
+                "firstShotDelay": 30,
+                "barrels": [
+                    -1.5, 0, 0,
+                    -3, 0, 0,
+                    -4.5, 0, 0,
+                    1.5, 0, 0,
+                    3, 0, 0,
+                    4.5, 0, 0,
+                    -2, 0, -1.5,
+                    2, 0, 1.5
+                ]
+            },
+            {
+                "type": "ShootBarrel",
+                "shots": 8,
+                "firstShotDelay": 60,
+                "barrels": [
+                    -1.5, 0, 0,
+                    -3, 0, 0,
+                    -4.5, 0, 0,
+                    1.5, 0, 0,
+                    3, 0, 0,
+                    4.5, 0, 0,
+                    -2, 0, -1.5,
+                    2, 0, 1.5
+                ]
+            },
+            {
+                "type": "ShootBarrel",
+                "shots": 6,
+                "firstShotDelay": 120,
+                "barrels": [
+                    -7.5, -15, 0,
+                    -5, -12, 0,
+                    -2.5, -9, 0,
+                    7.5, -15, 0,
+                    5, -12, 0,
+                    2.5, -9, 0
+                ]
+            }
+        ]
+    },
+    "ammoTypes": {
+        "thorium": {
+            "type": "EmpBulletType",
+            "ammoMultiplier": 1,
+            "damage": 80,
+            "splashDamage": 56,
+            "splashDamageRadius": 40,
+            "sprite": "circle-bullet",
+            "backColor": "E2E8EF",
+            "frontColor": "9192A4",
+            "speed": 10,
+            "lifetime": 61,
+            "radius": 80,
+            "unitDamageScl": 2.5,
+            "timeIncrease": 1.2,
+            "timeDuration": 300,
+            "powerDamageScl": 2.5,
+            "powerSclDecrease": 0.1,
+            "hittable": false,
+            "pierceArmor": true,
+            "pierceCap": 2,
+            "hitSound": "pulseBlast",
+            "knockback": 21,
+            "hitShake": 3,
+            "despawnEffect": "none",
+            "shootEffect": "none",
+            "trailLength": 23,
+            "trailWidth": 1,
+            "trailColor": "E2E8EF",
+            "width": 4,
+            "height": 4,
+            "parts": [
+                {
+                    "type": "FlarePart",
+                    "progress": "life",
+                    "rotation": 80,
+                    "color1": "E2E8EF",
+                    "stroke": 2.2,
+                    "radius": 6,
+                    "radiusTo": 8
+                }
+            ],
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "WaveEffect",
+                        "strokeFrom": 5,
+                        "strokeTo": 0,
+                        "sizeFrom": 0,
+                        "sizeTo": 42,
+                        "lifetime": 20,
+                        "colorFrom": "E2E8EF",
+                        "colorTo": "9192A4"
+                    },
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 4,
+                        "line": true,
+                        "lenFrom": 15,
+                        "lenTo": 0,
+                        "length": 50,
+                        "strokeFrom": 5,
+                        "strokeTo": 0,
+                        "baseLength": 40,
+                        "lifetime": 30,
+                        "colorFrom": "E2E8EF",
+                        "colorTo": "9192A4",
+                        "cone": 12
+                    }
+                ]
+            }
+        }
+    },
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "mirror": false,
+                "x": 0,
+                "y": 0,
+                "suffix": "-炮",
+                "layer": 50,
+                "moveX": 0,
+                "moveY": 0,
+                "moves": [
+                    {
+                        "progress": "recoil",
+                        "y": -2
+                    }
+                ]
+            },
+            {
+                "type": "HoverPart",
+                "color": "E2E8EF",
+                "phase": 120,
+                "circles": 3,
+                "stroke": 1,
+                "y": -7,
+                "layer": 110
+            },
+            {
+                "type": "HaloPart",
+                "progress": "smoothReload",
+                "mirror": true,
+                "tri": true,
+                "x": 0,
+                "y": -7,
+                "shapeRotation": -90,
+                "shapes": 1,
+                "radius": 3,
+                "triLength": 12,
+                "triLengthTo": 20,
+                "haloRadius": 0,
+                "color": "E2E8EF",
+                "colorTo": "E2E8EF",
+                "layer": 110
+            }
+        ]
+    },
+    "requirements": [
+        "graphite/1000",
+        "phase-fabric/800",
+        "copper/1000",
+        "silicon/1150",
+        "thorium/950",
+        "surge-alloy/400"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "贯穿",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "infestedCanyons"
+            }
+        ]
+    }
+}

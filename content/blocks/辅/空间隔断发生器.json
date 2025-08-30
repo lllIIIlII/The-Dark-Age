@@ -1,0 +1,51 @@
+{
+	"type": "ForceProjector",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "空间隔断发生器",
+	"health": 4210,
+	"size": 1,
+	"radius": 100,
+	"armor":871
+	"squareSprite": true,
+	"canOverdrive": false,
+	"shieldHealth": 200000,
+	"phaseRadiusBoost": 900,
+	"phaseShieldBoost": 89000,
+	"cooldownNormal": 120,
+	"cooldownLiquid": 60,
+	"cooldownBrokenBase": 100,
+	"coolantConsumption": 16,
+	"liquidCapacity": 48,
+	"absorbEffect": {
+		"type": "WaveEffect",
+		"sizeFrom": 0,//初始大小
+		"sizeTo": 20,//最终大小
+		"lifetime": 120,
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF00"
+	},
+	"consumes": {
+		"power": 372
+	},
+	"requirements": [
+		"lead/1890",
+		"铁/2780",
+		"钢/3000",
+		"silicon/2760"
+		"graphite/425"
+		"plastanium/2100",
+		"phase-fabric/1260",
+		"暗能钢/900",
+		"空间节点/3000"
+	],
+"research": {
+"parent": "钢械伞",
+"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "北极星银滩"
+			}
+		]
+	},
+	"category": "effect"
+}

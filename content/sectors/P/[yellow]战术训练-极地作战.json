@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":231,
+	"difficulty": 8,
+	"research": {
+    "parent": "[yellow]战术训练-极端情况",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "[yellow]战术训练-极端情况"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

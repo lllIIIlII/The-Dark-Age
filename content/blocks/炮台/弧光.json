@@ -1,0 +1,56 @@
+{
+	"type": "PowerTurret",
+	"name": "弧光",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"unitSort": "weakest",
+	"health": 500,
+	"size": 2,
+	"reload": 50,
+	"range": 90,
+	"recoilTime": 5,
+	"recoil": 1,
+	"canOverdrive": true,
+	"shoot": {
+	"shots": 3,
+	},
+	"consumes": {
+	"power":8
+	},
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 3,
+	"shake": 2.8,
+	"shootCone": 10,
+	"rotateSpeed": 3,
+	"shootSound":"spark",
+	"shootType": {
+		"type": "LightningBulletType",
+		"damage": 90,
+		"lightningLength": 40,
+		"lightningLengthRand": 0.5,
+		"shootEffect": "shootHeal",
+		"smokeEffect": "none",
+		"instantDisappear": true,
+		"lightningColor": "9BD9FD",
+		"hitColor": "9BD9FD",
+		"hitEffect": "hitLancer",
+		"status": "shocked",
+		"despawnSound": "laser"
+}
+	"requirements": [
+		"graphite/180"
+		"silicon/40"
+		"copper/300"
+		"lead/120"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "arc",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "frozenForest"
+			}
+		]
+	}
+}

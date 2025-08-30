@@ -1,0 +1,19 @@
+{
+	"type": "StorageBlock",
+	"name": "普兰大陆-东温带区-东北极区",
+	"health": 68,
+	"size": 1,
+	"requirements": [
+	],
+	"itemCapacity": 0,
+	"buildVisibility": "sandboxOnly",
+	"research": {
+    "parent": "普兰大陆-东赤道区",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "染湖北畔"
+			}
+		]
+	}
+}

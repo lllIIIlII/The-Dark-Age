@@ -1,0 +1,273 @@
+{
+  "name": "海蛟",
+  "type": "legs",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "drag": 0.3,
+  "speed": 1.3,
+  "hitSize": 56,
+  "health": 194200,
+  "armor": 45,
+  "legCount": 8,
+  "legMoveSpace": 0.8,
+  "legPairOffset": 3,
+  "legLength": 85,
+  "legExtension": -20,
+  "legBaseOffset": 2,
+  "stepShake": 1,
+  "legLengthScl": 0.95,
+  "rippleScale": 3,
+  "legSpeed": 0.17,
+  "hovering": true,
+  "allowLegStep": true,
+  "range": 480,
+  "shadowElevation": 0.95,
+  "abilities": [
+    {
+      "type": "StatusFieldAbility",
+      "duration": 1200,
+      "reload": 1200,
+      "range": 175,
+      "applyEffect": "none",
+      "activeEffect": {
+        "type": "ParticleEffect",
+        "particles": 16,
+        "line": true,
+        "lenFrom": 67,
+        "lenTo": 0,
+        "length": 275,
+        "interp": "pow10Out",
+        "sizeInterp": "pow5In",
+        "strokeFrom": 19,
+        "strokeTo": 0,
+        "baseLength": 0,
+        "lifetime": 405,
+        "colorFrom": "FFC23F",
+        "colorTo": "FFC23F50"
+      },
+      "effect": "overclock"
+    }
+  ],
+  "immunities": [
+    "tarred",
+    "burning",
+    "unmoving",
+    "slow",
+    "破防",
+    "污染",
+    "延迟"
+  ],
+  "research": {
+    "parent": "toxopid",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "染湖北畔"
+      }
+    ]
+  },
+  "requirements": {
+    "block": "复量级单位重构厂",
+    "previous": "toxopid"
+  },
+  "weapons": [
+    {
+      "name": "海蛟1",
+      "x": -18,
+      "y": -2.8,
+      "mirror": false,
+      "recoil": 1,
+      "rotateSpeed": 2,
+      "reload": 95,
+      "shootSound": "bigshot",
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 5,
+        "firstShotDelay": 35
+      },
+      "bullet": {
+        "damage": 287,
+        "speed": 8,
+        "lifetime": 130,
+        "width": 4,
+        "height": 4,
+        "splashDamageRadius": 20,
+        "splashDamage": 78,
+        "buildingDamageMultiplier": 1.12,
+        "sprite": "circle-bullet",
+        "backColor": "B894F2",
+        "frontColor": "645C9B",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "status": "延迟",
+        "statusDuration": 60,
+        "hitSound": "artillery",
+        "fragBullets": 6,
+        "fragBullet": {
+          "speed": 5,
+          "lifetime": 10,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "width": 3,
+          "height": 3,
+          "damage": 78,
+          "backColor": "B894F2",
+          "frontColor": "645C9B",
+          "sprite": "circle-bullet",
+          "hitSound": "bang"
+        }
+      }
+    },
+    {
+      "name": "海蛟0",
+      "x": 18,
+      "y": -2.8,
+      "mirror": false,
+      "recoil": 1,
+      "rotateSpeed": 2,
+      "reload": 95,
+      "shootSound": "bigshot",
+      "shoot": {
+        "shots": 2,
+        "shotDelay": 5
+      },
+      "bullet": {
+        "damage": 287,
+        "speed": 8,
+        "lifetime": 130,
+        "width": 4,
+        "height": 4,
+        "splashDamageRadius": 20,
+        "splashDamage": 78,
+        "buildingDamageMultiplier": 1.12,
+        "sprite": "circle-bullet",
+        "backColor": "B894F2",
+        "frontColor": "645C9B",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "status": "延迟",
+        "statusDuration": 60,
+        "hitSound": "artillery",
+        "fragBullets": 6,
+        "fragBullet": {
+          "speed": 5,
+          "lifetime": 10,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "width": 3,
+          "height": 3,
+          "damage": 78,
+          "backColor": "B894F2",
+          "frontColor": "645C9B",
+          "sprite": "circle-bullet",
+          "hitSound": "bang"
+        }
+      }
+    },
+    {
+      "name": "海蛟2",
+      "x": 0,
+      "y": -13.9,
+      "shootY": 9,
+      "recoil": 3.3,
+      "mirror": false,
+      "reload": 180,
+      "shootSound": "dullExplosion",
+      "rotate": false,
+      "inaccuracy": 0,
+      "bullet": {
+        "damage": 389,
+        "knockback": 12,
+        "speed": 18,
+        "lifetime": 67,
+        "width": 5,
+        "height": 5,
+        "trailColor": "B894F2",
+        "trailLength": 25,
+        "trailWidth": 2,
+        "splashDamageRadius": 90,
+        "splashDamage": 290,
+        "buildingDamageMultiplier": 1.24,
+        "sprite": "circle-bullet",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "status": "blasted",
+        "statusDuration": 6000,
+        "hitSound": "BZ2",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 7,
+              "strokeTo": 1,
+              "sizeFrom": 0,
+              "sizeTo": 90,
+              "lifetime": 10,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF40"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 45,
+              "sizeFrom": 7.5,
+              "sizeTo": 0,
+              "length": 90,
+              "baseLength": 0,
+              "lifetime": 35,
+              "colorFrom": "B894F2",
+              "colorTo": "645C9B"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 11,
+              "sizeFrom": 23,
+              "sizeTo": 0,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 90,
+              "baseLength": 0,
+              "lifetime": 56,
+              "colorFrom": "B894F2",
+              "colorTo": "645C9B"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 95,
+              "sizeTo": 0,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 0,
+              "baseLength": 0,
+              "lifetime": 90,
+              "colorFrom": "FFFFFF",
+              "colorTo": "B894F233"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "海蛟3",
+      "x": 0,
+      "y": 0,
+      "shootY": 8,
+      "recoil": 0,
+      "mirror": false,
+      "reload": 15,
+      "shootSound": "shotgun",
+      "rotate": false,
+      "inaccuracy": 1.5,
+      "bullet": {
+        "type": "ShrapnelBulletType",
+        "reloadMultiplier": 1.2,
+        "length": 250,
+        "damage": 511,
+        "width": 20,
+        "lifetime": 10,
+        "fromColor": "B894F2",
+        "toColor": "B894F2"
+      }
+    }
+  ]
+}

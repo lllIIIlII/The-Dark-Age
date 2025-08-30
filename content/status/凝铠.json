@@ -1,0 +1,8 @@
+{
+	"name": "凝铠",
+	"color": "989AA3",
+	"speedMultiplier": 0.9,
+	"healthMultiplier": 2.5,
+	"reloadMultiplier": 0.9,
+    "damageMultiplier": 1,
+}

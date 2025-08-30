@@ -1,0 +1,155 @@
+{
+  "name": "恐怖",
+  "type": "legs",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "drag": 0.5,
+  "speed": 1,
+  "hitSize": 56,
+  "health": 300000,
+  "armor": 12,
+  "legCount": 6,
+  "legMoveSpace": 0.8,
+  "legPairOffset": 3,
+  "legLength": 68,
+  "legExtension": -4,
+  "legBaseOffset": 2,
+  "stepShake": 1,
+  "legLengthScl": 0.95,
+  "rippleScale": 3,
+  "legSpeed": 0.17,
+  "hovering": true,
+  "allowLegStep": true,
+  "range": 600,
+  "shadowElevation": 0.95,
+  "abilities": [
+  {
+	"type": "ArmorPlateAbility",
+	"healthMultiplier": 1.95
+	"color":"262B44",
+	},
+    {
+      "type": "StatusFieldAbility",
+      "duration": 600,
+      "reload": 300,
+      "range": 450,
+      "applyEffect": "none",
+      "activeEffect": {
+	"type": "WaveEffect",
+	"sides": 8,
+	"rotation": 0,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 450,
+	"lifetime": 30,
+	"layer": 111,
+	"colorFrom": "000000",
+	"colorTo": "000000"
+	},
+      "effect": "boss"
+    }
+  ],
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "致盲",
+    "磁化",
+    "破防",
+    "瘫痪",
+    "空间混乱",
+    "污染",
+    "暗蚀"
+  ],
+  "research": {
+    "parent": "飞蝗",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "铁线三角洲"
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "恐怖1",
+      "x": 0,
+      "y": 0,
+      "shootY": 0
+      "mirror": false,
+      "recoil": 0,
+      "rotateSpeed": 0,
+      "reload": 180,
+      "shootCone": 360,
+      "shootSound": "wave",
+      "shootStatusDuration": 60,
+      "shootStatus": "unmoving",
+      "bullet": {
+        "damage": 400,
+        "speed": 1,
+        "lifetime": 360,
+        "width": 0,
+        "height": 0,
+        "splashDamageRadius": 360,
+        "splashDamage": 2200,
+        "sprite": "circle-bullet",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "status": "melting",
+        "statusDuration": 120,
+        "hitSound": "PF",
+        "hitShake": 1,
+        "instantDisappear": true,
+        "shootEffect":{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 15,
+	"sizeFrom": 0,
+	"sizeTo": 360,
+	"interp": "exp10In",
+	"lifetime": 60,
+	"colorFrom": "6E707F",
+	"colorTo": "6E707F"
+	},
+        "hitEffect":{
+"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 360,
+	"sizeTo": 360,
+	"lifetime": 60,
+	"colorFrom": "6E707F",
+	"colorTo": "6E707F",
+	"startDelay": 60
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 360
+	"sizeTo": 360,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 60,
+	"colorFrom": "5A698830",
+	"colorTo": "5A698800",
+	"startDelay": 60
+	}
+]
+}
+}
+}
+]
+}

@@ -1,0 +1,96 @@
+{
+	"type":"ItemTurret",
+	"name":"散爆",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"size":2,
+	"health":250,
+	"ammoPerShot":10,
+	"range":150,
+	"reload":40,
+	"inaccuracy":0.1,
+	"ammoUseEffect":"none"
+	"rotateSpeed":4,
+	"maxAmmo":60,
+	"shoot": {
+	"shots": 3,
+	"firstShotDelay": 30
+	"shotDelay": 5
+	}
+	"targetAir":true
+	"targetGround":true,
+	"ammoTypes":{
+		"copper": {
+		    "reloadMultiplier":1,
+			"speed": 3,
+			"damage": 20,
+			"knockback":0,
+			"lifetime":20,
+			"width": 15,
+			"height": 25,
+			"ammoMultiplier":1,
+			"shootEffect": "shootBig"
+			"fragBullets":30,
+		"fragRandomSpread":36,
+		"fragBullet":{
+		"speed": 10,
+			"damage": 1.5,
+			"knockback":1,
+			"lifetime":20,
+			"width": 5,
+			"height": 5,
+			}
+		},
+		"plastanium": {
+		"reloadMultiplier":1,
+			"speed":4,
+			"damage":45,
+			"knockback":2,
+			"lifetime":20,
+			"width": 15,
+			"height": 25,
+			"ammoMultiplier":2,
+			"shootEffect": "shootBig"
+			"fragBullets":30,
+		"fragRandomSpread":36,
+		"fragBullet":{
+		"speed": 10,
+			"damage": 2.5,
+			"knockback":1,
+			"lifetime":20,
+			"width": 5,
+			"height": 5,
+			"pierceCap": 2,
+			}
+		},
+		"titanium": {
+		"reloadMultiplier":1,
+			"speed":4,
+			"damage":25,
+			"knockback":2,
+			"lifetime":20,
+			"width": 15,
+			"height": 25,
+			"ammoMultiplier":2,
+			"shootEffect": "shootBig"
+			"fragBullets":30,
+		"fragRandomSpread":36,
+		"fragBullet":{
+		"speed": 10,
+			"damage": 2,
+			"knockback":1,
+			"lifetime":20,
+			"width": 5,
+			"height": 5
+			}
+		}
+	}
+	"requirements": [
+	 "copper/200"
+	 "lead/150"
+	 "silicon/50"
+	 ],
+	"category": "turret",
+	"research": {
+    "parent": "duo"
+	}
+}

@@ -1,0 +1,60 @@
+{
+    "health": 760,
+    "speed": 2.15,
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "weapons": [
+        {
+            "name": "苍穹1",
+            "reload": 36,
+            "x": 7,
+            "rotate": true,
+            "top": true,
+            "alternate": true,
+            "mirror": true,
+            "shake": 1,
+            "inaccuracy": 5,
+            "velocityRnd": 0.2,
+            "shootSound": "missile",
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 7
+            },
+            "bullet": {
+                "type": "MissileBullet",
+                "width": 8,
+                "height": 8,
+                "speed": 5,
+                "shrinkY": 0,
+                "drag": -0.003,
+                "homingRange": 80,
+                "keepVelocity": true,
+                "damage": 10,
+                "splashDamage": 18,
+                "splashDamageRadius": 28,
+                "lifetime": 60,
+                "trailColor": "F2AA70",
+                "trailLength": 8,
+                "trailWidth": 2,
+                "trailChance": 0.2,
+                "trailInterval": 10,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 3,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "F2AA70",
+                    "colorTo": "F2AA7060",
+                    "sizeFrom": 3,
+                    "sizeTo": 0
+                },
+                "backColor": "F2AA70",
+                "frontColor": "F2AA70",
+                "hitEffect": "blastExplosion",
+                "despawnEffect": "blastExplosion",
+                "weaveScale": 6,
+                "weaveMag": 1
+            }
+        }
+    ]
+}

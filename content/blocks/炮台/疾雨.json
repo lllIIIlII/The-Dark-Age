@@ -1,0 +1,165 @@
+{
+    "type": "PowerTurret",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "name": "疾雨",
+    "health": 9671,
+    "size": 6,
+    "reload": 180,
+    "range": 1200,
+    "recoilTime": 180,
+    "recoil": 0,
+    "liquidCapacity": 80,
+    "canOverdrive": false,
+    "unitSort": "strongest",
+    "consumes": {
+        "power": 35.5,
+        "liquid": "water/2.2"
+    },
+    "shootY": 0,
+    "shoot": {
+        "type": "ShootMulti",
+        "source": {
+            "shots": 1
+        },
+        "dest": [
+            {
+                "type": "ShootBarrel",
+                "shots": 3,
+                "shotDelay": 0,
+                "barrels": [
+                    0, 0, 0,
+                    -8.5, -1.25, 0,
+                    8.5, -1.25, 0
+                ]
+            },
+            {
+                "type": "ShootBarrel",
+                "shots": 2,
+                "firstShotDelay": 60,
+                "barrels": [
+                    8, -2, 0,
+                    -8, -2, 0
+                ]
+            },
+            {
+                "type": "ShootBarrel",
+                "shots": 5,
+                "firstShotDelay": 120,
+                "barrels": [
+                    0, -3, 0,
+                    -7, -3.75, 0,
+                    7, -3.75, 0,
+                    12, -4.5, 0,
+                    -12, -4.5, 0
+                ]
+            }
+        ]
+    },
+    "shootSound": "none",
+    "shootEffect": "none",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 0,
+    "shake": 0,
+    "shootCone": 180,
+    "rotateSpeed": 3,
+    "shootType": {
+        "type": "BasicBulletType",
+        "damage": 2530,
+        "ammoMultiplier": 1,
+        "buildingDamageMultiplier": 0.1,
+        "homingDelay": 0,
+        "homingPower": 0.5,
+        "homingRange": 1200,
+        "sprite": "黑暗纪元-刺雨",
+        "backColor": "6F80E8",
+        "frontColor": "6F80E8",
+        "shrinkX": 15,
+        "shrinkY": 15,
+        "width": 1,
+        "height": 3,
+        "pierce": true,
+        "speed": 0.1,
+        "lifetime": 60,
+        "hitSound": "PF",
+        "fragBullets": 1,
+        "fragVelocityMin": 1,
+        "fragAngle": 0,
+        "fragRandomSpread": 0,
+        "fragBullet": {
+            "speed": 65,
+            "lifetime": 20,
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "width": 15,
+            "height": 75,
+            "damage": 3400,
+            "sprite": "黑暗纪元-刺雨",
+            "backColor": "6F80E8",
+            "frontColor": "6F80E8",
+            "status": "wet",
+            "statusDuration": 600,
+            "pierceArmor": true,
+            "trailColor": "6F80E8",
+            "trailLength": 25,
+            "trailWidth": 2,
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "ParticleEffect",
+                        "particles": 5,
+                        "line": true,
+                        "strokeFrom": 15,
+                        "strokeTo": 0,
+                        "lenFrom": 45,
+                        "lenTo": 0,
+                        "length": 35,
+                        "baseLength": 0,
+                        "lifetime": 30,
+                        "colorFrom": "6F80E8",
+                        "colorTo": "6F80E800"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "lifetime": 30,
+                        "colorFrom": "6F80E8",
+                        "colorTo": "6F80E880",
+                        "sizeFrom": 0,
+                        "sizeTo": 65
+                    }
+                ]
+            }
+        }
+    },
+    "drawer": {
+        "type": "DrawTurret",
+        "parts": [
+            {
+                "type": "RegionPart",
+                "color": "8DA3F8,",
+                "suffix": "-light",
+                "blending": "additive",
+                "layer": 110,
+                "outline": false,
+                "turretHeatLayer": 110,
+                "layerOffset": -1
+            }
+        ]
+    },
+    "requirements": [
+        "silicon/2500",
+        "钢/2500",
+        "titanium/3000"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "影踪",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "地冠"
+            }
+        ]
+    }
+}

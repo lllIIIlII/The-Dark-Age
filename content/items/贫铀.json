@@ -1,0 +1,20 @@
+{
+    "name":"贫铀",
+    "color":"7FFF00",
+    "explosiveness":1,
+    "flammability":0.3,
+    "radioactivity":0.6,
+    "charge":0,
+    "cost":4.5,
+    "alwaysUnlocked":false,
+    "research": {
+    "parent": "铀",
+    "shownPlanets": [ "serpulo","Planzer" ]
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "天南沼泽"
+			}
+		]
+	}
+}

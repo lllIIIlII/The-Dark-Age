@@ -1,0 +1,31 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"plans": [
+		{
+			"unit": "risso",
+			"requirements": [
+				"silicon/20",
+				"metaglass/25"
+			],
+			"time": 2400
+		},
+		{
+			"unit": "retusa",
+			"requirements": [
+				"silicon/15",
+				"metaglass/25",
+				"titanium/30"
+			],
+			"time": 3000
+		},
+		{
+			"unit": "坚石",
+			"requirements": [
+				"silicon/30",
+				"metaglass/15",
+				"titanium/25"
+			],
+			"time": 2800
+		}
+	]
+}

@@ -1,0 +1,125 @@
+{
+	"type": "PowerTurret",
+	"name": "礼物盒",
+	"health": 80000,
+	"armor":8888
+	"size": 2,
+	"reload": 30,
+	"range": 400,
+	"destroyEffect":"none"
+	"breakable":false,
+	"insulated": true,
+	"absorbLasers":true,
+	"inaccuracy": 360,
+	"rotateSpeed": 0,
+	"shootCone":360
+	"shootSound": "door",
+	"velocityRnd": 0.2,
+	"shoot": {
+	"shots": 15,
+	"firstShotDelay": 45
+},
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+"type":"RegionPart",
+"mirror":false,//是否开启镜像
+"x":0,
+"y":0,//初始位置
+"suffix":"-盖"//,贴图后缀
+"layer":50,//层，49-110
+"layerOffset":-0.5
+"moveX":0,//改变位置
+"moveY":-15
+"moveRot": 45
+}
+]
+}
+	"shootType":{
+	"type": "BasicBulletType",
+	"damage": 2000000,
+	"splashDamageRadius": 60,
+	"splashDamage": 10000,
+	"status": "虚弱",
+	"statusDuration": 600
+	"hittable": false,
+	"absorbable": false,
+	"killShooter": true,
+	"hitSound": "explosion",
+	"ammoMultiplier": 1,
+	"drag":-0.01
+	"speed": 3,
+	"lifetime": 120,
+	"shootEffect": "none",
+	"smokeEffect": "none",
+	"sprite":"黑暗纪元-圆",
+	"homingDelay": 30,
+	"homingPower": 2,
+	"homingRange": 600,
+	"trailColor":"FFFFFF",
+	"trailLength":8,
+	"trailWidth":1,
+	"trailChance": 0.2,
+	"trailInterval": 65,
+	"trailEffect": "hitLancer"
+	"hitShake": 4,
+	"knockback": 0.9,
+	"backColor":"FF6420",
+	"frontColor":"FFFFFF",
+	"width": 3,
+	"height": 5
+	"shrinkX":0
+	"shrinkY":0,
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 60,
+	"lifetime": 60,
+	"colorFrom": "F3B688",
+	"colorTo": "F3B688"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 9,
+	"sizeFrom": 7,
+	"sizeTo": 0,
+	"length": 60,
+	"interp": "fastSlow",
+	"baseLength": 0,
+	"lifetime": 60,
+	"colorFrom": "F3B688",
+	"colorTo": "F3B688",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"line":true
+	"lenFrom": 25,
+	"lenTo": 0
+	"length": 65,
+	"strokeFrom": 6,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 65,
+	"colorFrom": "C37059",
+	"colorTo": "C37059"
+	}
+]
+}
+}
+	"requirements": [
+	"silicon/200",
+	"blast-compound/50",
+	"plastanium/100",
+	"thorium/250"
+	],
+	"buildCostMultiplier": 0,
+	"category": "effect",
+	"research": "礼物盒"
+}

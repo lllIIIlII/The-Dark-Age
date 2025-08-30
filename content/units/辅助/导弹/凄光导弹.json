@@ -1,0 +1,117 @@
+{
+  "type": "missile",
+  "template": "MissileUnitType",
+  "name": "凄光导弹",
+  "speed": 3.88,
+  "lifetime": 240,
+  "rotateSpeed": 2,
+  "loopSoundVolume": 0.04,
+  "hidden": true,
+  "lowAltitude": true,
+  "missileAccelTime": 30,
+  "homingDelay": 30,
+  "hitSize": 9,
+  "health": 1600,
+  "fogRadius": 5,
+  "engineColor": "B894F2",
+  "trailColor": "B894F2",
+  "trailLength": 12,
+  "engineLayer": 110,
+  "engineOffset": 15,
+  "engineSize": 6,
+  "maxRange": 30,
+  "immunities": [
+    "tarred",
+    "slow",
+    "burning",
+    "freezing",
+    "spore-slowed",
+    "electrified",
+    "disarmed",
+    "疑惑",
+    "致盲",
+    "瘫痪",
+    "空间混乱",
+    "破防",
+    "延迟",
+    "消散"
+  ],
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "disrupt-missile",
+      "amount": 4,
+      "randAmount": 5
+    }
+  ],
+  "weapons": [
+    {
+      "x": 0,
+      "reload": 260,
+      "mirror": false,
+      "rotate": true,
+      "shake": 10,
+      "shootSound": "none",
+      "shootOnDeath": true,
+      "shootCone": 360,
+      "bullet": {
+        "collides": false,
+        "instantDisappear": true,
+        "ammoMultiplier": 1,
+        "hitSound": "boom",
+        "killShooter": true,
+        "splashDamageRadius": 135,
+        "splashDamage": 445,
+        "hitShake": 4,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "despawnEffect": "none",
+        "trailEffect": "none",
+        "hitColor": "B894F2",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 135,
+              "lifetime": 60,
+              "colorFrom": "B894F2",
+              "colorTo": "B894F2"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 6,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "length": 130,
+              "baseLength": 0,
+              "interp": "pow5Out",
+              "sizeInterp": "pow10In",
+              "lifetime": 60,
+              "colorFrom": "B894F2",
+              "colorTo": "B894F2"
+            },
+            "massiveExplosion",
+            {
+              "type": "ParticleEffect",
+              "particles": 3,
+              "line": true,
+              "lenFrom": 15,
+              "lenTo": 0,
+              "length": 140,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "baseLength": 0,
+              "lifetime": 50,
+              "colorFrom": "B894F2",
+              "colorTo": "B894F2"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

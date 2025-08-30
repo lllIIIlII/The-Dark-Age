@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":122,
+	"difficulty": 2,
+	"research": {
+    "parent": "北极星银滩",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "北极星银滩"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

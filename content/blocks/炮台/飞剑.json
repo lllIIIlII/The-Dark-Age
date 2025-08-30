@@ -1,0 +1,225 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "飞剑",
+	"unitSort": "weakest",
+	"health": 2050,
+	"size": 4,
+	"reload": 360,
+	"range": 680,
+	"recoilTime": 180,
+	"recoil": 3,
+	"canOverdrive": false,
+	"xRand": 4,
+	"heatColor": "D4F2FF",
+	"consumes": {
+		"power": 25,
+		"coolant": {
+			"amount": 0.55,
+			"optional": true
+		}
+	},
+	"shootY": 0,
+	"shoot": {
+		"shots": 360,
+		"shotDelay": 0.1,
+		"type": "ShootBarrel",
+		"barrels": [
+			10,-10,0,
+			5,-10,0,
+			-5,-10,0,
+			-10,-10,0
+			]
+		},
+	"shootSound": "FJ1",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 2,
+	"shake": 3,
+	"shootCone": 20,
+	"rotateSpeed": 3,
+	"shootType": {
+	    "type":"BasicBulletType",
+		"damage": 40,
+		"ammoMultiplier": 1,
+		"buildingDamageMultiplier": 0.1,
+	    "homingDelay": 15,
+	    "homingPower": 0.08,
+		"homingRange": 120,
+		"sprite":"黑暗纪元-弹药飞剑",
+		"width": 15,
+		"height": 50,
+		"pierceCap": 3,
+		"hitSound":"bang"
+		"status": "破防",
+		"statusDuration": 30,
+		"speed": 30,
+		"lifetime": 30,
+		"trailLength": 40,
+			"trailWidth": 2,
+			"trailColor": "FFFFFF88",
+			"trailChance": 1,
+			"trailInterval": 16,
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 3,
+				"length": 16,
+				"baseLength": 1,
+				"lifetime": 30,
+				"colorFrom": "E3E3E380",
+				"colorTo": "E3E3E380",
+				"sizeFrom": 3,
+				"sizeTo": 0
+			}
+	    },
+    "drawer":{
+    "type":"DrawTurret",
+    "parts":[
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":-8,
+    "moveY":-8
+    "moveRot": 20
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":8,
+    "moveY":-8
+    "moveRot": -20
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":-8,
+    "moveY":-9.5
+    "moveRot": 35
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":8,
+    "moveY":-9.5
+    "moveRot": -35
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":-8,
+    "moveY":-11
+    "moveRot": 50
+    },
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-sword"
+    "layer":49,
+    "moveX":8,
+    "moveY":-11
+    "moveRot": -50
+    },
+{
+	"type": "HaloPart",
+	"progress": "reload",
+	"y": 13,
+	"rotateSpeed": 0,
+	"sides": 5,
+	"shapes": 4,
+	"color": "D4F2FF",
+	"tri": true,
+	"hollow": true,
+	"stroke": 0,
+	"strokeTo": 0.1,
+	"radius": 3,
+	"radiusTo": 0,
+	"triLength": 15,
+	"triLengthTo": 0,
+	"haloRadius": 1,
+	"haloRotation": 0,
+	"haloRotateSpeed": 0.7,
+	"layer": 110
+},
+{
+	"type": "HaloPart",
+	"progress": "warmup",
+	"y": -15,
+	"rotateSpeed": 0,
+	"sides": 4,
+	"shapes": 1,
+	"tri": true,
+	"hollow": true,
+	"color": "FFFFFF",
+	"stroke": 0,
+	"strokeTo": 0.1,
+	"radius": 0,
+	"radiusTo": 5,
+	"triLength": 0,
+	"triLengthTo": 35,
+	"haloRadius": 0,
+	"haloRotation": -90
+	"haloRotateSpeed": 0,
+	"layer": 110
+},
+{
+"type": "HaloPart",
+"progress": "warmup",
+"y": -15,
+"rotateSpeed": 0,
+"sides": 4,
+"shapes": 1,
+"tri":true,
+"hollow": true,
+"color":"FFFFFF",
+"stroke": 0,
+"strokeTo": 0.1,
+"radius": 0,
+"radiusTo": 5,
+"triLength": 0,
+"triLengthTo": 35,
+"haloRadius": 0,
+"haloRotation": 90
+"haloRotateSpeed": 0,
+"layer": 110
+}
+]
+},
+	"requirements": [
+		"graphite/180"
+		"silicon/1200"
+		"钢/800"
+		"铁/400"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "临时核心",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "天南沼泽"
+			}
+		]
+	}
+}

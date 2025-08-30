@@ -1,0 +1,150 @@
+{
+    "type": "payload",
+    "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+    "payloadCapacity": 50,
+    "name": "修复机",
+    "speed": 4,
+    "drag": 0.04,
+    "accel": 0.03,
+    "rotateSpeed": 2.5,
+    "immunities": [
+        "electrified",
+        "slow",
+        "破防",
+        "疑惑",
+        "延迟"
+    ],
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 3000
+    },
+    "itemCapacity": 300,
+    "itemOffsetY": 1,
+    "hitSize": 12,
+    "flying": true,
+    "faceTarget": true,
+    "health": 2500,
+    "armor": 25,
+    "engineOffset": 6,
+    "engineSize": 3,
+    "engines": [
+        {
+            "x": 0,
+            "y": -10,
+            "radius": 6,
+            "rotation": 90
+        }
+    ],
+    "abilities": [
+        {
+            "type": "EnergyFieldAbility",
+            "damage": 185,
+            "reload": 120,
+            "range": 200,
+            "healPercent": 5,
+            "sameTypeHealMult": 0.45,
+            "effectRadius": 0,
+            "sectors": 8,
+            "sectorRad": 0.06,
+            "rotateSpeed": 2,
+            "color": "16A951",
+            "hitEffect": {
+                "type": "ParticleEffect",
+                "particles": 15,
+                "line": true,
+                "length": 85,
+                "baseLength": 0,
+                "lifetime": 15,
+                "colorFrom": "FFFFFF",
+                "colorTo": "16A951"
+            },
+            "damageEffect": "chainLightning",
+            "status": "修复",
+            "shootSound": "spark",
+            "statusDuration": 360,
+            "x": 0,
+            "y": 16,
+            "targetGround": true,
+            "targetAir": true,
+            "hitBuildings": true,
+            "hitUnits": true,
+            "maxTargets": 8
+        }
+    ],
+    "weapons": [
+        {
+            "reload": 30,
+            "x": 0,
+            "y": 0,
+            "shootX": 3,
+            "shootY": 4,
+            "rotate": false,
+            "shootCone": 10,
+            "ejectEffect": "none",
+            "shootSound": "bolt",
+            "mirror": true,
+            "inaccuracy": 0,
+            "alternate": true,
+            "top": false,
+            "bullet": {
+                "damage": 50,
+                "collides": false,
+                "knockback": 10,
+                "trailColor": "36CC72",
+                "trailLength": 10,
+                "trailWidth": 2,
+                "hitSound": "none",
+                "speed": 10,
+                "lifetime": 10,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 2,
+                            "sizeFrom": 6,
+                            "sizeTo": 0,
+                            "length": 10,
+                            "baseLength": 3,
+                            "lifetime": 35,
+                            "colorFrom": "16A951",
+                            "colorTo": "FFFFFF"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 4,
+                            "line": true,
+                            "length": 5,
+                            "baseLength": 5,
+                            "lifetime": 12,
+                            "colorFrom": "16A951",
+                            "colorTo": "16A951"
+                        },
+                        {
+                            "type": "WaveEffect",
+                            "lifetime": 15,
+                            "sizeFrom": 0,
+                            "sizeTo": 10,
+                            "strokeFrom": 4,
+                            "strokeTo": 0,
+                            "colorFrom": "16A951",
+                            "colorTo": "FFFFFF"
+                        }
+                    ]
+                },
+                "width": 2,
+                "height": 10,
+                "healPercent": 10
+            }
+        }
+    ],
+    "research": {
+        "parent": "无人机组装工厂",
+        "objectives": [
+            {
+                "type": "OnSector",
+                "preset": "同步轨道空间站"
+            }
+        ]
+    }
+}

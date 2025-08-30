@@ -1,0 +1,17 @@
+{
+	"captureWave":91
+	"planet": "Planzer",
+	"sector":90,
+	"difficulty": 9,
+	"research": {
+    "parent": "铁线三角洲",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "铁线三角洲"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

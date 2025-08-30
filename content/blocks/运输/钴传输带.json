@@ -1,0 +1,15 @@
+{
+	"type": "Conveyor",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "钴传输带",
+	"health": 115,
+	"requirements": [
+		"钴/1",
+		"lead/1"
+	],
+	"category": "distribution",
+	"research":"临时核心",
+	"speed": 0.3,
+	"itemCapacity":5
+	"displayedSpeed":10
+}

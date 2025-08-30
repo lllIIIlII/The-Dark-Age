@@ -1,0 +1,426 @@
+{
+  "name": "燎原",
+  "type": "legs",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "drag": 0.9,
+  "speed": 0.89,
+  "hitSize": 78,
+  "health": 45630,
+  "armor": 68,
+  "rotateSpeed": 1.5,
+  "lockLegBase": true,
+  "legContinuousMove": true,
+  "legStraightness": 1.55,
+  "baseLegStraightness": 1.8,
+  "legMaxLength": 1.5,
+  "legMinLength": 1.3,
+  "legCount": 8,
+  "legLength": 55,
+  "legForwardScl": 1.2,
+  "legMoveSpace": 1.3,
+  "rippleScale": 6,
+  "stepShake": 4,
+  "legGroupSize": 2,
+  "legExtension": 2.2,
+  "legBaseOffset": 3,
+  "legStraightLength": 3,
+  "ammoType": "洛德合金",
+  "legSplashDamage": 233,
+  "legSplashRange": 40,
+  "drownTimeMultiplier": 2,
+  "hovering": true,
+  "shadowElevation": 0.85,
+  "targetAir": false,
+  "alwaysShootWhenMoving": true,
+  "abilities": [
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": false,
+      "radius": 75,
+      "width": 30,
+      "max": 5400,
+      "regen": 600,
+      "cooldown": 600,
+      "angle": 120,
+      "angleOffset": 0
+    }
+  ],
+  "immunities": [
+    "tarred",
+    "burning",
+    "unmoving",
+    "破防",
+    "污染",
+    "瘫痪"
+  ],
+  "research": "扩散",
+  "requirements": {
+    "block": "tetrative-reconstructor",
+    "previous": "扩散"
+  },
+  "weapons": [
+    {
+      "name": "扩散1",
+      "type": "PointDefenseWeapon",
+      "x": 8,
+      "y": 6,
+      "mirror": false,
+      "recoil": 0,
+      "rotateSpeed": 2,
+      "reload": 4,
+      "targetInterval": 4,
+      "targetSwitchInterval": 4,
+      "shoot": {
+        "shots": 2
+      },
+      "bullet": {
+        "speed": 65,
+        "lifetime": 5,
+        "shootEffect": "none",
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 6,
+          "line": true,
+          "length": 64,
+          "baseLength": 0,
+          "lifetime": 25,
+          "colorFrom": "FFFFFF",
+          "colorTo": "00FFFF30"
+        },
+        "maxRange": 325,
+        "damage": 110
+      }
+    },
+    {
+      "name": "扩散2",
+      "type": "PointDefenseWeapon",
+      "x": -8,
+      "y": 6,
+      "mirror": false,
+      "recoil": 0,
+      "rotateSpeed": 2,
+      "reload": 4,
+      "targetInterval": 4,
+      "targetSwitchInterval": 4,
+      "shoot": {
+        "shots": 2
+      },
+      "bullet": {
+        "speed": 65,
+        "lifetime": 5,
+        "shootEffect": "none",
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 6,
+          "line": true,
+          "length": 64,
+          "baseLength": 0,
+          "lifetime": 25,
+          "colorFrom": "FFFFFF",
+          "colorTo": "00FFFF30"
+        },
+        "maxRange": 325,
+        "damage": 110
+      }
+    },
+    {
+      "name": "燎原1",
+      "x": 0,
+      "y": 0,
+      "shootY": 15,
+      "recoil": 0,
+      "mirror": false,
+      "reload": 180,
+      "shootSound": "laser",
+      "rotate": false,
+      "inaccuracy": 0,
+      "shoot": {
+        "firstShotDelay": 120
+      },
+      "bullet": {
+        "type": "LaserBulletType",
+        "chargeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            "lancerLaserCharge",
+            "lancerLaserChargeBegin"
+          ]
+        },
+        "lightningSpacing": 20,
+        "lightningLength": 5,
+        "lightningDelay": 0.5,
+        "lightningLengthRand": 1,
+        "lightningAngleRand": 8,
+        "lightningDamage": 80,
+        "lightningColor": "FFFFFF",
+        "damage": 258,
+        "lifetime": 20,
+        "width": 25,
+        "splashDamageRadius": 80,
+        "splashDamage": 280,
+        "buildingDamageMultiplier": 1.25,
+        "status": "破防",
+        "statusDuration": 60
+      }
+    },
+    {
+      "name": "燎原2",
+      "x": -20,
+      "y": -14,
+      "shootY": 5,
+      "recoil": 3,
+      "mirror": false,
+      "reload": 360,
+      "shootSound": "largeCannon",
+      "shoot": {
+        "firstShotDelay": 120
+      },
+      "rotate": false,
+      "inaccuracy": 5,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 368,
+        "speed": 30,
+        "lifetime": 25.5,
+        "sprite": "circle-bullet",
+        "hitShake": 8,
+        "width": 9,
+        "height": 9,
+        "splashDamageRadius": 40,
+        "splashDamage": 125,
+        "hitSound": "plasmaboom",
+        "trailLength": 20,
+        "trailWidth": 2,
+        "trailColor": "EB949488",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "knockback": 28,
+        "makeFire": true,
+        "backColor": "EB9494",
+        "frontColor": "DE5D70",
+        "incendChance": 60,
+        "incendSpread": 45,
+        "incendAmount": 27,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 2,
+              "strokeTo": 1,
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "lifetime": 10,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF40"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "length": 45,
+              "baseLength": 0,
+              "lifetime": 30,
+              "colorFrom": "FFFFFF",
+              "colorTo": "EB949450"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 45,
+              "sizeTo": 0,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 0,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "FFFFFF90",
+              "colorTo": "EB949450"
+            },
+            {
+              "type": "WrapEffect",
+              "effect": "instBomb",
+              "color": "EB9494"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "燎原2",
+      "x": 20,
+      "y": -14,
+      "shootY": 5,
+      "recoil": 3,
+      "mirror": false,
+      "reload": 360,
+      "shootSound": "largeCannon",
+      "rotate": false,
+      "inaccuracy": 5,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 368,
+        "speed": 30,
+        "lifetime": 25.5,
+        "sprite": "circle-bullet",
+        "hitShake": 8,
+        "width": 9,
+        "height": 9,
+        "splashDamageRadius": 40,
+        "splashDamage": 125,
+        "hitSound": "plasmaboom",
+        "trailLength": 20,
+        "trailWidth": 2,
+        "trailColor": "EB949488",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "knockback": 28,
+        "makeFire": true,
+        "backColor": "EB9494",
+        "frontColor": "DE5D70",
+        "incendChance": 60,
+        "incendSpread": 45,
+        "incendAmount": 27,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 2,
+              "strokeTo": 1,
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "lifetime": 10,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF40"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "length": 45,
+              "baseLength": 0,
+              "lifetime": 30,
+              "colorFrom": "FFFFFF",
+              "colorTo": "EB949450"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 45,
+              "sizeTo": 0,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 0,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "FFFFFF90",
+              "colorTo": "EB949450"
+            },
+            {
+              "type": "WrapEffect",
+              "effect": "instBomb",
+              "color": "EB9494"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "燎原3",
+      "x": 0,
+      "y": 0,
+      "shootY": 8,
+      "recoil": 1.3,
+      "mirror": false,
+      "reload": 5,
+      "shootSound": "flame",
+      "rotate": false,
+      "inaccuracy": 2,
+      "xRand": 8,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 38,
+        "speed": 7,
+        "lifetime": 68,
+        "sprite": "circle-bullet",
+        "hitShake": 3,
+        "width": 4,
+        "height": 4,
+        "splashDamageRadius": 30,
+        "splashDamage": 12,
+        "hitSound": "sap",
+        "trailLength": 20,
+        "trailWidth": 2,
+        "trailColor": "EB949488",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "knockback": 2,
+        "makeFire": true,
+        "backColor": "EB9494",
+        "frontColor": "DE5D70",
+        "incendChance": 60,
+        "incendSpread": 20,
+        "incendAmount": 7,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 2,
+              "strokeTo": 1,
+              "sizeFrom": 0,
+              "sizeTo": 30,
+              "lifetime": 10,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF40"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "length": 35,
+              "baseLength": 0,
+              "lifetime": 40,
+              "colorFrom": "FFFFFF",
+              "colorTo": "EB949450"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 11,
+              "sizeFrom": 45,
+              "sizeTo": 0,
+              "line": true,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 36,
+              "baseLength": 20,
+              "lifetime": 60,
+              "colorFrom": "FFFFFF90",
+              "colorTo": "EB949450"
+            }
+          ]
+        },
+        "fragBullets": 64,
+        "fragLifeMin": 1,
+        "fragLifeMax": 1,
+        "fragRandomSpread": 50,
+        "fragBullet": {
+          "type": "LiquidBulletType",
+          "liquid": "oil",
+          "lifetime": 36.5,
+          "speed": 8,
+          "puddleSize": 10,
+          "orbSize": 5,
+          "knockback": 6.6,
+          "statusDuration": 600,
+          "status": "tarred",
+          "damage": 10.1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"name": "大型铀墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 9999,
+	"armor":37,
+	"size": 2,
+	"absorbLasers":true,
+	"requirements": [
+		"lead/21" 
+		"铀/32"
+	],
+	"category": "defense",
+	"research": {
+    "parent": "铀墙",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "峡石涧"
+			}
+		]
+	}
+}

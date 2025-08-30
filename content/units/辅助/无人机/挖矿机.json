@@ -1,0 +1,48 @@
+{
+	"type": "payload",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"payloadCapacity": 100,
+	"name": "挖矿机",
+	"controller": "BuilderAI",
+	"speed": 3,
+	"drag": 0.04,
+	"accel": 0.03,
+	"rotateSpeed": 2.5,
+	"immunities": [
+		"electrified",
+		"破防"
+	],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 3000
+	},
+	"itemCapacity": 300,
+	"itemOffsetY": 1,
+	"hitSize": 12,
+	"mineSpeed": 10,
+	"mineTier": 4,
+	"mineRange": 60,
+	"flying": true,
+	"faceTarget": true,
+	"health": 2100,
+	"armor": 25,
+	"engineOffset": 6,
+	"engineSize": 3,
+	"engines": [
+		{
+			"x": 0,
+			"y": -9,
+			"radius": 6,
+			"rotation": 90
+		}
+	],
+	"research": {
+		"parent": "无人机组装工厂",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

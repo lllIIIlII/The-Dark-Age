@@ -1,0 +1,10 @@
+{
+	"type": "TreeBlock",
+	"name": "仙人掌1",
+	"solid": true,
+	"breakable":true
+	"alwaysReplace":true;
+	"clipSize":90,
+	"customShadow":true
+	"shadowOffset":0
+}

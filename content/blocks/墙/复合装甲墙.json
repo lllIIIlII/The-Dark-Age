@@ -1,0 +1,19 @@
+{
+	"name": "复合装甲墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 15900,
+	"size": 3,
+	"armor":18
+	"absorbLasers":true,
+	"flashHit": true,
+	"insulated":true,
+	"chanceDeflect": 50,
+	"requirements": [
+		"phase-fabric/48"
+		"plastanium/40"
+		"metaglass/18"
+	],
+	"category": "defense",
+	"research": "巨型钴墙"
+}

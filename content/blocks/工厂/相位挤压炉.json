@@ -1,0 +1,115 @@
+{
+	"Type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "相位挤压炉",
+	"health": 5400,
+	"size": 5,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemCapacity":50,
+	"liquidCapacity":100,
+	"requirements": [
+	"titanium/300",
+	"graphite/300",
+	"plastanium/185",
+	"silicon/180",
+	"lead/400",
+	"洛德合金/130",
+	"空间节点/50"
+	],
+	"outputItem":"silicon/10",
+	"size":5,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":45,
+	"consumes":{
+		"power":20,
+		"items": [
+	    "coal/5",
+	    "sand/12"
+	    "空间节点/1"
+	    "洛德合金/2"
+	         ]
+		},
+	"drawer": {
+	"type": "DrawMulti",
+	"drawers": [
+	"DrawDefault",
+	{
+	"type": "DrawFlame",
+	"flameRadius": 0,
+	"flameRadiusIn": 0,
+	"flameRadiusMag": 0,
+	"flameRadiusInMag": 0,
+	"flameColor": "F2E770"
+	}
+]
+},
+	"craftEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 8,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 24,
+	"lifetime": 15,
+	"colorFrom": "5A5A5A",
+	"colorTo": "303030"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 32,
+	"sizeFrom": 5,
+	"sizeTo": 0,
+	"length": 75,
+	"baseLength": 0,
+	"lifetime": 30,
+	"colorFrom": "5A5A5A",
+	"colorTo": "FFFFFF",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 18,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 120,
+	"baseLength": 0,
+	"lifetime": 60,
+	"colorFrom": "5A5A5A50",
+	"colorTo": "30303020",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 5,
+	"line":true
+	"lenFrom": 25,
+	"lenTo": 0
+	"length": 100,
+	"strokeFrom": 4,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 32,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	}
+]
+},
+	"category": "crafting",
+	"ambientSound": "torch",
+	"ambientSoundVolume": 0.8,
+	"research": {
+    "parent": "高效编织机",
+    "objectives": [
+	{
+	"type": "OnSector",
+	"preset": "铁线三角洲"
+	}
+]
+}
+}

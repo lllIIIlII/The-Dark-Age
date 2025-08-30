@@ -1,0 +1,12 @@
+{
+	"name": "暗能块",
+	"type": "Wall",
+	"health": 50000,
+	"drawTeamOverlay": false,
+	"size": 1,
+	"requirements": [],
+	"category": "defense",
+	"buildVisibility": "sandboxOnly",
+	"buildCostMultiplier": 0,
+	"research": "暗能块"
+}

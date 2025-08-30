@@ -1,0 +1,68 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "洛德合金构造机",
+	"health":1550,
+	"itemCapacity":25,
+    "liquidCapacity":200,
+	"outputItem":"洛德合金/3",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":60,	
+	"consumes":{
+		"power":6.5,
+		"liquid":"润滑剂/0.25",
+		"items": [
+	    "spore-pod/4",
+	    "pyratite/2"
+	    "blast-compound/3",
+	    "钢/2.5"
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-转",
+					"spinSprite": true,
+					"rotateSpeed": 2.5
+			}
+		]
+	},
+	"updateEffect":{
+	"type":"MultiEffect",
+	"effects":[
+	{
+			"type": "WaveEffect",
+			"lifetime": 20,
+			"sizeFrom": 10,
+			"sizeTo": 0,
+			"strokeFrom": 5,
+			"strokeTo": 0,
+			"interp": "circleOut",
+			"colorFrom": "FFFFFF",
+			"colorTo": "FFFFFF00"
+		}
+	]
+},
+    "requirements": [
+    "plastanium/150"
+	"暗能钢/100",
+	"lead/350"
+	"钢/200"
+	],	
+	"category": "crafting",
+	"research": {
+    "parent": "贫铀加工厂",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "地冠"
+			}
+		]
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "压缩塑钢机",
+	"health":700,
+	"itemCapacity":20,
+    "liquidCapacity":360,
+	"outputItem":"plastanium/5",
+	"size":3,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "oil"
+			},
+			"DrawDefault"
+		]
+	},
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":70,	
+	"consumes":{
+		"power":1.25,
+		"liquid":"oil/0.5"
+		"items": [
+	    "titanium/4.5"
+	         ]
+		},
+		"updateEffect": 
+	{"type":"hitEmpSpark"
+	    "particles":15//粒子个数
+	    "sizeFrom":0//位置变化
+	    "sizeTo":0//位置
+	    "length":12//长度变化
+	    "baseLength":15
+	    "colorFrom":"E8E8E860"
+	    "colorTo":"FFFFFF"
+	    "lifetime":20
+	    "cone":360
+	    },
+    "requirements": [
+	"titanium/50"
+	"copper/150"
+	"lead/100"
+	"thorium/55"
+	],	
+	"category": "crafting",
+	"research": "炼钢厂",
+}
+

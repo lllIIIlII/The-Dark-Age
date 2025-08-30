@@ -1,0 +1,72 @@
+{
+	"Type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "原子糅合机",
+	"health": 900,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemCapacity":50,
+	"liquidCapacity":100,
+	"requirements": [
+	"titanium/120",
+	"graphite/55",
+	"plastanium/115",
+	"silicon/365"
+	],
+	"outputItem":"scrap/5",
+	"craftTime":60,
+	"consumes":{
+		"power":26.5,
+		"items": [
+	    "sand/1",
+	    "copper/1"
+	    "lead/1"
+	    "graphite/1"
+	         ]
+		},
+	"drawer": {
+	"type": "DrawMulti",
+	"drawers": [
+	"DrawDefault",
+	{
+	"type": "DrawFlame",
+	"flameRadius": 2,
+	"flameRadiusIn": 1.5,
+	"flameRadiusMag": 2,
+	"flameRadiusInMag": 1.8,
+	"flameColor": "F2E770"
+	}
+]
+},
+	"craftEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 4,
+	"sizeFrom": 5,
+	"sizeTo": 0,
+	"length": 45,
+	"region":"黑暗纪元-斜正方",
+	"baseLength": 0,
+	"lifetime": 30,
+	"colorFrom": "9BD9FD",
+	"colorTo": "9BD9FD00",
+	}
+]
+}
+	"category": "crafting",
+	"ambientSound": "shield",
+	"ambientSoundVolume": 0.7,
+	"research": {
+    "parent": "暗金属催化池",
+    "objectives": [
+	{
+	"type": "OnSector",
+	"preset": "空置域"
+	}
+]
+}
+}

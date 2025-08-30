@@ -1,0 +1,36 @@
+{
+  "bloom": true,
+  "accessible": false,
+  "alwaysUnlocked": true,
+  "radius": 8,
+  "atmosphereColor": "FFF4C2",
+  "mesh": {
+    "type": "SunMesh",
+    "planet": "Daina",
+    "divisions": 8,
+    "octaves": 5,
+    "persistence": 0.3,
+    "scl": 1.5,
+    "pow": 1.2,
+    "mag": 1,
+    "colorScale": 1.1,
+    "colors": [ 
+      "FFFFFF",
+      "FFF496",
+      "FFF4C2",
+      "FFF4C2",
+      "FFF484",
+      "DFF484"
+    ]
+  },
+  "iconColor": "FFF4C2",
+  "rotateTime": 600,
+  "solarSystem": "Daina",
+  "visible": true,
+  "alwaysUnlocked": false,
+  "parent": "sun",
+  "orbitRadius": 300,
+  "drawOrbit": false,
+  "orbitTime": 12000,
+  "children": [ "Planzer" ]
+}

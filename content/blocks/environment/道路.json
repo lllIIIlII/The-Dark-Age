@@ -1,0 +1,15 @@
+{
+	"type": "Floor",
+	"name": "道路",
+	"autotile": true,
+	"drawEdgeOut": false,
+    "drawEdgeIn": false,
+    "speedMultiplier": 1.5,
+	"dragMultiplier": 1,
+	"attributes":{
+		"oil": -0.15,
+		"water": -0.15
+	},
+	"blendGroup": "硬基地",
+	"autotileVariants": 1
+}

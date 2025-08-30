@@ -1,0 +1,10 @@
+{
+	"type": "StaticWall",
+	"name": "花岗岩墙",
+	"variants": 2
+	"allowRectanglePlacement":true,
+    "instantBuild":true,
+    "breakable":false,
+    "alwaysReplace":false,
+    "solid":true,
+}

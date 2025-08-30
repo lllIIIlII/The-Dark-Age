@@ -1,0 +1,11 @@
+{
+"type":"Floor",
+"name":"黄花草地",
+"variants":3,
+"speedMultiplier":1,
+"dragMultiplier":1,
+"attributes":{
+"water":0.3
+}
+"blendGroup": "grass",
+}

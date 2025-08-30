@@ -1,0 +1,19 @@
+{
+	"name": "禁锢",
+	"color": "576B73",
+	"speedMultiplier": 0.0,
+	"healthMultiplier": 1,
+	"reloadMultiplier": 1,
+	"effectChance": 0.1,
+	"effect": {
+	"type": "WaveEffect",
+	"sides": 3,
+	"sizeFrom": 0,
+	"sizeTo": 50,
+	"lifetime": 30,
+	"strokeFrom": 4,
+	"strokeTo": 4,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF00"
+	}
+}

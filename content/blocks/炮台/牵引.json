@@ -1,0 +1,31 @@
+{
+	"type": "TractorBeamTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "牵引",
+	"health": 1976,
+	"size": 4,
+	"rotateSpeed": 7,
+	"range": 640,
+	"scaledForce": 125,
+	"force": 225,
+	"targetGround": true,
+	"targetAir": true,
+	"damage": 16.875,
+	"consumes": {},
+	"requirements": [
+		"graphite/180"
+		"silicon/1200"
+		"钢/800"
+		"铁/400"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "蜂巢",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "[yellow]战术训练-极地作战"
+			}
+		]
+	}
+}

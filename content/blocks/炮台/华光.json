@@ -1,0 +1,311 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "华光",
+	"unitSort": "weakest",
+	"health": 11189,
+	"size": 6,
+	"reload": 360,
+	"range": 1342,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 205,
+		"liquid": "cryofluid/0.22"
+	},
+	"shoot": {
+		"shots": 4,
+		"shotDelay": 5,
+		"type": "ShootBarrel",
+		"barrels": [
+			18, 14, 2,
+			9, 14, 1,
+			-18, 14, -2,
+			-9, 14, -1
+		]
+	},
+	"shootSound": "JG",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shootCone": 12,
+	"rotateSpeed": 0.9,
+	"shootType": {
+		"type": "BasicBulletType",
+		"damage": 671,
+		"buildingDamageMultiplier": 2,
+		"splashDamageRadius": 28,
+		"splashDamage": 327.9,
+		"sprite": "missile-large",
+		"ammoMultiplier": 1,
+		"hitSound": "laser",
+		"knockback": 54,
+		"hitShake": 12,
+		"width": 13,
+		"height": 17,
+		"status": "sapped",
+		"statusDuration": 45,
+		"speed": 18,
+		"lifetime": 178,
+		"drag": 0.009,
+		"trailLength": 70,
+		"trailWidth": 1,
+		"trailColor": "D4F2FF80",
+		"trailChance": 1,
+		"trailInterval": 50,
+		"trailEffect": {
+			"type": "ParticleEffect",
+			"particles": 5,
+			"sizeFrom": 14,
+			"sizeTo": 0,
+			"interp": "fastSlow",
+			"region": "黑暗纪元-斜正方",
+			"length": -80,
+			"baseLength": 5,
+			"lifetime": 180,
+			"colorFrom": "FFC23F77",
+			"colorTo": "D8C7C650"
+		},
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WaveEffect",
+					"sizeFrom": 0,
+					"sizeTo": 30,
+					"lifetime": 40,
+					"colorFrom": "FFFFFF",
+					"colorTo": "FFFFFF"
+				},
+				{
+					"type": "WaveEffect",
+					"sizeFrom": 0,
+					"sizeTo": 35,
+					"lifetime": 35,
+					"colorFrom": "FFFFFF",
+					"colorTo": "FFFFFF"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 25,
+					"sizeFrom": 10,
+					"sizeTo": 0,
+					"length": 35,
+					"lifetime": 60,
+					"colorFrom": "D4F2FF",
+					"colorTo": "D4F2FF"
+				},
+				{
+					"type": "ParticleEffect",
+					"particles": 7,
+					"line": true,
+					"lenFrom": 35,
+					"lenTo": 0,
+					"length": 60,
+					"strokeFrom": 5,
+					"strokeTo": 0,
+					"baseLength": 40,
+					"lifetime": 45,
+					"colorFrom": "FFC23F",
+					"colorTo": "FFC23F50"
+				}
+			]
+		},
+		"fragBullets": 34,
+		"fragSpread": 360,
+		"fragBullet": {
+			"type": "BasicBulletType",
+			"damage": 278,
+			"buildingDamageMultiplier": 2,
+			"splashDamageRadius": 45,
+			"splashDamage": 147,
+			"sprite": "黑暗纪元-圆",
+			"backColor": "D4F2FF",
+			"frontColor": "6F8892",
+			"hitSound": "plasmaboom",
+			"homingDelay": 30,
+			"homingPower": 0.34,
+			"homingRange": 246,
+			"knockback": 12,
+			"hitShake": 2,
+			"width": 3,
+			"height": 3,
+			"speed": 3,
+			"lifetime": 211,
+			"drag": -0.0067,
+			"trailLength": 10,
+			"trailWidth": 1,
+			"trailColor": "6F889270",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "WaveEffect",
+						"sizeFrom": 0,
+						"sizeTo": 50,
+						"lifetime": 60,
+						"colorFrom": "FFFFFF",
+						"colorTo": "6F889266"
+					},
+					{
+						"type": "ParticleEffect",
+						"particles": 25,
+						"sizeFrom": 7,
+						"sizeTo": 0,
+						"length": 50,
+						"lifetime": 66,
+						"colorFrom": "D4F2FF",
+						"colorTo": "FFFFFF"
+					},
+					{
+						"type": "ParticleEffect",
+						"particles": 17,
+						"sizeFrom": 13,
+						"sizeTo": 0,
+						"length": 53,
+						"lifetime": 56,
+						"colorFrom": "D4F2FF80",
+						"colorTo": "FFFFFF80"
+					},
+					{
+						"type": "ParticleEffect",
+						"particles": 1,
+						"sizeFrom": 45,
+						"sizeTo": 0,
+						"interp": "pow5Out",
+						"sizeInterp": "pow10In",
+						"lifetime": 60,
+						"colorFrom": "D4F2FF45",
+						"colorTo": "6F889235"
+					}
+				]
+			}
+		}
+	},
+	"drawer": {
+		"type": "DrawTurret",
+		"parts": [
+			{
+				"type": "HaloPart",
+				"progress": {
+					"type": "warmup",
+					"op": "delay",
+					"amount": 0.25
+				},
+				"rotateSpeed": 0,
+				"shapeRotation": 0,
+				"y": 32,
+				"x": 22,
+				"sides": 3,
+				"shapes": 1,
+				"color": "FFFFFF",
+				"colorTo": "D4F2FF",
+				"tri": true,
+				"hollow": true,
+				"radius": 0,
+				"radiusTo": 5,
+				"triLength": 300,
+				"triLengthTo": 90,
+				"haloRadius": 0,
+				"haloRotation": 0,
+				"haloRotateSpeed": 0,
+				"layer": 110
+			},
+			{
+				"type": "HaloPart",
+				"progress": {
+					"type": "warmup",
+					"op": "delay",
+					"amount": 0.25
+				},
+				"rotateSpeed": 0,
+				"shapeRotation": 0,
+				"y": 32,
+				"x": -22,
+				"sides": 3,
+				"shapes": 1,
+				"color": "FFFFFF",
+				"colorTo": "D4F2FF",
+				"tri": true,
+				"hollow": true,
+				"radius": 0,
+				"radiusTo": 5,
+				"triLength": 300,
+				"triLengthTo": 90,
+				"haloRadius": 0,
+				"haloRotation": 0,
+				"haloRotateSpeed": 0,
+				"layer": 110
+			},
+			{
+				"type": "HaloPart",
+				"progress": {
+					"type": "warmup",
+					"op": "delay",
+					"amount": 0.25
+				},
+				"rotateSpeed": 0,
+				"shapeRotation": 137.5,
+				"y": 35,
+				"x": -23,
+				"sides": 3,
+				"shapes": 1,
+				"color": "FFFFFF",
+				"colorTo": "D4F2FF",
+				"tri": true,
+				"hollow": true,
+				"radius": 0,
+				"radiusTo": 5,
+				"triLength": 150,
+				"triLengthTo": 20,
+				"haloRadius": 0,
+				"haloRotation": 0,
+				"haloRotateSpeed": 0,
+				"layer": 110
+			},
+			{
+				"type": "HaloPart",
+				"progress": {
+					"type": "warmup",
+					"op": "delay",
+					"amount": 0.25
+				},
+				"rotateSpeed": 0,
+				"shapeRotation": -137.5,
+				"y": 35,
+				"x": 23,
+				"sides": 3,
+				"shapes": 1,
+				"color": "FFFFFF",
+				"colorTo": "D4F2FF",
+				"tri": true,
+				"hollow": true,
+				"radius": 0,
+				"radiusTo": 5,
+				"triLength": 150,
+				"triLengthTo": 20,
+				"haloRadius": 0,
+				"haloRotation": 0,
+				"haloRotateSpeed": 0,
+				"layer": 110
+			}
+		]
+	},
+	"requirements": [
+		"copper/1200",
+		"silicon/1700",
+		"钢/890",
+		"贫铀/1120",
+		"钴钢/2000",
+		"graphite/990"
+	],
+	"category": "turret",
+	"research": {
+		"parent": "九幽",
+		"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "出云要塞"
+			}
+		]
+	}
+}

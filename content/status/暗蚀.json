@@ -1,0 +1,22 @@
+{
+	"name": "暗能量侵蚀",
+	"color": "000000",
+	"speedMultiplier": 0.65,
+	"healthMultiplier": 1,
+	"reloadMultiplier": 1,
+	"damageMultiplier": 1,
+	"effectChance": 0.2,
+	"damage": 100,
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 34,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"sizeFrom": 3,
+	"sizeTo": 0,
+	"colorFrom": "000000",
+	"colorTo": "000000"
+	},
+}

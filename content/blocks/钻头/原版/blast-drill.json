@@ -1,0 +1,7 @@
+{  
+"itemCapacity": 35,   
+"drillEffect": "mineHuge",
+"updateEffect": "explosion",
+"drillTime": 48,
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+}

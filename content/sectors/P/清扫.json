@@ -1,0 +1,21 @@
+{
+	"captureWave":201
+	"planet": "Planzer",
+	"sector":226,
+	"difficulty": 10,
+	"research": {
+    "parent": "深入",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "深入"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": true,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

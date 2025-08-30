@@ -1,0 +1,134 @@
+{
+	"type": "NuclearReactor",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "大型钍反应堆",
+	"size": 4,
+	"health": 4800,
+	"liquidCapacity": 100,
+	"itemCapacity": 30,
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsPower": true,
+	"powerProduction": 100,
+	"itemDuration": 60,
+	"heating":0.01,
+	"lightColor": "FFFFFF",
+	"explosionShake": 9,
+	"explosionShakeDuration": 120,
+	"explosionRadius": 60,
+	"explosionDamage": 16000,
+	"explodeSound": "BZ",
+	"explodeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "WaveEffect",
+				"lifetime": 60,
+				"sizeFrom": 0,
+				"sizeTo": 320,
+				"strokeFrom": 18,
+				"strokeTo": 0,
+				"colorFrom": "BF92F9",
+				"colorTo": "665C9F"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 25,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 35,
+				"sizeTo": 0,
+				"length": 280,
+				"baseLength": 0,
+				"lifetime": 250,
+				"colorFrom": "BF92F970",
+				"colorTo": "665C9F70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 35,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 30,
+				"sizeTo": 0,
+				"length": 290,
+				"baseLength": 0,
+				"lifetime": 300,
+				"colorFrom": "BF92F970",
+				"colorTo": "665C9F70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 40,
+				"interp": "pow10Out",
+				"sizeInterp": "pow5In",
+				"sizeFrom": 20,
+				"sizeTo": 0,
+				"length": 300,
+				"baseLength": 0,
+				"lifetime": 350,
+				"colorFrom": "BF92F970",
+				"colorTo": "665C9F70"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 25,
+				"line": true,
+				"interp": "pow10Out",
+				"sizeInterp": "pow3In",
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"lenFrom": 150,
+				"lenTo": 0,
+				"length": 220,
+				"baseLength": 60,
+				"lifetime": 60,
+				"colorFrom": "BF92F9",
+				"colorTo": "665C9F"
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 21
+				"lenFrom": 80,
+				"lenTo": 0
+				"strokeFrom": 10,
+				"strokeTo": 0,
+				"sizeInterp":"pow10In",
+				"length": 0,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FF5B5B"
+			}
+		]
+	},
+    "drawer": {
+    "type": "DrawMulti",
+		"drawers": [
+		{
+			"DrawDefault":{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "cryofluid"
+			}
+		}
+	]
+},
+	"fuelItem": "thorium",
+	"itemRadioactive": {},
+	"consumes": {
+		"liquid":"cryofluid/0.15",
+		"items":[
+		"thorium/1"
+		]
+	},
+	"requirements": [
+		"lead/500",
+		"graphite/500",
+		"metaglass/150",
+		"copper/680",
+		"silicon/500"
+		"plastanium/300"
+	],
+	"category": "power",
+	"research": "大型RTG"
+}

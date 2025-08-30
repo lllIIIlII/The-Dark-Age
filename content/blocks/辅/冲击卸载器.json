@@ -1,0 +1,17 @@
+{
+	"health": 190,
+	"size":1,
+	"speed": 0.5,
+	"update": "true",
+	"hasItems": "true",
+	"type":"Unloader",
+	"name":"冲击卸载器",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"requirements": [
+		"titanium/20",
+		"silicon/15",
+		"洛德合金/1"
+	],
+	"category": "effect",
+	"research":"冲击传输管道"
+	}

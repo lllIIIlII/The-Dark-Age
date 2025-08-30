@@ -1,0 +1,12 @@
+{
+"name":"暗金属",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"暗金属",
+"variants":4,
+"mapColor":"000000",
+"useColor":true,
+"oreDefault":false,
+"oreThreshold":0.95,
+"oreScale":12
+}

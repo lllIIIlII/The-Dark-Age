@@ -1,0 +1,99 @@
+{
+	"type": "LiquidTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "消防装置",
+	"health": 200,
+	"size": 1,
+	"shoot": {
+		"shots": 5
+		"shotDelay": 0.5,
+		"type": "ShootBarrel",
+		"barrels": [
+			0,-0.3,0,
+			]
+	},
+	"reload": 0.2,
+	"range": 230,
+	"rotateSpeed":4,
+	"recoilTime": 60,
+	"recoil": 0,
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 25,
+	"velocityRnd": 0.1,
+	"consumes": {
+		"power": 0.5
+	},
+	"liquidCapacity": 50,
+	"ammoTypes": {
+			"water": {
+			"type": "LiquidBulletType",
+			"liquid": "water",
+			"lifetime": 33,
+			"speed": 7,
+			"puddleSize": 6,
+			"orbSize": 3,
+			"knockback": 1.7,
+			"statusDuration": 600,
+			"status": "wet",
+			"damage": 0.4
+		},
+		"oil": {
+			"type": "LiquidBulletType",
+			"liquid": "oil",
+			"layer": 98,
+			"lifetime": 30,
+			"speed": 6.8,
+			"puddleSize": 6,
+			"orbSize": 3,
+			"knockback": 1.5,
+			"statusDuration": 600,
+			"status": "tarred",
+			"damage": 1,
+			"incendAmount": 1,
+			"incendSpread": 1,
+			"incendChance": 1
+		},
+		"cryofluid": {
+			"type": "LiquidBulletType",
+			"liquid": "cryofluid",
+			"lifetime": 33
+			"speed": 7.2,
+			"puddleSize": 6,
+			"orbSize": 3,
+			"knockback": 2,
+			"statusDuration": 600,
+			"status": "freezing",
+			"damage": 2
+		},
+		"slag": {
+			"type": "LiquidBulletType",
+			"liquid": "slag",
+			"lifetime": 33
+			"speed": 7.2,
+			"puddleSize": 6,
+			"orbSize": 3,
+			"knockback": 1.8,
+			"statusDuration": 600,
+			"status": "blasted",
+			"damage": 4
+		},
+		"润滑剂": {
+			"type": "LiquidBulletType",
+			"liquid": "润滑剂",
+			"lifetime": 30
+			"speed": 6.9,
+			"puddleSize": 6,
+			"orbSize": 3,
+			"knockback": 2.6,
+			"damage": 6
+		},
+	},
+	"requirements": [
+		"plastanium/70",
+		"metaglass/80",
+		"钴/80",
+	],
+	"category": "turret",
+	"research": "钢针"
+}

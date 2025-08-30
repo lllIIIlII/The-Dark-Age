@@ -1,0 +1,60 @@
+{
+	"type": "ConsumeGenerator",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "涡流发电机",
+	"size": 3,
+	"health": 500,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 30,
+	"powerProduction": 42,
+	"itemCapacity": 25,
+	"liquidCapacity": 150,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-转",
+				"rotateSpeed":6,
+				"rotation":45
+			},
+			{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "water"
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-顶"
+			},
+			"DrawWarmupRegion",
+		]
+	},
+	"generateEffect": "generatespark",
+	"consumes": {
+		"itemFlammable":{},
+		"itemExplode":{},
+		"liquid": "water/0.7"
+	},
+	"requirements": [
+		"lead/300",
+		"titanium/250",
+		"metaglass/120",
+		"silicon/90",
+		"钴/300"
+		"钢/180"
+	],
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": {
+	"parent": "临时核心"
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "天南沼泽"
+			}
+		]
+	},
+}

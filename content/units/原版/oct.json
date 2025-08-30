@@ -1,0 +1,94 @@
+{
+    "shownPlanets": ["serpulo", "Planzer", "Synchronous-orbit-space-station"],
+    "health": 40000,
+    "controller": "FlyingFollowAI",
+   // "targetGround": true,
+	//"targetAir": true,
+    "weapons": [
+        {
+            "name": "emp-cannon-mount",
+            "x": 18,
+            "y": 10,
+            "recoil": 2.2,
+            "shootX": 0,
+            "shootY": 4,
+            "reload": 80,
+            "xRand": 0,
+            "top": true,
+            "rotate": true,
+            "shootSound": "malignShoot",
+            "alternate": true,
+            "mirror": true,
+            "inaccuracy": 20,
+            "velocityRnd": 0.5,
+            "shoot": {
+                "shots": 3
+                "shotDelay": 15
+            },
+            "bullet": {
+                    "type": "EmpBulletType",
+                    "damage": 14,
+                    "layer": 120,
+                    "splashDamage": 89,
+                    "splashDamageRadius": 100,
+                    "collidesGround":true,
+                    "collidesAir":true,
+                    "healPercent": 2.7,
+                    "collidesTeam": true,
+                    "sprite": "circle-bullet",
+                    "backColor": "A0F19B",
+                    "frontColor": "74AC83",
+                    "speed": 8,
+                    "lifetime": 60,
+                    "radius": 40,
+                    "unitDamageScl": 0.8,
+                    "timeIncrease": 1.2,
+                    "timeDuration": 300,
+                    "powerDamageScl": 2,
+                    "powerSclDecrease": 0.1,
+                    "hitSound": "boom",
+                    "knockback": 2,
+                    "hitShake": 1,
+                    "despawnEffect": "none",
+                    "shootEffect": "none",
+                    "trailLength": 8,
+                    "trailWidth": 4,
+                    "trailColor": "A0F19B",
+                    "width": 8,
+                    "height": 8,
+                    "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "WaveEffect",
+                            "strokeFrom": 7,
+                            "strokeTo": 3,
+                            "sizeFrom": 0,
+                            "sizeTo": 100,
+                            "lifetime": 45,
+                            "colorFrom": "A0F19B",
+                            "colorTo": "A0F19B00"
+                        },
+                        {
+                        "type": "ParticleEffect",
+                        "particles": 12,
+                        "sizeFrom": 11
+                        "sizeTo": 0,
+                        "length": 100,
+                        "baseLength": 10,
+                        "lifetime": 60,
+                        "colorFrom": "A0F19B",
+                        "colorTo": "FFFFFF",
+                        },
+                        {
+                            "type": "WrapEffect",
+                            "effect": "dynamicSpikes",
+                            "color": "A0F19B",
+                            "rotation": 86
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

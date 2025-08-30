@@ -1,0 +1,83 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "蜂巢",
+	"unitSort": "weakest",
+	"health": 1976,
+	"size": 4,
+	"reload": 13.3,
+	"range": 640,
+	"recoilTime": 5,
+	"recoil": 4,
+	"canOverdrive": true,
+	"xRand":5
+	"consumes": {},
+	"shootSound": "missileSmall",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 12,
+	"shake": 2.8,
+	"shootCone": 180,
+	"rotateSpeed": 3,
+	"shootType": {
+	"ammoMultiplier": 1,
+	"homingDelay": 60,
+	"smokeEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 7,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 40,
+	"lifetime": 45,
+	"colorFrom": "C0C0C0",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 8,
+	"sizeFrom": 11
+	"sizeTo": 0,
+	"length": 170,
+	"baseLength": 10,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "C0C0C0",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 5,
+	"sizeFrom": 20,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 150,
+	"baseLength": 20,
+	"lifetime": 70,
+	"colorFrom": "73737390",
+	"colorTo": "73737390",
+	}
+]
+}
+	"speed": 0,
+	"spawnUnit": "蜂巢导弹"
+	},
+	"requirements": [
+		"graphite/180"
+		"silicon/1200"
+		"钢/800"
+		"铁/400"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "倾覆",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "[yellow]战术训练-极端情况"
+			}
+		]
+	}
+}

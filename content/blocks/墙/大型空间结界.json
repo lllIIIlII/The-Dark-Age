@@ -1,0 +1,53 @@
+{
+	"name": "大型空间结界",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 22900,
+	"armor":250,
+	"size": 2,
+	"lightningChance": 0.25
+	"lightningDamage": 285
+	"lightningColor": "46FFF9",
+	"absorbLasers":true,
+	"flashHit": true,
+	"chanceDeflect": 50,
+		"destroyBullet": {
+		"splashDamage": 150,
+		"splashDamageRadius": 40,
+		"lightningColor": "46FFF9",
+		"lightningDamage": 106,
+		"lightning": 7,
+		"lightningLength": 25,
+		"buildingDamageMultiplier": 0.8,
+		"collides": false,
+		"instantDisappear": true,
+		"pierceArmor": true,
+		"hittable": false,
+		"absorbable": false,
+		"status": "空间混乱",
+		"statusDuration": 60,
+		"hitSound": "plasmaboom",
+		"hitSoundVolume": 6,
+		"hitShake": 4,
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WaveEffect",
+					"sizeFrom": 0,
+					"sizeTo": 10,
+					"interp": "pow10Out",
+					"lifetime": 30,
+					"colorFrom": "46FFF950",
+					"colorTo": "46FFF9"
+				}
+			]
+		}
+	},
+	"requirements": [
+		"空间节点/85"
+	],
+	"buildCostMultiplier": 0.65,
+	"category": "defense",
+	"research": "空间结界"
+}

@@ -1,0 +1,33 @@
+{
+	"type": "ThermalGenerator",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "地热转能站",
+	"size": 3,
+	"health": 590,
+	"powerProduction": 4.3,
+	"generateEffect": "redgeneratespark",
+	"effectChance": 0.08,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFade",
+				"scale": 10
+			}
+		]
+	},
+	"requirements": [
+		"graphite/40",
+		"metaglass/20",
+		"铁/30",
+		"thorium/50"
+		"钢/330"
+	],
+	"buildCostMultiplier": 0.95,
+	"floating": true,
+	"ambientSound": "hum",
+	"attribute": "heat",
+	"category": "power",
+	"research": "涡流发电机"
+}

@@ -1,0 +1,61 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "铀合成机",
+	"description": "人工合成铀的机器",
+	"health":1500,
+	"itemCapacity":20,
+    "liquidCapacity":1200,
+	"outputItem":"铀/1",
+	"size":4,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":15,	
+	"consumes":{
+		"power":2,
+		"liquid":"water/1.7",
+		"items": [
+	    "thorium/2",
+	    "graphite/4"
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0,
+				"flameColor": "F2E770"
+			}
+		]
+	},
+		"craftEffect": {
+		"type": "ParticleEffect",
+		"particles": 10,
+		"baseLength": 2,
+		"length": 20,
+		"region": "黑暗纪元-放射三角",
+		"lifetime": 25,
+		"sizeFrom": 10,
+		"sizeTo": 0,
+		"colorFrom": "F2E77080",
+		"colorTo": "F2E770"
+	},
+    "requirements": [
+	"钢/200",
+	"plastanium/300"
+	"metaglass/500"
+	"silicon/750"
+	"铁/600"
+	],	
+	"category": "crafting",
+	"research": "大型爆炸物制造机",
+	"ambientSound": "pulse",
+	"ambientSoundVolume": 0.5,
+}
+

@@ -1,0 +1,31 @@
+{
+	"name": "适应型加速器",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "OverdriveProjector",
+	"health": 120,
+	"size": 1,
+	"range": 15,
+	"phaseRangeBoost": 0,
+	"speedBoostPhase": 1.25,
+	"speedBoost": 1.5,
+	"hasBoost": true,
+	"useTime": 30,
+	"consumes": {
+	"power": 8.55,
+	"liquids":{
+	"liquids": [
+	"oil/0.05"
+	]
+	"booster": true,
+	"optional": true
+	}
+}
+	"requirements": [
+	"copper/200",
+	"silicon/250",
+	"surge-alloy/500",
+	"lead/200",
+	],
+	"category": "effect",
+	"research": "暗能提速器"
+}

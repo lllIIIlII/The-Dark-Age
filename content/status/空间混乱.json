@@ -1,0 +1,23 @@
+{
+	"name": "空间混乱",
+	"color": "D4F2FF",
+	"speedMultiplier": -1,
+	"healthMultiplier": 0.5,
+	"reloadMultiplier": -3.5,
+    "damageMultiplier": -0.5,
+	"effectChance": 0.1,
+	"permanent": true,
+	"disarm": true,
+	"opposites": [
+	"神圣"
+	],
+	"damage": 128
+	"effect": {
+		"type": "WaveEffect",
+		"lifetime": 30,
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"colorFrom": "16CFC9",
+		"colorTo": "FFFFFF50"
+	}
+}

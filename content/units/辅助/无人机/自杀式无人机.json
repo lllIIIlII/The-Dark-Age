@@ -1,0 +1,109 @@
+{
+	"type": "payload",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"payloadCapacity": 100,
+	"name": "自杀式无人机",
+	"speed": 6.7,
+	"drag": 0.04,
+	"accel": 0.06,
+	"rotateSpeed": 2.5,
+	"immunities": [
+		"electrified",
+		"破防",
+		"疑惑"
+	],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 3000
+	},
+	"itemCapacity": 300,
+	"itemOffsetY": 1,
+	"hitSize": 12,
+	"flying": true,
+	"circleTarget": true,
+	"health": 800,
+	"armor": 25,
+	"engineOffset": 6,
+	"engineSize": 3,
+	"engines": [
+		{
+			"x": 0,
+			"y": -8,
+			"radius": 5,
+			"rotation": 90
+		}
+	],
+	"weapons": [
+		{
+			"reload": 10,
+			"x": 0,
+			"y": 0,
+			"rotate": false,
+			"shootCone": 270,
+			"ejectEffect": "none",
+			"shootSound": "explosionbig",
+			"mirror": false,
+			"inaccuracy": 0,
+			"alternate": true,
+			"top": false,
+			"shootOnDeath": true,
+			"bullet": {
+				"killShooter": true,
+				"splashDamageRadius": 68,
+				"instantDisappear": true,
+				"collides": false,
+				"splashDamage": 500,
+				"speed": 1,
+				"lifetime": 10,
+				"hitEffect": "massiveExplosion",
+				"despawnEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 18,
+							"sizeFrom": 6,
+							"sizeTo": 0,
+							"length": 45,
+							"baseLength": 3,
+							"lifetime": 35,
+							"colorFrom": "737373",
+							"colorTo": "737373"
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 32,
+							"line": true,
+							"length": 53,
+							"baseLength": 20,
+							"lifetime": 22,
+							"colorFrom": "FFFFFF",
+							"colorTo": "FFE176"
+						},
+						{
+							"type": "WaveEffect",
+							"lifetime": 15,
+							"sizeFrom": 0,
+							"sizeTo": 70,
+							"strokeFrom": 4,
+							"strokeTo": 0,
+							"colorFrom": "FFE176",
+							"colorTo": "FFFFFF"
+						}
+					]
+				},
+				"width": 0,
+				"height": 0
+			}
+		}
+	],
+	"research": {
+		"parent": "无人机组装工厂",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

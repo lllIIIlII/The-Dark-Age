@@ -1,0 +1,39 @@
+{
+	"name": "复分解",
+	"color": "8B4B89",
+	"speedMultiplier": 1,
+	"healthMultiplier": 0.7,
+	"reloadMultiplier": 0.6,
+	"damageMultiplier": 1.1,
+	"effectChance": 0.4,
+	"damage": -15,
+	"effect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 12
+	"sizeTo": 0,
+	"length": 110,
+	"baseLength": 0,
+	"lifetime": 60,
+	"sizeInterp": "pow5Out",
+	"colorFrom": "DE5D70",
+	"colorTo": "DE5D70",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"sizeFrom": 12
+	"sizeTo": 0,
+	"length": 110,
+	"baseLength": 0,
+	"lifetime": 60,
+	"sizeInterp": "pow5Out",
+	"colorFrom": "5DC190",
+	"colorTo": "5DC190",
+	}
+]
+}
+}

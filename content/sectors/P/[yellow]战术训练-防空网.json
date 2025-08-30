@@ -1,0 +1,17 @@
+{
+	"captureWave":10
+	"planet": "Planzer",
+	"sector":96,
+	"difficulty": 4,
+	"research": {
+    "parent": "[yellow]战术训练-速建防线",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "[yellow]战术训练-速建防线"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

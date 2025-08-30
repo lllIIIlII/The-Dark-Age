@@ -1,0 +1,179 @@
+{
+  "type": "payload",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "payloadCapacity": 100,
+  "name": "飞蝗",
+  "speed": 4.3,
+  "drag": 0.04,
+  "accel": 0.06,
+  "rotateSpeed": 2.5,
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "破防",
+    "疑惑",
+    "污染",
+    "致盲",
+    "空间混乱",
+    "瘫痪",
+    "溃解",
+    "暗蚀"
+  ],
+  "ammoType": {
+    "type": "PowerAmmoType",
+    "totalPower": 3000
+  },
+  "itemCapacity": 300,
+  "hitSize": 15,
+  "flying": true,
+  "circleTarget": true,
+  "health": 1550,
+  "armor": 7,
+  "engineOffset": 6,
+  "engineSize": 3,
+  "engines": [
+    {
+      "x": 0,
+      "y": -11,
+      "radius": 6,
+      "rotation": 90
+    }
+  ],
+  "abilities": [
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": true,
+      "radius": 35,
+      "width": 5,
+      "max": 500,
+      "regen": 60,
+      "cooldown": 100,
+      "angle": 90,
+      "angleOffset": 90
+    },
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": true,
+      "radius": 35,
+      "width": 5,
+      "max": 500,
+      "regen": 30,
+      "cooldown": 100,
+      "angle": 90,
+      "angleOffset": -90
+    },
+    {
+      "type": "ShieldArcAbility",
+      "radius": 95,
+      "width": 5,
+      "max": 900,
+      "regen": 30,
+      "cooldown": 150,
+      "angle": 120,
+      "angleOffset": 0
+    }
+  ],
+  "weapons": [
+    {
+      "name": "飞蝗1",
+      "reload": 100,
+      "x": -9,
+      "y": -1,
+      "shootX": 0,
+      "shootY": 4,
+      "rotate": false,
+      "alternate": true,
+      "top": true,
+      "shootCone": 5,
+      "recoil": 1.6,
+      "shoot": {
+        "shots": 3,
+        "firstShotDelay": 30,
+        "shotDelay": 15
+      },
+      "ejectEffect": "none",
+      "shootSound": "laser",
+      "mirror": true,
+      "inaccuracy": 10,
+      "bullet": {
+        "splashDamageRadius": 120,
+        "splashDamage": 170,
+        "layer": 120,
+        "sprite": "黑暗纪元-刺雨",
+        "collidesGround": true,
+        "collidesAir": true,
+        "reflectable": false,
+        "speed": 7,
+        "homingDelay": 20,
+        "homingPower": 0.08,
+        "homingRange": 200,
+        "lifetime": 50,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            "massiveExplosion",
+            {
+              "type": "WrapEffect",
+              "effect": "scatheExplosion",
+              "color": "FFFFFF70"
+            }
+          ]
+        },
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 18,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "length": 45,
+              "baseLength": 3,
+              "lifetime": 35,
+              "colorFrom": "737373",
+              "colorTo": "737373"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 32,
+              "line": true,
+              "length": 53,
+              "baseLength": 20,
+              "lifetime": 22,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFE176"
+            },
+            {
+              "type": "WaveEffect",
+              "lifetime": 15,
+              "sizeFrom": 0,
+              "sizeTo": 70,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "FFE176",
+              "colorTo": "FFFFFF"
+            }
+          ]
+        },
+        "width": 7,
+        "height": 34
+      }
+    }
+  ],
+  "research": {
+    "parent": "前线指挥中心",
+    "objectives": [
+      {
+        "type": "OnSector",
+        "preset": "空置域"
+      }
+    ]
+  }
+}

@@ -1,0 +1,561 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "肃正",
+	"unitSort": "strongest",
+	"health": 21782050
+	"armor":1200
+	"size": 16,
+	"reload": 2400,
+	"range": 6000,
+	"recoilTime": 1600,
+	"recoil": 5,
+	"liquidCapacity":4800
+	"consumes": {
+		"power": 105920,
+		"liquid":"STAL-加速流体/20"
+	},
+	"shoot": {
+		"type": "ShootPattern",
+		"firstShotDelay": 300
+		},
+	"shootSound": "JG2",
+	"targetGround": true,
+	"targetAir": true,
+	"canOverdrive": false,//能被超速
+	"inaccuracy": 0,
+	"shake": 30,
+	"shootCone": 1,
+	"rotateSpeed": 0.3,
+"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+"type": "HaloPart",
+"progress": "reload",
+"shapeRotation": 180,
+"shapes":5,
+"tri":true,
+"y":65,
+"radius":18,
+"radiusTo":0,
+"triLength":60,
+"triLengthTo":0,
+"haloRadius":60,
+"haloRadiusTo":0,
+"haloRotateSpeed":0.2,
+"layer":110,
+"color":"9D2933"
+}
+{
+"type": "HaloPart",
+"progress": "reload",
+"shapeRotation": 0,
+"shapes":5,
+"tri":true,
+"y":65,
+"radius":18,
+"radiusTo":0,
+"triLength":60,
+"triLengthTo":0,
+"haloRadius":60,
+"haloRadiusTo":0,
+"haloRotateSpeed":0.2,
+"layer":110,
+"color":"9D2933"
+}
+		]
+	}
+	"shootType": {
+	"type":"PointBulletType",
+		"ammoMultiplier": 1,
+		"trailLength": 4,
+		"trailWidth": 1.5,
+		"hitSound":"missileLarge"
+		"hitShake":137
+		"status": "延迟",
+		"statusDuration": 3600,
+		"splashDamageRadius": 800,
+		"splashDamage": 2969000,
+		"speed": 6000,
+		"lifetime": 1,
+		"trailSpacing": 10,
+			"trailEffect": {
+			"type": "MultiEffect",
+			"effects": [
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"length": 0,
+				"baseLength": 0,
+				"lifetime": 50,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 80,
+				"lenTo": 0,
+				"strokeFrom": 50,
+				"strokeTo": 0,
+				"colorFrom": "DC3023",
+				"colorTo": "DC302350",
+			},
+			{
+			"type": "ParticleEffect",
+			"particles": 5,
+			"strokeFrom": 200,
+			"strokeTo": 0,
+			"sizeFrom": 60,
+			"sizeTo": 0,
+			"region":"黑暗纪元-放射三角"
+			"length": 300,
+			"baseLength": 0,
+			"lifetime": 60,
+			"colorFrom": "DC3023",
+			"colorTo": "DC3023"
+			}
+		]
+	},
+	"chargeEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 150,
+		"strokeTo": 50,
+		"sizeFrom": 10000,
+		"sizeTo": 0,
+		"lifetime": 40,
+		"colorFrom": "9D2933",
+		"colorTo": "C85C51"
+		},
+		{
+		"type": "WaveEffect",
+		"sizeFrom": 15000,
+		"sizeTo": 0,
+		"strokeFrom": 150,
+		"strokeTo": 50,
+		"lifetime": 80,
+		"colorFrom": "9D2933",
+		"colorTo": "C85C51"
+		"startDelay": 30,
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 150,
+		"strokeTo": 50,
+		"sizeFrom": 20000,
+		"sizeTo": 0,
+		"lifetime": 120,
+		"colorFrom": "9D2933",
+		"colorTo": "C85C51"
+		"startDelay": 60,
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 215,
+		"sizeFrom": 50,
+		"sizeTo": 45,
+		"interp": "pow3In",
+		"sizeInterp": "pow5Out",
+		"length": -15250,
+		"baseLength": 15250,
+		"lifetime": 180,
+		"colorFrom": "C85C51",
+		"colorTo": "9D2933",
+		"startDelay": 5,
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 285,
+		"sizeFrom": 30,
+		"sizeTo": 25,
+		"interp": "pow3In",
+		"sizeInterp": "pow5Out",
+		"length": -17250,
+		"baseLength": 17250,
+		"lifetime": 180,
+		"colorFrom": "C85C51",
+		"colorTo": "9D2933",
+		"startDelay": 35,
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 185,
+		"sizeFrom": 70,
+		"sizeTo": 65,
+		"interp": "pow3In",
+		"sizeInterp": "pow5Out",
+		"length": -13250,
+		"baseLength": 13250,
+		"lifetime": 180,
+		"colorFrom": "C85C51",
+		"colorTo": "9D2933",
+		"startDelay": 65,
+		}
+	]
+},
+"hitEffect":{
+"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 15,
+		"strokeTo": 0,
+		"sizeFrom": 900,
+		"sizeTo": 0,
+		"lifetime": 120,
+		"colorFrom": "C85C51",
+		"colorTo": "9D293350"
+		},
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 20,
+		"strokeTo": 0,
+		"sizeFrom": 1000,
+		"sizeTo": 0,
+		"lifetime": 120,
+		"colorFrom": "C85C51",
+		"colorTo": "9D293350"
+		"startDelay": 30,
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 25,
+		"sizeFrom": 10,
+		"sizeTo": 0,
+		"length": 600,
+		"baseLength": 100,
+		"lifetime": 60,
+		"colorFrom": "C85C51",
+		"colorTo": "9D293350",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 45,
+		"sizeFrom": 10,
+		"sizeTo": 0,
+		"length": 800,
+		"baseLength": 100,
+		"lifetime": 60,
+		"colorFrom": "C85C51",
+		"colorTo": "9D293350",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 15,
+		"sizeFrom": 130,
+		"sizeTo": 0,
+		"interp": "pow5Out",
+		"sizeInterp": "pow10In",
+		"length": 1200,
+		"baseLength": 200,
+		"lifetime": 480,
+		"colorFrom": "C85C5150",
+		"colorTo": "73737320",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 50,
+		"line":true
+		"lenFrom": 350,
+		"lenTo": 0
+		"length": 600,
+		"strokeFrom": 50,
+		"strokeTo": 0,
+		"baseLength": 200,
+		"lifetime": 65,
+		"colorFrom": "FFC23F",
+		"colorTo": "FFC23F50"
+		}
+	]
+},
+"fragBullets":1
+"fragBullet":{
+"speed":0
+"splashDamageRadius":400
+"splashDamage": 316400,
+"lifetime":60
+"absorbable":false
+"reflectable":false
+"collides": false,
+"width": 0,
+"height": 0,
+"hitSound":"lasercharge"
+"fragBullets":1
+"fragBullet":{
+"splashDamageRadius":400
+"splashDamage": 27400,
+"speed":0
+"lifetime":1000
+"absorbable":false
+"reflectable":false
+"collides": false,
+"width": 0,
+"height": 0,
+"hitSound":"CDBZ"
+"parts": [
+{
+"type": "HaloPart",
+"sides": 6,
+"shapes": 8,
+"color": "C85C51",
+"colorTo": "9D2933",
+"tri": true,
+"radius": 450,
+"radiusTo": 0,
+"triLength": 120,
+"triLengthTo": 20,
+"haloRadius": 800,
+"haloRotation": 0,
+"haloRotateSpeed": 2
+"layer":110
+},
+{
+"type": "HaloPart",
+"sides": 6,
+"shapes": 12,
+"color": "C85C51",
+"colorTo": "9D2933",
+"tri": true,
+"radius": 400,
+"radiusTo": 0,
+"triLength": 120,
+"triLengthTo": 20,
+"haloRadius": 850,
+"haloRotation": 0,
+"haloRotateSpeed": -2
+"layer":110
+}
+],
+"hitEffect":{
+"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "ParticleEffect",
+		"particles": 100,
+		"interp": "pow3Out",
+		"sizeInterp": "pow3In",
+		"sizeFrom": 80,
+		"sizeTo": 0,
+		"length": 840,
+		"baseLength": 80,
+		"lifetime": 60,
+		"colorFrom": "C85C5100",
+		"colorTo": "9D293350"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 120,
+		"interp": "pow3Out",
+		"sizeInterp": "pow3In",
+		"sizeFrom": 60,
+		"sizeTo": 0,
+		"length": 880,
+		"baseLength": 60,
+		"lifetime": 80,
+		"colorFrom": "C85C5100",
+		"colorTo": "9D293350"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 90,
+		"line":true
+		"lenFrom": 40,
+		"lenTo": 0
+		"length": 900,
+		"strokeFrom": 40,
+		"strokeTo": 0,
+		"baseLength": 40,
+		"lifetime": 45,
+		"colorFrom": "C85C51",
+		"colorTo": "ffffff50"
+		}
+		{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"strokeFrom": 15,
+		"strokeTo": 0,
+		"line":true
+		"lenFrom": 800,
+		"lenTo": 0,
+		"length": -1200,
+		"baseLength": 1200,
+		"lifetime": 50,
+		"colorFrom": "C85C5100",
+		"colorTo": "9D293350"
+		}
+	]
+},
+		"bulletInterval":1
+		"intervalBullets":1
+		"intervalBullet":{
+		"splashDamageRadius": 680,
+		"instantDisappear": true,
+		"collides": false,
+		"splashDamage": 92000,
+		"speed": 0,
+		"lifetime": 0,
+		"hitSound":"largeExplosion"
+		"absorbable":false
+		"reflectable":false
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"sizeFrom": 950,
+		"sizeTo": 0,
+		"lifetime": 30,
+		"colorFrom": "9D2933",
+		"colorTo": "C85C51"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 45,
+		"sizeFrom": 20,
+		"sizeTo": 0,
+		"length": 480,
+		"baseLength": 20,
+		"lifetime": 30,
+		"colorFrom": "C85C51",
+		"colorTo": "9D2933",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 15,
+		"sizeFrom": 30,
+		"sizeTo": 0,
+		"interp": "pow5Out",
+		"sizeInterp": "pow10In",
+		"length": 640,
+		"baseLength": 80,
+		"lifetime": 50,
+		"colorFrom": "9D293370",
+		"colorTo": "C85C5170",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 90,
+		"line":true
+		"lenFrom": 40,
+		"lenTo": 0
+		"length": 800,
+		"strokeFrom": 40,
+		"strokeTo": 0,
+		"baseLength": 40,
+		"lifetime": 45,
+		"colorFrom": "C85C51",
+		"colorTo": "C85C51"
+		}
+	]
+}
+		"fragLifeMin": 0.1,
+		"fragLifeMax": 15,
+		"fragBullets":1
+		"fragSpread":137.5
+		"fragBullet":{
+		"damage":7000
+		"speed":50
+		"drag":0.01
+		"width": 0,
+		"height": 0,
+		"lifetime":20
+		"lightningColor":"C85C51"
+		"lightning":5,
+		"lightningDamage":85000,
+		"lightningLength":178,
+		"splashDamageRadius": 240,
+		"splashDamage": 38600,
+		"status": "消散",
+		"statusDuration": 10,
+		"hitSound":"BZ"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "WaveEffect",
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"sizeFrom": 260,
+		"sizeTo": 0,
+		"lifetime": 10,
+		"colorFrom": "9D2933",
+		"colorTo": "C85C51"
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 45,
+		"sizeFrom": 20,
+		"sizeTo": 0,
+		"length": 280,
+		"baseLength": 20,
+		"lifetime": 30,
+		"colorFrom": "C85C51",
+		"colorTo": "9D2933",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 15,
+		"sizeFrom": 120,
+		"sizeTo": 0,
+		"interp": "pow5Out",
+		"sizeInterp": "pow10In",
+		"length": 340,
+		"baseLength": 80,
+		"lifetime": 210,
+		"colorFrom": "ffffff50",
+		"colorTo": "ffffff20",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 90,
+		"line":true
+		"lenFrom": 350,
+		"lenTo": 0
+		"length": 400,
+		"strokeFrom": 50,
+		"strokeTo": 0,
+		"baseLength": 40,
+		"lifetime": 45,
+		"colorFrom": "C85C51",
+		"colorTo": "ffffff50"
+		}
+	]
+}
+}
+}
+}
+}
+}
+	"requirements": [
+	"silicon/120000",
+	"metaglass/1200",
+	"plastanium/70000",
+	"phase-fabric/85500",
+	"blast-compound/650000",
+	"surge-alloy/5000",
+	"钢/300000",
+	"贫铀/500",
+	"暗能钢/37500",
+	"洛德合金/70",
+	"钴钢/170000",
+	"空间节点/90000",
+	"copper/6000",
+	"titanium/167000",
+	"thorium/9000",
+	"铁/22000",
+	"铀/9500",
+	"暗金属/70000",
+	],
+	"category": "turret",
+	"research": {
+    "parent": "超新星",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "未知屏蔽区"
+			}
+		]
+	}
+}

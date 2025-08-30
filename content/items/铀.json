@@ -1,0 +1,13 @@
+{
+    "name":"铀",
+    "color":"00FA9A",
+    "explosiveness":0.5,
+    "flammability":0,
+    "radioactivity":2,
+    "charge":0,
+    "hardness":3.5,
+    "cost":3,
+    "alwaysUnlocked":false,
+    "research": "钴"
+    "shownPlanets": [ "serpulo","Planzer" ]
+}

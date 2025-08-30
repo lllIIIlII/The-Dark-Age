@@ -1,0 +1,100 @@
+{
+  "type": "missile",
+  "template": "MissileUnitType",
+  "name": "蜂巢导弹",
+  "speed": 5.33,
+  "lifetime": 240,
+  "rotateSpeed": 2,
+  "loopSoundVolume": 0.04,
+  "hidden": true,
+  "missileAccelTime": 30,
+  "homingDelay": 30,
+  "hitSize": 9,
+  "health": 700,
+  "fogRadius": 5,
+  "engineColor": "FFFFFF",
+  "trailColor": "FFFFFF",
+  "trailLength": 12,
+  "engineLayer": 110,
+  "engineOffset": 15,
+  "engineSize": 4,
+  "maxRange": 30,
+  "immunities": [
+    "tarred",
+    "slow",
+    "burning",
+    "freezing",
+    "spore-slowed",
+    "electrified",
+    "disarmed",
+    "疑惑",
+    "致盲",
+    "瘫痪",
+    "空间混乱",
+    "破防",
+    "延迟",
+    "消散"
+  ],
+  "weapons": [
+    {
+      "x": 0,
+      "reload": 260,
+      "mirror": false,
+      "rotate": true,
+      "shake": 10,
+      "shootSound": "none",
+      "shootOnDeath": true,
+      "shootCone": 360,
+      "bullet": {
+        "collides": false,
+        "instantDisappear": true,
+        "ammoMultiplier": 1,
+        "hitSound": "boom",
+        "killShooter": true,
+        "splashDamageRadius": 45,
+        "splashDamage": 225,
+        "status": "疑惑",
+        "hitShake": 4,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "despawnEffect": "none",
+        "trailEffect": "none",
+        "hitColor": "FFFFFF",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 50,
+              "lifetime": 60,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "length": 50,
+              "baseLength": 0,
+              "interp": "pow5Out",
+              "sizeInterp": "pow10In",
+              "lifetime": 45,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            },
+            "massiveExplosion",
+            {
+              "type": "WrapEffect",
+              "effect": "scatheExplosion",
+              "color": "C0C0C0"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

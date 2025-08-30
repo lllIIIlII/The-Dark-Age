@@ -1,0 +1,35 @@
+{
+	"type": "ConsumeGenerator",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "大型RTG",
+	"size": 3,
+	"health": 2000,
+	"hasLiquids": true,
+	"hasItems": true,
+	"itemDuration": 240,
+	"powerProduction": 40,
+	"itemCapacity": 20,
+	"liquidCapacity": 60,
+	"generateEffect": "generatespark",
+	"consumes": {
+		"itemRadioactive": {}
+	},
+	"requirements": [
+		"metaglass/400",
+		"silicon/580",
+		"copper/470",
+		"lead/600",
+		"plastanium/200"
+		"phase-fabric/80"
+	],
+	"category": "power",
+	"research": {
+		"parent": "地热转能站",
+		"objectives": [
+			{
+			"type": "SectorComplete",
+			"preset": "同步轨道空间站"
+			}
+		]
+	}
+}

@@ -1,0 +1,342 @@
+{
+	"type": "ItemTurret",
+	"name": "迁流",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health": 7800,
+	"size": 5,
+	"armor": 6
+	"reload": 10,
+	"range": 400,
+	"recoilTime": 2,
+	"recoil": 3,
+	"shake": 1,
+	"coolantMultiplier":0.65
+	"maxAmmo":100,
+	"liquidCapacity": 30,
+	"consumes": {
+		"power": 30,
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"shootY": 8.1,
+	"xRand":0.5
+	"shoot": {
+		"shots": 4,
+		"shotDelay": 4,
+		},
+		"shootEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+"type": "WaveEffect",
+"strokeFrom": 5,
+"strokeTo": 0,
+"sizeFrom": 10,
+"sizeTo": 0,
+"lifetime": 10,
+"colorFrom": "FFFFFF00",
+"colorTo": "FFD494"
+},
+{
+"type": "WaveEffect",
+"strokeFrom": 0,
+"strokeTo": 5,
+"sizeFrom": 0,
+"sizeTo": 10,
+"lifetime": 10,
+"colorFrom": "FFFFFF",
+"colorTo": "FFD49400"
+}
+]
+}
+	"shootSound": "Shoot4",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 18
+	"shake": 3,
+	"shootCone": 24,
+	"rotateSpeed": 3,
+	"velocityRnd": 0.3,
+	"ammoPerShot":1,
+	"ammoTypes": {
+		"graphite": {
+	    "type":"BasicBulletType",
+		"damage": 75,
+		"ammoMultiplier": 1,
+		"despawnEffect": "none"
+		"width": 2,
+		"height": 2,
+		"hitSound":"bang"
+		"sprite":"missile-large",
+		"hitShake":1
+		"knockback":1.23
+		"status": "slow",
+		"statusDuration": 60,
+		"speed": 11,
+		"lifetime": 50,
+		"trailLength": 10,
+		"trailWidth": 1,
+		"trailColor": "99AAD5",
+		"trailEffect": "none"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+	"type": "ParticleEffect",
+	"particles": 4,
+	"line":true
+	"lenFrom": 15,
+	"lenTo": 0
+	"length": 60,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 4,
+	"lifetime": 45,
+	"colorFrom": "FFFFFF",
+	"colorTo": "99AAD5"
+	}
+	]
+}
+},
+"silicon": {
+"type":"BasicBulletType",
+"damage": 50,
+	"ammoMultiplier": 1,
+	"reloadMultiplier":1.5,
+	"homingDelay": 30,
+	"homingPower": 0.1,
+	"homingRange": 100,
+		"despawnEffect": "none"
+		"width": 2,
+		"height": 2,
+		"hitSound":"bang"
+		"sprite":"missile-large",
+		"hitShake":1.2
+		"knockback":2.2
+		"speed": 11,
+		"lifetime": 50,
+		"trailLength": 10,
+		"trailWidth": 1,
+		"trailColor": "5A5A5A",
+		"trailEffect": "none"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+	"type": "ParticleEffect",
+	"particles": 4,
+	"line":true
+	"lenFrom": 15,
+	"lenTo": 0
+	"length": 60,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 4,
+	"lifetime": 45,
+	"colorFrom": "FFFFFF",
+	"colorTo": "5A5A5A"
+	}
+	]
+}
+}
+"plastanium": {
+"type": "LaserBulletType",
+"reloadMultiplier":0.5,
+"hitShake":1.8
+	"length": 550,
+	"width": 12,
+	"pierce": true
+	"damage": 125,
+	"lifetime": 25,
+	"ammoMultiplier": 2,
+	"rangeChange": 100,
+	"colors": [
+	"B4F3D4",
+	"5DF3A9",
+	"B4F381",
+	"FFFFFF"
+	],
+	"smokeEffect": "smokeCloud",
+	"despawnEffect": "none"
+	"hitEffect":{
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 10,
+	"lifetime": 60,
+	"colorFrom": "B4F3D4",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"sizeFrom": 4
+	"sizeTo": 0,
+	"length": 60,
+	"baseLength": 5,
+	"lifetime": 60,
+	"colorFrom": "B4F3D4",
+	"colorTo": "FFFFFF",
+	},
+	]
+}
+},
+"surge-alloy": {
+"type":"BasicBulletType",
+"damage": 90,
+	"ammoMultiplier": 1,
+	"reloadMultiplier":0.75,
+		"despawnEffect": "none"
+		"width": 2,
+		"height": 2,
+		"hitSound":"bang"
+		"sprite":"missile-large",
+		"hitShake":2
+		"knockback":0.4
+		"status": "shocked",
+		"statusDuration": 60,
+		"lightning":3,
+		"lightningDamage":99,
+		"lightningLength":4,
+		"speed": 11,
+		"lifetime": 50,
+		"trailLength": 10,
+		"trailWidth": 1,
+		"trailColor": "FBEDA0",
+		"trailEffect": "none"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+	"type": "ParticleEffect",
+	"particles": 2,
+	"sizeFrom": 3
+	"sizeTo": 0,
+	"length": 60,
+	"baseLength": 2,
+	"lifetime": 30,
+	"colorFrom": "FBEDA0",
+	"colorTo": "FFFFFF",
+	},
+	]
+}
+},
+"blast-compound": {
+"type":"ArtilleryBulletType",
+"damage": 30,
+"splashDamageRadius": 100,
+	"splashDamage": 20,
+	"ammoMultiplier": 1,
+	"reloadMultiplier":1.25,
+	"rangeChange": 50,
+		"despawnEffect": "none"
+		"width": 2,
+		"height": 2,
+		"hitSound":"boom"
+		"sprite":"missile-large",
+		"hitShake":2
+		"knockback":0.4
+		"status": "blasted",
+		"statusDuration": 60,
+		"speed": 5,
+		"lifetime": 90,
+		"trailLength": 10,
+		"trailWidth": 1,
+		"trailColor": "EE8066",
+		"trailEffect": "none"
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+	"type": "WaveEffect",
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 20,
+	"lifetime": 10,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"sizeFrom": 6,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 50,
+	"baseLength": 20,
+	"lifetime": 120,
+	"colorFrom": "5A5A5A",
+	"colorTo": "5A5A5A",
+	}
+	]
+}
+},
+"phase-fabric": {
+"type":"BasicBulletType",
+"damage": 148,
+	"ammoMultiplier": 1,
+	"reloadMultiplier":1.1,
+		"despawnEffect": "none"
+		"width": 2,
+		"height": 2,
+		"hitSound":"bang"
+		"sprite":"missile-large",
+		"hitShake":2
+		"knockback":8
+		"status": "超相",
+		"statusDuration": 60,
+		"speed": 5,
+		"drag":-0.03
+		"lifetime": 60,
+		"rangeChange": 250,
+		"trailLength": 10,
+		"trailWidth": 1,
+		"trailColor": "F0CDA9",
+		"trailEffect": "none"
+		"trailSinScl": 3,
+		"trailSinMag": 1.5,
+		"hitEffect":{
+		"type": "MultiEffect",
+		"effects": [
+		{
+	"type": "ParticleEffect",
+	"particles": 2,
+	"sizeFrom": 3
+	"sizeTo": 0,
+	"length": 60,
+	"baseLength": 2,
+	"lifetime": 30,
+	"colorFrom": "F0CDA9",
+	"colorTo": "F0CDA9",
+	},
+	]
+}
+}
+}
+	"requirements": [
+		"graphite/600"
+		"silicon/200"
+		"copper/800"
+		"metaglass/40"
+		"thorium/800"
+		"plastanium/750"
+	],
+	"category": "turret",
+	"research": {
+	"parent": "弧光",
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "navalFortress"
+			}
+		]
+	}
+}

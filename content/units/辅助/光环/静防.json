@@ -1,0 +1,85 @@
+{
+  "type": "missile",
+  "template": "MissileUnitType",
+  "name": "静防",
+  "speed": 0,
+  "lifetime": 10,
+  "rotateSpeed": 0,
+  "loopSoundVolume": 0,
+  "hidden":false,
+  "missileAccelTime": 1,
+  "homingDelay": 60,
+  "hitSize": 1,
+  "health": 99999,
+  "fogRadius": 5,
+  "engineColor": "FFFFFF",
+  "trailColor": "FFFFFF",
+  "trailLength": 12,
+  "engineLayer": 110,
+  "engineOffset": 15,
+  "engineSize": 4,
+  "maxRange": 30,
+  "immunities": [
+    "tarred",
+    "slow",
+    "burning",
+    "freezing",
+    "spore-slowed",
+    "electrified",
+    "disarmed",
+    "疑惑",
+    "致盲",
+    "瘫痪",
+    "空间混乱",
+    "破防",
+    "延迟",
+    "消散",
+    "暗蚀",
+  ],
+  "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 600,
+            "reload": 5,
+            "range": 300,
+            "applyEffect": "none",
+            "activeEffect": {
+	"type": "ParticleEffect",
+	"particles": 12,
+	"sizeFrom": 10
+	"sizeTo": 0,
+	"length": 300,
+	"baseLength": 12,
+	"lifetime": 60,
+	"colorFrom": "CDCDCD",
+	"colorTo": "5A5A5A",
+	},
+            "effect": "静防"
+        }
+      ]
+  "weapons": [
+    {
+      "x": 0,
+      "reload": 0,
+      "mirror": false,
+      "rotate": true,
+      "shake": 0,
+      "shootSound": "none",
+      "shootOnDeath": true,
+      "shootCone": 360,
+      "bullet": {
+        "collides": false,
+        "instantDisappear": true,
+        "ammoMultiplier": 1,
+        "hitSound": "boom",
+        "killShooter": true,
+        "hitShake": 0,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "despawnEffect": "none",
+        "trailEffect": "none",
+        "hitEffect": "none"
+      }
+    }
+  ]
+}

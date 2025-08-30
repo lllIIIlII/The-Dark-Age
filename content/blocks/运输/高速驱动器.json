@@ -1,0 +1,44 @@
+{
+	"name": "高速驱动器",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "MassDriver",
+	"size": 3,
+	"health": 1690,
+	"armor": 3,
+	"hasItems": true,
+	"itemCapacity": 360,
+	"minDistribute": 60,
+	"reload": 120,
+	"rotateSpeed": 5,
+	"bulletSpeed": 20,
+	"shootEffect": "instShoot",
+	"smokeEffect": {
+		"type": "ParticleEffect",
+		"particles": 23,
+		"line": true,
+		"interp": "circleOut",
+		"sizeInterp": "circleOut",
+		"lenFrom": 35,
+		"lenTo": 0,
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"length": 80,
+		"lifetime": 60,
+		"colorFrom": "F8D58B",
+		"colorTo": "C8857060",
+		"cone": 10
+	},
+	"shootSound": "artillery",
+	"range": 1000,
+	"consumes": {
+		"power": 17
+	},
+	"requirements": [
+		"plastanium/160",
+		"钢/120",
+		"silicon/460"
+		"thorium/600"
+	],
+	"research": "mass-driver",
+	"category": "distribution"
+}

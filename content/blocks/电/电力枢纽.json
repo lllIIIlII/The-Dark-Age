@@ -1,0 +1,18 @@
+{
+	"type": "PowerNode",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "电力枢纽",
+	"health": 460,
+	"size": 3,
+	"maxNodes": 30,
+	"laserRange": 45,
+	"laserScale": 0.42,
+	"research": "surge-tower",
+	"requirements": [
+		"titanium/30",
+		"copper/45",
+		"silicon/5",
+		"thorium/10"
+	],
+	"category": "power"
+}

@@ -1,0 +1,43 @@
+{
+	"type": "Separator",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "空间造物",
+	"health":10000,
+	"armor":5000
+	"itemCapacity":1000,
+		"results": [
+		"空间节点/3",
+		"暗能钢/5"
+	],
+	"size":2,
+	"hasPower":true,
+	"hasItems":true,
+	"craftTime":6,	
+	"consumes":{
+		"power":1000
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0,
+				"flameColor": "F2E770"
+			}
+		]
+	},
+    "requirements": [
+	"洛德合金/3500",
+	"暗金属/8500"
+	"铀/5000"
+	"thorium/7500"
+	"钢/6500"
+	],	
+	"category": "crafting",
+	"research": "暗能钢塑造机",
+}
+

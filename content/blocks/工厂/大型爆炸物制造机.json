@@ -1,0 +1,68 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型爆炸物制造机",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health":890,
+	"itemCapacity":35,
+	"outputItem":"blast-compound/3",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+	"craftTime":60,	
+	"consumes":{
+		"power":2.4,
+		"items": [
+	    "pyratite/3",
+	    "spore-pod/5"
+	         ]
+		},
+		"updateEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "ParticleEffect",
+				"particles": 1,
+				"sizeFrom": 4,
+				"sizeTo": 0,
+				"length": 0,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF50"
+				"cone":360
+			},
+			{
+				"type": "WaveEffect",
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"sizeFrom": 0,
+				"sizeTo": 5,
+				"lifetime": 20,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF50"
+			}
+		]
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 0,
+				"flameRadiusIn": 0,
+				"flameRadiusMag": 0,
+				"flameRadiusInMag": 0,
+				"flameColor": "FFFFFF"
+			}
+		]
+	},
+    "requirements": [
+    "titanium/120"
+	"lead/240"
+	"plastanium/25"
+	"silicon/35"
+	],	
+	"category": "crafting",
+	"research": "大型硫混合机",
+}

@@ -1,0 +1,25 @@
+{
+	"name": "污染",
+	"color": "97FFA8",
+	"speedMultiplier": 0.65,
+	"healthMultiplier": 0.8,
+	"reloadMultiplier": 0.85,
+	"effectChance": 0.1,
+	"damage": 3,
+	"opposites": [
+	"修复"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 30,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-放射三角",
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"colorFrom": "97FFA8",
+		"colorTo": "97FFA850"
+	}
+}

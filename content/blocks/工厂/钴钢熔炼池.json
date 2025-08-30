@@ -1,0 +1,64 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "钴钢熔炼池",
+	"health":1345,
+	"itemCapacity":30,
+    "liquidCapacity":360,
+	"outputItem":"钴钢/4.5",
+	"size":4,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":30,	
+	"consumes":{
+		"power":5.5,
+		"liquid":"water/0.12",
+		"items": [
+	    "钢/2",
+	    "钴/3",
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawFlame",
+				"flameRadius": 3,
+				"flameRadiusIn": 2,
+				"flameRadiusMag": 2,
+				"flameRadiusInMag": 2,
+				"flameColor": "F2E770"
+			}
+		]
+	},
+	"updateEffect": {
+	"type":"WaveEffect"//横扫
+	    "sizeFrom":5//位置变化
+	    "sizeTo":0//位置
+	    "colorFrom":"CDC67360"
+	    "colorTo":"FFFFFF"
+	    "strokeFrom":8
+	    "strokeTo":0
+	    "lifetime":45
+	    },
+    "requirements": [
+	"钴/340",
+	"copper/300"
+	"graphite/260"
+	"titanium/260"
+	"plastanium/45"
+	],	
+	"category": "crafting",
+	"research": {
+	"parent": "炼钢厂",
+	"objectives": [
+	{
+	"type": "OnSector",
+	"preset": "地冠"
+	}
+]
+}
+}
+

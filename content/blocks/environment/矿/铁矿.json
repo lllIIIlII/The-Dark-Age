@@ -1,0 +1,12 @@
+{
+"name":"铁",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"铁",
+"variants":3,
+"mapColor":"8B4513",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":0.87,
+"oreScale":30
+}

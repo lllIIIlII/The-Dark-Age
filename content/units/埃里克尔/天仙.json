@@ -1,0 +1,499 @@
+{
+  "name": "天仙",
+  "type": "legs",
+  "template": "ErekirUnitType",
+  "drag": 0.9,
+  "speed": 1.1,
+  "hitSize": 64,
+  "health": 196650,
+  "armor": 7,
+  "rotateSpeed": 1.5,
+  "lockLegBase": true,
+  "legContinuousMove": true,
+  "legStraightness": 0.6,
+  "baseLegStraightness": 0.5,
+  "legMaxLength": 1.2,
+  "legMinLength": 1,
+  "legCount": 8,
+  "legLength": 38,
+  "legForwardScl": 2.1,
+  "legMoveSpace": 1.05,
+  "rippleScale": 3,
+  "stepShake": 4,
+  "legGroupSize": 2,
+  "legExtension": -6,
+  "legBaseOffset": 19,
+  "legStraightLength": 0.9,
+  "ammoType": "oxide",
+  "legSplashDamage": 150,
+  "legSplashRange": 40,
+  "drownTimeMultiplier": 2.5,
+  "hovering": true,
+  "shadowElevation": 0.85,
+  "targetAir": true,
+  "alwaysShootWhenMoving": true,
+  "abilities": [
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": false,
+      "radius": 35,
+      "width": 15,
+      "max": 10000,
+      "regen": 90,
+      "cooldown": 400,
+      "angle": 140,
+      "angleOffset": 0
+    },
+    {
+      "type": "ShieldArcAbility",
+      "whenShooting": true,
+      "radius": 65,
+      "width": 20,
+      "max": 20000,
+      "regen": 150,
+      "cooldown": 500,
+      "angle": 180,
+      "angleOffset": 0
+    }
+  ],
+  "immunities": [
+    "blasted",
+    "sapped",
+    "shocked",
+    "freezing",
+    "spore-slowed",
+    "致盲",
+    "磁化",
+    "破防"
+  ],
+  "research": {
+    "parent": "collaris",
+    "objectives": [
+      {
+        "type": "OnSector",
+        "preset": "突袭"
+      },
+      {
+        "type": "SectorComplete",
+        "preset": "origin"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "type": "RegionPart",
+      "color": "D7EEFD",
+      "suffix": "-glow",
+      "blending": "additive",
+      "layer": -1,
+      "outline": false
+    },
+    {
+      "type": "ShapePart",
+      "y": -15,
+      "sides": 4,
+      "color": "D7EEFD",
+      "rotateSpeed": 0,
+      "stroke": 2,
+      "strokeTo": 2,
+      "circle": false,
+      "hollow": true,
+      "radius": 12,
+      "radiusTo": 12,
+      "layer": 110
+    },
+    {
+      "type": "ShapePart",
+      "y": -23,
+      "x": -15,
+      "sides": 4,
+      "color": "D7EEFD",
+      "rotateSpeed": 0,
+      "stroke": 2,
+      "strokeTo": 2,
+      "circle": false,
+      "hollow": true,
+      "radius": 7,
+      "radiusTo": 7,
+      "layer": 110
+    },
+    {
+      "type": "ShapePart",
+      "y": -27,
+      "x": 8,
+      "sides": 4,
+      "color": "D7EEFD",
+      "rotateSpeed": 0,
+      "stroke": 2,
+      "strokeTo": 2,
+      "circle": false,
+      "hollow": true,
+      "radius": 4,
+      "radiusTo": 4,
+      "layer": 110
+    }
+  ],
+  "weapons": [
+    {
+      "name": "天仙1",
+      "x": 0,
+      "y": 2,
+      "shootY": 1,
+      "recoil": 3,
+      "mirror": false,
+      "reload": 120,
+      "shootSound": "Shoot3",
+      "shootWarmupSpeed": 0.07,
+      "cooldownTime": 90,
+      "minWarmup": 0.7,
+      "parts": [
+        {
+          "type": "ShapePart",
+          "progress": "reload",
+          "y": 15,
+          "sides": 3,
+          "color": "D7EEFD",
+          "colorTo": "D7EEFD",
+          "rotateSpeed": 0,
+          "stroke": 1.5,
+          "strokeTo": 1.5,
+          "circle": false,
+          "hollow": true,
+          "radius": 6,
+          "radiusTo": 6,
+          "layer": 110
+        },
+        {
+          "type": "HaloPart",
+          "progress": "reload",
+          "y": 15,
+          "sides": 5,
+          "color": "D7EEFD",
+          "rotateSpeed": 0,
+          "shapeRotation": 180,
+          "stroke": 0,
+          "strokeTo": 0.1,
+          "shapes": 3,
+          "tri": true,
+          "hollow": true,
+          "radius": 3,
+          "radiusTo": 3,
+          "layer": 110,
+          "triLength": 3,
+          "triLengthTo": 3,
+          "haloRadius": 9,
+          "haloRadiusTo": 9,
+          "haloRotateSpeed": 0
+        },
+        {
+          "type": "HaloPart",
+          "progress": "reload",
+          "y": 15,
+          "sides": 5,
+          "color": "D7EEFD",
+          "rotateSpeed": 0,
+          "shapeRotation": 0,
+          "stroke": 0,
+          "strokeTo": 0.1,
+          "shapes": 3,
+          "tri": true,
+          "hollow": true,
+          "radius": 3,
+          "radiusTo": 3,
+          "layer": 110,
+          "triLength": 9,
+          "triLengthTo": 9,
+          "haloRadius": 9,
+          "haloRadiusTo": 9,
+          "haloRotateSpeed": 0
+        },
+        {
+          "type": "RegionPart",
+          "mirror": true,
+          "x": 0,
+          "y": 0,
+          "suffix": "-1",
+          "layer": 110,
+          "moveX": 0,
+          "moveY": 0,
+          "moveRot": 0,
+          "layerOffset": -0.01,
+          "color": "D7EEFD",
+          "moves": [
+            {
+              "progress": "recoil",
+              "y": -2,
+              "x": -2
+            }
+          ],
+          "children": [
+            {
+              "type": "HaloPart",
+              "progress": "recoil",
+              "y": 0,
+              "x": -5,
+              "sides": 5,
+              "color": "D7EEFD",
+              "rotateSpeed": 0,
+              "shapeRotation": 135,
+              "stroke": 0,
+              "strokeTo": 0.1,
+              "shapes": 1,
+              "tri": true,
+              "hollow": true,
+              "radius": 3,
+              "radiusTo": 3,
+              "layer": 110,
+              "triLength": 0,
+              "triLengthTo": 8,
+              "haloRadius": 0,
+              "haloRadiusTo": 0,
+              "haloRotateSpeed": 0
+            }
+          ]
+        },
+        {
+          "type": "RegionPart",
+          "mirror": true,
+          "x": 0,
+          "y": 0,
+          "suffix": "-2",
+          "layer": 110,
+          "moveX": 0,
+          "moveY": 0,
+          "moveRot": 0,
+          "layerOffset": -0.01,
+          "color": "D7EEFD",
+          "moves": [
+            {
+              "progress": "recoil",
+              "y": -2,
+              "x": -2
+            }
+          ],
+          "children": [
+            {
+              "type": "HaloPart",
+              "progress": "recoil",
+              "y": 4,
+              "x": -5,
+              "sides": 5,
+              "color": "D7EEFD",
+              "rotateSpeed": 0,
+              "shapeRotation": 135,
+              "stroke": 0,
+              "strokeTo": 0.1,
+              "shapes": 1,
+              "tri": true,
+              "hollow": true,
+              "radius": 3,
+              "radiusTo": 3,
+              "layer": 110,
+              "triLength": 0,
+              "triLengthTo": 8,
+              "haloRadius": 0,
+              "haloRadiusTo": 0,
+              "haloRotateSpeed": 0
+            }
+          ]
+        }
+      ],
+      "shoot": {
+        "type": "ShootMulti",
+        "source": {
+          "shots": 2
+        },
+        "dest": [
+          {
+            "type": "ShootHelix",
+            "scl": -6,
+            "mag": 2
+          }
+        ]
+      },
+      "rotate": false,
+      "inaccuracy": 0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 556,
+        "speed": 7,
+        "lifetime": 80,
+        "sprite": "circle-bullet",
+        "width": 5,
+        "height": 5,
+        "splashDamageRadius": 30,
+        "splashDamage": 112,
+        "buildingDamageMultiplier": 1.1,
+        "hitSound": "boom",
+        "trailLength": 12,
+        "trailWidth": 2.5,
+        "trailColor": "D7EEFD88",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "knockback": 4,
+        "makeFire": true,
+        "backColor": "D7EEFD",
+        "frontColor": "D7EEFD",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 2,
+              "strokeTo": 1,
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "lifetime": 10,
+              "colorFrom": "D7EEFD",
+              "colorTo": "D7EEFD"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "sizeInterp": "swing",
+              "length": 40,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "D7EEFD",
+              "colorTo": "D7EEFD"
+            },
+            {
+              "type": "WrapEffect",
+              "effect": "dynamicSpikes",
+              "color": "D7EEFD",
+              "rotation": 86
+            }
+          ]
+        },
+        "fragBullets": 5,
+        "fragLifeMin": 1,
+        "fragLifeMax": 3,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "damage": 150,
+          "absorbable": false,
+          "pierce": true,
+          "pierceCap": 3,
+          "sprite": "circle-bullet",
+          "despawnEffect": "none",
+          "homingDelay": 60,
+          "homingPower": 0.1,
+          "homingRange": 500,
+          "width": 2,
+          "height": 2,
+          "hitSound": "bang",
+          "hitSoundPitch": 1.2,
+          "backColor": "D7EEFD",
+          "frontColor": "D7EEFD",
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "speed": 5,
+          "lifetime": 60,
+          "trailLength": 8,
+          "trailWidth": 2,
+          "trailColor": "D7EEFD",
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "line": true,
+                "lenFrom": 20,
+                "lenTo": 0,
+                "length": 50,
+                "strokeFrom": 5,
+                "strokeTo": 0,
+                "baseLength": 0,
+                "interp": "pow5Out",
+                "sizeInterp": "pow10In",
+                "lifetime": 40,
+                "colorFrom": "D7EEFD",
+                "colorTo": "D7EEFD"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "天仙2",
+      "x": 20,
+      "y": -14,
+      "shootY": 5,
+      "recoil": 3,
+      "mirror": true,
+      "reload": 360,
+      "shootSound": "mediumCannon",
+      "alternate": true,
+      "shootCone": 5,
+      "shootStatusDuration": 400,
+      "shootStatus": "攻速提升",
+      "rotate": true,
+      "inaccuracy": 0,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 1000,
+        "speed": 20,
+        "lifetime": 30,
+        "buildingDamageMultiplier": 1.8,
+        "sprite": "circle-bullet",
+        "width": 7,
+        "height": 7,
+        "splashDamageRadius": 200,
+        "splashDamage": 500,
+        "hitSound": "largeCannon",
+        "trailLength": 20,
+        "trailWidth": 3,
+        "trailColor": "D7EEFD88",
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "hitShake": 20,
+        "backColor": "D7EEFD",
+        "frontColor": "D7EEFD",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 200,
+              "lifetime": 120,
+              "colorFrom": "D7EEFD",
+              "colorTo": "D7EEFD"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 13,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "interp": "pow10Out",
+              "sizeInterp": "pow5In",
+              "length": 205,
+              "baseLength": 0,
+              "lifetime": 60,
+              "colorFrom": "92A8E3",
+              "colorTo": "92A8E3"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 1,
+              "sizeFrom": 0,
+              "sizeTo": 200,
+              "region": "黑暗纪元-渐变圆",
+              "length": 0,
+              "baseLength": 0,
+              "lifetime": 100,
+              "colorFrom": "D7EEFD",
+              "colorTo": "D7EEFD00"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

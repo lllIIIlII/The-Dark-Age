@@ -1,0 +1,8 @@
+{
+	"name": "闪耀",
+	"color": "9BD9FD",
+	"speedMultiplier": 2.6,
+	"healthMultiplier": 1.1,
+	"reloadMultiplier": 1.5,
+    "damageMultiplier": 0.95,
+}

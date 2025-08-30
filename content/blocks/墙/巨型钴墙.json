@@ -1,0 +1,14 @@
+{
+	"name": "巨型钴墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 7800,
+	"armor":14,
+	"size": 3,
+	"absorbLasers":false,
+	"requirements": [
+		"钴/100" 
+	],
+	"category": "defense",
+	"research": "大型钴墙"
+}

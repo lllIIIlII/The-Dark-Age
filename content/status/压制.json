@@ -1,0 +1,8 @@
+{
+	"name": "压制",
+	"color": "F2AA70",
+	"speedMultiplier": 0.7,
+	"healthMultiplier": 0.94,
+	"reloadMultiplier": 0.45,
+    "damageMultiplier": 0.37,
+}

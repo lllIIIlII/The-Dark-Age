@@ -1,0 +1,1147 @@
+{
+	"type":"ItemTurret",
+	"unitSort": "strongest",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name":"剑仙",
+	"size":10,
+	"health":321190
+	"range":2280,
+	"reload":2060,
+	"recoil":6.5,
+	"recoilTime": 120,
+	"inaccuracy":0
+	"rotateSpeed":0.7,
+	"ammoPerShot":200,
+	"maxAmmo":400,
+	"targetAir":true
+	"targetGround":true,
+	"canOverdrive": false,
+	"shootCone": 1,
+	"shootSound": "CJB2",
+	"minWarmup": 0.6,
+	"cooldownTime": 10,
+	"consumes": {
+	"power": 18512
+	},
+	"shoot": {
+	"firstShotDelay": 60
+	}
+	"drawer":{
+"type":"DrawTurret",
+"parts":[
+{
+"type":"RegionPart",
+"mirror":false,
+"x":0,
+"y":0,
+"suffix":"-左"
+"layer":51,
+"moveX":-2.8,
+"moveY":4.8
+"moveRot": 0
+"moves": [
+{
+"progress": "recoil",
+"y":-5
+}
+]
+},
+{
+"type":"RegionPart",
+"mirror":false,
+"x":0,
+"y":0,
+"suffix":"-右"
+"layer":51,
+"moveX":2.8,
+"moveY":4.8
+"moveRot": 0
+"moves": [
+{
+"progress": "recoil",
+"y":-5
+}
+]
+},
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": -34,
+	"sides": 4,
+	"color": "D4F2FF",
+	"rotateSpeed": 1.6,
+	"stroke": 0,
+	"strokeTo": 6,
+	"circle": false,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 26,
+	"layer": 110
+	}
+	{
+	"type": "ShapePart",
+	"progress": "warmup",
+	"y": -34,
+	"sides": 4,
+	"color": "D4F2FF",
+	"rotateSpeed": -1.6,
+	"stroke": 0,
+	"strokeTo": 6,
+	"circle": false,
+	"hollow": true,
+	"radius": 0,
+	"radiusTo": 26,
+	"layer": 110
+	}
+]
+},
+	"requirements": [
+	"copper/24900",
+	"lead/17655",
+	"titanium/4000",
+	"thorium/15700",
+	"铁/67200",
+	"暗金属/470",
+	"silicon/56660",
+	"plastanium/12000",
+	"贫铀/3000",
+	"铀/50000",
+	"surge-alloy/700",
+	"暗能钢/5600",
+	"钴钢/5000",
+	"空间节点/200"
+	],
+	"category": "turret",
+	"research": {
+	"parent": "超相磁轨炮",
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "侵蚀区-汇合"
+			}
+		]
+	}
+	"ammoTypes":{
+	"钢": {
+	"type": "PointBulletType",
+	"speed": 2280,
+	"damage": 7800,
+	"lifetime":1
+	"hitSound":"none"
+	"hitEffect": "none"
+	"despawnEffect": "none",
+	"trailEffect": "none"
+	"status": "禁锢",
+	"statusDuration": 3600,
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1,
+	"fragAngle": 180,
+	"fragRandomSpread":0,
+	"fragBullet":{//回拉,生成裂缝
+	"type": "PointBulletType",
+	"speed": 2480,
+	"damage": 2480,
+	"lifetime":1,
+	"trailEffect": "none"
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"region":"黑暗纪元-裂痕",
+	"particles": 1,
+	"sizeFrom": 300
+	"sizeTo": 300,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 960,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragBullet":{//巨型裂缝
+	"speed": 0.01,
+	"damage": 6700,
+	"lifetime":960,
+	"homingDelay": 0,
+	"homingPower": 600,
+	"homingRange": 2500,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 25,
+	"strokeTo": 20,
+	"sizeFrom": 0,
+	"sizeTo": 800,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 25,
+	"sizeFrom": 23
+	"sizeTo": 0,
+	"length": 800,
+	"baseLength": 20,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"lifetime": 130,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 40,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 800,
+	"baseLength": 20,
+	"lifetime": 180,
+	"colorFrom": "6F8892",
+	"colorTo": "6F8892",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 20,
+	"line":true
+	"lenFrom": 140,
+	"lenTo": 0
+	"length": 800,
+	"strokeFrom": 20,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	}
+]
+}
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"missileLaunch"
+	"hitSoundVolume": 10
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1,
+	"fragAngle": 180,
+	"fragRandomSpread":0,
+	"fragBullet":{//巨剑
+	"speed": 3,
+	"drag":-0.22
+	"damage": 401120,
+	"status": "破防",
+	"statusDuration": 3600,
+	"lifetime":60,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"width": 120,
+	"height": 680,
+	"despawnEffect": "none",
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"hitSound":"BZ5"
+	"hitSoundVolume": 29
+	"hitShake":130
+	"knockback":1000000
+	"trailLength": 40,
+	"trailWidth": 10,
+	"trailColor": "FFFFFF88",
+	"trailChance": 20,
+	"trailInterval": 30,
+	"trailEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 4,
+	"rotation": 0,
+	"strokeFrom": 10,
+	"strokeTo": 10,
+	"sizeFrom": 0,
+	"sizeTo": 100,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "WaveEffect",
+	"sides": 4,
+	"rotation": 0,
+	"strokeFrom": 10,
+	"strokeTo": 10,
+	"sizeFrom": 0,
+	"sizeTo": 100,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+]
+}
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 0,
+	"strokeFrom": 30,
+	"strokeTo": 30,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 36,
+	"strokeFrom": 30,
+	"strokeTo": 30,
+	"sizeFrom": 0,
+	"sizeTo": 500,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 45,
+	"sizeFrom": 20
+	"sizeTo": 0,
+	"length": 400,
+	"baseLength": 20,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"lifetime": 150,
+	"colorFrom": "D4F2FF",
+	"colorTo": "6F8892",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 40,
+	"sizeFrom": 35,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 450,
+	"baseLength": 0,
+	"lifetime": 180,
+	"colorFrom": "6F889280",
+	"colorTo": "D4F2FF80",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 10,
+	"line":true
+	"lenFrom": 135,
+	"lenTo": 0
+	"length": 500,
+	"strokeFrom": 55,
+	"strokeTo": 0,
+	"baseLength": 19,
+	"lifetime": 145,
+	"colorFrom": "B2BABF",
+	"colorTo": "B2BABF"
+	}
+]
+},
+	"fragBullets":30,
+	"fragVelocityMin":1,
+	"fragVelocityMax":2,
+	"fragLifeMin":1,
+	"fragLifeMax":2,
+	"fragRandomSpread":40,
+	"fragBullet":{//巨剑破片
+	"speed": 100,
+	"damage": 11200,
+	"status": "破防",
+	"statusDuration": 3600,
+	"lifetime":5,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"width": 6,
+	"height": 24,
+	"despawnEffect": "none",
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"pierce":true
+	"pierceCap":5
+	"pierceArmor":true
+	"hitSound":"shockBlast"
+	"hitSoundVolume": 34
+	"hitShake":80
+	"knockback":760
+	"trailLength": 40,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF88",
+	"trailChance": 1,
+	"trailInterval": 30,
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 0,
+	"strokeFrom": 30,
+	"strokeTo": 30,
+	"sizeFrom": 0,
+	"sizeTo": 70,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 36,
+	"strokeFrom": 30,
+	"strokeTo": 30,
+	"sizeFrom": 0,
+	"sizeTo": 70,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 20
+	"sizeTo": 0,
+	"length": 70,
+	"baseLength": 20,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"lifetime": 150,
+	"colorFrom": "D4F2FF",
+	"colorTo": "6F8892",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 4,
+	"line":true
+	"lenFrom": 135,
+	"lenTo": 0
+	"length": 70,
+	"strokeFrom": 55,
+	"strokeTo": 0,
+	"baseLength": 19,
+	"lifetime": 145,
+	"colorFrom": "B2BABF",
+	"colorTo": "B2BABF"
+	}
+]
+}
+}
+}
+}//巨剑
+	"bulletInterval":1000
+	"intervalBullets":1
+	"intervalSpread":0
+	"intervalBullet":{//大小剑
+	"speed": 0,
+	"damage": 1300,
+	"lifetime":1,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": "none"
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"bulletInterval":1000
+	"intervalBullets":1
+	"intervalSpread":0
+	"intervalBullet":{//大剑总
+	"speed": 0,
+	"damage": 1800,
+	"lifetime":0,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"region":"黑暗纪元-裂痕",
+	"particles": 1,
+	"sizeFrom": 100
+	"sizeTo": 100,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 600,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"fragBullets":20,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.6,
+	"fragLifeMin":1,
+	"fragLifeMax":1.2,
+	"fragBullet":{//大剑圈
+	"speed": 10,
+	"damage": 5900,
+	"lifetime":300,
+	"drag":0.07
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"region":"黑暗纪元-圈",
+	"particles": 1,
+	"sizeFrom": 25
+	"sizeTo": 25,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 600,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	},
+	"trailLength": 40,
+	"trailWidth": 4,
+	"trailColor": "FFFFFF88",
+	"trailChance": 10,
+	"trailInterval": 30,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 6,
+	"rotation": 0,
+	"strokeFrom": 5,
+	"strokeTo": 5,
+	"sizeFrom": 0,
+	"sizeTo": 30,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"bulletInterval":1000
+	"intervalBullets":1
+	"intervalSpread":0
+	"intervalBullet":{//大剑终C
+	"speed": 0,
+	"damage": 1900,
+	"lifetime":0,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": "none"
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.3,
+	"fragLifeMin":1,
+	"fragLifeMax":1.8,
+	"fragBullet":{//大剑分裂
+	"speed": 2,
+	"damage": 8000,
+	"lifetime":600,
+	"drag":0.009
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 400,
+	"lifetime": 110,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 30,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 400,
+	"baseLength": 0,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF60",
+	"colorTo": "FFFFFF60",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 10,
+	"line":true
+	"lenFrom": 55,
+	"lenTo": 0
+	"length": 400,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 40,
+	"interp": "swing",
+	"lifetime": 115,
+	"colorFrom": "6F8892",
+	"colorTo": "6F8892"
+	}
+]
+},
+	"trailLength": 40,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF88",
+	"trailChance": 20,
+	"trailInterval": 30,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 6,
+	"rotation": 0,
+	"strokeFrom": 5,
+	"strokeTo": 5,
+	"sizeFrom": 0,
+	"sizeTo": 100,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"laserblast"
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.8,
+	"fragLifeMin":1,
+	"fragLifeMax":1.5,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragBullet":{//大剑
+	"speed": 10,
+	"damage": 20300,
+	"lifetime":60,
+	"drag":-0.04
+	"width": 70,
+	"height": 310,
+	"homingDelay": 0,
+	"homingPower": 1,
+	"homingRange": 3700,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"despawnEffect": "none"
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"trailLength": 40,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF88",
+	"trailChance": 20,
+	"trailInterval": 30,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 6,
+	"rotation": 0,
+	"strokeFrom": 5,
+	"strokeTo": 5,
+	"sizeFrom": 0,
+	"sizeTo": 150,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"hitSound":"shootSmite"
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 6,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 120,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"line":true
+	"lenFrom": 65,
+	"lenTo": 0
+	"length": 100,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 105,
+	"colorFrom": "6F8892",
+	"colorTo": "6F8892"
+	}
+]
+}
+},
+	"intervalBullets":1
+	"bulletInterval":30
+	"intervalSpread":0
+	"intervalBullet":{//追踪剑1
+	"speed": 15,
+	"damage": 900,
+	"status": "破防",
+	"statusDuration": 1800,
+	"lightningColor":"6F8892"
+	"lightning":4,
+	"lightningDamage":265,
+	"lightningLength":10,
+	"homingDelay": 20,
+	"homingPower": 0.07,
+	"homingRange": 3600,
+	"lifetime":200,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"width": 9,
+	"height": 36,
+	"despawnEffect": "none",
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"pierceArmor":true
+	"hitSound":"plasmaboom"
+	"hitSoundVolume": 2
+	"hitShake":20
+	"trailLength": 20,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF",
+	"trailChance": 10,
+	"trailInterval": 30,
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 6,
+	"strokeFrom": 10,
+	"strokeTo": 10,
+	"sizeFrom": 0,
+	"sizeTo": 100,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 3,
+	"line":true
+	"lenFrom": 35,
+	"lenTo": 0
+	"length": 100,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"baseLength": 19,
+	"lifetime": 105,
+	"colorFrom": "6F8892",
+	"colorTo": "6F8892"
+	}
+]
+}
+}
+}
+}//大剑中途
+}
+},//大剑总
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragLifeMin":1,
+	"fragLifeMax":1,
+	"fragBullet":{//小剑分裂
+	"speed": 0,
+	"damage": 2200,
+	"lifetime":0,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": "none"
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"bulletInterval":1000
+	"intervalBullets":1
+	"intervalSpread":0
+	"intervalBullet":{//小剑总
+	"speed": 0,
+	"damage": 1800,
+	"lifetime":0,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"region":"黑暗纪元-裂痕",
+	"particles": 1,
+	"sizeFrom": 100
+	"sizeTo": 100,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 600,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"fragBullets":25,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.6,
+	"fragLifeMin":1,
+	"fragLifeMax":1.2,
+	"fragBullet":{//小剑圈
+	"speed": 4,
+	"damage": 3800,
+	"lifetime":300,
+	"drag":0.005
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "ParticleEffect",
+	"region":"黑暗纪元-斜正方",
+	"particles": 1,
+	"sizeFrom": 18
+	"sizeTo": 18,
+	"length": 0,
+	"baseLength": 0,
+	"lifetime": 600,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	},
+	"trailLength": 40,
+	"trailWidth": 4,
+	"trailColor": "FFFFFF88",
+	"trailChance": 10,
+	"trailInterval": 30,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 0,
+	"strokeFrom": 3,
+	"strokeTo": 3,
+	"sizeFrom": 0,
+	"sizeTo": 40,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"bulletInterval":1000
+	"intervalBullets":1
+	"intervalSpread":0
+	"intervalBullet":{//小剑终C
+	"speed": 0,
+	"damage": 800,
+	"lifetime":0,
+	"width": 0,
+	"height": 0,
+	"despawnEffect": "none"
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"none"
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.4,
+	"fragLifeMin":1,
+	"fragLifeMax":1.2,
+	"fragBullet":{//小剑分裂
+	"speed": 2,
+	"damage": 5555,
+	"lifetime":600,
+	"drag":0.03
+	"width": 0,
+	"height": 0,
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 10,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 200,
+	"lifetime": 110,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 20,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 400,
+	"baseLength": 0,
+	"lifetime": 200,
+	"colorFrom": "FFFFFF60",
+	"colorTo": "FFFFFF60",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 10,
+	"line":true
+	"lenFrom": 35,
+	"lenTo": 0
+	"length": 200,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 40,
+	"interp": "swing",
+	"lifetime": 115,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF"
+	}
+]
+},
+	"trailLength": 40,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF88",
+	"trailChance": 20,
+	"trailInterval": 36,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 0,
+	"strokeFrom": 2,
+	"strokeTo": 2,
+	"sizeFrom": 0,
+	"sizeTo": 50,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"collidesGround":false,
+	"collidesAir":false,
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"collides": false,
+	"collidesTiles": false,
+	"hitSound":"laser"
+	"hitEffect": "none"
+	"fragBullets":1,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1.3,
+	"fragLifeMin":1,
+	"fragLifeMax":1.7,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragBullet":{//小剑
+	"speed": 15,
+	"damage": 8870,
+	"lifetime":60,
+	"drag":-0.03
+	"width": 40,
+	"height": 250,
+	"homingDelay": 0,
+	"homingPower": 1,
+	"homingRange": 3700,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"despawnEffect": "none"
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"trailLength": 40,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF88",
+	"trailChance": 20,
+	"trailInterval": 36,
+	"trailEffect": {
+	"type": "WaveEffect",
+	"sides": 5,
+	"rotation": 0,
+	"strokeFrom": 2,
+	"strokeTo": 2,
+	"sizeFrom": 0,
+	"sizeTo": 70,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	"hitSound":"mediumCannon"
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 60,
+	"lifetime": 80,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 8,
+	"line":true
+	"lenFrom": 30,
+	"lenTo": 0
+	"length": 100,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 0,
+	"lifetime": 85,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF"
+	}
+]
+}
+},
+	"intervalBullets":1
+	"bulletInterval":30
+	"intervalSpread":0
+	"intervalBullet":{//追踪剑2
+	"speed": 25,
+	"damage": 400,
+	"status": "破防",
+	"statusDuration": 900,
+	"lightningColor":"6F8892"
+	"lightning":4,
+	"lightningDamage":115,
+	"lightningLength":5,
+	"homingDelay": 20,
+	"homingPower": 0.07,
+	"homingRange": 3600,
+	"lifetime":160,
+	"sprite":"黑暗纪元-弹药飞剑",
+	"width": 9,
+	"height": 36,
+	"despawnEffect": "none",
+	"absorbable":false,
+	"reflectable":false,
+	"hittable":false,
+	"pierceArmor":true
+	"hitSound":"bang"
+	"hitSoundVolume": 2
+	"hitShake":8
+	"trailLength": 20,
+	"trailWidth": 2,
+	"trailColor": "FFFFFF",
+	"trailChance": 10,
+	"trailInterval": 36,
+	"hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"sides": 5,
+	"strokeFrom": 4,
+	"strokeTo": 4,
+	"sizeFrom": 0,
+	"sizeTo": 50,
+	"lifetime": 100,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 7,
+	"sizeFrom": 11
+	"sizeTo": 0,
+	"length": 50,
+	"baseLength": 8,
+	"lifetime": 80,
+	"colorFrom": "D4F2FF",
+	"colorTo": "D4F2FF",
+	},
+]
+}
+}
+}
+}//小剑中途
+}
+}//小剑总
+}
+}
+}
+}
+}
+}

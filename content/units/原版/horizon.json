@@ -1,0 +1,37 @@
+{
+    "health": 360,
+    "speed": 2.75
+    "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+    "weapons": [
+        {
+            "minShootVelocity": 0.75,
+            "x": 3,
+            "shootY": 0,
+            "reload": 40,
+            "shootCone": 180,
+            "ejectEffect": "none",
+            "ignoreRotation": true,
+            "shootSound": "none",
+            "shootStatusDuration": 90,
+            "shootStatus": "fast",
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 5
+            },
+            "bullet": {
+                "type": "BombBullet",
+                "speed": 0.1,
+                "width": 10,
+                "height": 14,
+                "hitEffect": "flakExplosion",
+                "despawnEffect":"flakExplosion",
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "status": "blasted",
+                "statusDuration": 60,
+                "damage": 5,
+                "splashDamage": 15
+            }
+        }
+    ]
+}

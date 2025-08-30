@@ -1,0 +1,164 @@
+{
+    "type": "PowerTurret",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "name": "差值",
+    "unitSort": "weakest",
+    "health": 1976,
+    "size": 4,
+    "reload": 13.3,
+    "range": 640,
+    "recoilTime": 5,
+    "recoil": 4,
+    "canOverdrive": true,
+    "consumes": {},
+    "shootSound": "malignShoot",
+    "targetGround": true,
+    "targetAir": true,
+    "inaccuracy": 0,
+    "shake": 2.8,
+    "shootCone": 10,
+    "rotateSpeed": 3,
+    "shootType": {
+        "type": "PointBulletType",
+        "splashDamageRadius": 16,
+        "splashDamage": 225,
+        "ammoMultiplier": 1,
+        "hitSound": "BZ2",
+        "lifetime": 1,
+        "speed": 50,
+        "hitShake": 7,
+        "trailSpacing": 10,
+        "despawnEffect": {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "line": true,
+            "lenFrom": 20,
+            "lenTo": 0,
+            "length": -30,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "baseLength": 30,
+            "lifetime": 25,
+            "colorFrom": "FFFFFF30",
+            "colorTo": "FFFFFF"
+        },
+        "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+                {
+                    "type": "WaveEffect",
+                    "strokeFrom": 5,
+                    "strokeTo": 0,
+                    "sizeFrom": 10,
+                    "sizeTo": 20,
+                    "lifetime": 10,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "FFFFFF"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "sizeFrom": 6,
+                    "sizeTo": 0,
+                    "length": 22,
+                    "baseLength": 0,
+                    "lifetime": 30,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "B0BAC040"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 5,
+                    "sizeFrom": 18,
+                    "sizeTo": 0,
+                    "interp": "pow5Out",
+                    "sizeInterp": "pow10In",
+                    "length": 0,
+                    "baseLength": 0,
+                    "lifetime": 20,
+                    "colorFrom": "FFFFFF10",
+                    "colorTo": "00000010"
+                },
+                {
+                    "type": "ParticleEffect",
+                    "particles": 10,
+                    "line": true,
+                    "lenFrom": 10,
+                    "lenTo": 10,
+                    "length": 10,
+                    "strokeFrom": 3,
+                    "strokeTo": 0,
+                    "baseLength": 10,
+                    "lifetime": 30,
+                    "colorFrom": "FFFFFF",
+                    "colorTo": "5A5A5A50"
+                }
+            ]
+        },
+        "trailEffect": {
+            "type": "ParticleEffect",
+            "particles": 1,
+            "baseLength": 0.1,
+            "length": 0.1,
+            "lifetime": 22,
+            "line": true,
+            "randLength": false,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 8,
+            "strokeTo": 0,
+            "colorFrom": "FFFFFF",
+            "colorTo": "B0BAC0",
+            "cone": 0
+        },
+        "spawnBullets": [
+            {
+                "type": "PointBulletType",
+                "speed": 64,
+                "lifetime": 10,
+                "damage": 438,
+                "hitEffect": "none",
+                "hitSound": "laser",
+                "trailEffect": "none",
+                "fragBullets": 1,
+                "fragVelocityMin": 1,
+                "fragVelocityMax": 1,
+                "fragAngle": 0,
+                "fragRandomSpread": 0,
+                "fragBullet": {
+                    "type": "LaserBulletType",
+                    "length": 213.3,
+                    "width": 45,
+                    "sideAngle": 15,
+                    "sideWidth": 2,
+                    "sideLength": 426.6,
+                    "pierce": true,
+                    "damage": 75,
+                    "lifetime": 25,
+                    "colors": [
+                        "000000",
+                        "5A5A5A",
+                        "B0BAC0",
+                        "FFFFFF"
+                    ]
+                }
+            }
+        ]
+    },
+    "requirements": [
+        "graphite/180",
+        "silicon/1200",
+        "钢/800",
+        "铁/400"
+    ],
+    "category": "turret",
+    "research": {
+        "parent": "碎裂轨道炮",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "[yellow]战术训练-速建防线"
+            }
+        ]
+    }
+}

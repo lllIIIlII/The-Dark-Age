@@ -1,0 +1,21 @@
+{
+	"captureWave":45
+	"planet": "serpulo",
+	"sector":4,
+	"difficulty": 7,
+	"research": {
+    "parent": "黑暗纪元-寒锋走廊",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "黑暗纪元-寒锋走廊"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

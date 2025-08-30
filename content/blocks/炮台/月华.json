@@ -1,0 +1,244 @@
+{
+	"type": "ItemTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "月华",
+	"unitSort": "weakest",
+	"health": 700,
+	"size": 3,
+	"reload": 15,
+	"range": 280,
+	"recoil": 3,
+	"ammoPerShot":2,
+	"maxAmmo": 30,
+    "ammoUseEffect": {
+		"type": "WaveEffect",
+		"interp": "pow10Out",
+		"sizeFrom": 0,
+		"sizeTo": 3,
+		"lifetime": 55,
+		"colorFrom": "FFFFFF50",
+		"colorTo": "FFFFFF50",
+		"layer": 49
+	},
+	"canOverdrive": false,
+	"consumes": {
+		"power": 2.5,
+		"coolant": {
+			"amount": 0.2,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"shotDelay": 5,
+		"type": "ShootBarrel",
+		"barrels": [
+			3,2,0,
+			-3,2,0,
+			0,2,0,
+			]
+		},
+	"shootSound": "laser",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 1,
+	"shake": 0,
+	"shootCone": 5,
+	"rotateSpeed": 4,
+	"ammoTypes": {
+		"钢": {
+		"damage": 225,
+		"ammoMultiplier": 1,
+		"sprite":"黑暗纪元-月波",
+		"splashDamageRadius": 30,
+		"splashDamage": 40,
+		"width": 10,
+		"height": 10,
+		"pierceCap": 2,
+		"speed": 5,
+		"lifetime": 60,
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+				"type": "ParticleEffect",
+				"particles": 5,
+				"length": 20,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "D4F2FF40",
+				"colorTo": "D4F2FF80",
+				"sizeFrom": 6,
+				"sizeTo": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 7,
+				"length": 17,
+				"baseLength": 0,
+				"lifetime": 35,
+				"colorFrom": "D4F2FF50",
+				"colorTo": "D4F2FF80",
+				"sizeFrom": 5,
+				"sizeTo": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 11,
+				"length": 24,
+				"baseLength": 0,
+				"lifetime": 40,
+				"colorFrom": "96C0D2",
+				"colorTo": "96C0D280",
+				"sizeFrom": 3,
+				"sizeTo": 0
+			},
+			{
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF80",
+				"sizeFrom": 0,
+				"sizeTo": 15
+			}
+		]
+	}
+},
+	"metaglass": {
+		"damage": 155,
+		"ammoMultiplier": 2,
+		"sprite":"黑暗纪元-月波",
+		"width": 10,
+		"height": 10,
+		"speed": 5,
+		"lifetime": 60,
+		"splashDamageRadius": 30,
+		"splashDamage": 20,
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+				"type": "ParticleEffect",
+				"particles": 5,
+				"length": 20,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "D4F2FF40",
+				"colorTo": "D4F2FF80",
+				"sizeFrom": 6,
+				"sizeTo": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 7,
+				"length": 17,
+				"baseLength": 0,
+				"lifetime": 35,
+				"colorFrom": "D4F2FF50",
+				"colorTo": "D4F2FF80",
+				"sizeFrom": 5,
+				"sizeTo": 0
+			},
+			{
+				"type": "ParticleEffect",
+				"particles": 11,
+				"length": 24,
+				"baseLength": 0,
+				"lifetime": 40,
+				"colorFrom": "96C0D2",
+				"colorTo": "96C0D280",
+				"sizeFrom": 3,
+				"sizeTo": 0
+			},
+			{
+				"type": "WaveEffect",
+				"lifetime": 20,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF80",
+				"sizeFrom": 0,
+				"sizeTo": 15
+			}
+		]
+	}
+}
+},
+    "drawer":{"type":"DrawTurret",
+    "parts":[
+    {"type":"RegionPart",
+    "mirror":false,//是否开启镜像
+    "x":0,
+    "y":0,//初始位置
+    "suffix":"-左"//,贴图后缀
+    "layer":50,//层，49-110
+    "moveX":0,//改变位置
+    "moveY":0
+    "moves": [
+					{
+						"progress": "recoil",
+						"y":-3
+						}
+					]
+    },
+    {"type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-右"
+    "layer":50,
+    "moveX":0,
+    "moveY":0 
+    "moves": [
+					{
+						"progress": "recoil",
+						"y":-3
+						}
+					]
+    },
+    {"type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-中"
+    "layer":50,
+    "moveX":0,
+    "moveY":0 
+    "moves": [
+					{
+						"progress": "recoil",
+						"y":-3
+						}
+					]
+    },
+    {"type":"RegionPart",
+    "mirror":false,
+    "x":0,
+    "y":0,
+    "suffix":"-尾"
+    "layer":49,
+    "moveX":0,
+    "moveY":0
+    "moves": [
+					{
+						"progress": "recoil",
+						"y":2
+					}
+				]
+            }
+        ]
+    },
+	"requirements": [
+		"metaglass/90"
+		"silicon/110"
+		"钢/100"
+		"铁/200"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "飞剑",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "天南沼泽"
+			}
+		]
+	}
+}

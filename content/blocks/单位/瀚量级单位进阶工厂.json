@@ -1,0 +1,52 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Reconstructor",
+	"name": "瀚量级单位进阶工厂",
+	"health": 77610,
+	"size": 13,
+	"liquidCapacity": 600,
+	"consumes": {
+		"power": 122,
+		"liquid": "润滑剂/3.8"
+		"items": [
+		"silicon/7000",
+		"plastanium/3050",
+		"surge-alloy/2300",
+		"钢/4500",
+		"暗能钢/1120",
+		"phase-fabric/3000",
+		"钴钢/4600",
+		"洛德合金/3000",
+		"空间节点/1200",
+		"graphite/6600",
+		"贫铀/4500"
+		"metaglass/3400"
+		]
+	},
+	"constructTime": 34200,
+	"requirements": [
+		"thorium/18900",
+		"copper/30000"
+		"lead/24000"
+		"钢/14400",
+		"暗金属/8900",
+		"暗能钢/7000",
+		"贫铀/6700"
+		"铀/70000"
+		"silicon/12000",
+		"铁/17780",
+		"plastanium/9300",
+		"metaglass/3580"
+	],
+	"researchCostMultiplier": 0,
+	"category": "units",
+	"research": {
+    "parent": "复量级单位重构厂",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "涯光岛"
+			}
+		]
+	}
+}

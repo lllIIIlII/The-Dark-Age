@@ -1,0 +1,40 @@
+{
+	"type": "GenericCrafter",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "冷凝器",
+	"health":260,
+	"itemCapacity":15,
+    "liquidCapacity":200,
+	"outputItem":"scrap/3.5",
+	"size":2,
+	"hasPower":true,
+	"hasItems":true,
+    "hasLiquids": true,
+	"craftTime":15,	
+	"consumes":{
+		"power":1.2,
+		"liquid":"slag/0.25",
+		},
+		"drawer": {
+		"type": "DrawMulti",
+				"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "slag"
+			}
+			"DrawDefault",
+		]
+	},
+    "requirements": [
+	"钴/80",
+	"copper/150"
+	"lead/100"
+	"铁/55"
+	],	
+	"category": "crafting",
+	"research": "原子离解机",
+}

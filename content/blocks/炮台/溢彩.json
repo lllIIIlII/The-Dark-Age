@@ -1,0 +1,357 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "溢彩",
+	"unitSort": "weakest",
+	"health": 6905,
+	"armor": 6,
+	"size": 5,
+	"reload": 24,
+	"range": 640,
+	"recoilTime": 5,
+	"recoil": 4,
+	"canOverdrive": true,
+	"xRand": 0
+	"consumes": {
+	"power": 88,
+	},
+	"shootSound": "laser",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 2.8,
+	"rotateSpeed": 3,
+	"shootY":12
+	"shootType": {
+	"ammoMultiplier": 1,
+	"damage": 600,
+	"lifetime": 1,
+	"speed": 640,
+	"repeat": 1
+	"type": "MultiBulletType",
+	"bullets": [
+	{
+	"speed": 0,
+"damage": 100,
+"lifetime":0,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 600,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"DC3023",
+			"9D2933",
+			"DC3023",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+}
+{
+"createChance":0.5
+"speed": 0,
+"damage": 100,
+"lifetime":5,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 1200,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"FF9C00",
+			"FFC23F",
+			"FF9C00",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+},
+{
+"createChance":0.25
+"speed": 0,
+"damage": 100,
+"lifetime":10,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 2400,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"F6C443",
+			"B99330",
+			"F6C443",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+},
+{
+"createChance":0.125
+"speed": 0,
+"damage": 100,
+"lifetime":15,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 4800,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"A0F19B",
+			"74AC83",
+			"A0F19B",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+},
+{
+"createChance":0.0625
+"speed": 0,
+"damage": 100,
+"lifetime":20,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 9600,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"8DA3F8",
+			"5757BA",
+			"8DA3F8",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+},
+{
+"createChance":0.03125
+"speed": 0,
+"damage": 100,
+"lifetime":25,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 19200,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"00FFFF",
+			"A4FCFA",
+			"00FFFF",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+},
+{
+"createChance":0.015625
+"speed": 0,
+"damage": 100,
+"lifetime":30,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+	"fragBullets":1,
+	"fragAngle": 0,
+	"fragRandomSpread":0,
+	"fragVelocityMin":1,
+	"fragVelocityMax":1,
+	"fragBullet": {
+	"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 38400,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"C1BFF6",
+			"B894F2",
+			"C1BFF6",
+			"FFFFFF"
+		],
+		"smokeEffect": "none",
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	}
+}
+]
+}
+	"requirements": [
+	"copper/1200",
+	"titanium/4000",
+	"thorium/800",
+	"钴/1500",
+	"silicon/1500",
+	"metaglass/50",
+	"plastanium/340",
+	"surge-alloy/1000",
+	"钢/750",
+	"钴钢/500"
+	],
+	"category": "turret",
+	"research": {
+	"parent": "潮水",
+	"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "云月关"
+			}
+		]
+	}
+}

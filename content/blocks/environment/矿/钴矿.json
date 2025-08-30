@@ -1,0 +1,12 @@
+{
+"name":"钴",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"钴",
+"variants":3,
+"mapColor":"FFB6C1",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":0.89,
+"oreScale":34
+}

@@ -1,0 +1,124 @@
+{
+    "type": "flying",
+    "name": "极速",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "rotateSpeed": 6,
+    "speed": 5.5,
+    "drag": 0.07,
+    "accel": 0.7,
+    "trailLength": 45,
+    "immunities": [
+        "tarred",
+        "slow",
+        "spore-slowed",
+        "瘫痪"
+    ],
+    "targetFlags": [
+        "turret",
+        "core"
+    ],
+    "targetAir": true,
+    "circleTarget": true,
+    "engines": [
+        {
+            "x": 0,
+            "y": -17,
+            "radius": 5,
+            "rotation": 90
+        }
+    ],
+    "research": "鬼影",
+    "requirements": {
+        "block": "multiplicative-reconstructor",
+        "previous": "鬼影"
+    },
+    "ammoType": {
+        "type": "PowerAmmoType",
+        "totalPower": 4800
+    },
+    "hitSize": 36,
+    "flying": true,
+    "health": 950,
+    "armor": 15,
+    "itemCapacity": 30,
+    "weapons": [
+        {
+            "name": "极速-下",
+            "x": 0,
+            "y": 0,
+            "recoil": 0,
+            "shootX": 0,
+            "shootY": 0,
+            "reload": 240,
+            "top": false,
+            "rotate": 0,
+            "shootSound": "DDFS",
+            "shoot": {
+                "shots": 3,
+                "shotDelay": 45
+            },
+            "alternate": false,
+            "bullet": {
+                "damage": 200,
+                "lifetime": 60,
+                "width": 20,
+                "height": 66,
+                "knockback": 9,
+                "speed": 4,
+                "drag": -0.02,
+                "homingDelay": 60,
+                "homingPower": 0.3,
+                "homingRange": 1000,
+                "splashDamageRadius": 55,
+                "splashDamage": 180,
+                "sprite": "黑暗纪元-惊鸿",
+                "buildingDamageMultiplier": 1.5,
+                "hitShake": 5,
+                "hitSound": "explosionbig",
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 10,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "length": 35,
+                            "baseLength": 0,
+                            "lifetime": 15,
+                            "colorFrom": "434242",
+                            "colorTo": "CECECE70"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 20,
+                            "sizeFrom": 9,
+                            "sizeTo": 0,
+                            "length": 40,
+                            "baseLength": 0,
+                            "lifetime": 25,
+                            "colorFrom": "434242",
+                            "colorTo": "CECECE70"
+                        }
+                    ]
+                },
+                "trailLength": 40,
+                "trailWidth": 2,
+                "trailColor": "FFFFFF88",
+                "trailChance": 1,
+                "trailInterval": 16,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "length": 16,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "E3E3E380",
+                    "colorTo": "E3E3E380",
+                    "sizeFrom": 3,
+                    "sizeTo": 0
+                }
+            }
+        }
+    ]
+}

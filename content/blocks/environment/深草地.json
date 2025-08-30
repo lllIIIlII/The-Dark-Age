@@ -1,0 +1,10 @@
+{
+"type":"Floor",
+"name":"深色草地",
+"variants":3,
+"speedMultiplier":1,
+"dragMultiplier":1,
+"attributes":{
+"water":0.25
+}
+}

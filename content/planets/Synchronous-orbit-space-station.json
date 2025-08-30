@@ -1,0 +1,61 @@
+{
+    "localizedName": "同步轨道空间站",
+    "generator": "SerpuloPlanetGenerator",
+    "parent": "Planzer",
+    "icon": "defense"
+    "iconColor": "FFFFFF",
+    "orbitRadius": 2.7,
+    "minZoom": 1.2
+    "maxZoom": 2.4
+    "hasAtmosphere": false,
+    "updateLighting": false,
+    "atmosphereRadIn": 0.1,
+    "atmosphereRadOut": 0.1,
+    "atmosphereColor": "FFFFFF",
+    "autoAssignPlanet": true,
+    "prebuildBase": false,
+    "drawOrbit": true,
+    "accessible": true,
+    "alwaysUnlocked": true,
+    "allowSelfSectorLaunch": false,
+    "defaultCore": "core-shard",
+    "sectorSeed": 68,
+    "startSector": 0,
+    "sectorSize": 0.1,
+    "clearSectorOnLose": true,
+    "allowSectorInvasion": true,
+    "allowLaunchToNumbered": false,
+    "radius": 0.1,
+    "cloudMesh": [
+        {
+            "type": "HexSkyMesh",
+            "planet": "Synchronous-orbit-space-station",
+            "seed": 3,
+            "speed": 0,
+            "radius": 0,
+            "divisions": 0,
+            "color": "00000000",
+            "octaves": 0,
+            "persistence": 0,
+            "scl": 0,
+            "thresh": 0
+        }
+    ],
+    "mesh": {
+                "type": "NoiseMesh",
+                "planet": "Synchronous-orbit-space-station",
+                "seed": 1,
+                "color1": "00000000",
+                "color2": "00000000",
+                "divisions": 0,
+                "radius": 0,
+                "octaves": 0,
+                "persistence": 0,
+                "scale": 0,
+                "mag": 0
+    },
+    "orbitSpacing": 1,
+    "orbitalParent": "Planzer",
+    "solarSystem": "Daina",
+    "hiddenItems": []
+}

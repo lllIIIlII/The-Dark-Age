@@ -1,0 +1,70 @@
+{
+	"type": "PowerTurret",
+	"name": "测试",
+	"unitSort": "weakest",
+	"health": 1976,
+	"size": 4,
+	"reload": 133,
+	"range": 640,
+	"recoilTime": 5,
+	"recoil": 4,
+	"canOverdrive": true,
+	"xRand":0
+	"consumes": {},
+	"shootSound": "bolt",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 2.8,
+	"rotateSpeed": 3,
+	"shootY":60
+	"shootType": {
+"type": "LaserBulletType",
+		"length": 660,
+		"width": 25,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 1200,
+		"lifetime": 30,
+		"ammoMultiplier": 2,
+		"colors": [
+			"FF9C00",
+			"FFC23F",
+			"FF9C00",
+			"FFFFFF"
+		],
+		"smokeEffect": {
+	"type": "ParticleEffect",
+	"particles": 3,
+	"region": "黑暗纪元-冲压波",
+	"sizeFrom": 45
+	"sizeTo": 45,
+	"length": 10,
+	"baseLength": 130,
+	"lifetime": 60,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	"cone":0
+	},
+		"despawnEffect": "none"
+		"hitEffect": "none"
+	},
+	"requirements": [
+		"graphite/1800"
+		"silicon/12000"
+		"钢/8000"
+		"铁/4000"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "sin",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "[yellow]战术训练-极端情况"
+			}
+		]
+	}
+}

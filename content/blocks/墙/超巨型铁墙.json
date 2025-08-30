@@ -1,0 +1,16 @@
+{
+	"name": "超巨型铁墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 19920,
+	"armor":250,
+	"size": 4,
+	"absorbLasers":false,
+	"requirements": [
+		"铁/150" 
+		"钢/195"
+	],
+	"category": "defense",
+	"buildCostMultiplier": 0.55,
+	"research": "巨型铁墙"
+}

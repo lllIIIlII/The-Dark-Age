@@ -1,0 +1,17 @@
+{
+	"captureWave":0
+	"planet": "Planzer",
+	"sector":171,
+	"difficulty": 1,
+	"research": {
+    "parent": "冥迷沙漠西部",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "冥迷沙漠西部"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

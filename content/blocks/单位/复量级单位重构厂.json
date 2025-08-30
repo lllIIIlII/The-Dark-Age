@@ -1,0 +1,45 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Reconstructor",
+	"name": "复量级单位重构工厂",
+	"health": 25000,
+	"size": 11,
+	"liquidCapacity": 180,
+	"consumes": {
+		"power": 48,
+		"liquid": "润滑剂/1.35"
+		"items": [
+		"silicon/1500",
+		"plastanium/1250",
+		"surge-alloy/1070",
+		"钢/1060",
+		"暗能钢/630",
+		"phase-fabric/1200"
+		"钴钢/1390"
+		]
+	},
+	"constructTime": 18900,
+	"requirements": [
+		"thorium/8700",
+		"copper/10000"
+		"lead/9999"
+		"钢/4400",
+		"暗金属/5200",
+		"silicon/6000",
+		"铁/6780",
+		"plastanium/2300",
+		"metaglass/580"
+	],
+	"buildVisibility": "shown",
+	"researchCostMultiplier": 0,
+	"category": "units",
+	"research": {
+    "parent": "tetrative-reconstructor",
+    "objectives": [
+			{
+				"type": "OnSector",
+				"preset": "染湖北畔"
+			}
+		]
+	}
+}

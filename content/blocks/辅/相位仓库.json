@@ -1,0 +1,26 @@
+{
+    "requirements": [
+        "空间节点/200",
+        "silicon/2500",
+        "钢/4500",
+        "plastanium/220",
+        "surge-alloy/500",
+        "钴/1000",
+    ],
+    "type": "StorageBlock",
+    "name": "相位仓库",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+    "size": 3,
+    "health": 5000,
+    "itemCapacity": 150000,
+    "research": {
+        "parent": "临时核心",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "天南沼泽"
+            }
+        ]
+    },
+    "category": "effect"
+}

@@ -1,0 +1,16 @@
+{
+    "name":"洛德合金",
+    "details":"要是饿了就把它当葱花吃了吧",
+    "color":"81AC4E",
+    "explosiveness":1.8,
+    "flammability":2.2,
+    "radioactivity":0.1,
+    "charge":0,
+    "cost":5.3,
+    "frames": 6,
+	"transitionFrames": 5,
+	"frameTime": 5,
+    "alwaysUnlocked":false,
+    "research": "暗能钢"
+    "shownPlanets": [ "serpulo","Planzer" ]
+}

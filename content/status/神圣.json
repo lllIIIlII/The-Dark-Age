@@ -1,0 +1,27 @@
+{
+	"name": "神圣",
+	"color": "6AFFB3",
+	"speedMultiplier": 0.95,
+	"healthMultiplier": 1.15,
+	"reloadMultiplier": 1.25,
+    "damageMultiplier": 1.1,
+	"effectChance": 0.44,
+	"damage":-178.6
+	"opposites": [
+	"空间混乱"
+	],
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 20,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"spin": -1.25
+	"region": "黑暗纪元-新星",
+	"sizeFrom": 2,
+	"sizeTo": 5,
+	"colorFrom": "6AFFB3",
+	"colorTo": "FFFFFF50"
+	},
+}

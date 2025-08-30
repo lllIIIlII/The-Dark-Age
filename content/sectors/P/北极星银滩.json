@@ -1,0 +1,17 @@
+{
+	"captureWave":95
+	"planet": "Planzer",
+	"sector":123,
+	"difficulty": 5,
+	"research": {
+    "parent": "出云要塞",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "出云要塞"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

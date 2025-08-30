@@ -1,0 +1,272 @@
+{
+    "type": "flying",
+    "name": "绝尘",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+    "rotateSpeed": 3.2,
+    "speed": 1.6,
+    "drag": 0.04,
+    "accel": 0.06,
+    "immunities": [
+        "tarred",
+        "slow",
+        "burning",
+        "freezing",
+        "spore-slowed",
+        "electrified",
+        "疑惑",
+        "致盲",
+        "瘫痪",
+        "空间混乱"
+    ],
+    "hitSize": 60,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 34550,
+    "armor": 25,
+    "engines": [
+        {
+            "x": 0,
+            "y": -24,
+            "radius": 11,
+            "rotation": 90
+        },
+        {
+            "x": 16,
+            "y": -19,
+            "radius": 6,
+            "rotation": 90
+        },
+        {
+            "x": -16,
+            "y": -19,
+            "radius": 6,
+            "rotation": 90
+        }
+    ],
+    "research": "缥缈",
+    "requirements": {
+        "block": "tetrative-reconstructor",
+        "previous": "缥缈"
+    },
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 240,
+            "reload": 480,
+            "range": 480,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 20,
+                "sizeFrom": 24,
+                "sizeTo": 480,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "30FF3E",
+                "colorTo": "FFFFFF"
+            },
+            "effect": "保护"
+        },
+        {
+            "type": "ShieldRegenFieldAbility",
+            "amount": 180,
+            "max": 2500,
+            "reload": 240,
+            "range": 180,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "lifetime": 50,
+                        "sizeFrom": 6,
+                        "sizeTo": 245,
+                        "strokeFrom": 8,
+                        "strokeTo": 0,
+                        "colorFrom": "30FF3E",
+                        "colorTo": "FEEBB3"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "startDelay": 5,
+                        "lifetime": 50,
+                        "sizeFrom": 5,
+                        "sizeTo": 255,
+                        "strokeFrom": 8,
+                        "strokeTo": 0,
+                        "colorFrom": "30FF3E",
+                        "colorTo": "FEEBB3"
+                    },
+                    {
+                        "type": "WaveEffect",
+                        "interp": "circleOut",
+                        "startDelay": 10,
+                        "lifetime": 46,
+                        "sizeFrom": 5,
+                        "sizeTo": 265,
+                        "strokeFrom": 7,
+                        "strokeTo": 0,
+                        "colorFrom": "30FF3E",
+                        "colorTo": "FEEBB3"
+                    }
+                ]
+            }
+        }
+    ],
+    "weapons": [
+        {
+            "name": "绝尘2",
+            "x": 0,
+            "y": 0,
+            "recoil": 3,
+            "shootX": 25,
+            "shootY": 25,
+            "reload": 100,
+            "top": false,
+            "rotate": false,
+            "shootSound": "laser",
+            "chargeSound": "lasercharge2",
+            "alternate": true,
+            "mirror": true,
+            "bullet": {
+                "type": "LaserBulletType",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "lancerLaserCharge",
+                        "lancerLaserChargeBegin"
+                    ]
+                },
+                "lightningSpacing": 20,
+                "lightningLength": 10,
+                "lightningDelay": 0.4,
+                "lightningLengthRand": 1,
+                "lightningAngleRand": 8,
+                "lightningDamage": 80,
+                "lightningColor": "FFFFFF",
+                "damage": 360,
+                "lifetime": 20,
+                "width": 35,
+                "splashDamageRadius": 80,
+                "splashDamage": 280,
+                "buildingDamageMultiplier": 1.5,
+                "status": "破防",
+                "statusDuration": 60
+            }
+        },
+        {
+            "name": "绝尘3",
+            "x": 5,
+            "y": 0,
+            "recoil": 3,
+            "shootX": 9,
+            "shootY": 6,
+            "reload": 60,
+            "top": false,
+            "rotate": false,
+            "shoot": {
+                "shots": 15,
+                "shotDelay": 5
+            },
+            "alternate": true,
+            "mirror": true,
+            "bullet": {
+                "damage": 80,
+                "lifetime": 20,
+                "width": 8,
+                "height": 8,
+                "speed": 25,
+                "sprite": "黑暗纪元-彗星",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "FFFFFF90",
+                "trailChance": 2
+                "shootEffect": "shootBig",
+            }
+        },
+        {
+            "name": "绝尘1",
+            "x": 0,
+            "y": 10,
+            "recoil": 7,
+            "shootX": 0,
+            "shootY": 0,
+            "reload": 180,
+            "top": true,
+            "rotate": false,
+            "shootSound": "DDFS",
+            "alternate": false,
+            "mirror": false,
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 15
+            },
+            "xRand": 10,
+            "bullet": {
+                "damage": 635,
+                "lifetime": 60,
+                "width": 25,
+                "height": 76,
+                "knockback": 15,
+                "speed": 15,
+                "homingDelay": 30,
+                "homingPower": 0.1,
+                "homingRange": 200,
+                "splashDamageRadius": 95,
+                "splashDamage": 310,
+                "sprite": "黑暗纪元-惊鸿",
+                "buildingDamageMultiplier": 1.1,
+                "status": "melting",
+                "statusDuration": 600,
+                "hitSound": "BZ2",
+                "hitShake": 9,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 15,
+                            "sizeFrom": 13,
+                            "sizeTo": 0,
+                            "length": 95,
+                            "baseLength": 0,
+                            "lifetime": 15,
+                            "colorFrom": "FE7804",
+                            "colorTo": "CECECE70"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 20,
+                            "sizeFrom": 18,
+                            "sizeTo": 0,
+                            "length": 110,
+                            "baseLength": 0,
+                            "lifetime": 25,
+                            "colorFrom": "FE7804",
+                            "colorTo": "CECECE70"
+                        }
+                    ]
+                },
+                "trailLength": 40,
+                "trailWidth": 2,
+                "trailColor": "FFFFFF88",
+                "trailChance": 2,
+                "trailInterval": 16,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "length": 26,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "E3E3E380",
+                    "colorTo": "E3E3E380",
+                    "sizeFrom": 6,
+                    "sizeTo": 0
+                }
+            }
+        }
+    ]
+}

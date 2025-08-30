@@ -1,0 +1,194 @@
+{
+    "type": "flying",
+    "name": "缥缈",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+    "rotateSpeed": 4.2,
+    "speed": 4.2,
+    "drag": 0.04,
+    "accel": 0.3,
+    "lowAltitude": true,
+    "immunities": [
+        "tarred", "slow",
+        "spore-slowed",
+        "疑惑", "瘫痪"
+    ],
+    "hitSize": 40,
+    "flying": true,
+    "health": 12550,
+    "armor": 25,
+    "engines": [
+        {
+            "x": 0,
+            "y": -14,
+            "radius": 7,
+            "rotation": 90
+        }
+    ],
+    "research": "极速",
+    "requirements": {
+        "block": "exponential-reconstructor",
+        "previous": "极速"
+    },
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 300,
+            "reload": 400,
+            "range": 240,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 10,
+                "sizeFrom": 24,
+                "sizeTo": 240,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "FFFFFF",
+                "colorTo": "FFFFFF"
+            },
+            "effect": "警惕"
+        }
+    ],
+    "weapons": [
+        {
+            "x": 0,
+            "y": 0,
+            "recoil": 3,
+            "shootX": 20,
+            "shootY": 25,
+            "reload": 100,
+            "top": false,
+            "rotate": false,
+            "shootSound": "laser",
+            "chargeSound": "lasercharge2",
+            "alternate": false,
+            "mirror": true,
+            "bullet": {
+                "type": "LaserBulletType",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "lancerLaserCharge",
+                        "lancerLaserChargeBegin"
+                    ]
+                },
+                "lightningSpacing": 20,
+                "lightningLength": 10,
+                "lightningDelay": 0.4,
+                "lightningLengthRand": 1,
+                "lightningAngleRand": 8,
+                "lightningDamage": 50,
+                "lightningColor": "FFFFFF",
+                "damage": 165,
+                "lifetime": 10,
+                "width": 25,
+                "splashDamageRadius": 30,
+                "splashDamage": 160,
+                "buildingDamageMultiplier": 1.2,
+                "status": "破防",
+                "statusDuration": 30
+            }
+        },
+        {
+            "name": "缥缈1",
+            "x": 12,
+            "y": 0,
+            "recoil": 2,
+            "shootX": 0,
+            "shootY": 3,
+            "reload": 20,
+            "top": false,
+            "rotate": true,
+            "alternate": true,
+            "mirror": true,
+            "shoot": {
+                "shots": 5,
+                "shotDelay": 10
+            },
+            "bullet": {
+                "damage": 40,
+                "lifetime": 20,
+                "width": 6,
+                "height": 6,
+                "speed": 20,
+                "sprite": "circle-bullet",
+                "trailColor": "FFFFFF88",
+                "trailChance": 1,
+                "trailInterval": 4
+            }
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "recoil": 7,
+            "shootX": 0,
+            "shootY": 0,
+            "reload": 60,
+            "top": false,
+            "rotate": false,
+            "shootSound": "cannon",
+            "alternate": false,
+            "bullet": {
+                "layer": 49,
+                "damage": 145,
+                "lifetime": 60,
+                "width": 15,
+                "height": 36,
+                "knockback": 15,
+                "speed": 3,
+                "drag": -0.035,
+                "homingDelay": 30,
+                "homingPower": 0.4,
+                "homingRange": 1000,
+                "splashDamageRadius": 55,
+                "splashDamage": 110,
+                "sprite": "黑暗纪元-惊鸿",
+                "buildingDamageMultiplier": 0.5,
+                "hitShake": 6,
+                "hitEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 10,
+                            "sizeFrom": 8,
+                            "sizeTo": 0,
+                            "length": 55,
+                            "baseLength": 0,
+                            "lifetime": 15,
+                            "colorFrom": "434242",
+                            "colorTo": "CECECE70"
+                        },
+                        {
+                            "type": "ParticleEffect",
+                            "particles": 20,
+                            "sizeFrom": 9,
+                            "sizeTo": 0,
+                            "length": 60,
+                            "baseLength": 0,
+                            "lifetime": 25,
+                            "colorFrom": "434242",
+                            "colorTo": "CECECE70"
+                        }
+                    ]
+                },
+                "trailLength": 40,
+                "trailWidth": 2,
+                "trailColor": "FFFFFF88",
+                "trailChance": 1,
+                "trailInterval": 16,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "length": 16,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "E3E3E380",
+                    "colorTo": "E3E3E380",
+                    "sizeFrom": 3,
+                    "sizeTo": 0
+                }
+            }
+        }
+    ]
+}

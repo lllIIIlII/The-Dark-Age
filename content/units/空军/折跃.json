@@ -1,0 +1,272 @@
+{
+    "type": "flying",
+    "name": "折跃",
+    "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+    "rotateSpeed": 3.2,
+    "speed": 0.99,
+    "drag": 0.04,
+    "accel": 0.06,
+    "immunities": [
+        "tarred",
+        "slow",
+        "burning",
+        "freezing",
+        "spore-slowed",
+        "electrified",
+        "disarmed",
+        "疑惑",
+        "致盲",
+        "瘫痪",
+        "空间混乱",
+        "破防"
+    ],
+    "hitSize": 85,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 279400,
+    "armor": 38,
+    "engines": [
+        {
+            "x": 0,
+            "y": -30,
+            "radius": 11,
+            "rotation": 90
+        },
+        {
+            "x": 16,
+            "y": -28,
+            "radius": 6,
+            "rotation": 90
+        },
+        {
+            "x": -16,
+            "y": -28,
+            "radius": 6,
+            "rotation": 90
+        }
+    ],
+    "research": {
+        "parent": "绝尘",
+        "objectives": [
+            {
+                "type": "SectorComplete",
+                "preset": "出云要塞"
+            }
+        ]
+    },
+    "requirements": {
+        "block": "复量级单位重构厂",
+        "previous": "绝尘"
+    },
+    "abilities": [
+        {
+            "type": "StatusFieldAbility",
+            "duration": 600,
+            "reload": 800,
+            "range": 300,
+            "applyEffect": "none",
+            "activeEffect": {
+                "type": "WaveEffect",
+                "lifetime": 20,
+                "sizeFrom": 24,
+                "sizeTo": 300,
+                "strokeFrom": 2,
+                "strokeTo": 12,
+                "colorFrom": "C88570",
+                "colorTo": "FFFFFF10"
+            },
+            "effect": "fast"
+        },
+        {
+            "type": "RepairFieldAbility",
+            "amount": 6000,
+            "reload": 360,
+            "range": 180,
+            "healEffect": "none",
+            "activeEffect": {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 10,
+                "sizeTo": 20,
+                "length": 200,
+                "baseLength": 40,
+                "lifetime": 60,
+                "colorFrom": "20F977",
+                "colorTo": "FFFFFF10"
+            }
+        }
+    ],
+    "weapons": [
+        {
+            "name": "折跃1",
+            "x": 0,
+            "y": -3,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 8,
+            "reload": 30,
+            "xRand": 5,
+            "top": true,
+            "rotate": false,
+            "shootSound": "laser",
+            "chargeSound": "lasercharge2",
+            "alternate": false,
+            "mirror": false,
+            "shootStatusDuration": 25,
+            "shootStatus": "警惕",
+            "bullet": {
+                "type": "LaserBulletType",
+                "chargeEffect": {
+                    "type": "MultiEffect",
+                    "effects": [
+                        "lancerLaserCharge",
+                        "lancerLaserChargeBegin"
+                    ]
+                },
+                "lightningSpacing": 20,
+                "lightningLength": 10,
+                "lightningDelay": 0.4,
+                "lightningLengthRand": 1,
+                "lightningAngleRand": 8,
+                "lightningDamage": 80,
+                "lightningColor": "FFFFFF",
+                "damage": 567,
+                "lifetime": 20,
+                "width": 35,
+                "length": 386,
+                "splashDamageRadius": 80,
+                "splashDamage": 378,
+                "buildingDamageMultiplier": 1.5
+            }
+        },
+        {
+            "name": "折跃2",
+            "x": 13,
+            "y": 25,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 6,
+            "reload": 70,
+            "top": true,
+            "rotate": true,
+            "rotateSpeed": 8.8, 
+            "xRand": 3,
+            "shoot": {
+                "shots": 7,
+                "shotDelay": 5
+            },
+            "alternate": false,
+            "mirror": true,
+            "bullet": {
+                "damage": 80,
+                "lifetime": 20,
+                "width": 8,
+                "height": 8,
+                "speed": 25,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "FFFFFF77",
+                "trailChance": 2
+            }
+        },
+        {
+            "name": "折跃2",
+            "x": 46,
+            "y": 2,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 6,
+            "reload": 70,
+            "top": true,
+            "rotate": true,
+            "rotateSpeed": 8.8,
+            "xRand": 3,
+            "shoot": {
+                "shots": 7,
+                "firstShotDelay": 5
+                "shotDelay": 5
+            },
+            "alternate": false,
+            "mirror": true,
+            "bullet": {
+                "damage": 80,
+                "lifetime": 20,
+                "width": 8,
+                "height": 8,
+                "speed": 25,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "FFFFFF77",
+                "trailChance": 2
+            }
+        },
+        {
+            "name": "折跃2",
+            "x": 21,
+            "y": 6,
+            "recoil": 3,
+            "shootX": 0,
+            "shootY": 6,
+            "reload": 70,
+            "top": true,
+            "rotate": true,
+            "rotateSpeed": 8.8,
+            "xRand": 3,
+            "shoot": {
+                "shots": 7,
+                "firstShotDelay": 10
+                "shotDelay": 5
+            },
+            "alternate": false,
+            "mirror": true,
+            "bullet": {
+                "damage": 80,
+                "lifetime": 20,
+                "width": 8,
+                "height": 8,
+                "speed": 25,
+                "shrinkX": 0,
+                "shrinkY": 0,
+                "sprite": "large-orb",
+                "trailLength": 40,
+                "trailWidth": 4,
+                "trailColor": "FFFFFF77",
+                "trailChance": 2
+            }
+        },
+        {
+            "reload": 360,
+            "x": 24,
+            "y": 14,
+            "rotate": false,
+            "inaccuracy": 0,
+            "shootCone": 55,
+            "alternate": true,
+            "shootSound": "missileLaunch",
+            "shake": 5,
+            "parts": [
+                {
+                    "type": "RegionPart",
+                    "mirror": false,
+                    "progress": "reload",
+                    "under": true,
+                    "layerOffset": -0.001,
+                    "moveY": 0
+                }
+            ],
+            "bullet": {
+                "keepVelocity": false,
+                "speed": 0,
+                "shootEffect": "none",
+                "smokeEffect": "none",
+                "spawnUnit": "折跃导弹"
+            }
+        }
+    ]
+}

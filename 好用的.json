@@ -1,0 +1,162 @@
+{
+"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "WaveEffect",
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 10,
+	"lifetime": 10,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF"
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 25,
+	"sizeFrom": 10
+	"sizeTo": 0,
+	"length": 200,
+	"baseLength": 20,
+	"lifetime": 30,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 15,
+	"sizeFrom": 20,
+	"sizeTo": 0,
+	"interp": "pow5Out",
+	"sizeInterp": "pow10In",
+	"length": 250,
+	"baseLength": 20,
+	"lifetime": 180,
+	"colorFrom": "73737350",
+	"colorTo": "73737320",
+	},
+	{
+	"type": "ParticleEffect",
+	"particles": 10,
+	"line":true
+	"lenFrom": 35,
+	"lenTo": 0
+	"length": 100,
+	"strokeFrom": 5,
+	"strokeTo": 0,
+	"baseLength": 40,
+	"lifetime": 45,
+	"colorFrom": "FFC23F",
+	"colorTo": "FFC23F50"
+	}
+]
+}
+
+{
+	"type": "RadialEffect",
+	"amount": 10
+	"effect":"dynamicSpikes",
+	"rotationSpacing":10
+	"lengthOffset":8
+	"startDelay":60
+	},
+
+"startDelay":
+//触发延迟
+"region":
+//自定义形状，需用"模组名字-贴图名字"
+"spin":
+//特效旋转速度
+"instBomb"
+//圆圈星，就是雷霆的轰炸子弹落地的特效，可直接使用
+"interp": "fastSlow",
+//缓速
+"interp": "swing",
+//波纹
+"interp": "bounceIn",
+//弹力球
+"sprite": "circle-bullet",
+//子弹圆球
+"interp": "pow10Out",
+"sizeInterp": "pow5In",
+//烟尘
+"interp": "pow3In",
+"sizeInterp": "pow5Out",
+//吸
+"randLength": false,
+//特效随机位移
+"type":"hitEmpSpark"
+//工厂生产东西的特效
+"despawnEffect":
+//子弹消失的特效。与hitEffect不同，此特效在子弹消失的地方生成特效，hitEffect命中实体后在命中处生成特效。若子弹命中，不触发despawn，触发hit。当攻击处于分裂系时，不命中hitEffect就不会触发。用不到的话最好关掉
+"shootEffect": "instShoot",
+//恶兆发射
+"parts":[
+//几何形状，不会消失的特效
+"collidesAir":false,
+//对空碰撞
+"collidesGround":false,
+//对地碰撞
+"absorbable":false,
+//立场墙碰撞
+"reflectable":false,
+//布墙反弹
+"hittable":false,
+//点防分解
+"collides": false,
+//碰撞体积
+"collidesTiles": false,
+//碰撞敌方
+"collideTerrain":false
+//碰撞墙体，是背景墙，不是造出来的墙
+"collidesTeam": false
+//碰撞己方
+"pierceBuilding": true,
+//穿透建筑，穿透一个建筑造成一次伤害
+"pierce": true
+//穿透单位
+"instantDisappear": true,
+//瞬间消失，跟 lifetime=0 差不多。不过相比于用lifetime=0，它可以使炮台预判单位位置
+"splashDamagePierce": true,
+//爆炸穿透，对建筑伤害=splashDamage×size^2，对单位不明显  要是不想被喷就不要填这玩意
+"drag":
+// 总位移 = speed * [1 - (1-drag)^lifetime] / drag
+"weaveScale": 5,//波长
+"weaveMag": 2,//振幅
+
+"type": "PointBulletType",//点击式触发器，特殊情况下可用
+"speed": 0,
+"damage": 1000,
+"lifetime":0,
+"despawnEffect": "none"
+"collidesGround":false,
+"collidesAir":false,
+"absorbable":false,
+"reflectable":false,
+"hittable":false,
+"collides": false,
+"collidesTiles": false,
+"hitSound":"none",
+"hitEffect": "none",
+"trailEffect": "none"
+//触发器，json堆堆乐用
+
+status:
+Buff:保护,攻速提升,过载,护佑,警惕,狂热,凝铠,轻盈,闪耀,伤害提升,神圣,生命提升,修复,再生
+Debuff:爆燃,腐化,寂灭,禁锢,空间混乱,溃解,扭转,瘫痪,污染,消散,虚弱,延迟,疑惑,致盲,磁干扰,压制,暗蚀
+Neutralbuff:超相,磁化,复分解,破防,献祭,静防
+
+flying -> UnitEntity;//飞机
+mech -> MechUnit;//机甲
+legs -> LegsUnit;//爬爬
+naval -> UnitWaterMove;//船
+payload -> PayloadUnit;//运输机（建造机）
+missile -> TimedKillUnit;//实体导弹
+tank -> TankUnit;//坦克
+hover -> ElevationMoveUnit;//轰炸机？
+tether -> BuildingTetherPayloadUnit;//单位构造机？
+crawl -> CrawlUnit;//毛毛虫
+
+[{type:黑暗纪元-乾坤,max:100,effect:boss},{type:黑暗纪元-八岐,max:100,effect:boss},{type:黑暗纪元-制衡,max:100,effect:boss},{type:黑暗纪元-暴君,max:100,effect:boss},{type:黑暗纪元-曙光,effect:boss},{type:黑暗纪元-末路,max:100,effect:boss},{type:黑暗纪元-烁灭,max:100,effect:boss},{type:黑暗纪元-神佑,max:100,effect:boss},{type:黑暗纪元-群星,max:100,effect:boss},{type:黑暗纪元-遮天,max:100,effect:boss},{type:黑暗纪元-金乌,max:100,effect:boss}]
+
+[{type:黑暗纪元-fast},{type:黑暗纪元-乾坤},{type:黑暗纪元-亘古},{type:黑暗纪元-亢龙锏},{type:黑暗纪元-伤害提升},{type:黑暗纪元-修复机},{type:黑暗纪元-八岐},{type:黑暗纪元-凄光},{type:黑暗纪元-制衡},{type:黑暗纪元-坚石},{type:黑暗纪元-壁垒},{type:黑暗纪元-天仙},{type:黑暗纪元-威严},{type:黑暗纪元-定海},{type:黑暗纪元-尘落},{type:黑暗纪元-崇高},{type:黑暗纪元-建造机},{type:黑暗纪元-弥漫},{type:黑暗纪元-征程},{type:黑暗纪元-恐怖F},{type:黑暗纪元-恒久},{type:黑暗纪元-扩散},{type:黑暗纪元-折跃},{type:黑暗纪元-挖矿机},{type:黑暗纪元-掩星},{type:黑暗纪元-攻速提升},{type:黑暗纪元-敏捷},{type:黑暗纪元-无双},{type:黑暗纪元-无畏},{type:黑暗纪元-无际},{type:黑暗纪元-暴君},{type:黑暗纪元-曙光},{type:黑暗纪元-末路},{type:黑暗纪元-极速},{type:黑暗纪元-泽塔},{type:黑暗纪元-海蛟},{type:黑暗纪元-游离},{type:黑暗纪元-烁灭},{type:黑暗纪元-燎原},{type:黑暗纪元-爬虫·钍},{type:黑暗纪元-爬虫·铀},{type:黑暗纪元-生命提升},{type:黑暗纪元-盾},{type:黑暗纪元-磐石},{type:黑暗纪元-神佑},{type:黑暗纪元-神秘},{type:黑暗纪元-种子},{type:黑暗纪元-穹顶},{type:黑暗纪元-绝尘},{type:黑暗纪元-缥缈},{type:黑暗纪元-群星},{type:黑暗纪元-耀斑},{type:黑暗纪元-自杀式无人机},{type:黑暗纪元-色彩},{type:黑暗纪元-苍溟},{type:黑暗纪元-血光},{type:黑暗纪元-轻盈},{type:黑暗纪元-过载},{type:黑暗纪元-遮天},{type:黑暗纪元-金乌},{type:黑暗纪元-长空},{type:黑暗纪元-陨星},{type:黑暗纪元-静防},{type:黑暗纪元-飞蝗},{type:黑暗纪元-鬼影}]

@@ -1,0 +1,23 @@
+{
+	"name": "强化装甲墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 44290,
+	"armor":63,
+	"size": 4,
+	"absorbLasers":true,
+	"flashHit": true,
+	"insulated":true,
+	"chanceDeflect": 70,
+	"lightningChance": 0.2
+	"lightningDamage": 187
+	"lightningColor": "46FFF9",
+	"requirements": [
+	"phase-fabric/68"
+	"plastanium/72"
+	"metaglass/24"
+	"空间节点/12"
+	],
+	"category": "defense",
+	"research": "复合装甲墙"
+}

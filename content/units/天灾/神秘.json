@@ -1,0 +1,160 @@
+{
+  "name": "神秘",
+  "type": "legs",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "drag": 0.5,
+  "speed": 1,
+  "hitSize": 56,
+  "health": 300000,
+  "armor": 12,
+  "legCount": 6,
+  "legMoveSpace": 0.8,
+  "legPairOffset": 3,
+  "legLength": 68,
+  "legExtension": -4,
+  "legBaseOffset": 2,
+  "stepShake": 1,
+  "legLengthScl": 0.95,
+  "rippleScale": 3,
+  "legSpeed": 0.17,
+  "hovering": true,
+  "allowLegStep": true,
+  "range": 600,
+  "shadowElevation": 0.95,
+  "abilities": [
+  {
+	"type": "ArmorPlateAbility",
+	"healthMultiplier": 1.95
+	"color":"262B44",
+	},
+    {
+      "type": "StatusFieldAbility",
+      "duration": 600,
+      "reload": 300,
+      "range": 450,
+      "applyEffect": "none",
+      "activeEffect": {
+	"type": "WaveEffect",
+	"sides": 8,
+	"rotation": 0,
+	"strokeFrom": 15,
+	"strokeTo": 0,
+	"sizeFrom": 0,
+	"sizeTo": 450,
+	"lifetime": 30,
+	"layer": 111,
+	"colorFrom": "000000",
+	"colorTo": "000000"
+	},
+      "effect": "boss"
+    }
+  ],
+  "immunities": [
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "disarmed",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "致盲",
+    "磁化",
+    "破防",
+    "瘫痪",
+    "空间混乱",
+    "污染",
+    "暗蚀"
+  ],
+  "research": {
+    "parent": "飞蝗",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "铁线三角洲"
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "神秘1",
+      "x": 0,
+      "y": 0,
+      "shootY": 23
+      "mirror": false,
+      "recoil": 3,
+      "rotateSpeed": 2,
+      "reload": 20,
+      "shootSound": "Shoot3",
+      "bullet": {
+      "type": "LaserBulletType",
+		"length": 400,
+		"width": 15,
+		"sideAngle": 125,
+		"sideWidth": 1,
+		"sideLength": 40,
+		"pierce": true
+		"damage": 8000,
+		"buildingDamageMultiplier": 0.1,
+		"status": "暗蚀",
+        "statusDuration": 120,
+		"lifetime": 5,
+		"colors": [
+			"5A6988",
+			"262B44",
+			"5A6988",
+			"FFFFFF"
+		],
+		"smokeEffect": "smokeCloud",
+		"despawnEffect": "none"
+		"hitEffect": {
+		"type": "MultiEffect",
+		"effects": [
+		{
+		"type": "ParticleEffect",
+		"particles": 5,
+		"sizeFrom": 6,
+		"sizeTo": 0,
+		"length": 80,
+		"baseLength": 5,
+		"lifetime": 30,
+		"colorFrom": "5A6988",
+		"colorTo": "FFFFFF50",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 7,
+		"sizeFrom": 8,
+		"sizeTo": 0,
+		"length": 80,
+		"baseLength": 0,
+		"lifetime": 40,
+		"colorFrom": "5A6988",
+		"colorTo": "FFFFFF50",
+		},
+		{
+		"type": "ParticleEffect",
+		"particles": 5,
+		"line":true
+		"lenFrom": 35,
+		"lenTo": 0
+		"length": 80,
+		"strokeFrom": 5,
+		"strokeTo": 0,
+		"baseLength": 25,
+		"lifetime": 45,
+		"colorFrom": "5A6988",
+		"colorTo": "262B4466"
+		}
+	]
+}
+}
+    }
+  ]
+}

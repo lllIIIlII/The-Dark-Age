@@ -1,0 +1,22 @@
+{
+	"name": "消散",
+	"color": "DC3023",
+	"speedMultiplier": 2,
+	"healthMultiplier": 0.2,
+	"reloadMultiplier": 2,
+	"damageMultiplier": 2,
+	"effectChance": 0.05,
+	"damage": 283,
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 2,
+		"baseLength": 50,
+		"length": 120,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"sizeFrom": 15,
+		"sizeTo": 0,
+		"colorFrom": "DC3023",
+		"colorTo": "DC302350"
+	}
+}

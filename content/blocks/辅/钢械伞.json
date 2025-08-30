@@ -1,0 +1,46 @@
+{
+	"type": "ForceProjector",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "钢械伞",
+	"health": 13500,
+	"size": 6,
+	"radius": 440,
+	"squareSprite": false,
+	"canOverdrive": false,
+	"shieldHealth": 71200,
+	"phaseRadiusBoost": 2500,
+	"phaseShieldBoost": 2500,
+	"cooldownNormal": 50,
+	"cooldownLiquid": 30,
+	"cooldownBrokenBase": 111,
+	"coolantConsumption": 16,
+	"liquidCapacity": 48,
+	"absorbEffect": {
+		"type": "WaveEffect",
+		"sizeFrom": 0,
+		"sizeTo": 20,
+		"lifetime": 120,
+		"colorFrom": "FFFFFF",
+		"colorTo": "FFFFFF00"
+	},
+	"consumes": {
+		"power": 18.8
+	},
+	"requirements": [
+		"lead/1200",
+		"钢/1110",
+		"plastanium/450",
+		"phase-fabric/450",
+		"暗能钢/200",
+	],
+"research": {
+"parent": "铁伞",
+"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "地冠"
+			}
+		]
+	},
+	"category": "effect"
+}

@@ -1,0 +1,16 @@
+{
+	"type": "Conveyor",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "冲击传输管道",
+	"health": 115,
+	"requirements": [
+		"洛德合金/1",
+		"lead/1"
+		"metaglass/2"
+	],
+	"category": "distribution",
+	"research":"钴传输带",
+	"speed": 5,
+	"itemCapacity":25
+	"displayedSpeed":1
+}

@@ -1,0 +1,13 @@
+{
+	"name": "STAL-加速流体",
+	"alwaysUnlocked":false,
+	"lightColor":"1685A9",
+	"color": "0F5972",
+	"flammability": -0.5,
+	"temperature": -0.5,
+	"heatCapacity": 2.8,
+	"viscosity": 0,
+	"explosiveness": 0.3,
+	"research": "空间节点"
+	"shownPlanets": [ "serpulo","erekir","Planzer" ]
+}

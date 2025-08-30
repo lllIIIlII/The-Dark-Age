@@ -1,0 +1,21 @@
+{
+	"captureWave":65
+	"planet": "serpulo",
+	"sector":267,
+	"difficulty": 6,
+	"research": {
+    "parent": "overgrowth",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "overgrowth"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

@@ -1,0 +1,26 @@
+{
+	"name": "破防",
+	"color": "96CDCD",
+	"speedMultiplier": 0.9,
+	"healthMultiplier": 0.7,
+	"reloadMultiplier": 1.2,
+    "damageMultiplier": 1.25,
+	"effectChance": 0.05,
+	"damage": 2.5
+	"opposites": [
+	"保护"
+	],
+	"effect": {
+		"type": "ParticleEffect",
+		"particles": 1,
+		"baseLength": 0,
+		"length": 20,
+		"lifetime": 60,
+		"interp": "fastSlow",
+		"region": "黑暗纪元-三角",
+		"sizeFrom": 2,
+		"sizeTo": 5,
+		"colorFrom": "96CDCD",
+		"colorTo": "FFFFFF50"
+	}
+}

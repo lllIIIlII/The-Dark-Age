@@ -1,0 +1,23 @@
+{
+	"name": "腐化",
+	"color": "B894F2",
+	"speedMultiplier": 0.75,
+	"healthMultiplier": 0.77,
+	"reloadMultiplier": 0.8,
+	"damageMultiplier": 0.88,
+	"effectChance": 0.3,
+	"damage": 14.42,
+	"effect": {
+	"type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length": 34,
+	"lifetime": 60,
+	"interp": "fastSlow",
+	"region": "黑暗纪元-圆矩",
+	"sizeFrom": 1.5,
+	"sizeTo": 0,
+	"colorFrom": "B894F2",
+	"colorTo": "B894F250"
+	}
+}

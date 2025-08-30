@@ -1,0 +1,13 @@
+{
+	"type": "floor",
+	"name": "覆雪沙地",
+	"itemDrop": "sand",
+	"speedMultiplier": 1,
+	"attributes":{
+	"oil": 0.2,
+	"water":0.2
+	},
+	"variants":3,
+	"blendGroup": "snow",
+	"playerUnmineable": true
+}

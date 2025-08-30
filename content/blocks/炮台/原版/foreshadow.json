@@ -1,0 +1,162 @@
+{
+	"range": 720,
+	"rotateSpeed": 3,
+	"fogRadiusMultiplier": 0.6888,
+	"canOverdrive": false,
+	"coolantMultiplier": 1.5,
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"consumes": {
+		"power": 18
+	},
+	"ammoTypes": {
+		"surge-alloy": {
+			"type": "PointBulletType",
+			"trailSpacing": 19,
+			"hitEffect": "instHit",
+			"smokeEffect": "smokeCloud",
+			"trailEffect": "instTrail",
+			"despawnEffect": "instBomb",
+			"damage": 2130,
+			"pierceArmor": true,
+			"hitShake": 6,
+			"ammoMultiplier": 1,
+			"lightningDamage": 25,
+			"lightning": 4,
+			"lightningLength": 10,
+			"speed": 200,
+			"lifetime": 60,
+			"shootEffect": "instShoot",
+			"buildingDamageMultiplier": 0.3
+		},
+		"暗能钢": {
+			"type": "PointBulletType",
+			"buildingDamageMultiplier": 0.4,
+			"shootEffect": {
+				"type": "WaveEffect",
+				"lifetime": 10,
+				"sizeFrom": 5,
+				"sizeTo": 80,
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"colorFrom": "2B2C2C",
+				"colorTo": "FFFFFF"
+			},
+			"despawnEffect": {
+				"type": "ParticleEffect",
+				"particles": 13,
+				"sizeFrom": 8,
+				"sizeTo": 0,
+				"length": 100,
+				"baseLength": 0,
+				"lifetime": 13,
+				"colorFrom": "2B2C2C",
+				"colorTo": "FFFFFF",
+				"cone": 60
+			},
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 13,
+						"sizeFrom": 9,
+						"sizeTo": 0,
+						"length": -20,
+						"baseLength": 20,
+						"lifetime": 30,
+						"colorFrom": "2B2C2C",
+						"colorTo": "2B2C2C"
+					},
+					{
+						"type": "ParticleEffect",
+						"particles": 15,
+						"line":true
+						"lenFrom": 9,
+						"lenTo": 0,
+						"strokeFrom": 2,
+						"strokeTo": 0,
+						"length": -25,
+						"baseLength": 20,
+						"lifetime": 30,
+						"colorFrom": "2B2C2C",
+						"colorTo": "FFFFFF",
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 20,
+						"sizeFrom": 5,
+						"sizeTo": 80,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "2B2C2C",
+						"colorTo": "2B2C2C"
+					}
+				]
+			},
+			"smokeEffect": "smokeCloud",
+			"trailEffect": {
+				"type": "ParticleEffect",
+				"particles": 13,
+				"baseLength": 0.1,
+				"length": 0.1,
+				"lifetime": 30,
+				"line": true,
+				"randLength": false,
+				"lenFrom": 11,
+				"lenTo": 11,
+				"strokeFrom": 8,
+				"strokeTo": 0,
+				"colorFrom": "2B2C2C",
+				"colorTo": "2B2C2C",
+				"cone": 0
+			},
+			"trailSpacing": 10,
+			"hitShake": 6,
+			"speed": 200,
+			"lifetime": 60,
+			"ammoMultiplier": 1,
+			"status": "致盲",
+			"statusDuration": 30,
+			"hitSound": "BZ"
+			"splashDamageRadius": 60,
+			"splashDamage": 2400,
+			"fragBullets": 15,
+			"fragBullet": {
+				"type": "PointBulletType",
+				"trailEffect": {
+					"type": "ParticleEffect",
+					"particles": 1,
+					"baseLength": 0.1,
+					"length": 0.1,
+					"lifetime": 22,
+					"line": true,
+					"randLength": false,
+					"lenFrom": 9,
+					"lenTo": 9,
+					"strokeFrom": 5,
+					"strokeTo": 0,
+					"colorFrom": "2B2C2C",
+					"colorTo": "2B2C2C",
+					"cone": 0
+				},
+				"hitEffect": {
+					"type": "ParticleEffect",
+					"particles": 8,
+					"sizeFrom": 9,
+					"sizeTo": 0,
+					"length": -10,
+					"baseLength": 10,
+					"lifetime": 30,
+					"colorFrom": "2B2C2C",
+					"colorTo": "FFFFFF"
+				},
+				"trailSpacing": 8,
+				"hitShake": 3,
+				"speed": 20,
+				"lifetime": 8,
+				"splashDamageRadius": 16,
+				"splashDamage": 240
+			}
+		}
+	}
+}

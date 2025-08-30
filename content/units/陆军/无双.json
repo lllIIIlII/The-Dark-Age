@@ -1,0 +1,176 @@
+{
+  "type": "mech",
+  "name": "无双",
+  "shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"],
+  "hitSize": 49,
+  "armor": 56,
+  "speed": 0.61,
+  "rotateSpeed": 1.32,
+  "baseRotateSpeed": 1.3,
+  "health": 186700,
+  "ammoType": "钢",
+  "ammoCapacity": 280,
+  "immunities": [
+    "disarmed",
+    "slow",
+    "wet",
+    "污染"
+  ],
+  "research": {
+    "parent": "reign",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "染湖北畔"
+      }
+    ]
+  },
+  "requirements": {
+    "block": "复量级单位重构厂",
+    "previous": "reign"
+  },
+  "canDrown": false,
+  "mechStepParticles": true,
+  "mechFrontSway": 2.35,
+  "mechSideSway": 0.8,
+  "weapons": [
+    {
+      "name": "无双1",
+      "reload": 10,
+      "shake": 3.5,
+      "recoil": 3.2,
+      "recoilTime": 2,
+      "shootX": -30,
+      "shootY": 23,
+      "x": 0,
+      "y": 0,
+      "rotate": false,
+      "top": true,
+      "inaccuracy": 1,
+      "shootSound": "shootBig",
+      "alternate": false,
+      "shootCone": 12,
+      "shootStatusDuration": 365,
+      "shootStatus": "生命提升",
+      "bullet": {
+        "damage": 183,
+        "splashDamage": 67,
+        "splashDamageRadius": 32,
+        "pierceBuilding": true,
+        "pierceArmor": true,
+        "pierce": true,
+        "pierceCap": 5,
+        "speed": 25,
+        "lifetime": 15,
+        "hitSound": "boom",
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "despawnEffect": "flakExplosionBig",
+        "trailLength": 3.5,
+        "trailWidth": 3.3,
+        "trailColor": "FFC23F",
+        "width": 13,
+        "height": 27.8,
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "sizeFrom": 0,
+              "sizeTo": 10,
+              "lifetime": 10,
+              "colorFrom": "FFFFFF",
+              "colorTo": "FFFFFF"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 10,
+              "line": true,
+              "lenFrom": 36,
+              "lenTo": 0,
+              "length": 142,
+              "strokeFrom": 12,
+              "strokeTo": 0,
+              "baseLength": 10,
+              "lifetime": 12,
+              "colorFrom": "FFC23F",
+              "colorTo": "FFC23F",
+              "cone": 12
+            }
+          ]
+        },
+        "fragBullets": 10,
+        "fragRandomSpread": 36,
+        "fragBullet": {
+          "damage": 98,
+          "pierceArmor": true,
+          "speed": 35,
+          "lifetime": 5,
+          "hitSound": "boom",
+          "trailLength": 2.5,
+          "trailWidth": 1,
+          "trailColor": "FFC23F",
+          "status": "sapped",
+          "statusDuration": 60,
+          "width": 6,
+          "height": 13,
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "line": true,
+                "lenFrom": 24,
+                "lenTo": 0,
+                "length": 86,
+                "strokeFrom": 7,
+                "strokeTo": 0,
+                "baseLength": 10,
+                "lifetime": 5,
+                "colorFrom": "FFC23F",
+                "colorTo": "FFC23F",
+                "cone": 18
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "无双2",
+      "top": true,
+      "reload": 25,
+      "x": 16,
+      "y": -8,
+      "shootY": 9,
+      "shootX": 1.9,
+      "rotate": true,
+      "recoil": 1,
+      "recoilTime": 5,
+      "inaccuracy": 0,
+      "shootSound": "laser",
+      "shootStatusDuration": 600,
+      "shootStatus": "保护",
+      "bullet": {
+        "type": "LaserBulletType",
+        "splashDamageRadius": 40,
+        "splashDamage": 164,
+        "collidesGround": true,
+        "collidesAir": true,
+        "length": 360,
+        "width": 6,
+        "pierce": true,
+        "lifetime": 10,
+        "colors": [
+          "FFC23F",
+          "F2A971",
+          "C26F59",
+          "FFFFFF"
+        ]
+      }
+    }
+  ]
+}

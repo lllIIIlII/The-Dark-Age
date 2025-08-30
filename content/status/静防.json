@@ -1,0 +1,8 @@
+{
+	"name": "静态防守",
+	"color": "3F3F3F",
+	"speedMultiplier": 0,
+	"healthMultiplier": 3,
+	"reloadMultiplier": 2.5,
+    "damageMultiplier": 3,
+}

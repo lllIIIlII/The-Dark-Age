@@ -1,0 +1,15 @@
+{
+"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+"type":"payloadConveyor"
+"name":"大型载荷传输带",
+"health":300
+"payloadLimit": 9
+"size": 5,
+"requirements":[
+"graphite/30",
+"silicon/30"
+]
+"canOverdrive":false,
+"category": "units",
+"research":"payload-conveyor"
+}

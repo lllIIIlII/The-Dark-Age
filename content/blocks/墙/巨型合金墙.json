@@ -1,0 +1,16 @@
+{
+	"name": "巨型合金墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 14010,
+	"size": 3,
+	"absorbLasers":false,
+	"lightningChance": 0.3
+	"lightningDamage": 30
+	"armor":20
+	"requirements": [
+		"surge-alloy/48"
+	],
+	"category": "defense",
+	"research": "surge-wall-large"
+}

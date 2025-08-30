@@ -1,0 +1,72 @@
+{
+	"type": "PowerTurret",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"name": "cos",
+	"unitSort": "weakest",
+	"health": 1976,
+	"size": 4,
+	"reload": 133,
+	"range": 640,
+	"recoilTime": 5,
+	"recoil": 4,
+	"canOverdrive": true,
+	"xRand":0
+	"consumes": {},
+	"shootSound": "bolt",
+	"targetGround": true,
+	"targetAir": true,
+	"inaccuracy": 0,
+	"shake": 2.8,
+	"rotateSpeed": 3,
+	"shootY":60
+	"shootType": {
+	"ammoMultiplier": 1,
+	"type": "RailBulletType",
+	"pointEffectSpace": 120,
+	"pointEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	"type": "ParticleEffect",
+	"particles": 1,
+	"region": "黑暗纪元-cos",
+	"sizeFrom": 60,
+	"sizeTo": 60,
+	"length": 60,
+	"interp": "pow4Out"
+	"randLength": false,
+	"baseLength": 0,
+	"lifetime": 90,
+	"colorFrom": "FFFFFF",
+	"colorTo": "FFFFFF00",
+	"cone": 0
+	}
+]
+},
+	"damage": 5500,
+	"hitShake": 4,
+	"lifetime": 30,
+	"length": 640,
+	"pierce": true,
+	"pierceDamageFactor": 0.05,
+	"hitEffect": "none"
+	"shootEffect": "none",
+	"smokeEffect": "none"
+}
+	"requirements": [
+		"graphite/1800"
+		"silicon/12000"
+		"钢/8000"
+		"铁/4000"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "asin",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "[yellow]战术训练-极端情况"
+			}
+		]
+	}
+}

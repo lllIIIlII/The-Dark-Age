@@ -1,0 +1,12 @@
+{
+	"type": "floor",
+	"name": "基层地板",
+	"speedMultiplier": 1.1,
+	"dragMultiplier": 1.25,
+	"attributes":{
+		"oil": -0.15,
+		"water": -0.15
+	},
+	"blendGroup": "基层地",
+	"variants": 0
+}

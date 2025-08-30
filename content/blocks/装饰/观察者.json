@@ -1,0 +1,14 @@
+{
+	"name": "观察者",
+	"type": "Wall",
+	"health": 100000,
+	"armor":6800000
+	"size": 4,
+	"absorbLasers":false,
+	"chanceDeflect": 100,
+	"requirements": [],
+	"category": "defense",
+	"buildVisibility": "sandboxOnly",
+	"buildCostMultiplier": 0,
+	"research": "前线指挥中心"
+}

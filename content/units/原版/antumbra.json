@@ -1,0 +1,157 @@
+{
+    "speed": 1,
+    "accel": 0.06,
+    "drag": 0.04,
+    "rotateSpeed": 1.9,
+    "flying": true,
+    "lowAltitude": true,
+    "health": 7500,
+    "shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+    "weapons": [
+        {
+            "name": "月影1",
+            "y": 8,
+            "x": 17,
+            "reload": 60,
+            "ejectEffect": "casing1",
+            "rotateSpeed": 8,
+            "shootSound": "missile",
+            "rotate": true,
+            "top": true,
+            "alternate": true,
+            "mirror": true,
+            "shadow": 6,
+            "shoot": {
+                "type": "ShootMulti",
+                "source": {
+                    "shots": 4,
+                    "shotDelay": 15
+                },
+                "dest": [
+                    {
+                        "type": "ShootHelix",
+                        "scl": 4,
+                        "mag": 1
+                    }
+                ]
+            },
+            "bullet": {
+                "type": "MissileBulletType",
+                "width": 8,
+                "height": 8,
+                "shrinkY": 0,
+                "speed": 4,
+                "drag": -0.01,
+                "splashDamageRadius": 20,
+                "splashDamage": 45,
+                "ammoMultiplier": 4,
+                "lifetime": 70,
+                "hitEffect": "blastExplosion",
+                "despawnEffect": "blastExplosion",
+                "status": "blasted",
+                "statusDuration": 60
+                "trailChance": 0.2,
+                "trailInterval": 10,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 3,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "F2AA70",
+                    "colorTo": "F2AA7060",
+                    "sizeFrom": 3,
+                    "sizeTo": 0
+                }
+            }
+        },
+        {
+            "name": "月影1",
+            "y": -8,
+            "x": 17,
+            "reload": 60,
+            "ejectEffect": "casing1",
+            "rotateSpeed": 8,
+            "shootSound": "missile",
+            "rotate": true,
+            "top": true,
+            "shadow": 6,
+            "shoot": {
+                "type": "ShootMulti",
+                "source": {
+                    "shots": 4,
+                    "shotDelay": 15
+                },
+                "dest": [
+                    {
+                        "type": "ShootHelix",
+                        "scl": 4,
+                        "mag": 1
+                    }
+                ]
+            },
+            "bullet": {
+                "type": "MissileBulletType",
+                "width": 8,
+                "height": 8,
+                "shrinkY": 0,
+                "speed": 3,
+                "drag": -0.03,
+                "splashDamageRadius": 20,
+                "splashDamage": 64,
+                "ammoMultiplier": 4,
+                "lifetime": 55,
+                "hitEffect": "blastExplosion",
+                "despawnEffect": "blastExplosion",
+                "status": "blasted",
+                "statusDuration": 60
+                "trailChance": 0.2,
+                "trailInterval": 10,
+                "trailEffect": {
+                    "type": "ParticleEffect",
+                    "particles": 1,
+                    "length": 3,
+                    "baseLength": 1,
+                    "lifetime": 30,
+                    "colorFrom": "F2AA70",
+                    "colorTo": "F2AA7060",
+                    "sizeFrom": 3,
+                    "sizeTo": 0
+                }
+            }
+        },
+        {
+            "name": "月影2",
+            "y": 2.0,
+            "x": 10.0,
+            "shootY": 10.0,
+            "reload": 12,
+            "shake": 1.0,
+            "rotateSpeed": 2.0,
+            "ejectEffect": "casing1",
+            "shootSound": "shootBig",
+            "rotate": true,
+            "top": true,
+            "shadow": 8,
+            "bullet": {
+                "type": "BasicBulletType",
+                "width": 12,
+                "height": 18,
+                "lifetime": 25,
+                "speed": 16,
+                "shootEffect": "shootBig",
+                "damage": 67,
+                "fragBullets": 3,
+                "fragRandomSpread": 36,
+                "fragBullet": {
+                    "speed": 10,
+                    "damage": 34,
+                    "knockback": 1,
+                    "lifetime": 5,
+                    "width": 5,
+                    "height": 7
+                }
+            }
+        }
+    ]
+}

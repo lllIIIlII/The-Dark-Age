@@ -1,0 +1,13 @@
+{
+    "name":"关于质量驱动",
+    "color":"FFFFFF",
+    "hidden": true,
+    "explosiveness":0,
+    "flammability":0,
+    "radioactivity":0,
+    "charge":0,
+    "hardness":0,
+    "cost":0,
+    "alwaysUnlocked":true,
+    "research":"文件夹：技术"
+}

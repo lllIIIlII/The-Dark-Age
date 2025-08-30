@@ -1,0 +1,21 @@
+{
+	"captureWave":135
+	"planet": "Planzer",
+	"sector":180,
+	"difficulty": 7,
+	"research": {
+    "parent": "黑暗纪元-出云要塞",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "黑暗纪元-出云要塞"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+	"overrideLaunchDefaults": false,
+	"isLastSector": false,
+	"allowLaunchSchematics": true,
+	"allowLaunchLoadout": false
+}

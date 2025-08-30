@@ -1,0 +1,17 @@
+{
+	"planet": "Planzer",
+	"captureWave": 50
+	"sector":32,
+	"difficulty": 1,
+	"research": {
+    "parent": "同步轨道空间站",
+    "objectives": [ 
+      {
+        "type": "SectorComplete",
+        "preset": "同步轨道空间站"
+      }
+     ]
+    }
+	"alwaysUnlocked":false
+	"addStartingItems": true
+}

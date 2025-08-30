@@ -1,0 +1,13 @@
+{
+	"name": "巨型钛墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 5180,
+	"size": 3,
+	"absorbLasers":false,
+	"requirements": [
+		"titanium/48"
+	],
+	"category": "defense",
+	"research": "titanium-wall-large"
+}

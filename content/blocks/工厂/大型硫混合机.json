@@ -1,0 +1,57 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型硫混合机",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"health":780,
+	"itemCapacity":35,
+	"outputItem":"pyratite/3",
+	"size":3,
+	"hasPower":true,
+	"hasItems":true,
+	"craftTime":30,	
+	"consumes":{
+		"power":1.96,
+		"items": [
+	    "lead/3",
+	    "sand/4"
+	    "coal/2",
+	         ]
+		},
+		"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-转",
+					"spinSprite": true,
+					"rotateSpeed": 1
+			}
+		]
+	},
+		"updateEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "ParticleEffect",
+				"particles": 20,
+				"strokeFrom": 8,
+				"strokeTo": 0,
+				"length": 0,
+				"baseLength": 0,
+				"lifetime": 30,
+				"colorFrom": "FFFFFF",
+				"colorTo": "FFFFFF50"
+				"cone":360
+			}
+		]
+	},
+    "requirements": [
+    "plastanium/80"
+	"copper/300"
+	"lead/220"
+	"metaglass/60"
+	],	
+	"category": "crafting",
+	"research": "冶硅炉",
+}

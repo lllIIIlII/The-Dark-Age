@@ -1,0 +1,15 @@
+{
+	"name": "巨型塑钢墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 6220,
+	"size": 3,
+	"absorbLasers":true,
+	"insulated":true,
+	"requirements": [
+		"plastanium/42"
+		"metaglass/18"
+	],
+	"category": "defense",
+	"research": "plastanium-wall-large"
+}

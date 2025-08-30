@@ -1,0 +1,48 @@
+{
+	"type": "payload",
+	"shownPlanets": [ "serpulo","Planzer","Synchronous-orbit-space-station"]
+	"payloadCapacity": 576,
+	"name": "建造机",
+	"controller": "BuilderAI",
+	"speed": 3,
+	"drag": 0.04,
+	"accel": 0.03,
+	"rotateSpeed": 2.5,
+	"immunities": [
+		"electrified",
+		"破防"
+	],
+	"ammoType": {
+		"type": "PowerAmmoType",
+		"totalPower": 3000
+	},
+	"ammoCapacity": 60,
+	"hitSize": 12,
+	"buildRange": 280,
+	"buildSpeed": 2.5,
+	"buildBeamOffset": 11,
+	"flying": true,
+	"faceTarget": true,
+	"health": 2100,
+	"armor": 25,
+	"itemCapacity": 50,
+	"engineOffset": 6,
+	"engineSize": 3,
+	"engines": [
+		{
+			"x": 0,
+			"y": -5.5,
+			"radius": 5,
+			"rotation": 90
+		}
+	],
+	"research": {
+		"parent": "无人机组装工厂",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "同步轨道空间站"
+			}
+		]
+	}
+}
