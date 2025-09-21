@@ -5,4 +5,5 @@
 "description":"The Dark Age 科技与魔法!  [gold]小交流群:526675268",
 "version":"0.2.6",
 "minGameVersion":"150"
+"hideBrowser": false
 }

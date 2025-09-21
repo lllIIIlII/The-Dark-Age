@@ -1,0 +1,234 @@
+{
+	"type": "ItemTurret",
+	"name": "重锤",
+	"shownPlanets": ["serpulo", "Planzer", "Synchronous-orbit-space-station"],
+	"size": 2,
+	"health": 135,
+	"ammoPerShot": 3,
+	"range": 265,
+	"reload": 180,
+	"recoil": 1,
+	"inaccuracy": 0,
+	"rotateSpeed": 3,
+	"maxAmmo": 12,
+	"targetGround": true,
+	"targetAir": false,
+	"canOverdrive": true,
+	"shootSound": "shootAltLong",
+	"liquidCapacity": 12,
+	"consumes": {
+		"coolant": {
+			"amount": 0.1,
+			"optional": true
+		}
+	},
+	"ammoUseEffect": {
+		"type": "MultiEffect",
+		"effects": [
+			{
+				"type": "ParticleEffect",
+				"particles": 5,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"interp": "pow5Out",
+				"sizeInterp": "pow10In",
+				"length": 32,
+				"cone": 45,
+				"layer": 49,
+				"colorFrom": "73737370",
+				"colorTo": "73737370"
+			}
+		]
+	},
+	"requirements": [
+		"silicon/30",
+		"copper/200",
+		"lead/50",
+		"metaglass/10"
+	],
+	"category": "turret",
+	"research": {
+		"parent": "scatter",
+		"objectives": [
+			{
+				"type": "OnSector",
+				"preset": "frozenForest"
+			}
+		]
+	},
+	"shoot": {
+		"type": "ShootMulti",
+		"source": {
+			"shots": 3,
+			"shotDelay": 10
+		},
+		"dest": [
+			{
+				"type": "ShootBarrel",
+				"shots": 3,
+				"barrels": [
+					3, 0, 0,
+					-3, 0, 0,
+					0, 0, 0
+				]
+			}
+		]
+	},
+	"drawer": {
+		"type": "DrawTurret",
+		"parts": [
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"x": 0,
+				"y": 0,
+				"suffix": "-右管",
+				"layer": 49,
+				"moveX": 0,
+				"moveY": 3,
+				"moves": [
+					{
+						"progress": "recoil",
+						"y": -1.2
+					}
+				]
+			},
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"x": 0,
+				"y": 0,
+				"suffix": "-中管",
+				"layer": 49,
+				"moveX": 0,
+				"moveY": 3,
+				"moves": [
+					{
+						"progress": "recoil",
+						"y": -1.2
+					}
+				]
+			},
+			{
+				"type": "RegionPart",
+				"mirror": false,
+				"x": 0,
+				"y": 0,
+				"suffix": "-左管",
+				"layer": 49,
+				"moveX": 0,
+				"moveY": 3,
+				"moves": [
+					{
+						"progress": "recoil",
+						"y": -1.2
+					}
+				]
+			}
+		]
+	},
+	"ammoTypes": {
+		"copper": {
+			"damage": 50,
+			"ammoMultiplier": 1,
+			"collidesAir":false,
+			"width": 6,
+			"height": 10,
+			"speed": 26.5,
+			"lifetime": 10,
+			"trailColor": "E2B881",
+			"trailLength": 5,
+			"trailWidth": 1,
+			"hitSound": "bang",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 3,
+						"line": true,
+						"lenFrom": 7,
+						"lenTo": 0,
+						"length": 35,
+						"strokeFrom": 4,
+						"strokeTo": 0,
+						"baseLength": 40,
+						"lifetime": 15,
+						"cone": 15,
+						"colorFrom": "FFFFFF",
+						"colorTo": "FFC23F50"
+					}
+				]
+			}
+		},
+		"lead": {
+			"damage": 70,
+			"ammoMultiplier": 1,
+			"collidesAir":false,
+			"width": 6,
+			"height": 10,
+			"speed": 26.5,
+			"lifetime": 10,
+			"reloadMultiplier": 0.8,
+			"trailColor": "E2E8EF",
+			"trailLength": 5,
+			"trailWidth": 1,
+			"hitSound": "bang",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 3,
+						"line": true,
+						"lenFrom": 7,
+						"lenTo": 0,
+						"length": 35,
+						"strokeFrom": 4,
+						"strokeTo": 0,
+						"baseLength": 40,
+						"lifetime": 15,
+						"cone": 15,
+						"colorFrom": "FFFFFF",
+						"colorTo": "FFC23F50"
+					}
+				]
+			}
+		},
+		"graphite": {
+			"damage": 42,
+			"ammoMultiplier": 2,
+			"collidesAir":false,
+			"width": 6,
+			"height": 10,
+			"speed": 26.5,
+			"lifetime": 10,
+			"status": "slow",
+			"statusDuration": 180,
+			"trailColor": "9192A4",
+			"trailLength": 5,
+			"trailWidth": 1,
+			"hitSound": "bang",
+			"hitEffect": {
+				"type": "MultiEffect",
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"particles": 3,
+						"line": true,
+						"lenFrom": 7,
+						"lenTo": 0,
+						"length": 35,
+						"strokeFrom": 4,
+						"strokeTo": 0,
+						"baseLength": 40,
+						"lifetime": 15,
+						"cone": 15,
+						"colorFrom": "FFFFFF",
+						"colorTo": "FFC23F50"
+					}
+				]
+			}
+		}
+	}
+}

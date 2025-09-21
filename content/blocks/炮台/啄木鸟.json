@@ -8,7 +8,7 @@
 	"ammoPerShot": 10,
 	"range": 712,
 	"reload": 90,
-	"recoil": 5,
+	"recoil": 2,
 	"inaccuracy": 0,
 	"rotateSpeed": 7,
 	"maxAmmo": 400,
@@ -74,7 +74,7 @@
 				"moves": [
 					{
 						"progress": "recoil",
-						"y": -5.5
+						"y": -0.5
 					}
 				]
 			},

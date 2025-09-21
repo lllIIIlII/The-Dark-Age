@@ -1,0 +1,17 @@
+{
+	"name": "防爆墙",
+	"shownPlanets": ["serpulo","Planzer","Synchronous-orbit-space-station"]
+	"type": "Wall",
+	"health": 15000,
+	"armor": -5000
+	"size": 1,
+	"absorbLasers":true,
+	"insulated":true,
+	"requirements": [
+		"graphite/2"
+		"silicon/1"
+		"metaglass/1"
+	],
+	"category": "defense",
+	"research": "copper-wall"
+}
